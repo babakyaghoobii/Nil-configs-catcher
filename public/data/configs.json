@@ -1,8 +1,848 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-28T14:45:28Z",
-  "totalUnique": 50,
+  "generatedAt": "2026-10-28T15:21:52Z",
+  "totalUnique": 100,
   "configs": [
+    {
+      "id": "b9cbb4e56969ac378a42fe1b499da48b9ebbc08d60eae1495731baf66ff0d315",
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.192:8080#%F0%9F%87%AC%F0%9F%87%A7GB-82.38.31.192-5217",
+      "protocol": "ss",
+      "name": "🇬🇧GB-82.38.31.192-5217",
+      "host": "82.38.31.192",
+      "port": 8080,
+      "firstSeenAt": "2026-10-28T15:21:52Z",
+      "sources": [
+        {
+          "id": "v2ray-aggregator",
+          "name": "V2Ray Aggregator",
+          "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+        }
+      ]
+    },
+    {
+      "id": "ae1dc0a930b1b538b92f547ddd3eab581789016df5fedd754ddefe29ed346fbc",
+      "uri": "hysteria2://Telegram@179.61.138.145:443?insecure=1&sni=de2.jey.cc.cd&obfs=salamander&obfs-password=Telegram@vpnjey#Telegram%40vpnjey%20%234",
+      "protocol": "hysteria2",
+      "name": "Telegram@vpnjey #4",
+      "host": "179.61.138.145",
+      "port": 443,
+      "firstSeenAt": "2026-10-28T15:21:52Z",
+      "sources": [
+        {
+          "id": "no-more-walls",
+          "name": "No More Walls",
+          "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+        }
+      ]
+    },
+    {
+      "id": "3ecd5c60ea4de225adc204f1290d59f5d5f6b87797a61dc0a98d243416468347",
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpRQ1hEeHVEbFRUTUQ3anRnSFVqSW9q@193.29.139.168:8080#%F0%9F%87%B3%F0%9F%87%B1NL-193.29.139.168-0294",
+      "protocol": "ss",
+      "name": "🇳🇱NL-193.29.139.168-0294",
+      "host": "193.29.139.168",
+      "port": 8080,
+      "firstSeenAt": "2026-10-28T15:21:52Z",
+      "sources": [
+        {
+          "id": "v2ray-aggregator",
+          "name": "V2Ray Aggregator",
+          "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+        }
+      ]
+    },
+    {
+      "id": "722bbd5dd957cda88fd1afad37478a86e7661bd7eea0a234d1f7be493cf5134d",
+      "uri": "hysteria2://Telegram@31.76.27.23:443?insecure=1&alpn=h3&sni=de.vpnjey.store&obfs=salamander&obfs-password=Telegram@vpnjey#Telegram%40vpnjey%20%235",
+      "protocol": "hysteria2",
+      "name": "Telegram@vpnjey #5",
+      "host": "31.76.27.23",
+      "port": 443,
+      "firstSeenAt": "2026-10-28T15:21:52Z",
+      "sources": [
+        {
+          "id": "no-more-walls",
+          "name": "No More Walls",
+          "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+        }
+      ]
+    },
+    {
+      "id": "32f2de301f35d597efc758b6e0ef0bbce435bd165e3908268f49a95a57fc160d",
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.205:8080#%F0%9F%87%AC%F0%9F%87%A7GB-82.38.31.205-0126",
+      "protocol": "ss",
+      "name": "🇬🇧GB-82.38.31.205-0126",
+      "host": "82.38.31.205",
+      "port": 8080,
+      "firstSeenAt": "2026-10-28T15:21:52Z",
+      "sources": [
+        {
+          "id": "v2ray-aggregator",
+          "name": "V2Ray Aggregator",
+          "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+        }
+      ]
+    },
+    {
+      "id": "9417551e4de13023319fccceaf54f81ca470ac1d2b7322dac4842e82cf9c39b5",
+      "uri": "hysteria2://Telegram@77.110.96.201:443?insecure=1&alpn=h3&sni=se.vpnjey2.dpdns.org&obfs=salamander&obfs-password=Telegram@vpnjey#Telegram%40vpnjey%20%236",
+      "protocol": "hysteria2",
+      "name": "Telegram@vpnjey #6",
+      "host": "77.110.96.201",
+      "port": 443,
+      "firstSeenAt": "2026-10-28T15:21:52Z",
+      "sources": [
+        {
+          "id": "no-more-walls",
+          "name": "No More Walls",
+          "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+        }
+      ]
+    },
+    {
+      "id": "2a0ecc4352c5aea193d1eeffe34e2eaf5d01259743bc3b9fd5f0dff756c931a0",
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.193:8080#%F0%9F%87%AC%F0%9F%87%A7GB-82.38.31.193-0224",
+      "protocol": "ss",
+      "name": "🇬🇧GB-82.38.31.193-0224",
+      "host": "82.38.31.193",
+      "port": 8080,
+      "firstSeenAt": "2026-10-28T15:21:52Z",
+      "sources": [
+        {
+          "id": "v2ray-aggregator",
+          "name": "V2Ray Aggregator",
+          "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+        }
+      ]
+    },
+    {
+      "id": "c0d4436bb3f331a01c466a86a0243a7029f8b95022a68e324c70308f33137187",
+      "uri": "hysteria2://Telegram%40vpnjey@179.61.138.145:54759?insecure=1&obfs=salamander&obfs-password=Telegram@vpnjey#Telegram%40vpnjey%20%237",
+      "protocol": "hysteria2",
+      "name": "Telegram@vpnjey #7",
+      "host": "179.61.138.145",
+      "port": 54759,
+      "firstSeenAt": "2026-10-28T15:21:52Z",
+      "sources": [
+        {
+          "id": "no-more-walls",
+          "name": "No More Walls",
+          "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+        }
+      ]
+    },
+    {
+      "id": "69d94e89e0781afb5ecbcce8884d585a5d4b3825404e1e8b035159dae1a8c12b",
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.202:8080#%F0%9F%87%AC%F0%9F%87%A7GB-82.38.31.202-0291",
+      "protocol": "ss",
+      "name": "🇬🇧GB-82.38.31.202-0291",
+      "host": "82.38.31.202",
+      "port": 8080,
+      "firstSeenAt": "2026-10-28T15:21:52Z",
+      "sources": [
+        {
+          "id": "v2ray-aggregator",
+          "name": "V2Ray Aggregator",
+          "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+        }
+      ]
+    },
+    {
+      "id": "0b64df742b5ff4c55966008a543f708d7ed8da5bb7a6e7e427886477101d0f27",
+      "uri": "hysteria2://Yet-Another-Public-Config-1@206.71.158.37:35000?insecure=1&sni=YAPC-1.afshin.ir&obfs=salamander&obfs-password=Yet-Another-Public-Config-1#%F0%9F%87%B3%F0%9F%87%B1%20-%20NL%20-%20%40FreeOnlineVPN",
+      "protocol": "hysteria2",
+      "name": "🇳🇱 - NL - @FreeOnlineVPN",
+      "host": "206.71.158.37",
+      "port": 35000,
+      "firstSeenAt": "2026-10-28T15:21:52Z",
+      "sources": [
+        {
+          "id": "no-more-walls",
+          "name": "No More Walls",
+          "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+        }
+      ]
+    },
+    {
+      "id": "a8e474e5ac96d301acfce91b595b4b949e5d0dbcd647b0645c899f70e8c07155",
+      "uri": "ss://YWVzLTI1Ni1nY206WlJwZ2FCZUd4dEVOSVhndmhwa1pCS3o5R25XUlMyZFljeDlPK2EyaXdOND0=@185.176.204.18:19999#%F0%9F%87%A9%F0%9F%87%AADE-185.176.204.18-0128",
+      "protocol": "ss",
+      "name": "🇩🇪DE-185.176.204.18-0128",
+      "host": "185.176.204.18",
+      "port": 19999,
+      "firstSeenAt": "2026-10-28T15:21:52Z",
+      "sources": [
+        {
+          "id": "v2ray-aggregator",
+          "name": "V2Ray Aggregator",
+          "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+        },
+        {
+          "id": "no-more-walls",
+          "name": "No More Walls",
+          "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+        }
+      ]
+    },
+    {
+      "id": "6127b1e5cd294f2e7844023b08a944d5c6ee76334e7f72b8bde5073174fe0561",
+      "uri": "hysteria2://b4bd0613-ff7c-4f2f-954d-185915e6ddad@5.175.249.174:35000?insecure=1&sni=api.kermanshahi.org&obfs=salamander&obfs-password=@JavidnamanIran-Javid-SHAH-KingRezaPahlavi#%40KAFING_2%20%232",
+      "protocol": "hysteria2",
+      "name": "@KAFING_2 #2",
+      "host": "5.175.249.174",
+      "port": 35000,
+      "firstSeenAt": "2026-10-28T15:21:52Z",
+      "sources": [
+        {
+          "id": "no-more-walls",
+          "name": "No More Walls",
+          "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+        }
+      ]
+    },
+    {
+      "id": "e5811d96f0ee5e9b2fde257847748c56e89c1b2fbe1f6a7e087eb2ce7b0432d7",
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.208:8080#%F0%9F%87%AC%F0%9F%87%A7GB-82.38.31.208-0125",
+      "protocol": "ss",
+      "name": "🇬🇧GB-82.38.31.208-0125",
+      "host": "82.38.31.208",
+      "port": 8080,
+      "firstSeenAt": "2026-10-28T15:21:52Z",
+      "sources": [
+        {
+          "id": "v2ray-aggregator",
+          "name": "V2Ray Aggregator",
+          "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+        }
+      ]
+    },
+    {
+      "id": "68755fc4a4fef8bb8e4a2d97866cd0c0f936d0fb55b345776c56377c43a5a086",
+      "uri": "hysteria2://ca78f919e6@155.94.134.183:11592?insecure=0&sni=srv-3fc7c9.21freedom.net&obfs=salamander&obfs-password=ec66908dbc46e6920143d9b684adf277#%40V2rayng_mar_ket%20%231",
+      "protocol": "hysteria2",
+      "name": "@V2rayng_mar_ket #1",
+      "host": "155.94.134.183",
+      "port": 11592,
+      "firstSeenAt": "2026-10-28T15:21:52Z",
+      "sources": [
+        {
+          "id": "no-more-walls",
+          "name": "No More Walls",
+          "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+        }
+      ]
+    },
+    {
+      "id": "4eefb91332dda48efab9e5418345c04c708976fc9255ff6c20b82466b5cb2129",
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.203:8080#%F0%9F%87%AC%F0%9F%87%A7GB-82.38.31.203-0122",
+      "protocol": "ss",
+      "name": "🇬🇧GB-82.38.31.203-0122",
+      "host": "82.38.31.203",
+      "port": 8080,
+      "firstSeenAt": "2026-10-28T15:21:52Z",
+      "sources": [
+        {
+          "id": "v2ray-aggregator",
+          "name": "V2Ray Aggregator",
+          "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+        }
+      ]
+    },
+    {
+      "id": "f480e857e9034f7e1bed5f8d79c762051459c04f650919bdfb671ea5c53b83fa",
+      "uri": "hysteria2://eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ@nas.aizhzo.com:5010?insecure=0&sni=nas.aizhzo.com&obfs=salamander&obfs-password=7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9#%40vmess_ir",
+      "protocol": "hysteria2",
+      "name": "@vmess_ir",
+      "host": "nas.aizhzo.com",
+      "port": 5010,
+      "firstSeenAt": "2026-10-28T15:21:52Z",
+      "sources": [
+        {
+          "id": "no-more-walls",
+          "name": "No More Walls",
+          "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+        }
+      ]
+    },
+    {
+      "id": "a459bed41154f85f800fd90fdc599f69aaa15f839dabef078ee5d7a145694fc5",
+      "uri": "ss://YWVzLTI1Ni1nY206WlJwZ2FCZUd4dEVOSVhndmhwa1pCS3o5R25XUlMyZFljeDlPK2EyaXdOND0=@202.50.253.99:19999#%F0%9F%87%AE%F0%9F%87%B9IT-202.50.253.99-0137",
+      "protocol": "ss",
+      "name": "🇮🇹IT-202.50.253.99-0137",
+      "host": "202.50.253.99",
+      "port": 19999,
+      "firstSeenAt": "2026-10-28T15:21:52Z",
+      "sources": [
+        {
+          "id": "v2ray-aggregator",
+          "name": "V2Ray Aggregator",
+          "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+        },
+        {
+          "id": "no-more-walls",
+          "name": "No More Walls",
+          "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+        }
+      ]
+    },
+    {
+      "id": "66bd914772b82a9d78aa2179201fa52464fe7dfd5d1ee5dfc91cbb5c4523bcff",
+      "uri": "hysteria2://f04i31zq8sy80v9b@r5ycmuko.zibayeman.com:54280?insecure=0&sni=r5ycmuko.zibayeman.com&obfs=salamander&obfs-password=hfwq51con9efdxx6#%E2%99%BE%EF%B8%8FJoin-%3E%F0%9F%86%94%EF%B8%8F%40ATLAS_V2VPN%F0%9F%86%93%EF%B8%8F%F0%9F%93%B6%E2%80%8E%F0%9F%9B%B0%EF%B8%8F63...",
+      "protocol": "hysteria2",
+      "name": "♾️Join->🆔️@ATLAS_V2VPN🆓️📶‎🛰️63...",
+      "host": "r5ycmuko.zibayeman.com",
+      "port": 54280,
+      "firstSeenAt": "2026-10-28T15:21:52Z",
+      "sources": [
+        {
+          "id": "no-more-walls",
+          "name": "No More Walls",
+          "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+        }
+      ]
+    },
+    {
+      "id": "e6965a98ca2118c2538906d95d40fac1796b5bdcc0068a8465145c99e36b6d28",
+      "uri": "ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@173.244.56.9:443#%F0%9F%87%BA%F0%9F%87%B8US-173.244.56.9-0135",
+      "protocol": "ss",
+      "name": "🇺🇸US-173.244.56.9-0135",
+      "host": "173.244.56.9",
+      "port": 443,
+      "firstSeenAt": "2026-10-28T15:21:52Z",
+      "sources": [
+        {
+          "id": "v2ray-aggregator",
+          "name": "V2Ray Aggregator",
+          "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+        }
+      ]
+    },
+    {
+      "id": "d1d9132583591fc1be18db47d1a696a08b6567e30040ee6d5aaae97f53e888fd",
+      "uri": "hysteria2://fmaznn1lrzys7ddy@giftcard.gateway-stream.com:52076?insecure=0&sni=giftcard.gateway-stream.com&obfs=salamander&obfs-password=fuw2k1ddrouwxr3u#Telegram%20%F0%9F%86%94%40Cnetvpn%20%F0%9F%87%BA%F0%9F%87%B2%20%231",
+      "protocol": "hysteria2",
+      "name": "Telegram 🆔@Cnetvpn 🇺🇲 #1",
+      "host": "giftcard.gateway-stream.com",
+      "port": 52076,
+      "firstSeenAt": "2026-10-28T15:21:52Z",
+      "sources": [
+        {
+          "id": "no-more-walls",
+          "name": "No More Walls",
+          "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+        }
+      ]
+    },
+    {
+      "id": "639f08e4fd52b52ddcd36800a5572ab48efecfc6bbf8d9a9eef11f561d1d0a3b",
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.191:8080#%F0%9F%87%AC%F0%9F%87%A7GB-82.38.31.191-0298",
+      "protocol": "ss",
+      "name": "🇬🇧GB-82.38.31.191-0298",
+      "host": "82.38.31.191",
+      "port": 8080,
+      "firstSeenAt": "2026-10-28T15:21:52Z",
+      "sources": [
+        {
+          "id": "v2ray-aggregator",
+          "name": "V2Ray Aggregator",
+          "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+        }
+      ]
+    },
+    {
+      "id": "c0a984e3b80740bd8a6a880723d6c3c3b12cabdcc2c2eae2c64573c62573e50d",
+      "uri": "hysteria2://p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR@130.49.161.70:443?insecure=0&sni=hy2.aspidnet.xyz&obfs=salamander&obfs-password=rG07s3COMIEvdnQipRyWzx_H_2xygNC3#%40confiig_hub%20%231",
+      "protocol": "hysteria2",
+      "name": "@confiig_hub #1",
+      "host": "130.49.161.70",
+      "port": 443,
+      "firstSeenAt": "2026-10-28T15:21:52Z",
+      "sources": [
+        {
+          "id": "no-more-walls",
+          "name": "No More Walls",
+          "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+        }
+      ]
+    },
+    {
+      "id": "6e691b4ad38a7c698ef86b796a260b5141ba0facfa460825f246d7ab2542e989",
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.216:8080#%F0%9F%87%AC%F0%9F%87%A7GB-82.38.31.216-0225",
+      "protocol": "ss",
+      "name": "🇬🇧GB-82.38.31.216-0225",
+      "host": "82.38.31.216",
+      "port": 8080,
+      "firstSeenAt": "2026-10-28T15:21:52Z",
+      "sources": [
+        {
+          "id": "v2ray-aggregator",
+          "name": "V2Ray Aggregator",
+          "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+        }
+      ]
+    },
+    {
+      "id": "7392b65457ec378bdc2ea589b5684a1a304a3f75559519b224e8c5192facba83",
+      "uri": "hysteria2://rjj39jg8iphgd06h@pro2.riziro.ir:44100?alpn=h3&fp=chrome&sni=pro2.riziro.ir&obfs=salamander&obfs-password=2gg0tx9d2etug8n9#%F0%9F%87%B1%F0%9F%87%BBhysteria",
+      "protocol": "hysteria2",
+      "name": "🇱🇻hysteria",
+      "host": "pro2.riziro.ir",
+      "port": 44100,
+      "firstSeenAt": "2026-10-28T15:21:52Z",
+      "sources": [
+        {
+          "id": "no-more-walls",
+          "name": "No More Walls",
+          "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+        }
+      ]
+    },
+    {
+      "id": "e449dee24e957d62164362c9387d2bb42421b219a5494aa2d478224c72e81dc5",
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.210:8080#%F0%9F%87%AC%F0%9F%87%A7GB-82.38.31.210-0226",
+      "protocol": "ss",
+      "name": "🇬🇧GB-82.38.31.210-0226",
+      "host": "82.38.31.210",
+      "port": 8080,
+      "firstSeenAt": "2026-10-28T15:21:52Z",
+      "sources": [
+        {
+          "id": "v2ray-aggregator",
+          "name": "V2Ray Aggregator",
+          "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+        }
+      ]
+    },
+    {
+      "id": "92112ac05fb157a9806978f1c79d3f0807f31327d49a1b08153133b442f0abe8",
+      "uri": "hysteria2://s6gt5e4mof43sfg8@giftcard.gateway-stream.com:52050?insecure=0&sni=giftcard.gateway-stream.com&obfs=salamander&obfs-password=fuw2k1ddrouwxr3u#Telegram%20%F0%9F%86%94%40cnetvpn%20%F0%9F%87%B3%F0%9F%87%B1",
+      "protocol": "hysteria2",
+      "name": "Telegram 🆔@cnetvpn 🇳🇱",
+      "host": "giftcard.gateway-stream.com",
+      "port": 52050,
+      "firstSeenAt": "2026-10-28T15:21:52Z",
+      "sources": [
+        {
+          "id": "no-more-walls",
+          "name": "No More Walls",
+          "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+        }
+      ]
+    },
+    {
+      "id": "b3707ef6c9b818248418df340930f55d865cc33ec3c0b3492e2b099849ac21de",
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.207:8080#%F0%9F%87%AC%F0%9F%87%A7GB-82.38.31.207-0120",
+      "protocol": "ss",
+      "name": "🇬🇧GB-82.38.31.207-0120",
+      "host": "82.38.31.207",
+      "port": 8080,
+      "firstSeenAt": "2026-10-28T15:21:52Z",
+      "sources": [
+        {
+          "id": "v2ray-aggregator",
+          "name": "V2Ray Aggregator",
+          "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+        }
+      ]
+    },
+    {
+      "id": "bc7d1d59c1011b9d1419c27505e1324e3e1a5d4c3c9f7ed6a95553d675f24101",
+      "uri": "hysteria2://tnnls@bwdf2fnt.xn--e1aatfr8bwa.online:443?insecure=0&sni=bwdf2fnt.xn--e1aatfr8bwa.online&obfs=salamander&obfs-password=b6d1f3888ab1d90dd11aac1dce427b81#%40fastkanfig%20%DA%A9%D8%A7%D9%86%D8%A7%D9%84%20%D8%AA%D9%84%DA%AF%D8%B1%D8%A7%D9%85",
+      "protocol": "hysteria2",
+      "name": "@fastkanfig کانال تلگرام",
+      "host": "bwdf2fnt.xn--e1aatfr8bwa.online",
+      "port": 443,
+      "firstSeenAt": "2026-10-28T15:21:52Z",
+      "sources": [
+        {
+          "id": "no-more-walls",
+          "name": "No More Walls",
+          "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+        }
+      ]
+    },
+    {
+      "id": "17909e00c9092e41f77771621544f959130634ebda245d3d5d56313698106b94",
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.189:8080#%F0%9F%87%AC%F0%9F%87%A7GB-82.38.31.189-0116",
+      "protocol": "ss",
+      "name": "🇬🇧GB-82.38.31.189-0116",
+      "host": "82.38.31.189",
+      "port": 8080,
+      "firstSeenAt": "2026-10-28T15:21:52Z",
+      "sources": [
+        {
+          "id": "v2ray-aggregator",
+          "name": "V2Ray Aggregator",
+          "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+        }
+      ]
+    },
+    {
+      "id": "e8ffb375c2219c0f91aa7f6e8f27a1b2ac0243a3dc2d9c28bb6b7269a5b3fde3",
+      "uri": "hysteria2://vpnjey@179.61.138.145:36264?insecure=1&sni=de2.jey.cc.cd&obfs=salamander&obfs-password=Telegram@vpnjey#Telegram%40vpnjey%20%238",
+      "protocol": "hysteria2",
+      "name": "Telegram@vpnjey #8",
+      "host": "179.61.138.145",
+      "port": 36264,
+      "firstSeenAt": "2026-10-28T15:21:52Z",
+      "sources": [
+        {
+          "id": "no-more-walls",
+          "name": "No More Walls",
+          "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+        }
+      ]
+    },
+    {
+      "id": "34f025ffdc9a06c2d6af80ef6b43fff698538dc8be91c9113f2c6bcfeff6725f",
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@193.29.139.147:8080#%F0%9F%87%B3%F0%9F%87%B1NL-193.29.139.147-0118",
+      "protocol": "ss",
+      "name": "🇳🇱NL-193.29.139.147-0118",
+      "host": "193.29.139.147",
+      "port": 8080,
+      "firstSeenAt": "2026-10-28T15:21:52Z",
+      "sources": [
+        {
+          "id": "v2ray-aggregator",
+          "name": "V2Ray Aggregator",
+          "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+        }
+      ]
+    },
+    {
+      "id": "0718e5f2c93fc37ffd0d58f1122806d32eaf1e2ab237e2c2e76ada542c5bdd41",
+      "uri": "hysteria2://vz86jgszv4zszchv@giftcard.gateway-stream.com:52062?insecure=0&sni=giftcard.gateway-stream.com&obfs=salamander&obfs-password=fuw2k1ddrouwxr3u#Telegram%20%F0%9F%86%94%40cnetvpn%20%F0%9F%87%B8%F0%9F%87%AA",
+      "protocol": "hysteria2",
+      "name": "Telegram 🆔@cnetvpn 🇸🇪",
+      "host": "giftcard.gateway-stream.com",
+      "port": 52062,
+      "firstSeenAt": "2026-10-28T15:21:52Z",
+      "sources": [
+        {
+          "id": "no-more-walls",
+          "name": "No More Walls",
+          "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+        }
+      ]
+    },
+    {
+      "id": "b80bbd47b7d10d33c7c211e3c7e3f77ef32746f098b4fb3a7ca87679511c3b98",
+      "uri": "ss://YWVzLTI1Ni1nY206WlJwZ2FCZUd4dEVOSVhndmhwa1pCS3o5R25XUlMyZFljeDlPK2EyaXdOND0=@185.164.175.81:19999#%F0%9F%87%BA%F0%9F%87%A6UA-185.164.175.81-0141",
+      "protocol": "ss",
+      "name": "🇺🇦UA-185.164.175.81-0141",
+      "host": "185.164.175.81",
+      "port": 19999,
+      "firstSeenAt": "2026-10-28T15:21:52Z",
+      "sources": [
+        {
+          "id": "v2ray-aggregator",
+          "name": "V2Ray Aggregator",
+          "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+        },
+        {
+          "id": "no-more-walls",
+          "name": "No More Walls",
+          "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+        }
+      ]
+    },
+    {
+      "id": "fc5a41b7e84d3929647670e5a8c419df772f99e40e2b5dad901ab01ffa06e50f",
+      "uri": "vless://965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0@95.174.68.188:14430?type=ws&host=95.174.68.188&path=/vless#%F0%9F%87%A6%F0%9F%87%AA%5Bwww.v2nodes.com%5D%20vless-AE-1...",
+      "protocol": "vless",
+      "name": "🇦🇪[www.v2nodes.com] vless-AE-1...",
+      "host": "95.174.68.188",
+      "port": 14430,
+      "firstSeenAt": "2026-10-28T15:21:52Z",
+      "sources": [
+        {
+          "id": "no-more-walls",
+          "name": "No More Walls",
+          "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+        }
+      ]
+    },
+    {
+      "id": "0b709bc60be4fca5b7b7e5c8969a2148b357d92b5bd51a7e8bf62669dcf4b508",
+      "uri": "trojan://dba20dcb635e430fa4d3bfc303a149d2@blog.findlocaljobnetworkandbuildcommunityconnections.com:443?security=tls&sni=blog.findlocaljobnetworkandbuildcommunityconnections.com#%F0%9F%87%BA%F0%9F%87%B8US-216.106.186.32-0148",
+      "protocol": "trojan",
+      "name": "🇺🇸US-216.106.186.32-0148",
+      "host": "blog.findlocaljobnetworkandbuildcommunityconnections.com",
+      "port": 443,
+      "firstSeenAt": "2026-10-28T15:21:52Z",
+      "sources": [
+        {
+          "id": "v2ray-aggregator",
+          "name": "V2Ray Aggregator",
+          "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+        }
+      ]
+    },
+    {
+      "id": "5818df1bc71c372252f6bb17aad101aad05cb2506b73764bf1b45f30685f0a0d",
+      "uri": "vless://39947382-3212-41c9-bc3a-589574ac8b23@84.235.244.108:22573?sni=uae.unixzone.us&type=ws&host=uae.unixzone.us&path=/#%F0%9F%87%A6%F0%9F%87%AA%5Bwww.v2nodes.com%5D%20vless-AE-1...%20%231",
+      "protocol": "vless",
+      "name": "🇦🇪[www.v2nodes.com] vless-AE-1... #1",
+      "host": "84.235.244.108",
+      "port": 22573,
+      "firstSeenAt": "2026-10-28T15:21:52Z",
+      "sources": [
+        {
+          "id": "no-more-walls",
+          "name": "No More Walls",
+          "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+        }
+      ]
+    },
+    {
+      "id": "3509d09fc4b4bba79758226c12edfb1ce9589a121470e76f29c45a37138e2bf0",
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.206:8080#%F0%9F%87%AC%F0%9F%87%A7GB-82.38.31.206-0112",
+      "protocol": "ss",
+      "name": "🇬🇧GB-82.38.31.206-0112",
+      "host": "82.38.31.206",
+      "port": 8080,
+      "firstSeenAt": "2026-10-28T15:21:52Z",
+      "sources": [
+        {
+          "id": "v2ray-aggregator",
+          "name": "V2Ray Aggregator",
+          "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+        }
+      ]
+    },
+    {
+      "id": "3c0e8d8f63502d43ef856a73ebbebd2ea073e96f6122335c3958193dee4072a2",
+      "uri": "vless://04c808e2-0b59-47b0-a54b-32fc7ef1c902@147.78.0.186:2053?sni=free.cndyw.ggff.net&type=ws&host=free.cndyw.ggff.net&path=pyip=bpb.yousef.isegaro.comfp=randomsecurity=tls#%F0%9F%87%A6%F0%9F%87%AA%5Bwww.v2nodes.com%5D%20vless-AE-1...%20%232",
+      "protocol": "vless",
+      "name": "🇦🇪[www.v2nodes.com] vless-AE-1... #2",
+      "host": "147.78.0.186",
+      "port": 2053,
+      "firstSeenAt": "2026-10-28T15:21:52Z",
+      "sources": [
+        {
+          "id": "no-more-walls",
+          "name": "No More Walls",
+          "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+        }
+      ]
+    },
+    {
+      "id": "31140d6e52c20ac89dff32fe44aaec53c09d1ca4b54c690dd674d0431065dea8",
+      "uri": "ss://YWVzLTI1Ni1nY206WlJwZ2FCZUd4dEVOSVhndmhwa1pCS3o5R25XUlMyZFljeDlPK2EyaXdOND0=@202.50.253.90:19999#%F0%9F%87%AE%F0%9F%87%B9IT-202.50.253.90-0131",
+      "protocol": "ss",
+      "name": "🇮🇹IT-202.50.253.90-0131",
+      "host": "202.50.253.90",
+      "port": 19999,
+      "firstSeenAt": "2026-10-28T15:21:52Z",
+      "sources": [
+        {
+          "id": "v2ray-aggregator",
+          "name": "V2Ray Aggregator",
+          "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+        },
+        {
+          "id": "no-more-walls",
+          "name": "No More Walls",
+          "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+        }
+      ]
+    },
+    {
+      "id": "2c1356c316ed7ac8d1c061932cb1f2a54bcd60f8f81fff970f01733e35955c61",
+      "uri": "vless://f7376394-cd54-11f1-bb6a-bff6d0326f6a@194.36.37.59:10004?type=ws&path=/vpnjantit#%F0%9F%8F%B3%5Bwww.v2nodes.com%5D%20vless-",
+      "protocol": "vless",
+      "name": "🏳[www.v2nodes.com] vless-",
+      "host": "194.36.37.59",
+      "port": 10004,
+      "firstSeenAt": "2026-10-28T15:21:52Z",
+      "sources": [
+        {
+          "id": "no-more-walls",
+          "name": "No More Walls",
+          "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+        }
+      ]
+    },
+    {
+      "id": "f05b992b0933ba004a7fe814a9eeee6d60eabcf84a6dde8505dfe0c7b22cd546",
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.184:8080#%F0%9F%87%AC%F0%9F%87%A7GB-82.38.31.184-0132",
+      "protocol": "ss",
+      "name": "🇬🇧GB-82.38.31.184-0132",
+      "host": "82.38.31.184",
+      "port": 8080,
+      "firstSeenAt": "2026-10-28T15:21:52Z",
+      "sources": [
+        {
+          "id": "v2ray-aggregator",
+          "name": "V2Ray Aggregator",
+          "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+        }
+      ]
+    },
+    {
+      "id": "1cb50e858042de9b57d7fcce0b7491217a0ad8cb581a5586ccafff19ecca07bf",
+      "uri": "vless://f667a096-5231-4cfb-8759-92bb32473139@77.91.68.70:55983?sni=yahoo.com&fp=chrome&security=tls#%F0%9F%8F%B3%5Bwww.v2nodes.com%5D%20vless-%20%231",
+      "protocol": "vless",
+      "name": "🏳[www.v2nodes.com] vless- #1",
+      "host": "77.91.68.70",
+      "port": 55983,
+      "firstSeenAt": "2026-10-28T15:21:52Z",
+      "sources": [
+        {
+          "id": "no-more-walls",
+          "name": "No More Walls",
+          "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+        }
+      ]
+    },
+    {
+      "id": "d5bd09bebfbf9795507dd1da88426864d90ca0aa228936f75757e9e7e032d115",
+      "uri": "ss://YWVzLTI1Ni1nY206WlJwZ2FCZUd4dEVOSVhndmhwa1pCS3o5R25XUlMyZFljeDlPK2EyaXdOND0=@202.50.253.81:19999#%F0%9F%87%AE%F0%9F%87%B9IT-202.50.253.81-0129",
+      "protocol": "ss",
+      "name": "🇮🇹IT-202.50.253.81-0129",
+      "host": "202.50.253.81",
+      "port": 19999,
+      "firstSeenAt": "2026-10-28T15:21:52Z",
+      "sources": [
+        {
+          "id": "v2ray-aggregator",
+          "name": "V2Ray Aggregator",
+          "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+        },
+        {
+          "id": "no-more-walls",
+          "name": "No More Walls",
+          "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+        }
+      ]
+    },
+    {
+      "id": "0f3bb55674c9ff53c3f9afbcd20da7b9d83386dd80914ab20ae98a505ec0d58b",
+      "uri": "vless://ca14493b-b984-4ffb-bc0e-9cb5da969e15@tau1.freerunet.online:443?sni=tau1.freerunet.online&flow=xtls-rprx-vision&fp=chrome&security=tls#%F0%9F%87%A6%F0%9F%87%B9%5Bwww.v2nodes.com%5D%20vless-AT-1...",
+      "protocol": "vless",
+      "name": "🇦🇹[www.v2nodes.com] vless-AT-1...",
+      "host": "tau1.freerunet.online",
+      "port": 443,
+      "firstSeenAt": "2026-10-28T15:21:52Z",
+      "sources": [
+        {
+          "id": "no-more-walls",
+          "name": "No More Walls",
+          "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+        }
+      ]
+    },
+    {
+      "id": "1710fe9e418a3e14b7b43f0e562065b5a541e0da5af867290fcbd3bc14223a6a",
+      "uri": "ss://YWVzLTI1Ni1nY206WlJwZ2FCZUd4dEVOSVhndmhwa1pCS3o5R25XUlMyZFljeDlPK2EyaXdOND0=@202.50.253.63:19999#%F0%9F%87%AE%F0%9F%87%B9IT-202.50.253.63-0145",
+      "protocol": "ss",
+      "name": "🇮🇹IT-202.50.253.63-0145",
+      "host": "202.50.253.63",
+      "port": 19999,
+      "firstSeenAt": "2026-10-28T15:21:52Z",
+      "sources": [
+        {
+          "id": "v2ray-aggregator",
+          "name": "V2Ray Aggregator",
+          "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+        },
+        {
+          "id": "no-more-walls",
+          "name": "No More Walls",
+          "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+        }
+      ]
+    },
+    {
+      "id": "557cbd0ed7e052b2e70cdaa01a7c381c77b2a3c7ad4f1536f160875708f2e0f1",
+      "uri": "vless://ef328563-cda1-4530-9b0a-988cc5a74d78@softice.net:443?sni=softice.net&alpn=h2%2Chttp/1.1&flow=xtls-rprx-vision-udp443-udp443&fp=chrome&security=tls#%F0%9F%87%A6%F0%9F%87%B9%5Bwww.v2nodes.com%5D%20vless-AT-1...%20%231",
+      "protocol": "vless",
+      "name": "🇦🇹[www.v2nodes.com] vless-AT-1... #1",
+      "host": "softice.net",
+      "port": 443,
+      "firstSeenAt": "2026-10-28T15:21:52Z",
+      "sources": [
+        {
+          "id": "no-more-walls",
+          "name": "No More Walls",
+          "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+        }
+      ]
+    },
+    {
+      "id": "5bcd18a446c48da47a026569ba20211111071b352b4588eb2c262304aa3da790",
+      "uri": "ss://YWVzLTI1Ni1nY206WlJwZ2FCZUd4dEVOSVhndmhwa1pCS3o5R25XUlMyZFljeDlPK2EyaXdOND0=@202.50.253.72:19999#%F0%9F%87%AE%F0%9F%87%B9IT-202.50.253.72-0124",
+      "protocol": "ss",
+      "name": "🇮🇹IT-202.50.253.72-0124",
+      "host": "202.50.253.72",
+      "port": 19999,
+      "firstSeenAt": "2026-10-28T15:21:52Z",
+      "sources": [
+        {
+          "id": "v2ray-aggregator",
+          "name": "V2Ray Aggregator",
+          "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+        },
+        {
+          "id": "no-more-walls",
+          "name": "No More Walls",
+          "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+        }
+      ]
+    },
+    {
+      "id": "85960d8b5dc66ca514071510e14a43468adf56a190529d6b21937aa0910e058f",
+      "uri": "vless://2b0e5676-fb62-4bf0-9607-6e7818421e8e@au2.pad-sservice.lat:8443?allowInsecure=0&sni=au2.pad-sservice.lat&type=ws&host=au2.pad-service.com&path=/A11Ufp=chrome&security=tls#AT_speednode_0001",
+      "protocol": "vless",
+      "name": "AT_speednode_0001",
+      "host": "au2.pad-sservice.lat",
+      "port": 8443,
+      "firstSeenAt": "2026-10-28T15:21:52Z",
+      "sources": [
+        {
+          "id": "no-more-walls",
+          "name": "No More Walls",
+          "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+        }
+      ]
+    },
+    {
+      "id": "040ff482a4995526c616cec006a467d7a7006fc47d1e9f5eb534545001762130",
+      "uri": "ss://YWVzLTI1Ni1nY206WlJwZ2FCZUd4dEVOSVhndmhwa1pCS3o5R25XUlMyZFljeDlPK2EyaXdOND0=@202.50.253.54:19999#%F0%9F%87%AE%F0%9F%87%B9IT-202.50.253.54-0133",
+      "protocol": "ss",
+      "name": "🇮🇹IT-202.50.253.54-0133",
+      "host": "202.50.253.54",
+      "port": 19999,
+      "firstSeenAt": "2026-10-28T15:21:52Z",
+      "sources": [
+        {
+          "id": "v2ray-aggregator",
+          "name": "V2Ray Aggregator",
+          "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+        },
+        {
+          "id": "no-more-walls",
+          "name": "No More Walls",
+          "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+        }
+      ]
+    },
+    {
+      "id": "93703f2f7d5169e62017f939123febb6d890ce638d3daf7b3b1c07a847e8246b",
+      "uri": "vless://40af9131-d540-448a-bc56-5bba147a1dc3@213.111.148.137:443?sni=proxy-1cu.pages.dev&type=ws&host=proxy-1cu.pages.dev&path=/fp=android&security=tls#%F0%9F%87%BA%F0%9F%87%A6%5Bwww.v2nodes.com%5D%20vless-UA-1...%20%237",
+      "protocol": "vless",
+      "name": "🇺🇦[www.v2nodes.com] vless-UA-1... #7",
+      "host": "213.111.148.137",
+      "port": 443,
+      "firstSeenAt": "2026-10-28T15:21:52Z",
+      "sources": [
+        {
+          "id": "no-more-walls",
+          "name": "No More Walls",
+          "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+        }
+      ]
+    },
     {
       "id": "717278310d35efc9996f2c6ae1b39bee005ab3b50e527dec6197ba302b2835b9",
       "uri": "ss://YWVzLTI1Ni1nY206WlJwZ2FCZUd4dEVOSVhndmhwa1pCS3o5R25XUlMyZFljeDlPK2EyaXdOND0=@45.86.51.18:19999#%F0%9F%87%BA%F0%9F%87%B8US-45.86.51.18-0099",
