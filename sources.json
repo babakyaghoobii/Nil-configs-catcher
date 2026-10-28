@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "id": "v2ray-aggregator",
+      "name": "V2Ray Aggregator",
+      "owner": "mahdibland",
+      "repo": "V2RayAggregator",
+      "ref": "master",
+      "path": "sub/sub_merge.txt",
+      "enabled": true
+    },
+    {
+      "id": "no-more-walls",
+      "name": "No More Walls",
+      "owner": "peasoft",
+      "repo": "NoMoreWalls",
+      "ref": "master",
+      "path": "list_raw.txt",
+      "enabled": true
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+name: Collect public configs
+
+on:
+  schedule:
+    - cron: "17 */2 * * *"
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: Maximum NEW unique configs (1–50)
+        default: "50"
+        type: string
+
+concurrency:
+  group: nil-collection
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  collect:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    permissions:
+      contents: write
+    outputs:
+      commit: ${{ steps.commit.outputs.sha }}
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        with:
+          python-version: "3.12"
+      - name: Test before collection
+        run: python3 -m unittest discover -s tests -v
+      - name: Fetch and validate public data
+        id: collect
+        continue-on-error: true
+        env:
+          COLLECTION_LIMIT: ${{ inputs.limit || '50' }}
+        run: python3 -m collector --limit "$COLLECTION_LIMIT"
+      - name: Commit data and actual refresh status
+        id: commit
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data public/data
+          if ! git diff --cached --quiet; then
+            git commit -m 'data: collect public configs and record refresh status'
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+          echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+      - name: Preserve failed collection as a failed check
+        if: steps.collect.outcome == 'failure'
+        run: |
+          echo 'Collection failed. Any written failure status was committed for the dashboard.' >> "$GITHUB_STEP_SUMMARY"
+          exit 1
+  publish:
+    # GITHUB_TOKEN pushes do NOT trigger a second push workflow. Explicitly call
+    # the reusable verifier/deployer, including when a failed status was saved.
+    if: ${{ always() && !cancelled() && needs.collect.outputs.commit != '' }}
+    needs: collect
+    uses: ./.github/workflows/ci-pages.yml
+    with:
+      ref: ${{ needs.collect.outputs.commit }}
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
