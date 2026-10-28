@@ -1,0 +1,34 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "NIL Config Catcher",
+  "version": "1.0.0",
+  "identifier": "io.github.babakyaghoobii.nil-config-catcher",
+  "mainBinaryName": "nil-config-catcher",
+  "build": {
+    "beforeDevCommand": "npm run dev -- --mode desktop --port 1420 --strictPort",
+    "devUrl": "http://localhost:1420",
+    "beforeBuildCommand": "npm run build:desktop",
+    "frontendDist": "../dist-desktop"
+  },
+  "app": {
+    "windows": [
+      { "label": "main", "title": "NIL Config Catcher — babakyaghoobii", "width": 1180, "height": 850, "minWidth": 360, "minHeight": 600 }
+    ],
+    "security": {
+      "csp": "default-src 'self'; script-src 'self'; style-src 'self'; font-src 'self'; img-src 'self' data:; connect-src 'self' ipc: http://ipc.localhost https://raw.githubusercontent.com; object-src 'none'; base-uri 'self'; form-action 'none'"
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "publisher": "babakyaghoobii",
+    "copyright": "Conceived, coded, and built by babakyaghoobii. Free for everyone to use.",
+    "category": "Utility",
+    "shortDescription": "NIL — free public VPN configuration index",
+    "longDescription": "A Persian RTL index of publicly shared configuration URIs, created by babakyaghoobii and freely available for everyone. Syntax validation only; no server connectivity claims.",
+    "homepage": "https://github.com/babakyaghoobii/Nil-configs-catcher",
+    "icon": ["icons/32x32.png", "icons/128x128.png", "icons/128x128@2x.png", "icons/icon.icns", "icons/icon.ico"],
+    "macOS": { "minimumSystemVersion": "13.0", "signingIdentity": "-" },
+    "linux": { "deb": { "section": "net" } }
+  }
+}

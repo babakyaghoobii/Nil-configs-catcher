@@ -3,7 +3,6 @@ import { createServer } from "node:http";
 import { readFile, stat } from "node:fs/promises";
 import { resolve, extname, sep } from "node:path";
 import { fileURLToPath } from "node:url";
-const root = resolve("dist");
 const prefix = "/Nil-configs-catcher/";
 const types = {
   ".html": "text/html; charset=utf-8",
@@ -15,7 +14,8 @@ const types = {
   ".png": "image/png",
   ".woff2": "font/woff2",
 };
-export function createPreviewServer() {
+export function createPreviewServer(directory = "dist") {
+  const root = resolve(directory);
   return createServer(async (request, response) => {
     try {
       const pathname = decodeURIComponent(
@@ -47,7 +47,11 @@ if (
   process.argv[1] &&
   resolve(process.argv[1]) === fileURLToPath(import.meta.url)
 ) {
-  createPreviewServer().listen(4173, "0.0.0.0", () =>
-    console.log("NIL preview: http://localhost:4173" + prefix),
+  const desktop = process.argv.includes("--desktop");
+  const port = desktop ? 4174 : 4173;
+  createPreviewServer(desktop ? "dist-desktop" : "dist").listen(
+    port,
+    "0.0.0.0",
+    () => console.log(`NIL preview: http://localhost:${port}${prefix}`),
   );
 }

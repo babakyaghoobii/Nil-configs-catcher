@@ -1,0 +1,24 @@
+[package]
+name = "nil-config-catcher"
+version = "1.0.0"
+description = "NIL Config Catcher — created by babakyaghoobii, free for everyone"
+authors = ["babakyaghoobii"]
+edition = "2021"
+rust-version = "1.99"
+publish = false
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
+tauri-plugin-clipboard-manager = "2"
+tauri-plugin-dialog = "2"
+tauri-plugin-fs = "2"
+tauri-plugin-opener = "2"
+
+[profile.release]
+lto = true
+codegen-units = 1
+strip = true
+panic = "abort"

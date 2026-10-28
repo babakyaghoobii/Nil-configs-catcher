@@ -1,0 +1,64 @@
+.creator-credit {
+  border: 1px solid #efd7c8;
+  border-inline-start: 4px solid var(--orange);
+  border-radius: 14px;
+  background: linear-gradient(120deg, #fff 35%, #fff3e9);
+  padding: 20px 24px;
+  margin-bottom: 24px;
+}
+
+html[data-runtime="desktop"] .install-button {
+  display: none;
+}
+
+.creator-label {
+  color: #a44e28;
+  font-size: 12px;
+  font-weight: 650;
+}
+
+.creator-credit h2 {
+  font-size: clamp(16px, 1.5vw, 20px);
+  font-weight: 650;
+  line-height: 1.95;
+  margin-top: 5px;
+  overflow-wrap: anywhere;
+}
+
+.creator-credit h2 bdi {
+  display: inline-block;
+  max-width: 100%;
+  font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+  font-weight: 800;
+  color: #a44e28;
+}
+
+.creator-free {
+  font-size: 13px;
+  color: #505865;
+  line-height: 2;
+  margin-top: 3px;
+}
+
+.creator-english {
+  border-top: 1px solid #efd7c8;
+  padding-top: 12px;
+  margin-top: 12px;
+  text-align: left;
+  color: #505865;
+  font-size: 12px;
+  line-height: 1.9;
+  overflow-wrap: anywhere;
+}
+
+.creator-english strong {
+  color: var(--ink);
+  font-weight: 750;
+}
+
+@media (max-width: 760px) {
+  .creator-credit {
+    padding: 17px 18px;
+    margin-bottom: 20px;
+  }
+}

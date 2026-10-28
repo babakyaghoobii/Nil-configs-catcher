@@ -1,8 +1,104 @@
 # NIL Config Catcher · نیل
 
+**ایده‌پردازی، برنامه‌نویسی و ساخت توسط babakyaghoobii — رایگان برای استفادهٔ عموم.**
+
+**Conceived, coded, and built by babakyaghoobii. Free for everyone to use.**
+
 A mobile-first Persian RTL PWA that collects **up to 50 NEW unique, publicly shared VPN configuration URIs per run**. No fabricated entries, endpoint probing, remote code, paid APIs, or private subscriptions.
 
 **Formats:** VLESS, VMess (base64 JSON v2), Trojan, Shadowsocks (SIP002 and legacy), Hysteria2 / hy2, and TUIC. Syntax validity does **not** imply that a server connects, is fast, or is trustworthy.
+
+## Installation · نصب نسخهٔ دسکتاپ
+
+نسخهٔ دسکتاپ یک برنامهٔ واقعی با رابطِ همراهِ خود برنامه است، نه میان‌بر مرورگر. در مک فایل `NIL Config Catcher.app` در **Applications** قرار می‌گیرد. در لینوکس فایل اجرایی، لانچر و ورودی منوی برنامه‌ها نصب می‌شود. برنامه با نام و نشان سازنده عرضه می‌شود و برای عموم رایگان است.
+
+بسته‌های آماده در [GitHub Releases](https://github.com/babakyaghoobii/Nil-configs-catcher/releases) منتشر می‌شوند. **دستورهای زیر فقط برای تگی کار می‌کنند که بسته‌هایش واقعاً در Releases منتشر شده باشند. وجود دستور، به‌تنهایی تأیید انتشار نیست.** تا قبل از انتشار، از ساخت از سورس یا خروجی آزمایشی Actions استفاده کنید. انتشار عمومی بدون دریافت لوگوی واقعی سازنده عمداً متوقف می‌شود.
+
+### macOS — Apple Silicon و Intel
+
+نیازمند macOS 13 یا جدیدتر. نصب‌کننده معماری را تشخیص می‌دهد و فایل ZIP صحیح را می‌گیرد، SHA-256 و هویت بسته را بررسی می‌کند و **خود فایل `.app`** را در `/Applications` قرار می‌دهد. مرورگر، Node یا Rust برای اجرای نسخهٔ نصب‌شده لازم نیست.
+
+تگ را از نسخه‌های واقعاً موجود در Releases انتخاب کنید:
+
+```bash
+NIL_VERSION=v1.0.0
+NIL_RELEASE="https://github.com/babakyaghoobii/Nil-configs-catcher/releases/download/$NIL_VERSION"
+nil_setup_dir="$(mktemp -d)"
+cd "$nil_setup_dir"
+curl --fail --location --proto '=https' --tlsv1.2 "$NIL_RELEASE/install.sh" -o install.sh
+curl --fail --location --proto '=https' --tlsv1.2 "$NIL_RELEASE/SHA256SUMS" -o SHA256SUMS
+awk '$2 == "install.sh" { print }' SHA256SUMS | shasum -a 256 -c - \
+  && bash install.sh --version "$NIL_VERSION"
+```
+
+اگر نوشتن در `/Applications` مجاز نیست، پس از بررسی همان فایل نصب‌کننده، `bash install.sh --version "$NIL_VERSION" --user` را اجرا کنید؛ یک بستهٔ واقعی در `~/Applications/NIL Config Catcher.app` نصب می‌شود. اسکریپت خودکار `sudo` اجرا نمی‌کند و تنظیمات امنیتی سیستم را تغییر نمی‌دهد.
+
+```bash
+open "/Applications/NIL Config Catcher.app"
+# نصب در پوشهٔ شخصی:
+open "$HOME/Applications/NIL Config Catcher.app"
+```
+
+**امضای مک:** بسته‌ها برای صحت محتوا ad-hoc signed هستند؛ این با گواهی Apple Developer ID و notarization اپل فرق دارد. ممکن است برای اولین اجرا لازم باشد در System Settings → Privacy & Security اجرای برنامه را صریحاً تأیید کنید. نصب‌کننده Gatekeeper یا quarantine را غیرفعال نمی‌کند. اجرای واقعی روی همهٔ نسخه‌های macOS یا سخت‌افزار فیزیکی، صرفاً از موفقیت ساخت در CI نتیجه‌گیری نمی‌شود.
+
+### Linux — x64 و arm64
+
+لانچر و ورودی برنامه در `~/.local` نصب می‌شوند؛ نیاز به دسترسی ریشه ندارند. لانچر AppImage از حالت استخراج استفاده می‌کند و به FUSE وابسته نیست. بستهٔ x64 روی محیط Ubuntu 22.04 و arm64 روی Ubuntu 24.04 ساخته می‌شود؛ سازگاری glibc و WebKit/GTK توزیع مقصد همچنان لازم است. این به معنای پشتیبانی تضمینی از همهٔ توزیع‌های لینوکس نیست.
+
+```bash
+NIL_VERSION=v1.0.0
+NIL_RELEASE="https://github.com/babakyaghoobii/Nil-configs-catcher/releases/download/$NIL_VERSION"
+nil_setup_dir="$(mktemp -d)"
+cd "$nil_setup_dir"
+curl --fail --location --proto '=https' --tlsv1.2 "$NIL_RELEASE/install.sh" -o install.sh
+curl --fail --location --proto '=https' --tlsv1.2 "$NIL_RELEASE/SHA256SUMS" -o SHA256SUMS
+awk '$2 == "install.sh" { print }' SHA256SUMS | sha256sum -c - \
+  && bash install.sh --version "$NIL_VERSION"
+```
+
+سپس **NIL Config Catcher** را از منوی برنامه‌ها باز کنید، یا اجرا کنید:
+
+```bash
+"$HOME/.local/bin/nil-config-catcher"
+```
+
+فایل اجرایی در `~/.local/lib/nil-config-catcher/` و ورودی منو در `~/.local/share/applications/io.github.babakyaghoobii.nil-config-catcher.desktop` قرار می‌گیرد. نصب در مسیر سفارشی با `--prefix /absolute/path` پشتیبانی می‌شود. همچنین بسته‌های `.deb` همان معماری در Releases ارائه می‌شوند؛ فایل DEB را نیز قبل از نصب با `SHA256SUMS` بررسی کنید و برای نصب وابستگی‌ها از `sudo apt install ./NIL-Config-Catcher-linux-x64.deb` یا فایل arm64 استفاده کنید. نصب DEB و AppImage دو روش جایگزین‌اند؛ لازم نیست هر دو را نصب کنید.
+
+### به‌روزرسانی و حذف
+
+برای ارتقا، برنامه را ببندید و همان روش دانلودِ بررسی‌شده را با تگ نسخهٔ جدید تکرار کنید. نصب‌کننده فقط فایل‌های برنامهٔ دارای هویت NIL را جایگزین می‌کند و نشان‌ها/داده‌های شخصی را حذف نمی‌کند.
+
+```bash
+# با نسخهٔ بررسی‌شدهٔ install.sh:
+bash install.sh --uninstall
+# اگر در ~/Applications نصب کرده‌اید:
+bash install.sh --uninstall --user
+# اگر در لینوکس مسیر سفارشی انتخاب کرده‌اید:
+bash install.sh --uninstall --prefix /absolute/path
+```
+
+فایل‌های دانلودشده فقط از همین مخزن و از HTTPS گرفته می‌شوند؛ `latest` یک‌بار به تگ معتبر حل می‌شود تا فایل و checksum از نسخه‌های مختلف مخلوط نشوند. checksum صحت انتقال را بررسی می‌کند و جایگزین اعتماد به حساب منتشرکننده یا notarization اپل نیست. هیچ دستور `curl | bash`، حذف quarantine، اجرای URIهای VPN یا دریافت URL دلخواه در نصب‌کننده وجود ندارد.
+
+### ساخت نسخهٔ دسکتاپ از سورس
+
+Node.js 22+، Python 3.12+ و Rust **1.99.1** لازم‌اند. روی مک Xcode Command Line Tools و روی لینوکس وابستگی‌های [رسمی Tauri](https://v2.tauri.app/start/prerequisites/) نیز لازم است. فایل قفل Cargo و npm در مخزن نگهداری می‌شوند.
+
+```bash
+git clone https://github.com/babakyaghoobii/Nil-configs-catcher.git
+cd Nil-configs-catcher
+npm ci --ignore-scripts
+rustup toolchain install 1.99.1 --profile minimal
+npm run desktop:icons
+
+# macOS:
+npm run desktop:build -- --bundles app -- --locked
+# Linux:
+npm run desktop:build -- --bundles appimage,deb -- --locked
+```
+
+خروجی‌های واقعی در پوشهٔ `src-tauri/target/.../release/bundle/` قرار می‌گیرند. `npm run desktop:dev` برای توسعهٔ محلی است. `npm run test:desktop-ui` مسیرهای رابط و فراخوانی clipboard/ذخیرهٔ بومی را با IPC آزمایشی بررسی می‌کند؛ این با تست اجرای GUI روی سخت‌افزار واقعی یکی نیست. ورک‌فلوی [native desktop](.github/workflows/desktop-release.yml) چهار معماری را می‌سازد، نصب/حذف بسته‌های واقعی را در مسیر آزمایشی بررسی می‌کند، بستهٔ macOS و امضای ad-hoc را کنترل می‌کند و فقط پس از تکمیل همهٔ خروجی‌ها و تطبیق digestهای آپلودشده، release را منتشر می‌کند. ساخت موفق به‌تنهایی تأیید اجرای GUI روی همهٔ سیستم‌های مقصد نیست.
+
+رابط دسکتاپ در بسته قرار دارد. دریافت دادهٔ تازه فقط از سه فایل JSON همین مخزن روی `raw.githubusercontent.com` انجام می‌شود؛ هنگام نبود شبکه، دادهٔ معتبر ذخیره‌شده یا snapshot همراه برنامه با برچسب آفلاین نمایش داده می‌شود. clipboard بومی فقط نوشتن متن دارد؛ خروجی با دیالوگ انتخاب فایل ذخیره می‌شود. هیچ مجوز shell، اجرای کانفیگ، خواندن clipboard یا دسترسی به مبدأهای وبِ دلخواه اعطا نشده است.
 
 ## Local development and verification
 

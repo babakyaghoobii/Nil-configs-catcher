@@ -9,13 +9,25 @@
     "preview": "vite preview --host 0.0.0.0",
     "test": "python3 -m unittest discover -s tests -v",
     "test:e2e": "playwright test",
-    "collect": "python3 -m collector"
+    "collect": "python3 -m collector",
+    "build:desktop": "tsc --noEmit && vite build --mode desktop",
+    "desktop:dev": "tauri dev",
+    "desktop:build": "tauri build",
+    "desktop:icons": "node scripts/desktop-icons.mjs",
+    "test:installer": "python3 -m unittest discover -s tests -p 'test_installer.py' -v",
+    "test:desktop-ui": "playwright test --config playwright.desktop.config.ts"
   },
   "dependencies": {
-    "@fontsource-variable/vazirmatn": "5.2.8"
+    "@fontsource-variable/vazirmatn": "5.2.8",
+    "@tauri-apps/api": "2.12.4",
+    "@tauri-apps/plugin-clipboard-manager": "2.5.0",
+    "@tauri-apps/plugin-dialog": "2.8.4",
+    "@tauri-apps/plugin-fs": "2.7.1",
+    "@tauri-apps/plugin-opener": "2.7.2"
   },
   "devDependencies": {
     "@playwright/test": "1.58.2",
+    "@tauri-apps/cli": "2.12.4",
     "typescript": "5.9.3",
     "vite": "7.3.7"
   }

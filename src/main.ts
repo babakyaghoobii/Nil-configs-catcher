@@ -1,6 +1,14 @@
 import "@fontsource-variable/vazirmatn";
 import "./style.css";
+import "./creator.css";
 import { icon } from "./icons";
+import {
+  isDesktop,
+  desktopDataURL,
+  writeNativeClipboard,
+  saveNativeExport,
+  openNativeGitHubLink,
+} from "./desktop";
 
 type Protocol = "vless" | "vmess" | "trojan" | "ss" | "hysteria2" | "tuic";
 type View = "dashboard" | "saved" | "sources" | "history";
@@ -62,6 +70,7 @@ const protocolLabels: Record<Protocol, string> = {
   tuic: "TUIC",
 };
 const app = document.querySelector<HTMLDivElement>("#app")!;
+if (isDesktop) document.documentElement.dataset.runtime = "desktop";
 const number = (n: number) => n.toLocaleString("fa-IR");
 const escape = (value: unknown) =>
   String(value).replace(
@@ -169,6 +178,15 @@ function statusLabel(status = state.status): string {
   );
 }
 
+function creatorCredit(): string {
+  return `<section class="creator-credit" aria-labelledby="creator-title">
+    <span class="creator-label">سازندهٔ این برنامه</span>
+    <h2 id="creator-title">ایده‌پردازی، برنامه‌نویسی و ساخت توسط <bdi>babakyaghoobii</bdi></h2>
+    <p class="creator-free">این برنامه برای استفادهٔ عموم، به‌رایگان در دسترس است.</p>
+    <p class="creator-english" lang="en" dir="ltr">Conceived, coded, and built by <strong>babakyaghoobii</strong>. Free for everyone to use.</p>
+  </section>`;
+}
+
 function render() {
   const item = navItems.find((item) => item.view === state.view)!;
   document.querySelector("#breadcrumb-name")!.textContent = item.label;
@@ -186,6 +204,7 @@ function render() {
     ${state.status?.errors.length ? `<div class="notice error" role="alert">${icon("info")}<span>خطای تنظیمات جمع‌آوری: <b dir="auto">${escape(state.status.errors.join(" · "))}</b></span></div>` : ""}
     ${!navigator.onLine || state.offlineCache ? `<div class="notice warning">${icon("wifi")} حالت آفلاین؛ آخرین نسخهٔ ذخیره‌شده نمایش داده می‌شود.</div>` : ""}
     ${isStale() ? `<div class="notice warning">${icon("clock")} بیش از ۴٫۵ ساعت از آخرین دریافت گذشته است. زمان‌بندی گیت‌هاب ممکن است با تأخیر اجرا شود.</div>` : ""}
+    ${creatorCredit()}
     ${state.view === "dashboard" ? dashboard() : state.view === "saved" ? catalog() : state.view === "sources" ? sourcesView() : historyView()}
   `;
   if (state.view === "dashboard" || state.view === "saved") renderResults();
@@ -328,6 +347,52 @@ function validateStatus(value: unknown): Status {
   return status;
 }
 
+function validateDataBatch(values: unknown) {
+  if (!Array.isArray(values) || values.length !== 3)
+    throw new Error("Invalid data batch");
+  const snapshot = validateSnapshot(values[0]),
+    status = validateStatus(values[1]);
+  const rawHistory: unknown = values[2];
+  if (!Array.isArray(rawHistory) || rawHistory.length > 120)
+    throw new Error("Invalid history");
+  const history = rawHistory.map(validateStatus);
+  if (status.totalUnique !== snapshot.totalUnique)
+    throw new Error("Snapshot deployment is in progress");
+  return { snapshot, status, history };
+}
+
+async function fetchDataBatch(base: string, signal?: AbortSignal) {
+  const responses = await Promise.all(
+    ["configs", "status", "history"].map((name) =>
+      fetch(`${base}${name}.json`, { cache: "no-store", signal }),
+    ),
+  );
+  if (responses.some((response) => !response.ok))
+    throw new Error("Data unavailable");
+  return {
+    ...validateDataBatch(
+      await Promise.all(responses.map((response) => response.json())),
+    ),
+    offline: responses.some(
+      (response) => response.headers.get("X-Nil-Cache") === "offline",
+    ),
+  };
+}
+
+async function desktopOfflineData() {
+  try {
+    const cached = localStorage.getItem("nil-desktop-data-v1");
+    if (cached)
+      return { ...validateDataBatch(JSON.parse(cached)), offline: true };
+  } catch {
+    /* A corrupt or unavailable cache must not replace valid bundled data. */
+  }
+  return {
+    ...(await fetchDataBatch(`${import.meta.env.BASE_URL}data/`)),
+    offline: true,
+  };
+}
+
 async function refresh() {
   if (state.refreshing) return;
   state.refreshing = true;
@@ -338,32 +403,31 @@ async function refresh() {
   const controller = refreshController;
   const timeout = setTimeout(() => controller.abort(), 15000);
   try {
-    const responses = await Promise.all(
-      ["configs", "status", "history"].map((name) =>
-        fetch(`${import.meta.env.BASE_URL}data/${name}.json`, {
-          cache: "no-store",
-          signal: controller.signal,
-        }),
-      ),
-    );
-    if (responses.some((response) => !response.ok))
-      throw new Error("Data unavailable");
-    const [rawSnapshot, rawStatus, rawHistory] = await Promise.all(
-      responses.map((response) => response.json()),
-    );
-    const snapshot = validateSnapshot(rawSnapshot),
-      status = validateStatus(rawStatus);
-    if (!Array.isArray(rawHistory) || rawHistory.length > 120)
-      throw new Error("Invalid history");
-    const history = rawHistory.map(validateStatus);
-    if (status.totalUnique !== snapshot.totalUnique)
-      throw new Error("Snapshot deployment is in progress");
+    let data;
+    try {
+      data = await fetchDataBatch(
+        isDesktop ? desktopDataURL : `${import.meta.env.BASE_URL}data/`,
+        controller.signal,
+      );
+    } catch (error) {
+      if (!isDesktop || state.snapshot) throw error;
+      data = await desktopOfflineData();
+    }
+    const { snapshot, status, history } = data;
     state.snapshot = snapshot;
     state.status = status;
     state.history = history;
-    state.offlineCache = responses.some(
-      (response) => response.headers.get("X-Nil-Cache") === "offline",
-    );
+    state.offlineCache = data.offline;
+    if (isDesktop && !data.offline) {
+      try {
+        localStorage.setItem(
+          "nil-desktop-data-v1",
+          JSON.stringify([snapshot, status, history]),
+        );
+      } catch {
+        /* Current data still works when the browser storage quota is exhausted. */
+      }
+    }
   } catch {
     state.error = state.snapshot
       ? "دریافت دادهٔ تازه ممکن نشد؛ آخرین دادهٔ این صفحه نمایش داده می‌شود."
@@ -383,6 +447,10 @@ function toast(message: string) {
   toastTimer = setTimeout(() => element.classList.remove("visible"), 3500);
 }
 async function copy(text: string) {
+  if (isDesktop) {
+    await writeNativeClipboard(text);
+    return;
+  }
   if (navigator.clipboard?.writeText) {
     await navigator.clipboard.writeText(text);
     return;
@@ -397,17 +465,24 @@ async function copy(text: string) {
   textarea.remove();
   if (!success) throw new Error("Clipboard unavailable");
 }
-function exportConfigs() {
+async function exportConfigs() {
   const configs = filteredConfigs();
   if (!configs.length) return;
+  const filename = `nil-${state.protocol}-${new Date().toISOString().slice(0, 10)}.txt`;
+  const text = configs.map((item) => item.uri).join("\n") + "\n";
+  if (isDesktop) {
+    if (await saveNativeExport(filename, text))
+      toast(`خروجی ${number(configs.length)} کانفیگ ذخیره شد`);
+    return;
+  }
   const url = URL.createObjectURL(
-    new Blob([configs.map((item) => item.uri).join("\n") + "\n"], {
+    new Blob([text], {
       type: "text/plain;charset=utf-8",
     }),
   );
   const anchor = document.createElement("a");
   anchor.href = url;
-  anchor.download = `nil-${state.protocol}-${new Date().toISOString().slice(0, 10)}.txt`;
+  anchor.download = filename;
   document.body.append(anchor);
   anchor.click();
   anchor.remove();
@@ -416,6 +491,18 @@ function exportConfigs() {
 }
 
 app.addEventListener("click", async (event) => {
+  const anchor = (event.target as Element).closest<HTMLAnchorElement>(
+    "a[href]",
+  );
+  if (isDesktop && anchor?.href.startsWith("https://")) {
+    event.preventDefault();
+    try {
+      await openNativeGitHubLink(anchor.href);
+    } catch {
+      toast("باز کردن این پیوند ممکن نشد.");
+    }
+    return;
+  }
   const button = (event.target as Element).closest<HTMLElement>(
     "[data-action], [data-view], [data-protocol]",
   );
@@ -443,7 +530,11 @@ app.addEventListener("click", async (event) => {
     return;
   }
   if (action === "export") {
-    exportConfigs();
+    try {
+      await exportConfigs();
+    } catch {
+      toast("ذخیرهٔ فایل انجام نشد؛ دوباره تلاش کن.");
+    }
     return;
   }
   if (action === "install") {
@@ -525,7 +616,7 @@ window.addEventListener("online", () => {
 });
 shell();
 void refresh();
-if ("serviceWorker" in navigator && import.meta.env.PROD) {
+if (!isDesktop && "serviceWorker" in navigator && import.meta.env.PROD) {
   window.addEventListener("load", () => {
     navigator.serviceWorker
       .register(`${import.meta.env.BASE_URL}sw.js`, {
