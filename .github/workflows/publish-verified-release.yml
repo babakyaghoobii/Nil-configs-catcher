@@ -1,0 +1,89 @@
+name: Publish verified desktop build
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Existing version tag to publish (v1.0.0)
+        required: true
+        type: string
+      run_id:
+        description: Native build run with all four successful installation tests
+        required: true
+        type: string
+
+permissions:
+  contents: write
+  actions: read
+
+concurrency:
+  group: publish-verified-${{ inputs.tag }}
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        with:
+          python-version: "3.12"
+      - name: Test release verification
+        run: python3 -m unittest discover -s tests -p 'test_release.py' -v
+      - name: Require successful builds at the exact tagged commit
+        id: validate
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_TAG: ${{ inputs.tag }}
+          VERIFIED_RUN: ${{ inputs.run_id }}
+        run: |
+          python3 - <<'PY'
+          import json, os, re, subprocess
+          tag, run_id = os.environ['RELEASE_TAG'], os.environ['VERIFIED_RUN']
+          if not re.fullmatch(r'v[0-9]+\.[0-9]+\.[0-9]+(?:-[A-Za-z0-9.-]+)?', tag) or not re.fullmatch(r'[0-9]+', run_id):
+              raise SystemExit('Invalid tag or run ID')
+          def api(path):
+              return json.loads(subprocess.run(['gh', 'api', 'repos/babakyaghoobii/Nil-configs-catcher/' + path], check=True, capture_output=True, text=True).stdout)
+          commit, run = api('commits/' + tag), api('actions/runs/' + run_id)
+          if run['status'] != 'completed' or run['head_sha'] != commit['sha'] or run['path'] != '.github/workflows/desktop-release.yml':
+              raise SystemExit('Build run does not match the tagged native workflow')
+          jobs = api('actions/runs/' + run_id + '/jobs?filter=latest&per_page=100')['jobs']
+          if not any(j['name'] == 'verify' and j['conclusion'] == 'success' for j in jobs):
+              raise SystemExit('Required verification did not pass')
+          for target in ['aarch64-apple-darwin', 'x86_64-apple-darwin', 'aarch64-unknown-linux-gnu', 'x86_64-unknown-linux-gnu']:
+              if not any(j['name'].startswith('native (') and target in j['name'] and j['conclusion'] == 'success' for j in jobs):
+                  raise SystemExit('Required native build or installation test did not pass: ' + target)
+          with open(os.environ['GITHUB_OUTPUT'], 'a') as output:
+              output.write('sha=' + commit['sha'] + '\n')
+          print('All four native builds and installation tests match the tagged commit')
+          PY
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          ref: ${{ steps.validate.outputs.sha }}
+          path: verified-source
+          persist-credentials: false
+      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4
+        with:
+          github-token: ${{ github.token }}
+          run-id: ${{ inputs.run_id }}
+          pattern: native-*
+          merge-multiple: true
+          path: verified-source/release-files
+      - name: Verify original source assets and publish complete draft
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          RELEASE_TAG: ${{ inputs.tag }}
+        run: |
+          set -euo pipefail
+          cp scripts/verify-release.py verified-source/scripts/verify-release.py
+          cd verified-source
+          python3 scripts/prepare-release.py "$RELEASE_TAG"
+          gh release view "$RELEASE_TAG" --json isDraft > /tmp/nil-verified-release.json
+          python3 -c "import json; assert json.load(open('/tmp/nil-verified-release.json'))['isDraft'], 'Published releases are immutable'"
+          gh release upload "$RELEASE_TAG" release-files/* --clobber
+          python3 scripts/verify-release.py "$RELEASE_TAG"
+          gh release edit "$RELEASE_TAG" --draft=false
