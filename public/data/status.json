@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
   "state": "success",
-  "startedAt": "2026-10-29T12:39:25Z",
-  "finishedAt": "2026-10-29T12:39:25Z",
-  "lastSuccessfulAt": "2026-10-29T12:39:25Z",
+  "startedAt": "2026-10-29T16:57:08Z",
+  "finishedAt": "2026-10-29T16:57:09Z",
+  "lastSuccessfulAt": "2026-10-29T16:57:08Z",
   "added": 50,
   "target": 50,
-  "totalUnique": 300,
-  "duplicateCount": 234,
-  "deferredUnique": 4319,
+  "totalUnique": 350,
+  "duplicateCount": 291,
+  "deferredUnique": 4269,
   "invalidCount": 13,
   "scheduleHours": 2,
   "snapshotLimit": 1000,
@@ -21,7 +21,7 @@
       "candidates": 4312,
       "valid": 4312,
       "invalid": 0,
-      "added": 12,
+      "added": 24,
       "error": null
     },
     {
@@ -32,7 +32,7 @@
       "candidates": 415,
       "valid": 402,
       "invalid": 13,
-      "added": 38,
+      "added": 26,
       "error": null
     }
   ],
