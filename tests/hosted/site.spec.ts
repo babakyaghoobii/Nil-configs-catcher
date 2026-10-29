@@ -55,6 +55,29 @@ async function liveData(page: Page) {
   });
 }
 
+async function githubUnavailableAfterReload(page: Page) {
+  // WebKit can bypass page.route once a service worker controls navigation.
+  // Fail the upstream fetch itself while keeping local cached assets usable.
+  await page.addInitScript(() => {
+    const originalFetch = window.fetch.bind(window);
+    window.fetch = (input, options) => {
+      const url =
+        typeof input === "string"
+          ? input
+          : input instanceof URL
+            ? input.href
+            : input.url;
+      if (
+        url.startsWith(
+          "https://raw.githubusercontent.com/babakyaghoobii/Nil-configs-catcher/main/public/data/",
+        )
+      )
+        return Promise.reject(new TypeError("Simulated GitHub outage"));
+      return originalFetch(input, options);
+    };
+  });
+}
+
 test("public web app reads fresh GitHub data and retains browser PWA behavior", async ({
   page,
 }) => {
@@ -91,7 +114,7 @@ test("GitHub failure restores validated browser data and rejects a corrupt cache
   await expect
     .poll(() => page.evaluate(() => localStorage.getItem("nil-web-data-v1")))
     .not.toBeNull();
-  await page.route(dataPattern, (route) => route.abort());
+  await githubUnavailableAfterReload(page);
   await page.reload();
   await expect(page.locator(".config-card")).toHaveCount(1);
   await expect(page.locator(".notice.warning").first()).toContainText("آفلاین");
@@ -120,7 +143,7 @@ test("installed PWA reloads after the host stops and GitHub becomes unavailable"
     await page.waitForFunction(() =>
       Boolean(navigator.serviceWorker.controller),
     );
-    await page.route(dataPattern, (route) => route.abort());
+    await githubUnavailableAfterReload(page);
     server.closeAllConnections();
     await new Promise<void>((resolve, reject) =>
       server.close((error) => (error ? reject(error) : resolve())),
