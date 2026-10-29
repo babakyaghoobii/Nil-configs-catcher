@@ -35,11 +35,15 @@ jobs:
       - name: Test collector and security boundaries
         run: npm test
       - name: Typecheck and production build
-        run: npm run build
+        run: |
+          npm run build
+          npm run build:desktop
       - name: Install test browsers
         run: npx playwright install --with-deps chromium webkit
       - name: Desktop and iPhone-size WebKit tests
-        run: npm run test:e2e
+        run: |
+          npm run test:e2e
+          npm run test:desktop-ui
       - uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa # v3
         if: github.event_name != 'pull_request'
         with:
