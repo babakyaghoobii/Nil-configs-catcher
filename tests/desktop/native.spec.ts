@@ -152,7 +152,28 @@ test("cancelled native exports write nothing and GitHub links open through the s
     ).nilMock.savePath = null;
   });
   await page.locator('[data-action="export"]').click();
+  await expect
+    .poll(() =>
+      page.evaluate(() =>
+        (
+          window as unknown as { nilMock: { calls: MockCall[] } }
+        ).nilMock.calls.some((call) => call.command === "plugin:dialog|save"),
+      ),
+    )
+    .toBe(true);
   await page.locator(".github-link").click();
+  // The opener module is lazy-loaded; clicking does not await its IPC call.
+  await expect
+    .poll(() =>
+      page.evaluate(() =>
+        (
+          window as unknown as { nilMock: { calls: MockCall[] } }
+        ).nilMock.calls.some(
+          (call) => call.command === "plugin:opener|open_url",
+        ),
+      ),
+    )
+    .toBe(true);
   const calls = await page.evaluate(
     () =>
       (window as unknown as { nilMock: { calls: MockCall[] } }).nilMock.calls,
