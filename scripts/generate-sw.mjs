@@ -12,16 +12,19 @@ async function files(dir, prefix = "") {
   }
   return result;
 }
-const paths = (await files("dist")).sort();
+const directory = process.argv[2] || "dist";
+if (!["dist", "dist-hosted"].includes(directory))
+  throw new Error("Unsupported build directory");
+const paths = (await files(directory)).sort();
 const hash = createHash("sha256");
-for (const path of paths) hash.update(await readFile(join("dist", path)));
+for (const path of paths) hash.update(await readFile(join(directory, path)));
 const version = hash.digest("hex").slice(0, 16);
 // Include data in the version so every published batch activates a fresh cache.
 // Seed a coherent data snapshot too: offline works after the first visit,
 // even if initial page requests preceded service-worker activation.
 const precache = paths;
 await writeFile(
-  "dist/sw.js",
+  join(directory, "sw.js"),
   `
 'use strict';
 const CACHE = 'nil-${version}';

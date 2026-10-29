@@ -4,7 +4,7 @@ import "./creator.css";
 import { icon } from "./icons";
 import {
   isDesktop,
-  desktopDataURL,
+  repositoryDataURL,
   writeNativeClipboard,
   saveNativeExport,
   openNativeGitHubLink,
@@ -53,6 +53,10 @@ type Snapshot = {
   configs: Config[];
 };
 const repository = "https://github.com/babakyaghoobii/Nil-configs-catcher";
+const usesRepositoryData = isDesktop || import.meta.env.MODE === "hosted";
+const repositoryCacheKey = isDesktop
+  ? "nil-desktop-data-v1"
+  : "nil-web-data-v1";
 const brandLogo = `${import.meta.env.BASE_URL}branding/creator-logo-charcoal.png`;
 const appIcon = `${import.meta.env.BASE_URL}icons/icon-192.png`;
 const protocols: Protocol[] = [
@@ -383,9 +387,9 @@ async function fetchDataBatch(base: string, signal?: AbortSignal) {
   };
 }
 
-async function desktopOfflineData() {
+async function repositoryOfflineData() {
   try {
-    const cached = localStorage.getItem("nil-desktop-data-v1");
+    const cached = localStorage.getItem(repositoryCacheKey);
     if (cached)
       return { ...validateDataBatch(JSON.parse(cached)), offline: true };
   } catch {
@@ -410,22 +414,24 @@ async function refresh() {
     let data;
     try {
       data = await fetchDataBatch(
-        isDesktop ? desktopDataURL : `${import.meta.env.BASE_URL}data/`,
+        usesRepositoryData
+          ? repositoryDataURL
+          : `${import.meta.env.BASE_URL}data/`,
         controller.signal,
       );
     } catch (error) {
-      if (!isDesktop || state.snapshot) throw error;
-      data = await desktopOfflineData();
+      if (!usesRepositoryData || state.snapshot) throw error;
+      data = await repositoryOfflineData();
     }
     const { snapshot, status, history } = data;
     state.snapshot = snapshot;
     state.status = status;
     state.history = history;
     state.offlineCache = data.offline;
-    if (isDesktop && !data.offline) {
+    if (usesRepositoryData && !data.offline) {
       try {
         localStorage.setItem(
-          "nil-desktop-data-v1",
+          repositoryCacheKey,
           JSON.stringify([snapshot, status, history]),
         );
       } catch {

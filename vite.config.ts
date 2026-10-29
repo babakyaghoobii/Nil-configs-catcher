@@ -5,18 +5,23 @@ export default defineConfig(({ mode }) => ({
   build: {
     target: "es2022",
     sourcemap: false,
-    outDir: mode === "desktop" ? "dist-desktop" : "dist",
+    outDir:
+      mode === "desktop"
+        ? "dist-desktop"
+        : mode === "hosted"
+          ? "dist-hosted"
+          : "dist",
   },
   server: { host: "0.0.0.0" },
   plugins:
-    mode === "desktop"
+    mode === "desktop" || mode === "hosted"
       ? [
           {
-            name: "desktop-data-policy",
+            name: "repository-data-policy",
             transformIndexHtml(html: string) {
               return html.replace(
                 "connect-src 'self'",
-                "connect-src 'self' ipc: http://ipc.localhost https://raw.githubusercontent.com",
+                `connect-src 'self'${mode === "desktop" ? " ipc: http://ipc.localhost" : ""} https://raw.githubusercontent.com`,
               );
             },
           },

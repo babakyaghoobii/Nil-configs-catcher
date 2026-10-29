@@ -6,6 +6,8 @@
 
 **Conceived, coded, and built by babakyaghoobii. Free for everyone to use.**
 
+وب‌اپ: [NIL Config Catcher](https://nil-config-catcher-babakyaghoobii.juststone7.chatgpt.site) · [دانلود نسخه‌های مک و لینوکس](https://github.com/babakyaghoobii/Nil-configs-catcher/releases/tag/v1.0.0)
+
 A mobile-first Persian RTL PWA that collects **up to 50 NEW unique, publicly shared VPN configuration URIs per run**. No fabricated entries, endpoint probing, remote code, paid APIs, or private subscriptions.
 
 **Formats:** VLESS, VMess (base64 JSON v2), Trojan, Shadowsocks (SIP002 and legacy), Hysteria2 / hy2, and TUIC. Syntax validity does **not** imply that a server connects, is fast, or is trustworthy.
@@ -117,8 +119,10 @@ npm run dev
 npm test                  # Parsing, collection, retention and security tests
 npm run collect           # Actually fetch configured public source files
 npm run build             # Typecheck, production assets and offline worker
+npm run build:hosted      # Public web host; reads fresh JSON directly from this GitHub repo
 npx playwright install --with-deps chromium webkit
 npm run test:e2e           # Desktop Chromium + iPhone 16-size WebKit
+npm run test:hosted-ui     # Hosted web/PWA data, cache and real offline reload tests
 ```
 
 Production preview, mounted at the Pages subpath:
@@ -184,7 +188,7 @@ Archives/registry grow over time; monitor repository size for long-running insta
 
 ## GitHub Actions and Pages
 
-[`ci-pages.yml`](.github/workflows/ci-pages.yml) runs Python tests, TypeScript checking, production build and desktop/WebKit browser tests. Pull requests only verify. Pushes to `main` and manual runs also upload and deploy the verified Pages artifact. Permissions are scoped: contents read for verification, Pages write and OIDC only for deployment.
+[`ci-pages.yml`](.github/workflows/ci-pages.yml) runs Python tests, TypeScript checking, all production builds and desktop/WebKit browser tests. Pull requests only verify. Pushes to `main` and manual runs also upload the verified Pages artifact. Deployment runs only when the repository owner has enabled a Pages site; otherwise the job is skipped with an explicit summary. Permissions are scoped: contents read for verification, Pages write and OIDC only for deployment.
 
 [`collect.yml`](.github/workflows/collect.yml) runs at **minute 17 every two hours, UTC** (`17 */2 * * *`) and supports manual dispatch with a 1–50 limit. GitHub scheduling is best effort, may be delayed and can be disabled after prolonged public-repository inactivity. Actions must be enabled and `GITHUB_TOKEN` needs contents write permission. Branch protection may require adapting the commit step.
 
@@ -194,10 +198,12 @@ Choose **Settings → Pages → Build and deployment → Source → GitHub Actio
 
 The conventional destination is `https://babakyaghoobii.github.io/Nil-configs-catcher/`. **An expected address is not evidence of deployment.** Verify a successful deployment job and HTTP response before calling it live. See [actual Actions runs](https://github.com/babakyaghoobii/Nil-configs-catcher/actions).
 
+The public web host uses `npm run build:hosted` and the same interface and branding. It reads only `configs.json`, `status.json` and `history.json` from this repository's fixed HTTPS raw-data path, so scheduled GitHub collection updates the app without another web deployment. It retains PWA installation, caches validated browser data, and falls back to the bundled snapshot when GitHub is unavailable. Cached data is labelled offline; this mode has no native IPC permissions. GitHub remains the canonical source repository. No repository token or paid runtime API is required.
+
 ## Security and limits
 
 - Config endpoint addresses are never contacted, resolved, imported, evaluated or passed to a shell. The dashboard has no arbitrary URL fetch feature. Upstream content is parsed as data only.
-- Same-origin CSP, no CDN scripts/fonts, no analytics, escaped dynamic text, protocol-restricted data, restricted GitHub links and no embedded access token. Clipboard/share failures are surfaced.
+- Strict CSP, no CDN scripts/fonts, no analytics, escaped dynamic text, protocol-restricted data, restricted GitHub links and no embedded access token. The hosted and desktop builds permit the fixed GitHub raw-data origin; native IPC is permitted only in the desktop build. Clipboard/share failures are surfaced.
 - Cached data is identified as offline; it is not claimed to be fresh. The service worker is scoped to this repository path.
 - Synthetic `example.com` fixtures are confined to test code. Published configs come only from actual source retrieval.
 - WebKit tests emulate iPhone 16 viewport/touch behavior; they do not replace physical-device checks of installation, clipboard permissions or native share sheets.

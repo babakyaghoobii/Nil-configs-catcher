@@ -11,6 +11,8 @@
     "test:e2e": "playwright test",
     "collect": "python3 -m collector",
     "build:desktop": "tsc --noEmit && vite build --mode desktop",
+    "build:hosted": "tsc --noEmit && vite build --mode hosted && node scripts/generate-sw.mjs dist-hosted",
+    "test:hosted-ui": "playwright test --config playwright.hosted.config.ts",
     "desktop:dev": "tauri dev",
     "desktop:build": "tauri build",
     "desktop:icons": "node scripts/desktop-icons.mjs",

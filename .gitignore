@@ -11,6 +11,7 @@ __pycache__/
 !.env.example
 .DS_Store
 dist-desktop/
+dist-hosted/
 src-tauri/target/
 src-tauri/gen/
 release-files/

@@ -19,6 +19,8 @@ jobs:
   verify:
     runs-on: ubuntu-24.04
     timeout-minutes: 15
+    outputs:
+      pages_enabled: ${{ steps.pages.outputs.enabled }}
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
         with:
@@ -38,18 +40,32 @@ jobs:
         run: |
           npm run build
           npm run build:desktop
+          npm run build:hosted
       - name: Install test browsers
         run: npx playwright install --with-deps chromium webkit
       - name: Desktop and iPhone-size WebKit tests
         run: |
           npm run test:e2e
           npm run test:desktop-ui
+          npm run test:hosted-ui
+      - name: Check owner-enabled Pages configuration
+        if: github.event_name != 'pull_request'
+        id: pages
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          enabled=$(gh api "repos/$GH_REPO" --jq '.has_pages')
+          printf 'enabled=%s\n' "$enabled" >> "$GITHUB_OUTPUT"
+          if [ "$enabled" != true ]; then
+            echo 'Pages deployment skipped: the repository owner has not enabled a Pages site. The hosted web build reads fresh data directly from the public GitHub files.' >> "$GITHUB_STEP_SUMMARY"
+          fi
       - uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa # v3
         if: github.event_name != 'pull_request'
         with:
           path: dist
   deploy:
-    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main' && needs.verify.outputs.pages_enabled == 'true'
     needs: verify
     runs-on: ubuntu-24.04
     timeout-minutes: 10

@@ -1,6 +1,6 @@
 // Native integrations are loaded only in the bundled desktop build.
 export const isDesktop = import.meta.env.MODE === "desktop";
-export const desktopDataURL =
+export const repositoryDataURL =
   "https://raw.githubusercontent.com/babakyaghoobii/Nil-configs-catcher/main/public/data/";
 
 export async function writeNativeClipboard(text: string): Promise<void> {
