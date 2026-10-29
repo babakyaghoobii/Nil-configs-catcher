@@ -2,6 +2,8 @@
 
 Conceived, coded, and built by **babakyaghoobii**. Free for everyone to use.
 
+Includes the original NIL branding supplied by babakyaghoobii, with matching web, iPhone, macOS and Linux icons.
+
 Native macOS application bundles and Linux AppImage/Debian packages, with the interface and an initial data snapshot included. These are native desktop applications, not browser shortcuts. Fresh public configuration data is read from this repository; cached data is labelled offline. VPN server connectivity is not tested.
 
 Choose `macos-arm64` for Apple Silicon or `macos-x64` for Intel. Linux `x64` targets Ubuntu 22.04-era glibc; Linux `arm64` targets Ubuntu 24.04-era glibc. The AppImage launcher uses extraction mode and does not require FUSE. System WebKit/GTK compatibility still depends on the distribution.

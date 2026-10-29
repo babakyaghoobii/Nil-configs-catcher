@@ -80,6 +80,15 @@ test("RTL, no horizontal overflow, all protocols, safe rendering and no CSP erro
   await fixture(page);
   await expect(page.locator("html")).toHaveAttribute("dir", "rtl");
   await expect(page.locator("html")).toHaveAttribute("lang", "fa");
+  await expect(page.locator("#creator-title")).toContainText("babakyaghoobii");
+  await expect(page.locator(".creator-english")).toContainText(
+    "Free for everyone to use",
+  );
+  await expect(page.locator(".creator-logo")).toBeVisible();
+  await expect(page.locator(".creator-logo")).toHaveJSProperty(
+    "naturalWidth",
+    640,
+  );
   await expect(page.locator(".config-card img")).toHaveCount(0);
   expect(
     await page.evaluate(
@@ -254,6 +263,10 @@ test.describe("real offline installation", () => {
         "icons/icon-192.png",
         "icons/icon-512.png",
         "icons/apple-touch-icon.png",
+        "icons/favicon-32.png",
+        "icons/maskable-512.png",
+        "branding/creator-logo-charcoal.png",
+        "branding/creator-logo.png",
         "sw.js",
       ]) {
         expect((await page.request.get(new URL(file, base).href)).ok()).toBe(
@@ -272,6 +285,10 @@ test.describe("real offline installation", () => {
         "آفلاین",
       );
       await expect(page.getByRole("alert")).toHaveCount(0);
+      await expect(page.locator(".creator-logo")).toHaveJSProperty(
+        "naturalWidth",
+        640,
+      );
     } finally {
       server.closeAllConnections();
       if (server.listening)

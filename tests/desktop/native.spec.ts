@@ -93,6 +93,11 @@ test("desktop has creator credits, fetches live data and exposes no PWA installa
   await page.goto("./");
   await expect(page.locator(".config-card")).toHaveCount(2);
   await expect(page.locator("#creator-title")).toContainText("babakyaghoobii");
+  await expect(page.locator(".creator-logo")).toBeVisible();
+  await expect(page.locator(".creator-logo")).toHaveJSProperty(
+    "naturalWidth",
+    640,
+  );
   await expect(page.locator(".creator-english")).toContainText(
     "Free for everyone",
   );

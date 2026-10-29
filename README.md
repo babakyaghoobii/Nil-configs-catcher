@@ -1,5 +1,7 @@
 # NIL Config Catcher · نیل
 
+<p align="center"><img src="public/branding/creator-logo-charcoal.png" alt="NIL — babakyaghoobii" width="240"></p>
+
 **ایده‌پردازی، برنامه‌نویسی و ساخت توسط babakyaghoobii — رایگان برای استفادهٔ عموم.**
 
 **Conceived, coded, and built by babakyaghoobii. Free for everyone to use.**
@@ -12,7 +14,7 @@ A mobile-first Persian RTL PWA that collects **up to 50 NEW unique, publicly sha
 
 نسخهٔ دسکتاپ یک برنامهٔ واقعی با رابطِ همراهِ خود برنامه است، نه میان‌بر مرورگر. در مک فایل `NIL Config Catcher.app` در **Applications** قرار می‌گیرد. در لینوکس فایل اجرایی، لانچر و ورودی منوی برنامه‌ها نصب می‌شود. برنامه با نام و نشان سازنده عرضه می‌شود و برای عموم رایگان است.
 
-بسته‌های آماده در [GitHub Releases](https://github.com/babakyaghoobii/Nil-configs-catcher/releases) منتشر می‌شوند. **دستورهای زیر فقط برای تگی کار می‌کنند که بسته‌هایش واقعاً در Releases منتشر شده باشند. وجود دستور، به‌تنهایی تأیید انتشار نیست.** تا قبل از انتشار، از ساخت از سورس یا خروجی آزمایشی Actions استفاده کنید. انتشار عمومی بدون دریافت لوگوی واقعی سازنده عمداً متوقف می‌شود.
+بسته‌های آماده در [GitHub Releases](https://github.com/babakyaghoobii/Nil-configs-catcher/releases) منتشر می‌شوند. **دستورهای زیر فقط برای تگی کار می‌کنند که بسته‌هایش واقعاً در Releases منتشر شده باشند. وجود دستور، به‌تنهایی تأیید انتشار نیست.** تا قبل از انتشار، از ساخت از سورس یا خروجی آزمایشی Actions استفاده کنید. لوگوی واقعیِ ارائه‌شده توسط سازنده در رابط، آیکون‌های وب و بسته‌های بومی استفاده می‌شود؛ [اصل چهار فایل](assets/branding/README.md) بدون تغییر در مخزن نگهداری می‌شود.
 
 ### macOS — Apple Silicon و Intel
 
@@ -124,7 +126,7 @@ node scripts/serve.mjs
 # http://localhost:4173/Nil-configs-catcher/
 ```
 
-PNG icons are committed. Optional regeneration: install Pillow in your development environment, then run `python3 scripts/generate-icons.py`. Pillow is not required for collection, testing, build or deployment.
+PNG and native icons are committed. Run `npm run icons` to regenerate all of them from the creator's supplied logo using the pinned Tauri CLI. No Pillow or external image service is required. Full-size originals remain in `assets/branding/`; only the smaller application assets are included in offline installation.
 
 ## Dashboard
 

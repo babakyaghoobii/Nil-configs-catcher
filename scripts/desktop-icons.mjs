@@ -3,14 +3,10 @@ import { readdir, rm } from "node:fs/promises";
 import { spawnSync } from "node:child_process";
 import { join } from "node:path";
 
-const candidate = [
-  "public/branding/creator-logo.png",
-  "public/branding/creator-logo.svg",
-].find(existsSync);
-const input = candidate || "public/icons/icon-512.png";
-if (!candidate)
-  console.log(
-    "Draft build: using the existing NIL icon until the creator supplies their logo.",
+const input = "public/icons/icon-512.png";
+if (!existsSync("assets/branding/nil-logo-charcoal.png") || !existsSync(input))
+  throw new Error(
+    "The supplied NIL logo is required. Run npm run icons first.",
   );
 const result = spawnSync(
   process.execPath,

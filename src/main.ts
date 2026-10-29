@@ -53,6 +53,8 @@ type Snapshot = {
   configs: Config[];
 };
 const repository = "https://github.com/babakyaghoobii/Nil-configs-catcher";
+const brandLogo = `${import.meta.env.BASE_URL}branding/creator-logo-charcoal.png`;
+const appIcon = `${import.meta.env.BASE_URL}icons/icon-192.png`;
 const protocols: Protocol[] = [
   "vless",
   "vmess",
@@ -147,16 +149,16 @@ const navItems: { view: View; label: string; icon: string }[] = [
 function shell() {
   app.innerHTML = `
     <aside class="sidebar" aria-label="ناوبری اصلی">
-      <a class="brand" href="#" data-view="dashboard" aria-label="نیل، داشبورد"><span class="brand-mark">N<span>↗</span></span><span class="brand-type" dir="ltr">NIL<span>CONFIG CATCHER</span></span></a>
+      <a class="brand" href="#" data-view="dashboard" aria-label="نیل، داشبورد"><img class="brand-image" src="${brandLogo}" alt="لوگوی NIL، ساختهٔ babakyaghoobii" width="196" height="112"/><span class="brand-caption" dir="ltr">NIL CONFIG CATCHER</span></a>
       <div class="workspace-label">فضای شخصی اتصال <span>V 1.0</span></div>
       <nav class="desktop-nav">${navItems.map((item) => `<button data-view="${item.view}" class="nav-item">${icon(item.icon)}<span>${item.label}</span>${item.view === "dashboard" ? '<span class="nav-dot"></span>' : ""}</button>`).join("")}</nav>
       <div class="sidebar-bottom"><div class="open-source-card"><span class="small-orange">${icon("github")}</span><h3>آزاد، مثل اینترنت.</h3><p>متن‌باز، شفاف و ساخته‌شده<br>برای دسترسی آسان‌تر.</p><a href="${repository}" target="_blank" rel="noopener noreferrer">مشاهده در گیت‌هاب ${icon("external")}</a></div><div class="sidebar-foot"><span class="tiny-dot"></span> عمومی و بدون حساب کاربری</div></div>
     </aside>
-    <div class="workspace"><header class="topbar"><div class="breadcrumb">نیل <span>/</span> <strong id="breadcrumb-name">داشبورد</strong></div><div class="topbar-actions"><span class="local-time">${icon("clock")} <span>${date(new Date().toISOString(), true)}</span></span><a class="icon-button github-link" href="${repository}" aria-label="ریپازیتوری گیت‌هاب" target="_blank" rel="noopener noreferrer">${icon("github")}</a><span class="avatar" aria-label="نیل">N</span></div></header>
+    <div class="workspace"><header class="topbar"><div class="breadcrumb"><img class="mobile-brand" src="${appIcon}" alt="" width="32" height="32"/>نیل <span>/</span> <strong id="breadcrumb-name">داشبورد</strong></div><div class="topbar-actions"><span class="local-time">${icon("clock")} <span>${date(new Date().toISOString(), true)}</span></span><a class="icon-button github-link" href="${repository}" aria-label="ریپازیتوری گیت‌هاب" target="_blank" rel="noopener noreferrer">${icon("github")}</a><img class="avatar" src="${appIcon}" alt="لوگوی نیل" width="32" height="32"/></div></header>
     <main id="main" tabindex="-1"></main><footer class="page-footer"><span><b dir="ltr">NIL.</b> اتصال ساده‌تر، اینترنت آزادتر.</span><span>تنها منابع عمومی <span class="footer-dot">·</span> بدون تست اتصال</span></footer></div>
     <nav class="mobile-nav" aria-label="ناوبری موبایل">${navItems.map((item) => `<button data-view="${item.view}" aria-label="${item.label}">${icon(item.icon)}<span>${item.label.replace(" دریافت", "")}</span></button>`).join("")}</nav>
     <div id="toast" class="toast" role="status" aria-live="polite"></div>
-    <dialog id="install-dialog" aria-labelledby="install-title"><button class="icon-button dialog-close" data-action="close-install" aria-label="بستن">${icon("close")}</button><span class="brand-mark">N<span>↗</span></span><h2 id="install-title">نیل، همیشه دم دست</h2><p>در Safari روی دکمهٔ اشتراک‌گذاری بزنید، سپس <b dir="ltr">Add to Home Screen</b> را انتخاب کنید.</p><p class="muted">در مرورگرهای دیگر، از گزینهٔ نصب برنامه در منوی مرورگر استفاده کنید. بعد از اولین بازدید، رابط و آخرین دادهٔ ذخیره‌شده آفلاین در دسترس‌اند.</p><button class="button primary" data-action="close-install">متوجه شدم ${icon("check")}</button></dialog>
+    <dialog id="install-dialog" aria-labelledby="install-title"><button class="icon-button dialog-close" data-action="close-install" aria-label="بستن">${icon("close")}</button><img class="brand-image install-brand-image" src="${brandLogo}" alt="لوگوی NIL" width="220" height="140"/><h2 id="install-title">نیل، همیشه دم دست</h2><p>در Safari روی دکمهٔ اشتراک‌گذاری بزنید، سپس <b dir="ltr">Add to Home Screen</b> را انتخاب کنید.</p><p class="muted">در مرورگرهای دیگر، از گزینهٔ نصب برنامه در منوی مرورگر استفاده کنید. بعد از اولین بازدید، رابط و آخرین دادهٔ ذخیره‌شده آفلاین در دسترس‌اند.</p><button class="button primary" data-action="close-install">متوجه شدم ${icon("check")}</button></dialog>
   `;
   render();
 }
@@ -180,9 +182,11 @@ function statusLabel(status = state.status): string {
 
 function creatorCredit(): string {
   return `<section class="creator-credit" aria-labelledby="creator-title">
-    <span class="creator-label">سازندهٔ این برنامه</span>
-    <h2 id="creator-title">ایده‌پردازی، برنامه‌نویسی و ساخت توسط <bdi>babakyaghoobii</bdi></h2>
-    <p class="creator-free">این برنامه برای استفادهٔ عموم، به‌رایگان در دسترس است.</p>
+    <img class="creator-logo" src="${brandLogo}" alt="لوگوی رسمی NIL متعلق به babakyaghoobii" width="220" height="142"/>
+    <div class="creator-copy"><span class="creator-label">سازندهٔ این برنامه</span>
+      <h2 id="creator-title">ایده‌پردازی، برنامه‌نویسی و ساخت توسط <bdi>babakyaghoobii</bdi></h2>
+      <p class="creator-free">این برنامه برای استفادهٔ عموم، به‌رایگان در دسترس است.</p>
+    </div>
     <p class="creator-english" lang="en" dir="ltr">Conceived, coded, and built by <strong>babakyaghoobii</strong>. Free for everyone to use.</p>
   </section>`;
 }

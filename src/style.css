@@ -101,49 +101,35 @@ p {
   flex-direction: column;
 }
 .brand {
-  display: flex;
-  gap: 13px;
-  align-items: center;
-  width: fit-content;
-}
-.brand-mark {
-  width: 49px;
-  height: 49px;
-  background: var(--orange);
-  color: #fff;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  font:
-    italic 900 31px Arial,
-    sans-serif;
-  border-radius: 13px;
-  position: relative;
-  box-shadow: 0 5px 14px #f25b2530;
+  display: block;
+  width: 100%;
+  text-align: center;
   direction: ltr;
-  flex-shrink: 0;
 }
-.brand-mark > span {
-  font-size: 14px;
-  position: absolute;
-  top: 1px;
-  right: 6px;
+.brand-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1.75;
+  object-fit: cover;
+  border-radius: 12px;
+  background: #141414;
 }
-.brand-type {
+.brand-caption {
+  display: block;
   font:
-    900 32px/0.95 Arial,
+    700 10px/1.5 Arial,
     sans-serif;
-  letter-spacing: -1.7px;
-  display: flex;
-  flex-direction: column;
-  gap: 9px;
+  letter-spacing: 1.5px;
+  margin-top: 12px;
 }
-.brand-type > span {
-  font:
-    600 8px/1 Arial,
-    sans-serif;
-  letter-spacing: 1.8px;
-  white-space: nowrap;
+.install-brand-image {
+  width: 220px;
+  max-width: 100%;
+  margin-inline: auto;
+}
+.mobile-brand {
+  display: none;
 }
 .workspace-label {
   display: flex;
@@ -302,15 +288,9 @@ p {
 .avatar {
   height: 31px;
   width: 31px;
-  background: var(--orange-pale);
-  color: var(--orange);
-  border-radius: 50%;
-  display: grid;
-  place-items: center;
-  font:
-    700 14px Arial,
-    sans-serif;
-  border: 3px solid white;
+  background: #141414;
+  border-radius: 8px;
+  object-fit: cover;
   box-shadow: 0 0 0 1px #eee;
 }
 .icon-button {
@@ -1589,22 +1569,9 @@ dialog .primary {
   .workspace {
     margin-right: 185px;
   }
-  .brand-mark {
-    width: 42px;
-    height: 42px;
-    border-radius: 11px;
-    font-size: 28px;
-  }
-  .brand-type {
-    font-size: 27px;
-    letter-spacing: -1px;
-  }
-  .brand-type > span {
-    font-size: 6px;
-    letter-spacing: 1.7px;
-  }
-  .brand {
-    gap: 10px;
+  .brand-caption {
+    font-size: 8px;
+    letter-spacing: 1px;
   }
   .nav-item {
     font-size: 12px;
@@ -1722,18 +1689,12 @@ dialog .primary {
     font-size: 11px;
     gap: 10px;
   }
-  .breadcrumb::before {
-    content: "N";
-    background: var(--orange);
-    width: 28px;
-    height: 28px;
-    color: #fff;
+  .mobile-brand {
+    display: block;
+    width: 32px;
+    height: 32px;
     border-radius: 8px;
-    display: grid;
-    place-items: center;
-    font:
-      italic 800 21px Arial,
-      sans-serif;
+    object-fit: cover;
     margin-left: 3px;
   }
   .breadcrumb {

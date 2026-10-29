@@ -14,6 +14,7 @@
     "desktop:dev": "tauri dev",
     "desktop:build": "tauri build",
     "desktop:icons": "node scripts/desktop-icons.mjs",
+    "icons": "node scripts/generate-icons.mjs && node scripts/desktop-icons.mjs",
     "test:installer": "python3 -m unittest discover -s tests -p 'test_installer.py' -v",
     "test:desktop-ui": "playwright test --config playwright.desktop.config.ts"
   },
