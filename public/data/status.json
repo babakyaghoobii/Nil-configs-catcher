@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
   "state": "success",
-  "startedAt": "2026-10-29T16:57:08Z",
-  "finishedAt": "2026-10-29T16:57:09Z",
-  "lastSuccessfulAt": "2026-10-29T16:57:08Z",
+  "startedAt": "2026-10-29T22:48:28Z",
+  "finishedAt": "2026-10-29T22:48:28Z",
+  "lastSuccessfulAt": "2026-10-29T22:48:28Z",
   "added": 50,
   "target": 50,
-  "totalUnique": 350,
-  "duplicateCount": 291,
-  "deferredUnique": 4269,
+  "totalUnique": 400,
+  "duplicateCount": 324,
+  "deferredUnique": 4236,
   "invalidCount": 13,
   "scheduleHours": 2,
   "snapshotLimit": 1000,
@@ -21,7 +21,7 @@
       "candidates": 4312,
       "valid": 4312,
       "invalid": 0,
-      "added": 24,
+      "added": 27,
       "error": null
     },
     {
@@ -29,10 +29,10 @@
       "name": "No More Walls",
       "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt",
       "status": "success",
-      "candidates": 415,
-      "valid": 402,
+      "candidates": 414,
+      "valid": 401,
       "invalid": 13,
-      "added": 26,
+      "added": 23,
       "error": null
     }
   ],
