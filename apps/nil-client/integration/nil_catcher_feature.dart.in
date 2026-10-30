@@ -1,0 +1,100 @@
+// NIL edition integration by babakyaghoobii. Host application/core attribution
+// and licensing remain in its About screen and upstream LICENSE.md.
+import 'dart:async';
+import 'package:flutter/foundation.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:hooks_riverpod/hooks_riverpod.dart';
+import 'package:hiddify/features/profile/data/profile_data_providers.dart';
+import 'package:hiddify/features/profile/model/profile_entity.dart';
+import 'nil_catcher_service.dart';
+
+class NilCatcherFeature extends ConsumerStatefulWidget {
+  const NilCatcherFeature({super.key});
+  @override
+  ConsumerState<NilCatcherFeature> createState() => _NilCatcherFeatureState();
+}
+
+class _NilCatcherFeatureState extends ConsumerState<NilCatcherFeature> with WidgetsBindingObserver {
+  final revision = ValueNotifier(0);
+  late final NilCatcherController controller;
+  @override
+  void initState() {
+    super.initState();
+    WidgetsBinding.instance.addObserver(this);
+    controller = NilCatcherController(
+      applySubscription: (url) async {
+        final repository = await ref.read(profileRepositoryProvider.future);
+        final result = await repository.upsertRemote(url.toString(), userOverride: const UserOverride(name: 'NIL · دریافت خودکار', isAutoUpdateDisable: false, updateInterval: 2)).run();
+        result.getOrElse((failure) => throw failure);
+      },
+      onChanged: () { if (mounted) { revision.value++; setState(() {}); } },
+    );
+    WidgetsBinding.instance.addPostFrameCallback((_) { if (mounted) { controller.start(); unawaited(refresh(false)); } });
+  }
+  Future<void> refresh(bool collect) async { try { await controller.synchronize(collect: collect); } catch (_) { /* Controller retains its last batch and an actionable error. */ } }
+  @override
+  void didChangeAppLifecycleState(AppLifecycleState state) {
+    if (state == AppLifecycleState.resumed) { controller.start(); unawaited(refresh(false)); }
+    else controller.pause();
+  }
+  @override
+  void dispose() { WidgetsBinding.instance.removeObserver(this); controller.dispose(); revision.dispose(); super.dispose(); }
+  @override
+  Widget build(BuildContext context) => Card(
+    child: ListTile(
+      leading: Image.asset('assets/nil/creator-logo.png', width: 48, height: 48, semanticLabel: 'NIL'),
+      title: const Text('NIL Config Catcher'),
+      subtitle: Text(controller.error ?? (controller.busy ? 'در حال دریافت کانفیگ…' : '${controller.batch?.totalUnique ?? 0} کانفیگ عمومی · همگام با فهرست اتصال')),
+      trailing: const Icon(Icons.chevron_left),
+      onTap: () => Navigator.of(context).push(MaterialPageRoute<void>(builder: (_) => NilCatcherPage(controller: controller, revision: revision))),
+    ),
+  );
+}
+
+class NilCatcherPage extends StatefulWidget {
+  const NilCatcherPage({super.key, required this.controller, required this.revision});
+  final NilCatcherController controller;
+  final ValueListenable<int> revision;
+  @override
+  State<NilCatcherPage> createState() => _NilCatcherPageState();
+}
+
+class _NilCatcherPageState extends State<NilCatcherPage> {
+  String protocol = 'all';
+  String search = '';
+  Future<void> collect() async { try { await widget.controller.synchronize(collect: true); } catch (_) { /* Message is shown below. */ } }
+  @override
+  Widget build(BuildContext context) => Directionality(
+    textDirection: TextDirection.rtl,
+    child: Scaffold(
+      appBar: AppBar(title: const Text('نیل · دریافت کانفیگ')),
+      body: ValueListenableBuilder<int>(valueListenable: widget.revision, builder: (context, _, __) {
+        final controller = widget.controller;
+        final rows = (controller.batch?.configs ?? []).where((row) => (protocol == 'all' || row['protocol'] == protocol) && '${row['name']} ${row['host']}'.toLowerCase().contains(search.toLowerCase())).toList();
+        return ListView(padding: const EdgeInsets.all(20), children: [
+          Image.asset('assets/nil/creator-logo.png', height: 140, semanticLabel: 'لوگوی رسمی NIL'),
+          const SizedBox(height: 14),
+          const Text('ایده‌پردازی و توسعهٔ نسخهٔ NIL توسط babakyaghoobii؛ رایگان برای استفادهٔ عموم.', textAlign: TextAlign.center),
+          const Text('NIL edition conceived and developed by babakyaghoobii. Free for everyone to use.', textDirection: TextDirection.ltr, textAlign: TextAlign.center),
+          const SizedBox(height: 20),
+          FilledButton.icon(onPressed: controller.busy ? null : collect, icon: const Icon(Icons.refresh), label: Text(controller.busy ? 'در حال دریافت…' : 'همین حالا کانفیگ تازه بگیر')),
+          if (controller.error != null) Padding(padding: const EdgeInsets.symmetric(vertical: 12), child: Text(controller.error!, style: TextStyle(color: Theme.of(context).colorScheme.error))),
+          const SizedBox(height: 14),
+          const Text('بعد از هر به‌روزرسانی موفق، اشتراک NIL در فهرست پروفایل‌های برنامه به‌روز می‌شود. پروفایل‌های شخصی در دستگاه می‌مانند.'),
+          TextField(onChanged: (value) => setState(() => search = value), decoration: const InputDecoration(labelText: 'جستجو', prefixIcon: Icon(Icons.search))),
+          const SizedBox(height: 14),
+          Wrap(spacing: 6, runSpacing: 6, children: ['all', ...nilProtocols].map((value) => ChoiceChip(label: Text(value == 'all' ? 'همه' : value.toUpperCase()), selected: protocol == value, onSelected: (_) => setState(() => protocol = value))).toList()),
+          const SizedBox(height: 14),
+          OutlinedButton.icon(icon: const Icon(Icons.link), label: const Text('کپی لینک اشتراک این پروتکل'), onPressed: () async {
+            final url = nilSubscription.replace(queryParameters: {...nilSubscription.queryParameters, 'protocol': protocol});
+            await Clipboard.setData(ClipboardData(text: url.toString()));
+            if (context.mounted) ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('لینک اشتراک کپی شد.')));
+          }),
+          Text('${rows.length} کانفیگ · فقط اعتبار قالب بررسی شده؛ سرعت و اتصال را خود کلاینت روی شبکهٔ دستگاه اندازه می‌گیرد.'),
+          ...rows.map((row) => Card(child: ListTile(title: Text('${row['name']}'), subtitle: Text('${row['protocol']} · ${row['host']}:${row['port']}', textDirection: TextDirection.ltr), trailing: IconButton(tooltip: 'کپی کانفیگ', icon: const Icon(Icons.copy), onPressed: () => Clipboard.setData(ClipboardData(text: row['uri'] as String)))))),
+        ]);
+      }),
+    ),
+  );
+}

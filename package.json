@@ -18,7 +18,9 @@
     "desktop:icons": "node scripts/desktop-icons.mjs",
     "icons": "node scripts/generate-icons.mjs && node scripts/desktop-icons.mjs",
     "test:installer": "python3 -m unittest discover -s tests -p 'test_installer.py' -v",
-    "test:desktop-ui": "playwright test --config playwright.desktop.config.ts"
+    "test:desktop-ui": "playwright test --config playwright.desktop.config.ts",
+    "test:service": "tsc -p service/tsconfig.json && node --experimental-strip-types --test service/tests/service.test.ts",
+    "package:runtime": "npm run build:hosted && python3 scripts/package-runtime.py"
   },
   "dependencies": {
     "@fontsource-variable/vazirmatn": "5.2.8",

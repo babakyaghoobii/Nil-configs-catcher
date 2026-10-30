@@ -54,6 +54,20 @@ const status = {
 };
 
 async function fixture(page: import("@playwright/test").Page) {
+  await page.route("**/api/data", (route) =>
+    route.fulfill({
+      json: {
+        snapshot: {
+          schemaVersion: 1,
+          generatedAt: now,
+          totalUnique: 6,
+          configs,
+        },
+        status,
+        history: [status],
+      },
+    }),
+  );
   await page.route("**/data/*.json", async (route) => {
     const file = new URL(route.request().url()).pathname.split("/").pop();
     await route.fulfill({
@@ -163,9 +177,9 @@ test("sources, history, and install instructions work", async ({ page }) => {
   await page.locator('[data-view="history"]:visible').first().click();
   await expect(page.locator(".history-item")).toHaveCount(1);
   await page.locator('[data-action="install"]').click();
-  await expect(page.locator("dialog")).toBeVisible();
+  await expect(page.locator("#install-dialog")).toBeVisible();
   await page.getByRole("button", { name: "متوجه شدم" }).click();
-  await expect(page.locator("dialog")).not.toBeVisible();
+  await expect(page.locator("#install-dialog")).not.toBeVisible();
 });
 
 test("native share receives the exact URI and cancelling is silent", async ({
@@ -203,6 +217,10 @@ test("failed refresh retains data and exposes an error instead of invented succe
 }) => {
   await fixture(page);
   await page.unroute("**/data/*.json");
+  await page.unroute("**/api/data");
+  await page.route("**/api/data", (route) =>
+    route.fulfill({ status: 503, body: "Unavailable" }),
+  );
   await page.route("**/data/*.json", (route) =>
     route.fulfill({ status: 503, body: "Unavailable" }),
   );

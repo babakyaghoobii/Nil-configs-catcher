@@ -1,5 +1,6 @@
 import { test, expect, type Page } from "@playwright/test";
 import { createPreviewServer } from "../../scripts/serve.mjs";
+import { createServer } from "node:http";
 
 const dataPattern =
   "https://raw.githubusercontent.com/babakyaghoobii/Nil-configs-catcher/main/public/data/*.json";
@@ -158,6 +159,55 @@ test("installed PWA reloads after the host stops and GitHub becomes unavailable"
       640,
     );
     await expect(page.getByRole("alert")).toHaveCount(0);
+  } finally {
+    server.closeAllConnections();
+    if (server.listening)
+      await new Promise<void>((resolve) => server.close(() => resolve()));
+  }
+});
+
+test("offline navigation works on hosts that redirect index.html to the root", async ({
+  page,
+}) => {
+  const files = createPreviewServer("dist-hosted", "/");
+  const server = createServer((request, response) => {
+    if (request.url === "/index.html") {
+      response.writeHead(302, { Location: "/" });
+      response.end();
+    } else files.emit("request", request, response);
+  });
+  await new Promise<void>((resolve) => server.listen(0, "127.0.0.1", resolve));
+  const base = `http://127.0.0.1:${(server.address() as { port: number }).port}/`;
+  try {
+    await liveData(page);
+    await page.goto(base);
+    await expect(page.locator(".config-card")).toHaveCount(1);
+    await page.evaluate(async () => {
+      await navigator.serviceWorker.ready;
+    });
+    await page.waitForFunction(() =>
+      Boolean(navigator.serviceWorker.controller),
+    );
+    const redirected = await page.evaluate(async () => {
+      const keys = await caches.keys();
+      const cache = await caches.open(
+        keys.find((key) => key.startsWith("nil-"))!,
+      );
+      return (await cache.match(new URL("index.html", location.href)))
+        ?.redirected;
+    });
+    expect(redirected).toBe(false);
+    await githubUnavailableAfterReload(page);
+    server.closeAllConnections();
+    await new Promise<void>((resolve, reject) =>
+      server.close((error) => (error ? reject(error) : resolve())),
+    );
+    await page.reload();
+    await expect(page.locator(".config-card")).toHaveCount(1);
+    await expect(page.locator(".creator-logo")).toHaveJSProperty(
+      "naturalWidth",
+      640,
+    );
   } finally {
     server.closeAllConnections();
     if (server.listening)

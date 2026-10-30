@@ -6,7 +6,11 @@
 
 **Conceived, coded, and built by babakyaghoobii. Free for everyone to use.**
 
-وب‌اپ: [NIL Config Catcher](https://nil-config-catcher-babakyaghoobii.juststone7.chatgpt.site) · [دانلود نسخه‌های مک و لینوکس](https://github.com/babakyaghoobii/Nil-configs-catcher/releases/tag/v1.0.0)
+وب‌اپ منتشرشدهٔ قبلی: [NIL Config Catcher](https://nil-config-catcher-babakyaghoobii.lovable.app) · [دانلود نسخه‌های مک و لینوکس v1.0.0](https://github.com/babakyaghoobii/Nil-configs-catcher/releases/tag/v1.0.0)
+
+در سورس نسخهٔ جدید: پوستهٔ اختصاصی NIL با حالت تاریک، روشن و خودکار؛ ساخت لینک اشتراک زنده با فیلتر پروتکل/منبع/جستجو؛ و جمع‌آوری واقعی با دکمهٔ «دریافت کانفیگ تازه». این قابلیت‌ها به سرویس [`service/`](service/README.md) وابسته‌اند و صرف وجود کد، تأیید انتشار نیست. آدرس سرویس پس از انتشار و آزمون در `deployment.json` ثبت می‌شود. بسته‌های منتشرشدهٔ v1.0.0 همان نسخهٔ قبلی کچر هستند.
+
+**کلاینت VPN اصلی NIL هنوز منتشر نشده است.** ماژول همگام‌سازی و قالب اتصال آن به کلاینت بومی در [`apps/nil-client`](apps/nil-client/README.md) قرار دارد. مجوز پایهٔ بررسی‌شده، fork واقعی را لازم می‌کند و ساخت آن با دسترسی فعلی GitHub خطای ۴۰۳ داده است؛ اقدام صاحب حساب برای ایجاد fork در انتظار است. کاربر فعلاً حساب Apple Developer ندارد، پس نصب نسخهٔ امضاشدهٔ VPN روی iOS نیز پیش‌نیاز تأمین‌نشده دارد. کانفیگ تازه به معنی پینگ پایین نیست؛ آن ادعا به آزمون واقعی روی دستگاه نیاز دارد.
 
 A mobile-first Persian RTL PWA that collects **up to 50 NEW unique, publicly shared VPN configuration URIs per run**. No fabricated entries, endpoint probing, remote code, paid APIs, or private subscriptions.
 
@@ -117,9 +121,10 @@ npm run dev
 
 ```bash
 npm test                  # Parsing, collection, retention and security tests
-npm run collect           # Actually fetch configured public source files
+npm run collect           # Standalone developer collection (not the production service registry)
+npm run test:service      # SQLite transactions, API boundaries and parser equivalence
 npm run build             # Typecheck, production assets and offline worker
-npm run build:hosted      # Public web host; reads fresh JSON directly from this GitHub repo
+npm run build:hosted      # Hosted PWA with live API and validated GitHub/offline fallbacks
 npx playwright install --with-deps chromium webkit
 npm run test:e2e           # Desktop Chromium + iPhone 16-size WebKit
 npm run test:hosted-ui     # Hosted web/PWA data, cache and real offline reload tests
@@ -141,8 +146,11 @@ PNG and native icons are committed. Run `npm run icons` to regenerate all of the
 - Copy the original URI, native sharing with clipboard fallback, and UTF-8 plain-text export of **all filtered results**, including those not yet rendered.
 - Browser-local bookmarks, source reports, last refresh outcome, a stale-data notice after 4.5 hours, and 120 recent run reports.
 - PWA manifest, Apple touch/maskable icons, Safari installation instructions, versioned local asset caching, and network-first data with explicit offline indicators.
+- Original NIL branding, charcoal/copper dark mode, warm light mode and automatic OS theme with persisted choice.
+- Live grouped subscription URLs with protocol/source/search filters, a custom title and plain/base64 output; clients read current retained records when the URL refreshes.
+- A separate immediate collection button calls `POST /api/collect`, accepts only actual returned new records and reports cooldowns or failure without replacing prior data.
 
-**Browser refresh downloads published JSON; it does not start collection or trigger Actions.** Installation happens through the browser. Bookmarks do not sync; a record outside the latest 1,000-record window disappears from the dashboard but remains in the repository archive.
+«خواندن آخرین داده» reads existing data; «دریافت کانفیگ تازه» starts actual service collection. Browser installation remains a PWA installation and cannot establish a VPN tunnel. Bookmarks do not sync; a record outside the bounded current snapshot disappears from the dashboard but remains in the permanent archive. [API details and deployment prerequisites](service/README.md).
 
 ## Configurable sources
 
@@ -173,7 +181,7 @@ Default public sources are files in `mahdibland/V2RayAggregator` and `peasoft/No
 5. Interleave sources and accept at most 50 IDs absent from the **permanent** seen registry. Excess new entries are deferred. A run with two new entries writes two; a run with none writes zero.
 6. Store UTC `firstSeenAt`, protocol and source provenance; append monthly archives, publish the newest 1,000 configs and retain 120 run reports. Git history retains earlier reports.
 
-Atomic local file replacements are committed together by a single scheduled writer. A total fetch failure preserves previous configs and the last successful timestamp, records failure and exits nonzero. Partial failures retain successful-source data and explicitly report `partial`. A successful zero-entry run is distinct from a failure.
+The Python standalone pipeline performs atomic local replacements. The deployed service uses one shared database registry and transaction leases for manual and scheduled collection, with a 60-second cooldown, a 30-second aggregate fetch budget, 12 MiB aggregate source limit and bounded rotating scan. Actions archives all records up to a fixed export checkpoint, including manual results, and commits atomic files together. A configured-service outage never launches an independent collector. Total failures preserve previous configs and success timestamps; partial failures and successful zero-entry runs are distinct.
 
 | Path | Purpose |
 | --- | --- |
@@ -183,6 +191,7 @@ Atomic local file replacements are committed together by a single scheduled writ
 | `public/data/configs.json` | Latest 1,000 records for the dashboard |
 | `public/data/status.json` | Actual latest outcome, counters, timestamps and source reports |
 | `public/data/history.json` | Latest 120 run reports |
+| `public/data/server-sync.json` | Last fully archived service dataset and cursor |
 
 Archives/registry grow over time; monitor repository size for long-running installations. Deleting the registry permits historical entries to be accepted again. Public VPN URIs include credentials **already published upstream**. Never add private subscriptions, API tokens, `.env` files, or personal credentials.
 
@@ -198,12 +207,12 @@ Choose **Settings → Pages → Build and deployment → Source → GitHub Actio
 
 The conventional destination is `https://babakyaghoobii.github.io/Nil-configs-catcher/`. **An expected address is not evidence of deployment.** Verify a successful deployment job and HTTP response before calling it live. See [actual Actions runs](https://github.com/babakyaghoobii/Nil-configs-catcher/actions).
 
-The public web host uses `npm run build:hosted` and the same interface and branding. It reads only `configs.json`, `status.json` and `history.json` from this repository's fixed HTTPS raw-data path, so scheduled GitHub collection updates the app without another web deployment. It retains PWA installation, caches validated browser data, and falls back to the bundled snapshot when GitHub is unavailable. Cached data is labelled offline; this mode has no native IPC permissions. GitHub remains the canonical source repository. No repository token or paid runtime API is required.
+The new public web host uses `npm run build:hosted`, the same NIL assets, and the own-origin service API. On service failure it reads the repository's three fixed HTTPS raw-data files, then validated browser cache or the bundled snapshot. These fallbacks do not claim a new collection. The hosting adapter requires a persistent D1 database; it receives its binding only on the server. No database credential or repository token is included in the browser or public source. The earlier published Lovable host has the earlier static build until explicitly replaced. A hosting provider's resource quota can limit service operation.
 
 ## Security and limits
 
 - Config endpoint addresses are never contacted, resolved, imported, evaluated or passed to a shell. The dashboard has no arbitrary URL fetch feature. Upstream content is parsed as data only.
-- Strict CSP, no CDN scripts/fonts, no analytics, escaped dynamic text, protocol-restricted data, restricted GitHub links and no embedded access token. The hosted and desktop builds permit the fixed GitHub raw-data origin; native IPC is permitted only in the desktop build. Clipboard/share failures are surfaced.
+- Strict CSP, no CDN scripts/fonts, no analytics, escaped dynamic text, protocol-restricted data, restricted GitHub links and no embedded access token. API requests use the own origin or the explicitly configured NIL service; hosted and desktop fallbacks permit the fixed GitHub raw-data origin. Native IPC is permitted only in the desktop build. Clipboard/share failures are surfaced.
 - Cached data is identified as offline; it is not claimed to be fresh. The service worker is scoped to this repository path.
 - Synthetic `example.com` fixtures are confined to test code. Published configs come only from actual source retrieval.
 - WebKit tests emulate iPhone 16 viewport/touch behavior; they do not replace physical-device checks of installation, clipboard permissions or native share sheets.
@@ -211,4 +220,4 @@ The public web host uses `npm run build:hosted` and the same interface and brand
 
 ## Layout
 
-`src/`: TypeScript UI. `collector/`: standard-library Python pipeline. `scripts/`: cache generation, optional icon generation and local preview. `tests/`: parsing, security boundaries, retention and browser flows. No paid service or third-party account is required at runtime.
+`src/`: TypeScript UI. `collector/`: standard-library Python pipeline and service archiver. `service/`: Worker API, strict parser and database migrations. `apps/nil-client/`: NIL-authored native subscription bridge and integration template. `scripts/`: cache generation, packaging, icons and local preview. `tests/`: parsing, security, archival and browser flows.

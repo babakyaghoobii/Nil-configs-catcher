@@ -1,7 +1,10 @@
 import "@fontsource-variable/vazirmatn";
 import "./style.css";
 import "./creator.css";
+import "./nil.css";
 import { icon } from "./icons";
+import { setTheme, themeChoice, type ThemeChoice } from "./theme";
+import { serviceData, subscriptionURL, ServiceError } from "./service";
 import {
   isDesktop,
   repositoryDataURL,
@@ -139,6 +142,7 @@ const state = {
   status: null as Status | null,
   history: [] as Status[],
   refreshing: false,
+  collecting: false,
 };
 let toastTimer: ReturnType<typeof setTimeout>;
 let refreshController: AbortController | null = null;
@@ -158,10 +162,24 @@ function shell() {
       <nav class="desktop-nav">${navItems.map((item) => `<button data-view="${item.view}" class="nav-item">${icon(item.icon)}<span>${item.label}</span>${item.view === "dashboard" ? '<span class="nav-dot"></span>' : ""}</button>`).join("")}</nav>
       <div class="sidebar-bottom"><div class="open-source-card"><span class="small-orange">${icon("github")}</span><h3>آزاد، مثل اینترنت.</h3><p>متن‌باز، شفاف و ساخته‌شده<br>برای دسترسی آسان‌تر.</p><a href="${repository}" target="_blank" rel="noopener noreferrer">مشاهده در گیت‌هاب ${icon("external")}</a></div><div class="sidebar-foot"><span class="tiny-dot"></span> عمومی و بدون حساب کاربری</div></div>
     </aside>
-    <div class="workspace"><header class="topbar"><div class="breadcrumb"><img class="mobile-brand" src="${appIcon}" alt="" width="32" height="32"/>نیل <span>/</span> <strong id="breadcrumb-name">داشبورد</strong></div><div class="topbar-actions"><span class="local-time">${icon("clock")} <span>${date(new Date().toISOString(), true)}</span></span><a class="icon-button github-link" href="${repository}" aria-label="ریپازیتوری گیت‌هاب" target="_blank" rel="noopener noreferrer">${icon("github")}</a><img class="avatar" src="${appIcon}" alt="لوگوی نیل" width="32" height="32"/></div></header>
+    <div class="workspace"><header class="topbar"><div class="breadcrumb"><img class="mobile-brand" src="${appIcon}" alt="" width="32" height="32"/>نیل <span>/</span> <strong id="breadcrumb-name">داشبورد</strong></div><div class="topbar-actions"><div class="theme-switch" role="group" aria-label="رنگ برنامه">${(
+      [
+        ["dark", "تیره", "moon"],
+        ["light", "روشن", "sun"],
+        ["auto", "خودکار", "monitor"],
+      ] as const
+    )
+      .map(
+        ([choice, label, image]) =>
+          `<button type="button" data-theme-choice="${choice}" data-action="theme" aria-label="پوستهٔ ${label}" aria-pressed="${themeChoice() === choice}" title="${label}">${icon(image)}<span>${label}</span></button>`,
+      )
+      .join(
+        "",
+      )}</div><span class="local-time">${icon("clock")} <span>${date(new Date().toISOString(), true)}</span></span><a class="icon-button github-link" href="${repository}" aria-label="ریپازیتوری گیت‌هاب" target="_blank" rel="noopener noreferrer">${icon("github")}</a><img class="avatar" src="${appIcon}" alt="لوگوی نیل" width="32" height="32"/></div></header>
     <main id="main" tabindex="-1"></main><footer class="page-footer"><span><b dir="ltr">NIL.</b> اتصال ساده‌تر، اینترنت آزادتر.</span><span>تنها منابع عمومی <span class="footer-dot">·</span> بدون تست اتصال</span></footer></div>
     <nav class="mobile-nav" aria-label="ناوبری موبایل">${navItems.map((item) => `<button data-view="${item.view}" aria-label="${item.label}">${icon(item.icon)}<span>${item.label.replace(" دریافت", "")}</span></button>`).join("")}</nav>
     <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <dialog id="subscription-dialog" aria-labelledby="subscription-title"><button class="icon-button dialog-close" data-action="close-subscription" aria-label="بستن">${icon("close")}</button><h2 id="subscription-title">مجموعهٔ نیل، در یک لینک</h2><p>کانفیگ‌های هم‌پروتکل یا هم‌منبع را یک‌جا اضافه کن. این اشتراک با هر دریافت جدید، به‌روز می‌شود.</p><div class="subscription-options"><label>نام مجموعه <input id="subscription-name" maxlength="80" value="NIL — مجموعهٔ نیل" /></label><label>پروتکل <select id="subscription-protocol"><option value="all">همهٔ پروتکل‌ها</option>${protocols.map((protocol) => `<option value="${protocol}">${protocolLabels[protocol]}</option>`).join("")}</select></label><label>منبع <select id="subscription-source"><option value="all">همهٔ منابع</option></select></label><label>جستجو <input id="subscription-search" maxlength="200" placeholder="نام یا سرور؛ اختیاری" /></label><label>قالب <select id="subscription-format"><option value="base64">Base64 — مناسب کلاینت‌های اشتراک</option><option value="plain">فهرست متنی URI</option></select></label></div><label for="subscription-link">لینک اشتراک</label><input id="subscription-link" class="subscription-link" dir="ltr" readonly /><p class="muted">این لینک شامل کانفیگ‌های عمومی است؛ کانفیگ شخصی به سرور فرستاده نمی‌شود.</p><div class="dialog-actions"><button class="button primary" data-action="copy-subscription">${icon("copy")} کپی لینک اشتراک</button><button class="button secondary" data-action="close-subscription">بستن</button></div></dialog>
     <dialog id="install-dialog" aria-labelledby="install-title"><button class="icon-button dialog-close" data-action="close-install" aria-label="بستن">${icon("close")}</button><img class="brand-image install-brand-image" src="${brandLogo}" alt="لوگوی NIL" width="220" height="140"/><h2 id="install-title">نیل، همیشه دم دست</h2><p>در Safari روی دکمهٔ اشتراک‌گذاری بزنید، سپس <b dir="ltr">Add to Home Screen</b> را انتخاب کنید.</p><p class="muted">در مرورگرهای دیگر، از گزینهٔ نصب برنامه در منوی مرورگر استفاده کنید. بعد از اولین بازدید، رابط و آخرین دادهٔ ذخیره‌شده آفلاین در دسترس‌اند.</p><button class="button primary" data-action="close-install">متوجه شدم ${icon("check")}</button></dialog>
   `;
   render();
@@ -223,11 +241,11 @@ function dashboard() {
   const sourceCount = status?.sources.length || 0;
   return `<section class="hero" aria-labelledby="hero-title"><div class="hero-content"><span class="hero-pill"><span></span> جمع‌آوری خودکار، هر ۲ ساعت</span><h2 id="hero-title">اینترنت،<br>بدون بن‌بست<span class="orange">.</span></h2><p>تا ۵۰ کانفیگ جدید در هر نوبت، از منابع عمومی گیت‌هاب.<br>بدون تکرار. بدون کانفیگ ساختگی.</p><a class="hero-cta" href="#catalog">کاوش کانفیگ‌ها ${icon("arrow")}</a></div><div class="hero-art" aria-hidden="true"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="orbit orbit-three"></div><span class="orbit-dot orbit-dot-one"></span><span class="orbit-dot orbit-dot-two"></span><div class="signal-tile">${icon("bolt")}</div><span class="art-label art-label-top">OPEN INTERNET</span><span class="art-label art-label-bottom">FIND YOUR NEXT CONNECTION ↗</span><span class="art-coordinate">35°41′ N / 51°25′ E</span></div></section>
     <section class="stats-grid" aria-label="آمار جمع‌آوری"><article class="stat-card"><div class="stat-icon orange-soft">${icon("layers")}</div><div><span>کل کانفیگ‌های آرشیو</span><strong>${state.loading ? "—" : number(status?.totalUnique || 0)}<small>کانفیگ یکتا</small></strong></div><span class="stat-trend">بدون تکرار ${icon("check")}</span></article><article class="stat-card"><div class="stat-icon green-soft">${icon("bolt")}</div><div><span>جدید در آخرین اجرا</span><strong>${state.loading ? "—" : number(status?.added || 0)}<small>از حداکثر ${number(status?.target || 50)}</small></strong></div><span class="stat-label">فقط دادهٔ واقعی</span></article><article class="stat-card"><div class="stat-icon purple-soft">${icon("globe")}</div><div><span>منابع آخرین اجرا</span><strong>${state.loading ? "—" : number(sourceCount)}<small>منبع عمومی</small></strong></div><button class="stat-link" data-view="sources" aria-label="مشاهده منابع">${icon("arrow")}</button></article></section>
-    <section class="refresh-strip" aria-label="وضعیت آخرین دریافت"><div><span class="status-dot ${status?.state === "success" && !isStale() ? "green" : "amber"}"></span><strong>${state.loading ? "در حال دریافت داده…" : statusLabel()}</strong><span class="strip-divider"></span><span>آخرین اجرا: <b>${date(status?.startedAt || null)}</b></span></div><button class="text-button ${state.refreshing ? "is-refreshing" : ""}" data-action="refresh" ${state.refreshing ? "disabled" : ""}>${icon("refresh")} دریافت آخرین داده</button></section>${catalog()}`;
+    <section class="refresh-strip" aria-label="وضعیت آخرین دریافت"><div><span class="status-dot ${status?.state === "success" && !isStale() ? "green" : "amber"}"></span><strong>${state.loading ? "در حال دریافت داده…" : statusLabel()}</strong><span class="strip-divider"></span><span>آخرین اجرا: <b>${date(status?.startedAt || null)}</b></span></div><button class="text-button ${state.refreshing ? "is-refreshing" : ""}" data-action="refresh" ${state.refreshing ? "disabled" : ""}>${icon("refresh")} خواندن آخرین داده</button><button class="button primary" data-action="collect-now" ${state.collecting ? "disabled" : ""}>${icon("bolt")} ${state.collecting ? "در حال جمع‌آوری تازه…" : "همین حالا کانفیگ تازه بگیر"}</button></section>${catalog()}`;
 }
 
 function catalog() {
-  return `<section id="catalog" class="catalog"><div class="section-heading"><div><h2>${state.view === "saved" ? "کانفیگ‌های نشان‌شده" : "کاوش کانفیگ‌ها"} <span class="count-badge" id="result-total">۰</span></h2><p>فقط قالب بررسی شده است؛ اتصال و سرعت تضمین نمی‌شود.</p></div><button class="button secondary export-button" data-action="export">${icon("download")} خروجی اشتراک</button></div><div class="filter-toolbar"><div class="search-field">${icon("search")}<input id="search" type="search" autocomplete="off" maxlength="200" placeholder="جستجوی نام، سرور یا منبع…" aria-label="جستجوی کانفیگ" value="${escape(state.query)}"/><kbd>⌘ K</kbd></div><label class="sort-field">${icon("layers")}<span class="sr-only">مرتب‌سازی</span><select id="sort" aria-label="مرتب‌سازی"><option value="newest" ${state.sort === "newest" ? "selected" : ""}>جدیدترین اول</option><option value="oldest" ${state.sort === "oldest" ? "selected" : ""}>قدیمی‌ترین اول</option><option value="name" ${state.sort === "name" ? "selected" : ""}>بر اساس نام</option></select></label></div><div class="protocol-tabs" role="group" aria-label="فیلتر پروتکل"><button class="protocol-tab ${state.protocol === "all" ? "selected" : ""}" data-protocol="all" aria-pressed="${state.protocol === "all"}">همه پروتکل‌ها <span>${number(baseConfigs().length)}</span></button>${protocols.map((protocol) => `<button class="protocol-tab ${state.protocol === protocol ? "selected" : ""}" data-protocol="${protocol}" aria-pressed="${state.protocol === protocol}"><i class="protocol-dot ${protocol}"></i><b dir="ltr">${protocolLabels[protocol]}</b><span>${number(baseConfigs().filter((item) => item.protocol === protocol).length)}</span></button>`).join("")}</div><div class="list-meta"><span id="list-description" role="status" aria-live="polite"></span><span>${icon("shield")} اعتبارسنجی ساختاری</span></div><div id="config-list" class="config-grid" aria-busy="${state.loading}"></div><div id="load-more"></div><div class="catalog-note">${icon("info")} این فهرست شامل حداکثر ${number(state.status?.snapshotLimit || 1000)} کانفیگ اخیر است. <a href="${repository}/tree/main/data/archive" target="_blank" rel="noopener noreferrer">آرشیو کامل در گیت‌هاب ${icon("external")}</a></div></section>`;
+  return `<section id="catalog" class="catalog"><div class="section-heading"><div><h2>${state.view === "saved" ? "کانفیگ‌های نشان‌شده" : "کاوش کانفیگ‌ها"} <span class="count-badge" id="result-total">۰</span></h2><p>فقط قالب بررسی شده است؛ اتصال و سرعت تضمین نمی‌شود.</p></div><div class="heading-actions"><button class="button secondary export-button" data-action="export">${icon("download")} خروجی اشتراک</button><button class="button primary" data-action="subscription">${icon("link")} ساخت لینک اشتراک</button></div></div><div class="filter-toolbar"><div class="search-field">${icon("search")}<input id="search" type="search" autocomplete="off" maxlength="200" placeholder="جستجوی نام، سرور یا منبع…" aria-label="جستجوی کانفیگ" value="${escape(state.query)}"/><kbd>⌘ K</kbd></div><label class="sort-field">${icon("layers")}<span class="sr-only">مرتب‌سازی</span><select id="sort" aria-label="مرتب‌سازی"><option value="newest" ${state.sort === "newest" ? "selected" : ""}>جدیدترین اول</option><option value="oldest" ${state.sort === "oldest" ? "selected" : ""}>قدیمی‌ترین اول</option><option value="name" ${state.sort === "name" ? "selected" : ""}>بر اساس نام</option></select></label></div><div class="protocol-tabs" role="group" aria-label="فیلتر پروتکل"><button class="protocol-tab ${state.protocol === "all" ? "selected" : ""}" data-protocol="all" aria-pressed="${state.protocol === "all"}">همه پروتکل‌ها <span>${number(baseConfigs().length)}</span></button>${protocols.map((protocol) => `<button class="protocol-tab ${state.protocol === protocol ? "selected" : ""}" data-protocol="${protocol}" aria-pressed="${state.protocol === protocol}"><i class="protocol-dot ${protocol}"></i><b dir="ltr">${protocolLabels[protocol]}</b><span>${number(baseConfigs().filter((item) => item.protocol === protocol).length)}</span></button>`).join("")}</div><div class="list-meta"><span id="list-description" role="status" aria-live="polite"></span><span>${icon("shield")} اعتبارسنجی ساختاری</span></div><div id="config-list" class="config-grid" aria-busy="${state.loading}"></div><div id="load-more"></div><div class="catalog-note">${icon("info")} این فهرست شامل حداکثر ${number(state.status?.snapshotLimit || 1000)} کانفیگ اخیر است. <a href="${repository}/tree/main/data/archive" target="_blank" rel="noopener noreferrer">آرشیو کامل در گیت‌هاب ${icon("external")}</a></div></section>`;
 }
 function baseConfigs() {
   return (state.snapshot?.configs || []).filter(
@@ -413,15 +431,22 @@ async function refresh() {
   try {
     let data;
     try {
-      data = await fetchDataBatch(
-        usesRepositoryData
-          ? repositoryDataURL
-          : `${import.meta.env.BASE_URL}data/`,
-        controller.signal,
-      );
-    } catch (error) {
-      if (!usesRepositoryData || state.snapshot) throw error;
-      data = await repositoryOfflineData();
+      data = {
+        ...validateDataBatch(await serviceData(false, controller.signal)),
+        offline: false,
+      };
+    } catch {
+      try {
+        data = await fetchDataBatch(
+          usesRepositoryData
+            ? repositoryDataURL
+            : `${import.meta.env.BASE_URL}data/`,
+          controller.signal,
+        );
+      } catch (error) {
+        if (!usesRepositoryData || state.snapshot) throw error;
+        data = await repositoryOfflineData();
+      }
     }
     const { snapshot, status, history } = data;
     state.snapshot = snapshot;
@@ -500,6 +525,96 @@ async function exportConfigs() {
   toast(`خروجی ${number(configs.length)} کانفیگ آماده شد`);
 }
 
+function updateSubscriptionLink() {
+  const value = (id: string) =>
+    document.querySelector<HTMLInputElement | HTMLSelectElement>(`#${id}`)!
+      .value;
+  const output =
+    document.querySelector<HTMLInputElement>("#subscription-link")!;
+  try {
+    output.value = subscriptionURL(
+      value("subscription-protocol"),
+      value("subscription-source"),
+      value("subscription-search"),
+      value("subscription-format"),
+      value("subscription-name"),
+    );
+  } catch {
+    output.value = "";
+  }
+}
+
+function openSubscription() {
+  document.querySelector<HTMLSelectElement>("#subscription-protocol")!.value =
+    state.protocol;
+  const source = document.querySelector<HTMLSelectElement>(
+    "#subscription-source",
+  )!;
+  source.innerHTML =
+    '<option value="all">همهٔ منابع</option>' +
+    (state.status?.sources || [])
+      .filter((item) => /^[A-Za-z0-9_-]{1,100}$/.test(item.id))
+      .map(
+        (item) =>
+          `<option value="${escape(item.id)}">${escape(item.name)}</option>`,
+      )
+      .join("");
+  document.querySelector<HTMLInputElement>("#subscription-search")!.value =
+    state.query;
+  updateSubscriptionLink();
+  document
+    .querySelector<HTMLDialogElement>("#subscription-dialog")!
+    .showModal();
+}
+
+async function collectNow() {
+  if (state.collecting || state.refreshing) return;
+  state.collecting = true;
+  state.error = "";
+  render();
+  try {
+    const data = validateDataBatch(await serviceData(true));
+    state.snapshot = data.snapshot;
+    state.status = data.status;
+    state.history = data.history;
+    state.offlineCache = false;
+    state.loading = false;
+    try {
+      localStorage.setItem(
+        repositoryCacheKey,
+        JSON.stringify([data.snapshot, data.status, data.history]),
+      );
+    } catch {
+      /* Current results remain usable. */
+    }
+    if (data.status.state === "failed")
+      state.error =
+        "جمع‌آوری تازه موفق نشد؛ داده‌های قبلی حفظ شده‌اند. گزارش منابع را بررسی کن.";
+    else
+      toast(
+        data.status.added
+          ? `${number(data.status.added)} کانفیگ تازه دریافت شد؛ اشتراک‌ها به‌روز شدند.`
+          : "جمع‌آوری انجام شد؛ کانفیگ تازهٔ یکتایی پیدا نشد.",
+      );
+    window.dispatchEvent(
+      new CustomEvent("nil-data-updated", {
+        detail: {
+          lastSuccessfulAt: data.status.lastSuccessfulAt,
+          added: data.status.added,
+        },
+      }),
+    );
+  } catch (error) {
+    state.error =
+      error instanceof ServiceError && error.status === 429
+        ? `یک دریافت دیگر در حال انجام است؛ ${number(error.retryAfter || 60)} ثانیهٔ دیگر دوباره تلاش کن.`
+        : "دریافت فوری از سرور انجام نشد؛ کانفیگ‌های فعلی حفظ شده‌اند. دوباره تلاش کن.";
+  } finally {
+    state.collecting = false;
+    render();
+  }
+}
+
 app.addEventListener("click", async (event) => {
   const anchor = (event.target as Element).closest<HTMLAnchorElement>(
     "a[href]",
@@ -535,6 +650,36 @@ app.addEventListener("click", async (event) => {
     return;
   }
   const action = button.dataset.action;
+  if (action === "theme") {
+    const choice = button.dataset.themeChoice;
+    if (choice === "light" || choice === "dark" || choice === "auto")
+      setTheme(choice as ThemeChoice);
+    return;
+  }
+  if (action === "collect-now") {
+    await collectNow();
+    return;
+  }
+  if (action === "subscription") {
+    openSubscription();
+    return;
+  }
+  if (action === "close-subscription") {
+    document.querySelector<HTMLDialogElement>("#subscription-dialog")!.close();
+    return;
+  }
+  if (action === "copy-subscription") {
+    const link =
+      document.querySelector<HTMLInputElement>("#subscription-link")!.value;
+    if (!link) return;
+    try {
+      await copy(link);
+      toast("لینک اشتراک کپی شد؛ در کلاینت اضافه کن.");
+    } catch {
+      toast("کپی انجام نشد؛ لینک را انتخاب و کپی کن.");
+    }
+    return;
+  }
   if (action === "refresh") {
     await refresh();
     return;
@@ -600,6 +745,10 @@ app.addEventListener("click", async (event) => {
   }
 });
 app.addEventListener("input", (event) => {
+  if ((event.target as Element).closest("#subscription-dialog")) {
+    updateSubscriptionLink();
+    return;
+  }
   if ((event.target as HTMLElement).id === "search") {
     state.query = (event.target as HTMLInputElement).value;
     visibleLimit = 24;
@@ -607,6 +756,10 @@ app.addEventListener("input", (event) => {
   }
 });
 app.addEventListener("change", (event) => {
+  if ((event.target as Element).closest("#subscription-dialog")) {
+    updateSubscriptionLink();
+    return;
+  }
   if ((event.target as HTMLElement).id === "sort") {
     state.sort = (event.target as HTMLSelectElement).value;
     renderResults();
@@ -626,6 +779,16 @@ window.addEventListener("online", () => {
 });
 shell();
 void refresh();
+setInterval(() => {
+  if (
+    !document.hidden &&
+    !state.refreshing &&
+    !state.collecting &&
+    !(document.activeElement instanceof HTMLInputElement) &&
+    !(document.activeElement instanceof HTMLSelectElement)
+  )
+    void refresh();
+}, 120000);
 if (!isDesktop && "serviceWorker" in navigator && import.meta.env.PROD) {
   window.addEventListener("load", () => {
     navigator.serviceWorker

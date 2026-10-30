@@ -1,0 +1,6 @@
+name: nil_catcher_bridge
+description: NIL public-config synchronization bridge by babakyaghoobii.
+version: 0.1.0
+publish_to: none
+environment:
+  sdk: '>=3.10.4 <4.0.0'

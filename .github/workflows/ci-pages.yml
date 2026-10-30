@@ -35,7 +35,9 @@ jobs:
           python-version: "3.12"
       - run: npm ci --ignore-scripts
       - name: Test collector and security boundaries
-        run: npm test
+        run: |
+          npm test
+          npm run test:service
       - name: Typecheck and production build
         run: |
           npm run build
@@ -64,6 +66,26 @@ jobs:
         if: github.event_name != 'pull_request'
         with:
           path: dist
+  native-bridge:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          ref: ${{ inputs.ref || github.sha }}
+          persist-credentials: false
+      - name: Download and verify the pinned official Dart SDK
+        run: |
+          curl --fail --silent --show-error --proto '=https' --tlsv1.2 'https://storage.googleapis.com/dart-archive/channels/stable/release/3.10.4/sdk/dartsdk-linux-x64-release.zip' -o "$RUNNER_TEMP/nil-dart.zip"
+          printf '%s  %s\n' '60a9a34eb1165d331d776dc89fb4fd43b9d8bdaf2ca137c1fdcf98d6c89abeec' "$RUNNER_TEMP/nil-dart.zip" | sha256sum --check --strict
+          unzip -q "$RUNNER_TEMP/nil-dart.zip" -d "$RUNNER_TEMP/nil-dart"
+          echo "$RUNNER_TEMP/nil-dart/dart-sdk/bin" >> "$GITHUB_PATH"
+      - name: Analyze and test the NIL subscription bridge
+        working-directory: apps/nil-client
+        run: |
+          dart --suppress-analytics format --output=none --set-exit-if-changed lib test
+          dart --suppress-analytics analyze lib test
+          dart test/bridge_test.dart
   deploy:
     if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main' && needs.verify.outputs.pages_enabled == 'true'
     needs: verify
