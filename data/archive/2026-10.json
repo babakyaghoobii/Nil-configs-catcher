@@ -9778,5 +9778,850 @@
         "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
       }
     ]
+  },
+  {
+    "id": "a375ce53d72f5901222e1c0b37a5b06500eea5631e7ac553cfe5e04e9ed9ee88",
+    "uri": "vless://ca14493b-b984-4ffb-bc0e-9cb5da969e15@178.236.245.59:443?sni=tau1.freerunet.online&flow=xtls-rprx-vision&fp=firefox&security=tls#%F0%9F%87%A6%F0%9F%87%B9%5Bwww.v2nodes.com%5D%20vless-AT-1...%20%231",
+    "protocol": "vless",
+    "name": "🇦🇹[www.v2nodes.com] vless-AT-1... #1",
+    "host": "178.236.245.59",
+    "port": 443,
+    "firstSeenAt": "2026-10-31T05:51:39Z",
+    "sources": [
+      {
+        "id": "no-more-walls",
+        "name": "No More Walls",
+        "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+      }
+    ]
+  },
+  {
+    "id": "5e345af447091f3bde8fb5b600f837d622447416d86b894e41460252d823afe5",
+    "uri": "ss://YWVzLTI1Ni1nY206cU12Sm1DYk1kdUtVb2VIcQ==@66.245.207.70:8388#%F0%9F%87%AE%F0%9F%87%B9IT-66.245.207.70-2482",
+    "protocol": "ss",
+    "name": "🇮🇹IT-66.245.207.70-2482",
+    "host": "66.245.207.70",
+    "port": 8388,
+    "firstSeenAt": "2026-10-31T05:51:39Z",
+    "sources": [
+      {
+        "id": "v2ray-aggregator",
+        "name": "V2Ray Aggregator",
+        "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+      },
+      {
+        "id": "no-more-walls",
+        "name": "No More Walls",
+        "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+      }
+    ]
+  },
+  {
+    "id": "8a17321f6814ca41ac48fadb03d905944dd872b8085af368172caa5c716eb8c7",
+    "uri": "vless://a1de0630-5786-48a0-84f6-dc6f2de10d6d@203.202.232.110:443?sni=vlso5.1d.mom&type=ws&host=vlso5.1d.mom&path=/socks5=888:888@hkip.1d.mom:1080fp=chromefp=chromesecurity=tls#%F0%9F%87%A7%F0%9F%87%AC%5Bwww.v2nodes.com%5D%20vless-BG-3...%20%234",
+    "protocol": "vless",
+    "name": "🇧🇬[www.v2nodes.com] vless-BG-3... #4",
+    "host": "203.202.232.110",
+    "port": 443,
+    "firstSeenAt": "2026-10-31T05:51:39Z",
+    "sources": [
+      {
+        "id": "no-more-walls",
+        "name": "No More Walls",
+        "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+      }
+    ]
+  },
+  {
+    "id": "81b858f88d01d78b4c39948d7cb393d6b030ef7d4883423ac9988114124f8194",
+    "uri": "vless://1af36694-b548-4b18-89a0-bc076eab4ed7@178.172.227.124:14430?sni=178.172.227.124&type=ws&host=178.172.227.124&path=/vless#%F0%9F%87%A7%F0%9F%87%BE%5Bwww.v2nodes.com%5D%20vless-BY-1...%20%231",
+    "protocol": "vless",
+    "name": "🇧🇾[www.v2nodes.com] vless-BY-1... #1",
+    "host": "178.172.227.124",
+    "port": 14430,
+    "firstSeenAt": "2026-10-31T05:51:39Z",
+    "sources": [
+      {
+        "id": "no-more-walls",
+        "name": "No More Walls",
+        "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+      }
+    ]
+  },
+  {
+    "id": "b368b5f4cb0236e32ea1add6cbb5f0de9cf2eddac56802c9e99dcb55ca869281",
+    "uri": "vless://13bf9403-22d1-4221-939b-f6606c423139@66.163.113.238:443?sni=steamcommunity.com&flow=xtls-rprx-vision&fp=chrome&security=tls#%F0%9F%87%A8%F0%9F%87%A6%5Bwww.v2nodes.com%5D%20vless-CA-1...",
+    "protocol": "vless",
+    "name": "🇨🇦[www.v2nodes.com] vless-CA-1...",
+    "host": "66.163.113.238",
+    "port": 443,
+    "firstSeenAt": "2026-10-31T05:51:39Z",
+    "sources": [
+      {
+        "id": "no-more-walls",
+        "name": "No More Walls",
+        "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+      }
+    ]
+  },
+  {
+    "id": "5629de166f02115f4fba1cff60cd75415db19f76085efd91827e05875205841c",
+    "uri": "vless://6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8@178.83.45.226:8080?#%F0%9F%87%A8%F0%9F%87%A6%5Bwww.v2nodes.com%5D%20vless-CA-1...%20%234",
+    "protocol": "vless",
+    "name": "🇨🇦[www.v2nodes.com] vless-CA-1... #4",
+    "host": "178.83.45.226",
+    "port": 8080,
+    "firstSeenAt": "2026-10-31T05:51:39Z",
+    "sources": [
+      {
+        "id": "no-more-walls",
+        "name": "No More Walls",
+        "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+      }
+    ]
+  },
+  {
+    "id": "bbd109ff4915ea7ecc7b2d11a1824c37d46d7b0a715f130c13f70bd4bcb57644",
+    "uri": "vless://d342d11e-d224-4463-b982-532309285094@104.18.45.38:443?allowInsecure=0&sni=ccc.010304.xyz&type=ws&host=ccc.010304.xyz&path=/?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2560fp=unsafe&security=tls#%F0%9F%87%B8%F0%9F%87%AC%5Bwww.v2nodes.com%5D%20vless-SG",
+    "protocol": "vless",
+    "name": "🇸🇬[www.v2nodes.com] vless-SG",
+    "host": "104.18.45.38",
+    "port": 443,
+    "firstSeenAt": "2026-10-31T05:51:39Z",
+    "sources": [
+      {
+        "id": "no-more-walls",
+        "name": "No More Walls",
+        "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+      }
+    ]
+  },
+  {
+    "id": "92eaf4f819b2dd75217443d7b1e148c77979ac614413608cfaf9bdf87a784334",
+    "uri": "vless://4bde8d55-d91c-45e9-9b36-e6448a194527@188.114.97.6:443?allowInsecure=0&sni=dfsuporte.garena.com.ex33r.eu.cc&type=ws&host=dfsuporte.garena.com.ex33r.eu.cc&path=/sg-amzsecurity=tls#%F0%9F%87%B8%F0%9F%87%AC%5Bwww.v2nodes.com%5D%20vless-SG%20%231",
+    "protocol": "vless",
+    "name": "🇸🇬[www.v2nodes.com] vless-SG #1",
+    "host": "188.114.97.6",
+    "port": 443,
+    "firstSeenAt": "2026-10-31T05:51:39Z",
+    "sources": [
+      {
+        "id": "no-more-walls",
+        "name": "No More Walls",
+        "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+      }
+    ]
+  },
+  {
+    "id": "da6a4eac1aba9c30857bf8d4091fa92ab493bb632c0e25170e835b6e4347e9dc",
+    "uri": "trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@66.163.112.13:443?security=tls&sni=blog.unlockyourfuturefindyourperfectcareer.com#%F0%9F%87%BA%F0%9F%87%B8US-66.163.112.13-0513",
+    "protocol": "trojan",
+    "name": "🇺🇸US-66.163.112.13-0513",
+    "host": "66.163.112.13",
+    "port": 443,
+    "firstSeenAt": "2026-10-31T05:51:39Z",
+    "sources": [
+      {
+        "id": "v2ray-aggregator",
+        "name": "V2Ray Aggregator",
+        "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+      }
+    ]
+  },
+  {
+    "id": "69a4b93bce517f4683339737397ed24e8176c8b206464136d920dd4140b9027c",
+    "uri": "trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@66.163.112.121:443?security=tls&sni=www.unlockyourfuturefindyourperfectcareer.com#%F0%9F%87%BA%F0%9F%87%B8US-66.163.112.121-0511",
+    "protocol": "trojan",
+    "name": "🇺🇸US-66.163.112.121-0511",
+    "host": "66.163.112.121",
+    "port": 443,
+    "firstSeenAt": "2026-10-31T05:51:39Z",
+    "sources": [
+      {
+        "id": "v2ray-aggregator",
+        "name": "V2Ray Aggregator",
+        "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+      }
+    ]
+  },
+  {
+    "id": "ae915ef4b8557fd294d1af0e3a72135e843735288a1d5b0b5118d3083874b9c4",
+    "uri": "vless://6202b230-417c-4d8e-b624-0f71afa9c75d@135.84.72.30:8880?type=ws&host=vms.lifetime06.workers.dev&path=/#%F0%9F%87%B8%F0%9F%87%AC%5Bwww.v2nodes.com%5D%20vless-SG%20%232",
+    "protocol": "vless",
+    "name": "🇸🇬[www.v2nodes.com] vless-SG #2",
+    "host": "135.84.72.30",
+    "port": 8880,
+    "firstSeenAt": "2026-10-31T05:51:39Z",
+    "sources": [
+      {
+        "id": "no-more-walls",
+        "name": "No More Walls",
+        "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+      }
+    ]
+  },
+  {
+    "id": "fefc3c5b91a5c8d657894cf2012ceb8a27bc3c81ee44c20a60fba7a59c538e12",
+    "uri": "vless://3950b45e-740d-4dca-ac95-505ec8534592@45.90.59.15:443?sni=www.cloudflare.com&flow=xtls-rprx-vision&fp=firefox&security=tls#%F0%9F%87%A8%F0%9F%87%AD%5Bwww.v2nodes.com%5D%20vless-CH-1...%20%232",
+    "protocol": "vless",
+    "name": "🇨🇭[www.v2nodes.com] vless-CH-1... #2",
+    "host": "45.90.59.15",
+    "port": 443,
+    "firstSeenAt": "2026-10-31T05:51:39Z",
+    "sources": [
+      {
+        "id": "no-more-walls",
+        "name": "No More Walls",
+        "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+      }
+    ]
+  },
+  {
+    "id": "6a532df7e5e1a58a734b2cfe7319f6407bc328348053b76a8420855978f1cfd3",
+    "uri": "vless://04c808e2-0b59-47b0-a54b-32fc7ef1c902@131.255.6.88:443?sni=free.cndyw.ggff.net&type=ws&host=free.cndyw.ggff.net&path=pyip=bpb.yousef.isegaro.comfp=randomsecurity=tls#%F0%9F%87%A8%F0%9F%87%B1%5Bwww.v2nodes.com%5D%20vless-CL-1...",
+    "protocol": "vless",
+    "name": "🇨🇱[www.v2nodes.com] vless-CL-1...",
+    "host": "131.255.6.88",
+    "port": 443,
+    "firstSeenAt": "2026-10-31T05:51:39Z",
+    "sources": [
+      {
+        "id": "no-more-walls",
+        "name": "No More Walls",
+        "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+      }
+    ]
+  },
+  {
+    "id": "ec50dc74c65f958964e3549d2f54986ffcbd0bb9b0e46c4489882f98981c4d41",
+    "uri": "vless://c720cb74-4c84-4fce-b8ae-637dbaa16199@z1q3pv4g78.rucdncomp.pro:443?sni=z1q3pv4g78.rucdncomp.pro&alpn=http/1.1&type=ws&host=z1q3pv4g78.rucdncomp.pro&path=/useraction/events/b892639b7195/fp=random&security=tls#%F0%9F%87%A9%F0%9F%87%AA%5Bwww.v2nodes.com%5D%20vless-DE-1...",
+    "protocol": "vless",
+    "name": "🇩🇪[www.v2nodes.com] vless-DE-1...",
+    "host": "z1q3pv4g78.rucdncomp.pro",
+    "port": 443,
+    "firstSeenAt": "2026-10-31T05:51:39Z",
+    "sources": [
+      {
+        "id": "no-more-walls",
+        "name": "No More Walls",
+        "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+      }
+    ]
+  },
+  {
+    "id": "07f1fddf79745c0cd4d21f82848d3747a676e42b42cd7ae0ba07ceeb376f130c",
+    "uri": "ss://YWVzLTI1Ni1nY206QXhJWVd0c2tKV0lJYWVmVw==@70.34.212.124:8388#%F0%9F%87%B8%F0%9F%87%AASE-70.34.212.124-0472",
+    "protocol": "ss",
+    "name": "🇸🇪SE-70.34.212.124-0472",
+    "host": "70.34.212.124",
+    "port": 8388,
+    "firstSeenAt": "2026-10-31T05:51:39Z",
+    "sources": [
+      {
+        "id": "v2ray-aggregator",
+        "name": "V2Ray Aggregator",
+        "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+      },
+      {
+        "id": "no-more-walls",
+        "name": "No More Walls",
+        "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+      }
+    ]
+  },
+  {
+    "id": "8f47399d3fdb69ebf8971f7fca937666efee19b595de31adb711481f09faba3e",
+    "uri": "vless://94c5a8a7-4296-400d-b413-639157be5224@gernode.barnikle1.me:1412?sni=www.dhl.de&flow=xtls-rprx-vision&fp=chrome&security=tls#%F0%9F%87%A9%F0%9F%87%AA%5Bwww.v2nodes.com%5D%20vless-DE-1...%20%234",
+    "protocol": "vless",
+    "name": "🇩🇪[www.v2nodes.com] vless-DE-1... #4",
+    "host": "gernode.barnikle1.me",
+    "port": 1412,
+    "firstSeenAt": "2026-10-31T05:51:39Z",
+    "sources": [
+      {
+        "id": "no-more-walls",
+        "name": "No More Walls",
+        "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+      }
+    ]
+  },
+  {
+    "id": "c03c871446a3e7a4f4d76dde08e463ed16309162c136bbdd8d607c88ef1c37cc",
+    "uri": "vless://d0d3d49c-56e8-40e1-9e83-793d03f83d93@91.107.180.176:465?sni=hw7.divarkhaghazi.com&type=ws&host=hw7.divarkhaghazi.com.&path=/security=tls#%F0%9F%87%A9%F0%9F%87%AA%5Bwww.v2nodes.com%5D%20vless-DE-1...%20%235",
+    "protocol": "vless",
+    "name": "🇩🇪[www.v2nodes.com] vless-DE-1... #5",
+    "host": "91.107.180.176",
+    "port": 465,
+    "firstSeenAt": "2026-10-31T05:51:39Z",
+    "sources": [
+      {
+        "id": "no-more-walls",
+        "name": "No More Walls",
+        "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+      }
+    ]
+  },
+  {
+    "id": "5a604a46ab243da8a1e4ecf47fbce16ca7dd32fd9a155e8d52618d068620d7c9",
+    "uri": "ss://YWVzLTI1Ni1nY206R0Vkb2VlcUxadGtKUmdTYQ==@139.84.166.47:8388#%F0%9F%87%AE%F0%9F%87%B3IN-139.84.166.47-0446",
+    "protocol": "ss",
+    "name": "🇮🇳IN-139.84.166.47-0446",
+    "host": "139.84.166.47",
+    "port": 8388,
+    "firstSeenAt": "2026-10-31T05:51:39Z",
+    "sources": [
+      {
+        "id": "v2ray-aggregator",
+        "name": "V2Ray Aggregator",
+        "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+      }
+    ]
+  },
+  {
+    "id": "b8c693261d6aa95c6e3c70a004126c9b21666e24ccf0778cd33bf1bd7686e9de",
+    "uri": "vless://3e21e3d3-6d26-4155-b851-764dd8e8c6b5@156.252.229.136:8443?sni=play.googleapis.com&fp=chrome&security=tls#%F0%9F%87%AA%F0%9F%87%B8%5Bwww.v2nodes.com%5D%20vless-ES-1...%20%231",
+    "protocol": "vless",
+    "name": "🇪🇸[www.v2nodes.com] vless-ES-1... #1",
+    "host": "156.252.229.136",
+    "port": 8443,
+    "firstSeenAt": "2026-10-31T05:51:39Z",
+    "sources": [
+      {
+        "id": "no-more-walls",
+        "name": "No More Walls",
+        "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+      }
+    ]
+  },
+  {
+    "id": "c13bff5b6070b88e73af8f524cd97d0519f14689d058b10af8ba7f0ee0f6536e",
+    "uri": "vless://3e21e3d3-6d26-4155-b851-764dd8e8c6b5@156.252.229.30:8443?sni=play.googleapis.com&fp=chrome&security=tls#%F0%9F%87%AA%F0%9F%87%B8%5Bwww.v2nodes.com%5D%20vless-ES-1...%20%236",
+    "protocol": "vless",
+    "name": "🇪🇸[www.v2nodes.com] vless-ES-1... #6",
+    "host": "156.252.229.30",
+    "port": 8443,
+    "firstSeenAt": "2026-10-31T05:51:39Z",
+    "sources": [
+      {
+        "id": "no-more-walls",
+        "name": "No More Walls",
+        "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+      }
+    ]
+  },
+  {
+    "id": "d27f5c48041fe23cbcfaf2f3abe270aacb9687d0018d9c5a3ec64fe2789ea428",
+    "uri": "trojan://5t6i121em5lkmsmk@in002.zestapp778.com:42733?security=tls&sni=in002.zestapp778.com#%F0%9F%87%AE%F0%9F%87%B3IN-139.84.210.39-0495",
+    "protocol": "trojan",
+    "name": "🇮🇳IN-139.84.210.39-0495",
+    "host": "in002.zestapp778.com",
+    "port": 42733,
+    "firstSeenAt": "2026-10-31T05:51:39Z",
+    "sources": [
+      {
+        "id": "v2ray-aggregator",
+        "name": "V2Ray Aggregator",
+        "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+      }
+    ]
+  },
+  {
+    "id": "2ee3b0ad443db7a4501b87490e55c3cc8ea875cbc9206fc05dffe565770bf038",
+    "uri": "vless://6cc745e3-4eb9-46c8-a4a1-85dee7b87edc@138.124.70.41:14430?sni=138.124.70.41&type=ws&host=138.124.70.41&path=/vless#%F0%9F%87%AB%F0%9F%87%B7%5Bwww.v2nodes.com%5D%20vless-FR-1...%20%233",
+    "protocol": "vless",
+    "name": "🇫🇷[www.v2nodes.com] vless-FR-1... #3",
+    "host": "138.124.70.41",
+    "port": 14430,
+    "firstSeenAt": "2026-10-31T05:51:39Z",
+    "sources": [
+      {
+        "id": "no-more-walls",
+        "name": "No More Walls",
+        "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+      }
+    ]
+  },
+  {
+    "id": "1ab09a53032365afc874beaa1d28823db344e11c11f7ea1b67b96ce379f65b9d",
+    "uri": "vless://75cc7568-abb0-46a8-88be-8137d3c647d4@152.228.139.33:51671?sni=www.sony.com&type=grpc&serviceName=grpc_common3&fp=firefox&security=tls#%F0%9F%87%AB%F0%9F%87%B7%5Bwww.v2nodes.com%5D%20vless-FR-1...%20%237",
+    "protocol": "vless",
+    "name": "🇫🇷[www.v2nodes.com] vless-FR-1... #7",
+    "host": "152.228.139.33",
+    "port": 51671,
+    "firstSeenAt": "2026-10-31T05:51:39Z",
+    "sources": [
+      {
+        "id": "no-more-walls",
+        "name": "No More Walls",
+        "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+      }
+    ]
+  },
+  {
+    "id": "564cedd5555093a224eac540e7d916fc21aea92e3addc4f66d043df750ba0e5a",
+    "uri": "vless://c6362720-0931-4b91-b187-d8ecf3149734@168.222.43.53:10002?#%F0%9F%87%AC%F0%9F%87%A7%5Bwww.v2nodes.com%5D%20vless-GB-1...%20%234",
+    "protocol": "vless",
+    "name": "🇬🇧[www.v2nodes.com] vless-GB-1... #4",
+    "host": "168.222.43.53",
+    "port": 10002,
+    "firstSeenAt": "2026-10-31T05:51:39Z",
+    "sources": [
+      {
+        "id": "no-more-walls",
+        "name": "No More Walls",
+        "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+      }
+    ]
+  },
+  {
+    "id": "4fc3d98d1c1b12449dbd0ff92a988ac7fb4acc45814dffeadf07f454d891b7ac",
+    "uri": "vless://c08f0056-7a6d-4931-813b-aaa3cdd00aed@node-uk.connectsuite.org:8443?sni=node-uk.connectsuite.org&alpn=h2%2Chttp/1.1&fp=chrome&security=tls#%F0%9F%87%AC%F0%9F%87%A7%5Bwww.v2nodes.com%5D%20vless-GB-1...%20%237",
+    "protocol": "vless",
+    "name": "🇬🇧[www.v2nodes.com] vless-GB-1... #7",
+    "host": "node-uk.connectsuite.org",
+    "port": 8443,
+    "firstSeenAt": "2026-10-31T05:51:39Z",
+    "sources": [
+      {
+        "id": "no-more-walls",
+        "name": "No More Walls",
+        "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+      }
+    ]
+  },
+  {
+    "id": "fe35ad5c237683765a968458b569b687dbc66128c9c7edd56347b1f6df4ef297",
+    "uri": "vless://8f704ed6-9a1a-4d04-94dd-1bff501716de@85.90.197.220:443?sni=www.cloudflare.com&flow=xtls-rprx-vision&fp=chrome&security=tls#%F0%9F%87%AC%F0%9F%87%B7%5Bwww.v2nodes.com%5D%20vless-GR-1...",
+    "protocol": "vless",
+    "name": "🇬🇷[www.v2nodes.com] vless-GR-1...",
+    "host": "85.90.197.220",
+    "port": 443,
+    "firstSeenAt": "2026-10-31T05:51:39Z",
+    "sources": [
+      {
+        "id": "no-more-walls",
+        "name": "No More Walls",
+        "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+      }
+    ]
+  },
+  {
+    "id": "027996e3807579fee71b8708191a894d17dff7837a7216a44be272a115e95086",
+    "uri": "vmess://ewogICAgImFkZCI6ICJ3am9mSHNRdEV1RXl3eEVxLnYuM2Rucy52aXAiLAogICAgImFpZCI6IDAsCiAgICAiaG9zdCI6ICJ3am9mSHNRdEV1RXl3eEVxLnYuM2Rucy52aXAiLAogICAgImlkIjogImE5ZjRkZThiLTY4ZjEtNDRiNi1iNmEyLTFkYjYwOTQwNTAzYSIsCiAgICAibmV0IjogIndzIiwKICAgICJwYXRoIjogIi93cy12bWVzcyIsCiAgICAicG9ydCI6IDQ0MywKICAgICJwcyI6ICLwn4eo8J+Hs0NOLTguMjE5Ljk3LjE3LTU0MzMiLAogICAgInRscyI6ICJ0bHMiLAogICAgInR5cGUiOiAiYXV0byIsCiAgICAic2VjdXJpdHkiOiAiYXV0byIsCiAgICAic2tpcC1jZXJ0LXZlcmlmeSI6IGZhbHNlLAogICAgInNuaSI6ICJ3am9mSHNRdEV1RXl3eEVxLnYuM2Rucy52aXAiCn0=",
+    "protocol": "vmess",
+    "name": "🇨🇳CN-8.219.97.17-5433",
+    "host": "wjofhsqteueywxeq.v.3dns.vip",
+    "port": 443,
+    "firstSeenAt": "2026-10-31T05:51:39Z",
+    "sources": [
+      {
+        "id": "v2ray-aggregator",
+        "name": "V2Ray Aggregator",
+        "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+      }
+    ]
+  },
+  {
+    "id": "b881a7e0dad6465605a8d286816af26998e8ffba08334fb3a1cd8f6602b3b98f",
+    "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp4MkE2QXN5Wi1yQWxsejB3YktIeldB@178.253.16.185:8388#%F0%9F%87%AC%F0%9F%87%B7GR-178.253.16.185-0441",
+    "protocol": "ss",
+    "name": "🇬🇷GR-178.253.16.185-0441",
+    "host": "178.253.16.185",
+    "port": 8388,
+    "firstSeenAt": "2026-10-31T05:51:39Z",
+    "sources": [
+      {
+        "id": "v2ray-aggregator",
+        "name": "V2Ray Aggregator",
+        "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+      },
+      {
+        "id": "no-more-walls",
+        "name": "No More Walls",
+        "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+      }
+    ]
+  },
+  {
+    "id": "afa4c2c01c925060b969d13323a483f4906b606ec9888d443d051863768ac5ef",
+    "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo2aGVleHl6@54.36.174.140:443#%F0%9F%87%AB%F0%9F%87%B7FR-54.36.174.140-0466",
+    "protocol": "ss",
+    "name": "🇫🇷FR-54.36.174.140-0466",
+    "host": "54.36.174.140",
+    "port": 443,
+    "firstSeenAt": "2026-10-31T05:51:39Z",
+    "sources": [
+      {
+        "id": "v2ray-aggregator",
+        "name": "V2Ray Aggregator",
+        "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+      },
+      {
+        "id": "no-more-walls",
+        "name": "No More Walls",
+        "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+      }
+    ]
+  },
+  {
+    "id": "65eb8332e45f7a9d27ee09ac2afcab051dfec1ee98c8012c6cd225bd202c9b27",
+    "uri": "ss://YWVzLTI1Ni1nY206TlRpSEJnNjRmc1k4dThEYkdydHlwRDlnUEdTTDM4NnA=@185.22.155.121:18443#%F0%9F%87%B7%F0%9F%87%BARU-185.22.155.121-0470",
+    "protocol": "ss",
+    "name": "🇷🇺RU-185.22.155.121-0470",
+    "host": "185.22.155.121",
+    "port": 18443,
+    "firstSeenAt": "2026-10-31T05:51:39Z",
+    "sources": [
+      {
+        "id": "v2ray-aggregator",
+        "name": "V2Ray Aggregator",
+        "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+      },
+      {
+        "id": "no-more-walls",
+        "name": "No More Walls",
+        "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+      }
+    ]
+  },
+  {
+    "id": "e40ec41678ae492f3ee1f63b93cb6fdbf43f4706fe1632c0fcec5e0a31b5bb14",
+    "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpoVFRnN2x3UU16cGFGN0tYcFkzQTh3@alb.rvpn.app:8388#%F0%9F%87%B7%F0%9F%87%BARU-130.49.189.54-0428",
+    "protocol": "ss",
+    "name": "🇷🇺RU-130.49.189.54-0428",
+    "host": "alb.rvpn.app",
+    "port": 8388,
+    "firstSeenAt": "2026-10-31T05:51:39Z",
+    "sources": [
+      {
+        "id": "v2ray-aggregator",
+        "name": "V2Ray Aggregator",
+        "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+      },
+      {
+        "id": "no-more-walls",
+        "name": "No More Walls",
+        "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+      }
+    ]
+  },
+  {
+    "id": "d6dadfe2828de315678a2f99df62d6985d0c61204f7653ef7d7506fc8bb1802c",
+    "uri": "vmess://ewogICAgImFkZCI6ICIxMzIuMTQ1LjgwLjIzMCIsCiAgICAiYWlkIjogMCwKICAgICJob3N0IjogImtyMDIuYTBhLnh5eiIsCiAgICAiaWQiOiAiNTE1NTg2MGUtZDA3ZC00NmMzLTkxMjgtM2FmYmQ4NDYyNmM3IiwKICAgICJuZXQiOiAid3MiLAogICAgInBhdGgiOiAiL2NjdHYxMy5tM3U4IiwKICAgICJwb3J0IjogODAsCiAgICAicHMiOiAi8J+HsPCfh7dLUi0xMzIuMTQ1LjgwLjIzMC0xMTUyIiwKICAgICJ0bHMiOiAiIiwKICAgICJ0eXBlIjogImF1dG8iLAogICAgInNlY3VyaXR5IjogImF1dG8iLAogICAgInNraXAtY2VydC12ZXJpZnkiOiB0cnVlLAogICAgInNuaSI6ICIiCn0=",
+    "protocol": "vmess",
+    "name": "🇰🇷KR-132.145.80.230-1152",
+    "host": "132.145.80.230",
+    "port": 80,
+    "firstSeenAt": "2026-10-31T05:51:39Z",
+    "sources": [
+      {
+        "id": "v2ray-aggregator",
+        "name": "V2Ray Aggregator",
+        "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+      }
+    ]
+  },
+  {
+    "id": "dbe32d947c2d35b6e1e17bc925113f2789bc0591fc8078b760b3d50fec2de993",
+    "uri": "trojan://5t6i121em5lkmsmk@en001.zestapp778.com:29813?security=tls&sni=en001.zestapp778.com#%F0%9F%87%AC%F0%9F%87%A7GB-130.94.77.169-0631",
+    "protocol": "trojan",
+    "name": "🇬🇧GB-130.94.77.169-0631",
+    "host": "en001.zestapp778.com",
+    "port": 29813,
+    "firstSeenAt": "2026-10-31T05:51:39Z",
+    "sources": [
+      {
+        "id": "v2ray-aggregator",
+        "name": "V2Ray Aggregator",
+        "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+      }
+    ]
+  },
+  {
+    "id": "e8e990d80a2c2ad468dac5c4501ee291d0c1d15faca75299c8fe74da38d36a4f",
+    "uri": "vless://af5eac96-e478-488a-bc8c-45269d7e8847@5.253.28.224:40443?sni=deepl.com&flow=xtls-rprx-vision&fp=qq&security=tls#%F0%9F%87%AE%F0%9F%87%B3%5Bwww.v2nodes.com%5D%20vless-IN-1...%20%233",
+    "protocol": "vless",
+    "name": "🇮🇳[www.v2nodes.com] vless-IN-1... #3",
+    "host": "5.253.28.224",
+    "port": 40443,
+    "firstSeenAt": "2026-10-31T05:51:39Z",
+    "sources": [
+      {
+        "id": "no-more-walls",
+        "name": "No More Walls",
+        "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+      }
+    ]
+  },
+  {
+    "id": "6b86bfcef5345b1d05755575ed6f3d6db7fff3b814e27e9d2aca71e8c2354786",
+    "uri": "ss://YWVzLTI1Ni1nY206Y2RCSURWNDJEQ3duZklO@51.79.85.185:8118#%F0%9F%87%A8%F0%9F%87%A6CA-51.79.85.185-0432",
+    "protocol": "ss",
+    "name": "🇨🇦CA-51.79.85.185-0432",
+    "host": "51.79.85.185",
+    "port": 8118,
+    "firstSeenAt": "2026-10-31T05:51:39Z",
+    "sources": [
+      {
+        "id": "v2ray-aggregator",
+        "name": "V2Ray Aggregator",
+        "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+      },
+      {
+        "id": "no-more-walls",
+        "name": "No More Walls",
+        "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+      }
+    ]
+  },
+  {
+    "id": "fd1cb211e488f4ab3053978b7b1af6406f5bc05baf5397fcbcc2e792c4e2ab45",
+    "uri": "vless://1d4e18bd-1f26-4915-b35a-7ace4826e76a@194.61.31.126:2053?sni=www.apple.com&fp=firefox&security=tls#%F0%9F%87%AE%F0%9F%87%B3%5Bwww.v2nodes.com%5D%20vless-IN-1...%20%235",
+    "protocol": "vless",
+    "name": "🇮🇳[www.v2nodes.com] vless-IN-1... #5",
+    "host": "194.61.31.126",
+    "port": 2053,
+    "firstSeenAt": "2026-10-31T05:51:39Z",
+    "sources": [
+      {
+        "id": "no-more-walls",
+        "name": "No More Walls",
+        "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+      }
+    ]
+  },
+  {
+    "id": "924406c71800602286087ccd6ef330cbd96385474e8344f486f5054dcef62958",
+    "uri": "ss://YWVzLTI1Ni1jZmI6VmNGdXlYdk5EMnlRV1NGWQ==@5.188.181.201:9054#%F0%9F%87%AA%F0%9F%87%B8ES-5.188.181.201-5477",
+    "protocol": "ss",
+    "name": "🇪🇸ES-5.188.181.201-5477",
+    "host": "5.188.181.201",
+    "port": 9054,
+    "firstSeenAt": "2026-10-31T05:51:39Z",
+    "sources": [
+      {
+        "id": "v2ray-aggregator",
+        "name": "V2Ray Aggregator",
+        "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+      }
+    ]
+  },
+  {
+    "id": "70581314560e3c7019748d6cd8ce9d23eb84c884299b222ce319909be69322e2",
+    "uri": "vless://98a24806-141a-43d3-b094-bd66c4eb93b8@198.16.113.222:8443?sni=www.apple.com&flow=xtls-rprx-vision&fp=chrome&security=tls#%F0%9F%87%AE%F0%9F%87%B7%5Bwww.v2nodes.com%5D%20vless-IR-1...",
+    "protocol": "vless",
+    "name": "🇮🇷[www.v2nodes.com] vless-IR-1...",
+    "host": "198.16.113.222",
+    "port": 8443,
+    "firstSeenAt": "2026-10-31T05:51:39Z",
+    "sources": [
+      {
+        "id": "no-more-walls",
+        "name": "No More Walls",
+        "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+      }
+    ]
+  },
+  {
+    "id": "e18e8c0cae5cc7c483cef1847bbddaf1b1d37c790961110be01e5d6202ae3f13",
+    "uri": "vless://98a24806-141a-43d3-b094-bd66c4eb93b8@198.16.113.220:8443?sni=www.apple.com&flow=xtls-rprx-vision&fp=chrome&security=tls#%F0%9F%87%AE%F0%9F%87%B7%5Bwww.v2nodes.com%5D%20vless-IR-1...%20%231",
+    "protocol": "vless",
+    "name": "🇮🇷[www.v2nodes.com] vless-IR-1... #1",
+    "host": "198.16.113.220",
+    "port": 8443,
+    "firstSeenAt": "2026-10-31T05:51:39Z",
+    "sources": [
+      {
+        "id": "no-more-walls",
+        "name": "No More Walls",
+        "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+      }
+    ]
+  },
+  {
+    "id": "fcccd24f101f95c27cde782478e9854ed79f690c777e426490761248c11ed721",
+    "uri": "vless://d4b08cd6-0903-411a-9dac-45dbdf5c9712@57.131.38.163:2053?sni=www.apple.com&fp=chrome&security=tls#%F0%9F%87%AE%F0%9F%87%B9%5Bwww.v2nodes.com%5D%20vless-IT-1...%20%231",
+    "protocol": "vless",
+    "name": "🇮🇹[www.v2nodes.com] vless-IT-1... #1",
+    "host": "57.131.38.163",
+    "port": 2053,
+    "firstSeenAt": "2026-10-31T05:51:39Z",
+    "sources": [
+      {
+        "id": "no-more-walls",
+        "name": "No More Walls",
+        "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+      }
+    ]
+  },
+  {
+    "id": "4acdd140d1b78130fb8e3ac2537067d2084c5e8ad8003dd540124890b7e17e1e",
+    "uri": "ss://YWVzLTI1Ni1jZmI6WkVUNTlMRjZEdkNDOEtWdA==@5.188.181.201:9005#%F0%9F%87%AA%F0%9F%87%B8ES-5.188.181.201-5354",
+    "protocol": "ss",
+    "name": "🇪🇸ES-5.188.181.201-5354",
+    "host": "5.188.181.201",
+    "port": 9005,
+    "firstSeenAt": "2026-10-31T05:51:39Z",
+    "sources": [
+      {
+        "id": "v2ray-aggregator",
+        "name": "V2Ray Aggregator",
+        "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+      }
+    ]
+  },
+  {
+    "id": "f615be930ae815c17c08bf869a5cc739757daa4a9e5b5afd8cce77908bec3e97",
+    "uri": "vless://7b102311-43fd-4e8f-877e-8090623c101d@80.211.170.53:443?sni=vp58.cc.cd&type=ws&host=vp58.cc.cd&path=/Telegram🇨🇳",
+    "protocol": "vless",
+    "name": "80.211.170.53",
+    "host": "80.211.170.53",
+    "port": 443,
+    "firstSeenAt": "2026-10-31T05:51:39Z",
+    "sources": [
+      {
+        "id": "no-more-walls",
+        "name": "No More Walls",
+        "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+      }
+    ]
+  },
+  {
+    "id": "e0205eae1bd25c7af7150626c900e8f12abf878232e05b3853c4fcd69049c017",
+    "uri": "vmess://ewogICAgImFkZCI6ICJvci41MjExNjYueHl6IiwKICAgICJhaWQiOiAwLAogICAgImhvc3QiOiAib3IuNTIxMTY2Lnh5eiIsCiAgICAiaWQiOiAiYWMyNTEyMzctNTc2Zi00MGM4LWE1NDMtNTU0OTYwYzk1OGIxIiwKICAgICJuZXQiOiAid3MiLAogICAgInBhdGgiOiAiL29yMyIsCiAgICAicG9ydCI6IDIwODMsCiAgICAicHMiOiAi8J+Hr/Cfh7VKUC0xNDAuMjM4LjU1Ljg0LTU0ODUiLAogICAgInRscyI6ICJ0bHMiLAogICAgInR5cGUiOiAiYXV0byIsCiAgICAic2VjdXJpdHkiOiAiYXV0byIsCiAgICAic2tpcC1jZXJ0LXZlcmlmeSI6IHRydWUsCiAgICAic25pIjogIiIKfQ==",
+    "protocol": "vmess",
+    "name": "🇯🇵JP-140.238.55.84-5485",
+    "host": "or.521166.xyz",
+    "port": 2083,
+    "firstSeenAt": "2026-10-31T05:51:39Z",
+    "sources": [
+      {
+        "id": "v2ray-aggregator",
+        "name": "V2Ray Aggregator",
+        "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+      }
+    ]
+  },
+  {
+    "id": "0e98c1a8dbe9276b24e32a9e102d7dadd67a65836eddc3486d18e44bbe9f5515",
+    "uri": "ss://YWVzLTI1Ni1jZmI6R0E5S3plRWd2ZnhOcmdtTQ==@5.188.181.201:9019#%F0%9F%87%AA%F0%9F%87%B8ES-5.188.181.201-5355",
+    "protocol": "ss",
+    "name": "🇪🇸ES-5.188.181.201-5355",
+    "host": "5.188.181.201",
+    "port": 9019,
+    "firstSeenAt": "2026-10-31T05:51:39Z",
+    "sources": [
+      {
+        "id": "v2ray-aggregator",
+        "name": "V2Ray Aggregator",
+        "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+      }
+    ]
+  },
+  {
+    "id": "6e56e0045e3494aa05f0ded583fc7511971f48fcbe8b75159d185ed7ce92ec01",
+    "uri": "vless://4e4f1f70-5e56-4a76-bb9d-db087f4690c4@172.67.156.147:443?allowInsecure=0&sni=jp3.yohototo.top&type=ws&host=jp3.yohototo.top&path=/tyxywssecurity=tls#%F0%9F%87%AF%F0%9F%87%B5%5Bwww.v2nodes.com%5D%20vless-JP-1...%20%232",
+    "protocol": "vless",
+    "name": "🇯🇵[www.v2nodes.com] vless-JP-1... #2",
+    "host": "172.67.156.147",
+    "port": 443,
+    "firstSeenAt": "2026-10-31T05:51:39Z",
+    "sources": [
+      {
+        "id": "no-more-walls",
+        "name": "No More Walls",
+        "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+      }
+    ]
+  },
+  {
+    "id": "e2cc29e2281c8f58a5f499fab3b57b89e75470ea3562216134dde1d0b4fbf489",
+    "uri": "vless://814bd064-544d-4255-a070-5705c03f6da9@103.75.118.228:11452?sni=www.apple.com&flow=xtls-rprx-vision&fp=chrome&security=tls#%F0%9F%87%AF%F0%9F%87%B5%5Bwww.v2nodes.com%5D%20vless-JP-1...%20%233",
+    "protocol": "vless",
+    "name": "🇯🇵[www.v2nodes.com] vless-JP-1... #3",
+    "host": "103.75.118.228",
+    "port": 11452,
+    "firstSeenAt": "2026-10-31T05:51:39Z",
+    "sources": [
+      {
+        "id": "no-more-walls",
+        "name": "No More Walls",
+        "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+      }
+    ]
+  },
+  {
+    "id": "e6dc1661b6cd3ced859d511d95fe830bba2f6382aadd93577c437e0b842217ff",
+    "uri": "vless://814bd064-544d-4255-a070-5705c03f6da9@3.114.220.22:18007?sni=www.apple.com&flow=xtls-rprx-vision&fp=chrome&security=tls#%F0%9F%87%AF%F0%9F%87%B5%5Bwww.v2nodes.com%5D%20vless-JP-1...%20%234",
+    "protocol": "vless",
+    "name": "🇯🇵[www.v2nodes.com] vless-JP-1... #4",
+    "host": "3.114.220.22",
+    "port": 18007,
+    "firstSeenAt": "2026-10-31T05:51:39Z",
+    "sources": [
+      {
+        "id": "no-more-walls",
+        "name": "No More Walls",
+        "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+      }
+    ]
+  },
+  {
+    "id": "eebcf14778c100fdb3323d7eee5c2b4aa9a902fb1781ac4a66da5c731a087a8e",
+    "uri": "ss://YWVzLTI1Ni1nY206VEV6amZBWXEySWp0dW9T@141.164.45.187:6697#%F0%9F%87%B0%F0%9F%87%B7KR-141.164.45.187-0462",
+    "protocol": "ss",
+    "name": "🇰🇷KR-141.164.45.187-0462",
+    "host": "141.164.45.187",
+    "port": 6697,
+    "firstSeenAt": "2026-10-31T05:51:39Z",
+    "sources": [
+      {
+        "id": "v2ray-aggregator",
+        "name": "V2Ray Aggregator",
+        "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+      },
+      {
+        "id": "no-more-walls",
+        "name": "No More Walls",
+        "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+      }
+    ]
+  },
+  {
+    "id": "0272a50a4fe655b44ab975db0e5208080790990a019a4e2a376a25c23d5e34d8",
+    "uri": "vless://0575005f-0ba9-4d6d-85e0-4a6a8cbafc1b@kclx.eu.org:443?sni=kclx.eu.org&type=ws&host=kclx.eu.org&path=/154.16.10.34-8080fp=chrome&security=tls#%F0%9F%87%AF%F0%9F%87%B5%5Bwww.v2nodes.com%5D%20vless-JP-4...",
+    "protocol": "vless",
+    "name": "🇯🇵[www.v2nodes.com] vless-JP-4...",
+    "host": "kclx.eu.org",
+    "port": 443,
+    "firstSeenAt": "2026-10-31T05:51:39Z",
+    "sources": [
+      {
+        "id": "no-more-walls",
+        "name": "No More Walls",
+        "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+      }
+    ]
+  },
+  {
+    "id": "513f97bbfdb90eb6c4044faee6eea6b99431fc2f4cae2fb0dadadebd3b820284",
+    "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo4ejJPQl9ndkZ2cEtnakZpOHM5Q3Z3@pol.rvpn.app:8388#%F0%9F%87%B5%F0%9F%87%B1PL-185.223.57.174-0465",
+    "protocol": "ss",
+    "name": "🇵🇱PL-185.223.57.174-0465",
+    "host": "pol.rvpn.app",
+    "port": 8388,
+    "firstSeenAt": "2026-10-31T05:51:39Z",
+    "sources": [
+      {
+        "id": "v2ray-aggregator",
+        "name": "V2Ray Aggregator",
+        "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+      },
+      {
+        "id": "no-more-walls",
+        "name": "No More Walls",
+        "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+      }
+    ]
   }
 ]
