@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
   "state": "success",
-  "startedAt": "2026-11-01T13:36:56Z",
-  "finishedAt": "2026-11-01T13:36:57Z",
-  "lastSuccessfulAt": "2026-11-01T13:36:56Z",
+  "startedAt": "2026-11-01T18:58:23Z",
+  "finishedAt": "2026-11-01T18:58:24Z",
+  "lastSuccessfulAt": "2026-11-01T18:58:23Z",
   "added": 50,
   "target": 50,
-  "totalUnique": 900,
-  "duplicateCount": 513,
-  "deferredUnique": 4380,
+  "totalUnique": 950,
+  "duplicateCount": 552,
+  "deferredUnique": 4395,
   "invalidCount": 14,
   "scheduleHours": 2,
   "snapshotLimit": 1000,
@@ -18,10 +18,10 @@
       "name": "V2Ray Aggregator",
       "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt",
       "status": "success",
-      "candidates": 4594,
-      "valid": 4593,
+      "candidates": 4650,
+      "valid": 4649,
       "invalid": 1,
-      "added": 23,
+      "added": 45,
       "error": null
     },
     {
@@ -32,7 +32,7 @@
       "candidates": 459,
       "valid": 446,
       "invalid": 13,
-      "added": 27,
+      "added": 5,
       "error": null
     }
   ],
