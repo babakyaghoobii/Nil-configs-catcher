@@ -50,6 +50,14 @@ jobs:
           npm run test:e2e
           npm run test:desktop-ui
           npm run test:hosted-ui
+      - name: Preserve browser failure evidence
+        if: failure()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: nil-browser-failure-${{ github.run_id }}
+          path: test-results/
+          if-no-files-found: ignore
+          retention-days: 7
       - name: Check owner-enabled Pages configuration
         if: github.event_name != 'pull_request'
         id: pages

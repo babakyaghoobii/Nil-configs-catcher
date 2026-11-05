@@ -1,4 +1,9 @@
 import { test, expect, type Page } from "@playwright/test";
+import { createPreviewServer } from "../../scripts/serve.mjs";
+
+// Page-level network fixtures cannot intercept requests owned by WebKit's
+// installed service worker. Its real network behavior is exercised below.
+test.use({ serviceWorkers: "block" });
 
 const now = new Date().toISOString();
 const source = {
@@ -136,4 +141,63 @@ test("a busy collector keeps the existing list and exposes the actual retry dela
   await expect(page.getByRole("alert")).toContainText("۳۳");
   await expect(page.locator(".config-card")).toHaveCount(2);
   await expect(page.locator("#toast")).not.toContainText("دریافت شد");
+});
+
+test.describe("manual collection with a real installed service worker", () => {
+  test.use({ serviceWorkers: "allow" });
+
+  test("POST reaches the HTTP server after installation and retains data on a later 429", async ({ page }) => {
+    const server = createPreviewServer();
+    const staticHandlers = server.listeners("request");
+    server.removeAllListeners("request");
+    let collected = false;
+    const requests: { method: string | undefined; body: string }[] = [];
+    server.on("request", async (request, response) => {
+      const path = new URL(request.url || "/", "http://localhost").pathname;
+      if (!path.startsWith("/Nil-configs-catcher/api/")) {
+        for (const handler of staticHandlers) handler.call(server, request, response);
+        return;
+      }
+      response.setHeader("Content-Type", "application/json");
+      response.setHeader("Cache-Control", "no-store");
+      if (path.endsWith("/data")) {
+        response.end(JSON.stringify(batch(collected)));
+        return;
+      }
+      let body = "";
+      for await (const part of request) body += part;
+      requests.push({ method: request.method, body });
+      if (collected) {
+        response.writeHead(429, { "Retry-After": "33" });
+        response.end(JSON.stringify({ error: "Fixture cooldown" }));
+        return;
+      }
+      collected = true;
+      response.end(JSON.stringify(batch(true)));
+    });
+    await new Promise<void>((resolve) => server.listen(0, "127.0.0.1", resolve));
+    const address = server.address();
+    if (!address || typeof address === "string") throw new Error("No test port");
+    try {
+      await page.goto(`http://127.0.0.1:${address.port}/Nil-configs-catcher/`);
+      await expect(page.locator(".config-card")).toHaveCount(2);
+      await page.evaluate(async () => { await navigator.serviceWorker.ready; });
+      await expect.poll(() => page.evaluate(() => Boolean(navigator.serviceWorker.controller))).toBe(true);
+      await page.reload();
+      await expect(page.locator(".config-card")).toHaveCount(2);
+      await page.locator('[data-action="collect-now"]').click();
+      await expect(page.locator(".config-card")).toHaveCount(3);
+      await page.locator('[data-action="collect-now"]').click();
+      await expect(page.getByRole("alert")).toContainText("۳۳");
+      await expect(page.locator(".config-card")).toHaveCount(3);
+      expect(requests).toHaveLength(2);
+      for (const request of requests) {
+        expect(request.method).toBe("POST");
+        expect(JSON.parse(request.body)).toEqual({ limit: 50 });
+      }
+    } finally {
+      server.closeAllConnections();
+      await new Promise<void>((resolve) => server.close(() => resolve()));
+    }
+  });
 });
