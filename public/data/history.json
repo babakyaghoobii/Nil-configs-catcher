@@ -2,6 +2,47 @@
   {
     "schemaVersion": 1,
     "state": "success",
+    "startedAt": "2026-11-05T16:30:26Z",
+    "finishedAt": "2026-11-05T16:30:27Z",
+    "lastSuccessfulAt": "2026-11-05T16:30:26Z",
+    "added": 50,
+    "target": 50,
+    "totalUnique": 1550,
+    "duplicateCount": 739,
+    "deferredUnique": 4124,
+    "invalidCount": 3,
+    "scheduleHours": 2,
+    "snapshotLimit": 1000,
+    "sources": [
+      {
+        "id": "v2ray-aggregator",
+        "name": "V2Ray Aggregator",
+        "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt",
+        "status": "success",
+        "candidates": 4533,
+        "valid": 4531,
+        "invalid": 2,
+        "added": 16,
+        "error": null
+      },
+      {
+        "id": "no-more-walls",
+        "name": "No More Walls",
+        "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt",
+        "status": "success",
+        "candidates": 467,
+        "valid": 466,
+        "invalid": 1,
+        "added": 34,
+        "error": null
+      }
+    ],
+    "errors": [],
+    "connectionTested": false
+  },
+  {
+    "schemaVersion": 1,
+    "state": "success",
     "startedAt": "2026-11-05T06:54:59Z",
     "finishedAt": "2026-11-05T06:54:59Z",
     "lastSuccessfulAt": "2026-11-05T06:54:59Z",
