@@ -15,3 +15,6 @@ dist-hosted/
 src-tauri/target/
 src-tauri/gen/
 release-files/
+.wrangler/
+deploy/cloudflare.generated.json
+deployment.candidate.json

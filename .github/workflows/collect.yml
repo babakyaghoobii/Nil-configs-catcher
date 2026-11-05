@@ -40,7 +40,12 @@ jobs:
         continue-on-error: true
         env:
           COLLECTION_LIMIT: ${{ inputs.limit || '50' }}
-        run: python3 -m collector --limit "$COLLECTION_LIMIT"
+        run: |
+          if [ -f deployment.json ]; then
+            python3 -m collector --service --limit "$COLLECTION_LIMIT"
+          else
+            python3 -m collector --limit "$COLLECTION_LIMIT"
+          fi
       - name: Commit data and actual refresh status
         id: commit
         run: |

@@ -1,4 +1,5 @@
-const primaryOrigin = "https://nil-config-catcher-babakyaghoobii.lovable.app";
+declare const __NIL_SERVICE_ORIGIN__: string;
+const primaryOrigin = __NIL_SERVICE_ORIGIN__;
 const localPreview =
   ["http:", "https:"].includes(location.protocol) &&
   ["localhost", "127.0.0.1"].includes(location.hostname);

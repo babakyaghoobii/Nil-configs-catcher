@@ -1,5 +1,7 @@
 # NIL Config Catcher · نیل
 
+[راهنمای فارسی انتشار خودکار Cloudflare](docs/cloudflare-installation.fa.md): دو Secret در GitHub ثبت می‌شوند؛ workflow دیتابیس و سایت را آماده می‌کند و پیش از ثبت نشانی، خروجی واقعی را بررسی می‌کند. آدرس Higgsfield هنگام بررسی عمومی خطای ۴۰۱ داده و به‌عنوان میزبان سالم معرفی نمی‌شود.
+
 <p align="center"><img src="public/branding/creator-logo-charcoal.png" alt="NIL — babakyaghoobii" width="240"></p>
 
 **ایده‌پردازی، برنامه‌نویسی و ساخت توسط babakyaghoobii — رایگان برای استفادهٔ عموم.**

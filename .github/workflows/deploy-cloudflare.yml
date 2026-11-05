@@ -1,0 +1,79 @@
+name: Deploy NIL to Cloudflare
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+# The deployment bootstrap and scheduled archive must see one coherent GitHub
+# registry. Neither writer can run alongside the other.
+concurrency:
+  group: nil-collection
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: "22"
+          cache: npm
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        with:
+          python-version: "3.12"
+      - name: Check owner-provided repository secrets
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          test -n "$CLOUDFLARE_API_TOKEN" || { echo 'Add CLOUDFLARE_API_TOKEN to repository Actions secrets.'; exit 1; }
+          test -n "$CLOUDFLARE_ACCOUNT_ID" || { echo 'Add CLOUDFLARE_ACCOUNT_ID to repository Actions secrets.'; exit 1; }
+      - run: npm ci --ignore-scripts
+      - name: Verify source before modifying Cloudflare resources
+        run: |
+          npm test
+          npm run test:service
+          npm run build:hosted
+      - name: Prepare scoped Worker and additive D1 configuration
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: python3 scripts/prepare-cloudflare.py
+      - name: Apply additive migrations and deploy the public Worker
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          WRANGLER_SEND_METRICS: "false"
+        run: |
+          npx --no-install wrangler d1 migrations apply DB --remote --config deploy/cloudflare.generated.json
+          npx --no-install wrangler deploy --config deploy/cloudflare.generated.json
+      - name: Verify the actual public app, logo, collector and subscription
+        run: python3 scripts/verify-cloudflare.py
+      - name: Save only the verified non-secret deployment configuration
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add deployment.json src-tauri/tauri.conf.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'deploy: record verified public NIL service origin'
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+          python3 - <<'PY' >> "$GITHUB_STEP_SUMMARY"
+          import json
+          from pathlib import Path
+          data = json.loads(Path('deployment.json').read_text())
+          print('Verified public NIL service: ' + data['serviceOrigin'])
+          print('\nVerified at: ' + data['verifiedAt'])
+          print('\nScheduled collection now uses the same authoritative registry as manual collection.')
+          PY

@@ -26,6 +26,10 @@ class ServiceFailure(FetchError):
 def service_origin(root: Path) -> str:
     config = load_json(root / "deployment.json", None)
     origin = config.get("serviceOrigin") if isinstance(config, dict) else None
+    return validate_service_origin(origin)
+
+
+def validate_service_origin(origin) -> str:
     if not isinstance(origin, str):
         raise ValueError("deployment.json must contain a verified serviceOrigin")
     parsed = urlsplit(origin)
@@ -33,7 +37,8 @@ def service_origin(root: Path) -> str:
         "nil-config-catcher-babakyaghoobii.higgsfield.app",
         "nil-config-catcher-babakyaghoobii.lovable.app",
     }
-    if parsed.scheme != "https" or parsed.netloc not in allowed or parsed.path or parsed.query or parsed.fragment:
+    worker_host = re.fullmatch(r"nil-config-catcher\.[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.workers\.dev", parsed.netloc)
+    if parsed.scheme != "https" or (parsed.netloc not in allowed and not worker_host) or parsed.path or parsed.query or parsed.fragment:
         raise ValueError("Only the checked-in NIL HTTPS service origin is permitted")
     return origin
 

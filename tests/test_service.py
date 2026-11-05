@@ -6,7 +6,7 @@ from urllib.parse import parse_qs, urlsplit
 
 from collector.pipeline import load_json, write_json
 from collector.protocols import parse_config
-from collector.service import ServiceFailure, run_service, service_origin
+from collector.service import ServiceFailure, run_service, service_origin, validate_service_origin
 
 ORIGIN = "https://nil-config-catcher-babakyaghoobii.higgsfield.app"
 SOURCE = {"id": "test", "name": "Public fixture", "url": "https://github.com/example/public/blob/main/list.txt"}
@@ -28,6 +28,13 @@ def batch(rows, added=1, dataset="dataset-one"):
 
 
 class ServiceArchiveTests(unittest.TestCase):
+    def test_only_the_named_nil_worker_origin_is_accepted(self):
+        origin = "https://nil-config-catcher.nil-example.workers.dev"
+        self.assertEqual(validate_service_origin(origin), origin)
+        for invalid in ("https://unrelated.nil-example.workers.dev", origin + "/", origin + "?x=1", origin + ":443", "https://nil-config-catcher.nil-example.workers.dev.evil.example"):
+            with self.assertRaises(ValueError):
+                validate_service_origin(invalid)
+
     def setUp(self):
         self.tmp = tempfile.TemporaryDirectory()
         self.root = Path(self.tmp.name)
