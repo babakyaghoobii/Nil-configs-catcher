@@ -843,6 +843,7 @@ app.addEventListener("input", (event) => {
     updateSubscriptionLink();
     return;
   }
+  if ((event.target as HTMLElement).id === "hub-search") { state.query = (event.target as HTMLInputElement).value; render(); (document.querySelector("#hub-search") as HTMLInputElement | null)?.focus(); return; }
   if ((event.target as HTMLElement).id === "search") {
     state.query = (event.target as HTMLInputElement).value;
     visibleLimit = 24;
@@ -854,6 +855,7 @@ app.addEventListener("change", (event) => {
     updateSubscriptionLink();
     return;
   }
+  if ((event.target as HTMLElement).id === "hub-sort") { state.sort = (event.target as HTMLSelectElement).value; render(); return; }
   if ((event.target as HTMLElement).id === "sort") {
     state.sort = (event.target as HTMLSelectElement).value;
     renderResults();
