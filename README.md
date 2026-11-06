@@ -12,9 +12,9 @@
 
 در سورس نسخهٔ جدید: پوستهٔ اختصاصی NIL با حالت تاریک، روشن و خودکار؛ ساخت لینک اشتراک زنده با فیلتر پروتکل/منبع/جستجو؛ و جمع‌آوری واقعی با دکمهٔ «دریافت کانفیگ تازه». این قابلیت‌ها به سرویس [`service/`](service/README.md) وابسته‌اند و صرف وجود کد، تأیید انتشار نیست. آدرس سرویس پس از انتشار و آزمون در `deployment.json` ثبت می‌شود. بسته‌های منتشرشدهٔ v1.0.0 همان نسخهٔ قبلی کچر هستند.
 
-**کلاینت VPN اصلی NIL هنوز منتشر نشده است.** ماژول همگام‌سازی و قالب اتصال آن به کلاینت بومی در [`apps/nil-client`](apps/nil-client/README.md) قرار دارد. مجوز پایهٔ بررسی‌شده، fork واقعی را لازم می‌کند و ساخت آن با دسترسی فعلی GitHub خطای ۴۰۳ داده است؛ اقدام صاحب حساب برای ایجاد fork در انتظار است. کاربر فعلاً حساب Apple Developer ندارد، پس نصب نسخهٔ امضاشدهٔ VPN روی iOS نیز پیش‌نیاز تأمین‌نشده دارد. کانفیگ تازه به معنی پینگ پایین نیست؛ آن ادعا به آزمون واقعی روی دستگاه نیاز دارد.
+[Nil-proxy](https://github.com/babakyaghoobii/Nil-proxy) کلاینت اتصال NIL است و آزمون URL را از مسیر شبکهٔ دستگاه اجرا می‌کند. ماژول همگام‌سازی و قالب اتصال آن در [`apps/nil-client`](apps/nil-client/README.md) قرار دارد. داشبورد کچر برای مرور و دریافت کانفیگ‌های عمومی است.
 
-A mobile-first Persian RTL PWA that collects **up to 50 NEW unique, publicly shared VPN configuration URIs per run**. No fabricated entries, endpoint probing, remote code, paid APIs, or private subscriptions.
+A mobile-first Persian RTL PWA that collects **up to 50 NEW unique, publicly shared VPN configuration URIs per run**. A separate scheduled probe measures HTTPS through selected public nodes.
 
 **Formats:** VLESS, VMess (base64 JSON v2), Trojan, Shadowsocks (SIP002 and legacy), Hysteria2 / hy2, and TUIC. Syntax validity does **not** imply that a server connects, is fast, or is trustworthy.
 
@@ -213,12 +213,12 @@ The new public web host uses `npm run build:hosted`, the same NIL assets, and th
 
 ## Security and limits
 
-- Config endpoint addresses are never contacted, resolved, imported, evaluated or passed to a shell. The dashboard has no arbitrary URL fetch feature. Upstream content is parsed as data only.
+- The dashboard and collection API parse upstream content as data. A separate scheduled probe contacts supported nodes after resolving and pinning their public IPv4 addresses.
 - Strict CSP, no CDN scripts/fonts, no analytics, escaped dynamic text, protocol-restricted data, restricted GitHub links and no embedded access token. API requests use the own origin or the explicitly configured NIL service; hosted and desktop fallbacks permit the fixed GitHub raw-data origin. Native IPC is permitted only in the desktop build. Clipboard/share failures are surfaced.
 - Cached data is identified as offline; it is not claimed to be fresh. The service worker is scoped to this repository path.
 - Synthetic `example.com` fixtures are confined to test code. Published configs come only from actual source retrieval.
 - WebKit tests emulate iPhone 16 viewport/touch behavior; they do not replace physical-device checks of installation, clipboard permissions or native share sheets.
-- This is a public configuration index, not a VPN client. It does not test availability, latency or server privacy, or evaluate upstream publication rights.
+- NIL Config Catcher indexes public configurations. Its probe measures the HTTPS response from the runner’s network. Nil-proxy runs the client-side connection test.
 
 ## Layout
 
