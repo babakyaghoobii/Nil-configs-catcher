@@ -13703,5 +13703,3205 @@
         "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
       }
     ]
+  },
+  {
+    "id": "9508eeba96c6c70ea48a6011423a1cd26912d620b4e3f94e43e5de76a384e6e3",
+    "uri": "vless://fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349@vpn.cintaku.qzz.io:443?type=ws&security=tls&path=/vlessws&sni=vpn.cintaku.qzz.io&fp=firefox#%F0%9F%87%B2%F0%9F%87%BE%20Malaysia%2C%20Shah%20Alam%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇲🇾 Malaysia, Shah Alam | [BL]",
+    "host": "vpn.cintaku.qzz.io",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T04:15:54Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "1eb83436b9e7bd54d09e6c645195442c46c20ab6315055277ea47ddd0e911013",
+    "uri": "vless://fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349@104.17.11.191:443?encryption=none&security=tls&sni=vpn.cintaku.qzz.io&type=ws&host=vpn.cintaku.qzz.io&path=%2Fvlessws#%F0%9F%87%B2%F0%9F%87%BE%20Malaysia%2C%20Shah%20Alam%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇲🇾 Malaysia, Shah Alam | 🌐 | [BL]",
+    "host": "104.17.11.191",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T04:15:54Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "8a6596a4c5823f804598db67093c9fde9d88588b3247f02755a008129845216a",
+    "uri": "vless://fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349@104.17.11.191:443?path=/vlessws&security=tls&encryption=none&insecure=0&host=vpn.cintaku.qzz.io&fp=chrome&type=ws&allowInsecure=0&sni=vpn.cintaku.qzz.io#%F0%9F%87%B2%F0%9F%87%BE%20Malaysia%2C%20Shah%20Alam%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇲🇾 Malaysia, Shah Alam | 🌐 | [BL]",
+    "host": "104.17.11.191",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T04:15:54Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "a0d386b408fceb4d9d26e7d728752745e12b8ca048a7deecdaa1187fca7b83ac",
+    "uri": "vless://fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349@104.21.91.49:443?encryption=none&host=vpn.cintaku.qzz.io&path=%2Fvlessws&security=tls&sni=vpn.cintaku.qzz.io&type=ws&fp=firefox#%F0%9F%87%B2%F0%9F%87%BE%20Malaysia%2C%20Shah%20Alam%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇲🇾 Malaysia, Shah Alam | 🌐 | [BL]",
+    "host": "104.21.91.49",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T04:15:54Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "66015381ea0aa634ac2e6c90a1c551de4d3d903bfee58cda1e7bbaa7a5bb10e6",
+    "uri": "vless://fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349@104.21.91.49:443?encryption=none&host=vpn.cintaku.qzz.io&path=%2Fvlessws&security=tls&sni=vpn.cintaku.qzz.io&type=ws&fp=ios#%F0%9F%87%B2%F0%9F%87%BE%20Malaysia%2C%20Shah%20Alam%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇲🇾 Malaysia, Shah Alam | 🌐 | [BL]",
+    "host": "104.21.91.49",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T04:15:54Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "a9748e5e93b521e53036562610bea7e53926fec28c0b0e6beb53dde1698b7f38",
+    "uri": "vless://fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349@104.21.91.49:443?path=%2Fvlessws&security=tls&encryption=none&insecure=0&host=vpn.cintaku.qzz.io&type=ws&allowInsecure=0&sni=vpn.cintaku.qzz.io#%F0%9F%87%B2%F0%9F%87%BE%20Malaysia%2C%20Shah%20Alam%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇲🇾 Malaysia, Shah Alam | 🌐 | [BL]",
+    "host": "104.21.91.49",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T04:15:54Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "bb05bc0de1f6b4e3525e2577752665284db856eb072e71bdce8b852aefe26e82",
+    "uri": "vless://fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349@172.67.166.188:443?security=tls&type=ws&path=%2Fvlessws&host=vpn.cintaku.qzz.io&packetEncoding=xudp&sni=vpn.cintaku.qzz.io&fp=chrome#%F0%9F%87%B2%F0%9F%87%BE%20Malaysia%2C%20Shah%20Alam%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇲🇾 Malaysia, Shah Alam | 🌐 | [BL]",
+    "host": "172.67.166.188",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T04:15:54Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "e01ea5e9bc4c06db0a3f1a5e47655e7e38c3f85e9ba8a6ec065d0c2b389c2d92",
+    "uri": "vless://fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349@8.35.211.242:443?fp=firefox&host=vpn.cintaku.qzz.io&path=%2Fvlessws&security=tls&sni=vpn.cintaku.qzz.io&type=ws#%F0%9F%87%B2%F0%9F%87%BE%20Malaysia%2C%20Shah%20Alam%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇲🇾 Malaysia, Shah Alam | 🌐 | [BL]",
+    "host": "8.35.211.242",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T04:15:54Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "1f1f7c37b5d19b89afa62b9c327bf184da07f33d6579bf134a4d38edd59ceb81",
+    "uri": "vless://fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349@8.35.211.242:443?path=%2Fvlessws&security=tls&encryption=none&insecure=0&host=vpn.cintaku.qzz.io&type=ws&allowInsecure=0&sni=vpn.cintaku.qzz.io#%F0%9F%87%B2%F0%9F%87%BE%20Malaysia%2C%20Shah%20Alam%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇲🇾 Malaysia, Shah Alam | 🌐 | [BL]",
+    "host": "8.35.211.242",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T04:15:54Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "0de75d080c0e8d189c9b2d72fe3b3024eddfb7bdc5418f8785ae2e7afefecab4",
+    "uri": "vless://fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349@vpn.cintaku.qzz.io:443?&security=tls&fp=chrome&sni=vpn.cintaku.qzz.io&type=ws&headerType=none&host=vpn.cintaku.qzz.io&path=%2Fvlessws#%F0%9F%87%B2%F0%9F%87%BE%20Malaysia%2C%20Shah%20Alam%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇲🇾 Malaysia, Shah Alam | 🌐 | [BL]",
+    "host": "vpn.cintaku.qzz.io",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T04:15:54Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "8193b4894a69b2dfd9c065bf9f25b6b599df3c9555f8e55e61d6bc1069d9a643",
+    "uri": "vless://fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349@vpn.cintaku.qzz.io:443?fp=firefox&host=vpn.cintaku.qzz.io&path=%2Fvlessws&security=tls&sni=vpn.cintaku.qzz.io&type=ws#%F0%9F%87%B2%F0%9F%87%BE%20Malaysia%2C%20Shah%20Alam%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇲🇾 Malaysia, Shah Alam | 🌐 | [BL]",
+    "host": "vpn.cintaku.qzz.io",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T04:15:54Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "35a5181ff25f04fd89929c9a933f5ed53deff5d42f31b8b7749c47d475c0f2de",
+    "uri": "vless://fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349@vpn.cintaku.qzz.io:443?host=vpn.cintaku.qzz.io&path=%2Fvlessws&security=tls&sni=vpn.cintaku.qzz.io&type=ws#%F0%9F%87%B2%F0%9F%87%BE%20Malaysia%2C%20Shah%20Alam%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇲🇾 Malaysia, Shah Alam | 🌐 | [BL]",
+    "host": "vpn.cintaku.qzz.io",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T04:15:54Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "66a9218ab49fcaa7104eb1c0476efeefb30e481810193b5fe4bb7b19442980cc",
+    "uri": "vless://fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349@vpn.cintaku.qzz.io:443?path=%2Fvlessws&security=tls&type=ws#%F0%9F%87%B2%F0%9F%87%BE%20Malaysia%2C%20Shah%20Alam%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇲🇾 Malaysia, Shah Alam | 🌐 | [BL]",
+    "host": "vpn.cintaku.qzz.io",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T04:15:54Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "0b4467c8f6b5ba3b30a740a86dbc6e3781e38b8bbe71c9e87101603efc55613e",
+    "uri": "vless://fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349@vpn.cintaku.qzz.io:443?security=tls&sni=vpn.cintaku.qzz.io&fp=ios&type=ws&host=vpn.cintaku.qzz.io&path=%2Fvlessws&encryption=none#%F0%9F%87%B2%F0%9F%87%BE%20Malaysia%2C%20Shah%20Alam%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇲🇾 Malaysia, Shah Alam | 🌐 | [BL]",
+    "host": "vpn.cintaku.qzz.io",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T04:15:54Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "fc3d638a538361d38fe3aa39796e03374734ccef6f0f7d44e914b657689fbdde",
+    "uri": "vless://2f6c70f3-206a-4bc1-ac1f-6b70153f9c73@connect2.accessgate.link:2086?type=tcp&security=reality&flow=xtls-rprx-vision&pbk=CQBmePak1QN5SsSmK_KTOSLjsCTaiaM4Jtxt7jLheko&sid=b0d8c9a285c70f6f&sni=unpkg.com&fp=firefox#%F0%9F%87%B3%F0%9F%87%B4%20Norway%2C%20Stokmarknes%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇳🇴 Norway, Stokmarknes | [BL]",
+    "host": "connect2.accessgate.link",
+    "port": 2086,
+    "firstSeenAt": "2026-11-06T04:15:54Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "c0ef1594bce56e790386a51f212441ef1bbf6cb7dacdb914143d892a43e74e23",
+    "uri": "vless://29c3dd6b-b164-40ca-a0d5-f06aca52a8b2@141.193.213.20:8443?encryption=none&security=tls&sni=u.srilankangrill.online&fp=firefox&type=ws&host=u.srilankangrill.online&path=%2F#%F0%9F%87%B8%F0%9F%87%AC%20Singapore%2C%20Singapore%20%28Somapah%29%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL]",
+    "host": "141.193.213.20",
+    "port": 8443,
+    "firstSeenAt": "2026-11-06T04:15:54Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "c8d6b38a3c50e0cb7f976f642435c7f3335f0f6b7fcdb6648645cd2b9703e920",
+    "uri": "vless://29c3dd6b-b164-40ca-a0d5-f06aca52a8b2@141.193.213.20:8443?encryption=none&security=tls&sni=u.srilankangrill.online&fp=safari&type=ws&host=u.srilankangrill.online&path=%2F#%F0%9F%87%B8%F0%9F%87%AC%20Singapore%2C%20Singapore%20%28Somapah%29%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL]",
+    "host": "141.193.213.20",
+    "port": 8443,
+    "firstSeenAt": "2026-11-06T04:15:54Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "64206a8d81eddadc7fe266f747dbc32dea82c0b21375b2c2d1e9c79d63bfc01d",
+    "uri": "vless://29c3dd6b-b164-40ca-a0d5-f06aca52a8b2@141.193.213.20:8443?encryption=none&security=tls&sni=u.srilankangrill.online&type=ws&host=u.srilankangrill.online&path=%2F&fp=android#%F0%9F%87%B8%F0%9F%87%AC%20Singapore%2C%20Singapore%20%28Somapah%29%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL]",
+    "host": "141.193.213.20",
+    "port": 8443,
+    "firstSeenAt": "2026-11-06T04:15:54Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "587440f1f8872cf5f9eaf54721a0f25c224c7b394c6246dfed120e54d20b755e",
+    "uri": "vless://29c3dd6b-b164-40ca-a0d5-f06aca52a8b2@141.193.213.20:8443?encryption=none&security=tls&sni=u.srilankangrill.online&type=ws&host=u.srilankangrill.online&path=%2F&fp=edge#%F0%9F%87%B8%F0%9F%87%AC%20Singapore%2C%20Singapore%20%28Somapah%29%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL]",
+    "host": "141.193.213.20",
+    "port": 8443,
+    "firstSeenAt": "2026-11-06T04:15:54Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "f902697fb4e388caa529c6ad39ce74ae17f2a47991ea4e1e1b9c4399726aa2c9",
+    "uri": "vless://29c3dd6b-b164-40ca-a0d5-f06aca52a8b2@141.193.213.20:8443?encryption=none&security=tls&sni=u.srilankangrill.online&type=ws&host=u.srilankangrill.online&path=%2F&fp=ios#%F0%9F%87%B8%F0%9F%87%AC%20Singapore%2C%20Singapore%20%28Somapah%29%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL]",
+    "host": "141.193.213.20",
+    "port": 8443,
+    "firstSeenAt": "2026-11-06T04:15:54Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "8fa6986c02fe6f0f598ee815d5408b2913693288da54c75aee1d73ed92b5d22c",
+    "uri": "vless://29c3dd6b-b164-40ca-a0d5-f06aca52a8b2@141.193.213.20:8443?encryption=none&security=tls&sni=u.srilankangrill.online&type=ws&host=u.srilankangrill.online&path=%2F&fp=qq#%F0%9F%87%B8%F0%9F%87%AC%20Singapore%2C%20Singapore%20%28Somapah%29%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL]",
+    "host": "141.193.213.20",
+    "port": 8443,
+    "firstSeenAt": "2026-11-06T04:15:54Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "645a2958b19133ce81b635695c84e34c89d9d395ef4a175792d93878d3ee95f3",
+    "uri": "vless://29c3dd6b-b164-40ca-a0d5-f06aca52a8b2@141.193.213.21:8443?encryption=none&security=tls&sni=u.srilankangrill.online&type=ws&host=u.srilankangrill.online&path=%2F&fp=qq#%F0%9F%87%B8%F0%9F%87%AC%20Singapore%2C%20Singapore%20%28Somapah%29%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL]",
+    "host": "141.193.213.21",
+    "port": 8443,
+    "firstSeenAt": "2026-11-06T04:15:54Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "9de0bb13d2b125ac5b895c8dc1cac33174e8ff84d5a1b6e5374db2c6fe4b348f",
+    "uri": "vless://29c3dd6b-b164-40ca-a0d5-f06aca52a8b2@141.193.213.21:8443?security=tls&sni=u.srilankangrill.online&type=ws&host=u.srilankangrill.online&path=%2F&fp=chrome#%F0%9F%87%B8%F0%9F%87%AC%20Singapore%2C%20Singapore%20%28Somapah%29%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL]",
+    "host": "141.193.213.21",
+    "port": 8443,
+    "firstSeenAt": "2026-11-06T04:15:54Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "2aa7fcd1eb8ef193e32fb395cce7b6eff951f9712e5f98657ade369e2573c8c9",
+    "uri": "vless://29c3dd6b-b164-40ca-a0d5-f06aca52a8b2@news.zoom.us:8443?encryption=none&security=tls&sni=u.srilankangrill.online&fp=firefox&type=ws&host=u.srilankangrill.online&path=%2F#%F0%9F%87%B8%F0%9F%87%AC%20Singapore%2C%20Singapore%20%28Somapah%29%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL]",
+    "host": "news.zoom.us",
+    "port": 8443,
+    "firstSeenAt": "2026-11-06T04:15:54Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "ed8cf493f7cda814fb65dbd4ede226a629a1cb1d1bc865ad37496b7cdae3873d",
+    "uri": "vless://29c3dd6b-b164-40ca-a0d5-f06aca52a8b2@news.zoom.us:8443?encryption=none&security=tls&sni=u.srilankangrill.online&fp=ios&type=ws&host=u.srilankangrill.online&path=%2F#%F0%9F%87%B8%F0%9F%87%AC%20Singapore%2C%20Singapore%20%28Somapah%29%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL]",
+    "host": "news.zoom.us",
+    "port": 8443,
+    "firstSeenAt": "2026-11-06T04:15:54Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "97c82463701773d02fceb404667f0a46375a8e78b2bd5841c1dc66b22d3444f7",
+    "uri": "vless://29c3dd6b-b164-40ca-a0d5-f06aca52a8b2@news.zoom.us:8443?encryption=none&security=tls&sni=u.srilankangrill.online&fp=safari&type=ws&host=u.srilankangrill.online&path=%2F#%F0%9F%87%B8%F0%9F%87%AC%20Singapore%2C%20Singapore%20%28Somapah%29%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL]",
+    "host": "news.zoom.us",
+    "port": 8443,
+    "firstSeenAt": "2026-11-06T04:15:54Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "45deec8f1beba6ad1d5f7df314e621c93ae6013dbbd9a27f75268cf3032be9e8",
+    "uri": "vless://29c3dd6b-b164-40ca-a0d5-f06aca52a8b2@news.zoom.us:8443?encryption=none&security=tls&sni=u.srilankangrill.online&type=ws&host=u.srilankangrill.online&path=%2F&fp=android#%F0%9F%87%B8%F0%9F%87%AC%20Singapore%2C%20Singapore%20%28Somapah%29%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL]",
+    "host": "news.zoom.us",
+    "port": 8443,
+    "firstSeenAt": "2026-11-06T04:15:54Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "4c9db2810ba41cc9459a28da75ebcdd67bc8dee5214ec2d1b20033e1b61e6401",
+    "uri": "vless://29c3dd6b-b164-40ca-a0d5-f06aca52a8b2@news.zoom.us:8443?encryption=none&security=tls&sni=u.srilankangrill.online&type=ws&host=u.srilankangrill.online&path=%2F&fp=edge#%F0%9F%87%B8%F0%9F%87%AC%20Singapore%2C%20Singapore%20%28Somapah%29%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL]",
+    "host": "news.zoom.us",
+    "port": 8443,
+    "firstSeenAt": "2026-11-06T04:15:54Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "c2277487944d812554d45c6944dcb45365fdf0799d02cd739b361403b26550ef",
+    "uri": "vless://29c3dd6b-b164-40ca-a0d5-f06aca52a8b2@news.zoom.us:8443?host=u.srilankangrill.online&path=%2F&security=tls&sni=u.srilankangrill.online&type=ws#%F0%9F%87%B8%F0%9F%87%AC%20Singapore%2C%20Singapore%20%28Somapah%29%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL]",
+    "host": "news.zoom.us",
+    "port": 8443,
+    "firstSeenAt": "2026-11-06T04:15:54Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "d4d44d951f3c0d3f6e48bf87190b902f42a90cff3c1b79f11fb4b9b955d20f3c",
+    "uri": "vless://29c3dd6b-b164-40ca-a0d5-f06aca52a8b2@news.zoom.us:8443?security=tls&type=ws&path=%2F&host=u.srilankangrill.online&packetEncoding=xudp&sni=u.srilankangrill.online&fp=chrome#%F0%9F%87%B8%F0%9F%87%AC%20Singapore%2C%20Singapore%20%28Somapah%29%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL]",
+    "host": "news.zoom.us",
+    "port": 8443,
+    "firstSeenAt": "2026-11-06T04:15:54Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "7798e0ce019df92f2de20fe24c1eff483f7396b81740bfe3356ceb1cf9f485c1",
+    "uri": "vless://b8d8a5b0-867f-4491-b4e4-30edc04bb10e@104.16.10.100:443?security=tls&type=ws&path=%2F&host=u.srilankangrill.online&packetEncoding=xudp&sni=u.srilankangrill.online&fp=chrome#%F0%9F%87%B8%F0%9F%87%AC%20Singapore%2C%20Singapore%20%28Somapah%29%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL]",
+    "host": "104.16.10.100",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T04:15:54Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "15a0e973b1cf9ffe444baf4e976d399439ee83d9700f2c647b007f42602dabe7",
+    "uri": "vless://b8d8a5b0-867f-4491-b4e4-30edc04bb10e@104.16.10.103:443?type=ws&path=%2F&host=u.srilankangrill.online&security=tls&sni=u.srilankangrill.online&fp=chrome#%F0%9F%87%B8%F0%9F%87%AC%20Singapore%2C%20Singapore%20%28Somapah%29%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL]",
+    "host": "104.16.10.103",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T04:15:54Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "f2d9e37db3644efe7a48307e6f4a5a02c0c272dee7c7390528cac61d4a608feb",
+    "uri": "vless://b8d8a5b0-867f-4491-b4e4-30edc04bb10e@104.16.10.10:443?security=tls&sni=u.srilankangrill.online&type=ws&host=u.srilankangrill.online&path=/&fp=chrome#%F0%9F%87%B8%F0%9F%87%AC%20Singapore%2C%20Singapore%20%28Somapah%29%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL]",
+    "host": "104.16.10.10",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T04:15:54Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "b48007efc30eadc9e121f0eac35adf9acacb7a7326a57a590b35a10d1c3b790f",
+    "uri": "vless://b8d8a5b0-867f-4491-b4e4-30edc04bb10e@104.16.10.116:443?security=tls&type=ws&path=%2F&host=u.srilankangrill.online&packetEncoding=xudp&sni=u.srilankangrill.online&fp=chrome#%F0%9F%87%B8%F0%9F%87%AC%20Singapore%2C%20Singapore%20%28Somapah%29%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL]",
+    "host": "104.16.10.116",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T04:15:54Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "c0ad328ee1900dd1af5192c32e9bbd22e1f4efc99e7facbefb6cccfc6006fcd9",
+    "uri": "vless://b8d8a5b0-867f-4491-b4e4-30edc04bb10e@104.16.10.117:443?security=tls&type=ws&path=/&host=u.srilankangrill.online&packetEncoding=xudp&sni=u.srilankangrill.online&fp=chrome#%F0%9F%87%B8%F0%9F%87%AC%20Singapore%2C%20Singapore%20%28Somapah%29%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL]",
+    "host": "104.16.10.117",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T04:15:54Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "736c7d66b9d57515e87a976ea9147c81b824dcc1bbfeb0a3ea1586a864976e50",
+    "uri": "vless://b8d8a5b0-867f-4491-b4e4-30edc04bb10e@104.16.10.189:443?security=tls&type=ws&path=%2F&host=u.srilankangrill.online&packetEncoding=xudp&sni=u.srilankangrill.online&fp=chrome#%F0%9F%87%B8%F0%9F%87%AC%20Singapore%2C%20Singapore%20%28Somapah%29%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL]",
+    "host": "104.16.10.189",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T04:15:54Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "97dae5d507de897fa8c0f810b2ad1b51126b603207d146ecd138eb6154b1a11c",
+    "uri": "vless://b8d8a5b0-867f-4491-b4e4-30edc04bb10e@104.16.10.198:443?security=tls&type=ws&path=%2F&host=u.srilankangrill.online&packetEncoding=xudp&sni=u.srilankangrill.online&fp=chrome#%F0%9F%87%B8%F0%9F%87%AC%20Singapore%2C%20Singapore%20%28Somapah%29%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL]",
+    "host": "104.16.10.198",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T04:15:54Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "1a343d3545e800a3d011c267684f4189c75d0512404d3af28d29bfdcdc4aa57c",
+    "uri": "vless://b8d8a5b0-867f-4491-b4e4-30edc04bb10e@104.16.10.234:443?security=tls&type=ws&path=%2F&host=u.srilankangrill.online&packetEncoding=xudp&sni=u.srilankangrill.online&fp=chrome#%F0%9F%87%B8%F0%9F%87%AC%20Singapore%2C%20Singapore%20%28Somapah%29%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL]",
+    "host": "104.16.10.234",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T04:15:54Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "7743714c89eb2720fe330981a82a5532cb547f9e1f9b8bd18a2bedf4340b0099",
+    "uri": "vless://b8d8a5b0-867f-4491-b4e4-30edc04bb10e@104.16.10.235:443?security=tls&sni=u.srilankangrill.online&type=ws&host=u.srilankangrill.online&path=/&fp=chrome#%F0%9F%87%B8%F0%9F%87%AC%20Singapore%2C%20Singapore%20%28Somapah%29%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL]",
+    "host": "104.16.10.235",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T04:15:54Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "143cd5de9349fedb604190ff4984b74cf8dde118b8f476a227bb9c7bd3994492",
+    "uri": "vless://b8d8a5b0-867f-4491-b4e4-30edc04bb10e@104.16.111.193:443?security=tls&type=ws&path=%2F&host=u.srilankangrill.online&sni=u.srilankangrill.online&fp=chrome#%F0%9F%87%B8%F0%9F%87%AC%20Singapore%2C%20Singapore%20%28Somapah%29%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL]",
+    "host": "104.16.111.193",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T04:15:54Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "b5ab6463229cf6881bb5f555915767f939a4d50d0830e01e48958e8d163c676e",
+    "uri": "vless://b8d8a5b0-867f-4491-b4e4-30edc04bb10e@104.16.3.98:443?path=%2F&security=tls&encryption=none&host=u.srilankangrill.online&type=ws&sni=u.srilankangrill.online#%F0%9F%87%B8%F0%9F%87%AC%20Singapore%2C%20Singapore%20%28Somapah%29%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL]",
+    "host": "104.16.3.98",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T04:15:54Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "78e57791332aa9b1fda6edd7d1573d8f61741ae2270484d113b1bc2df2bda94d",
+    "uri": "vless://b8d8a5b0-867f-4491-b4e4-30edc04bb10e@104.16.3.98:443?security=tls&type=ws&path=%2F&host=u.srilankangrill.online&packetEncoding=xudp&sni=u.srilankangrill.online&fp=chrome&encryption=none#%F0%9F%87%B8%F0%9F%87%AC%20Singapore%2C%20Singapore%20%28Somapah%29%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL]",
+    "host": "104.16.3.98",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T04:15:54Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "ef76916e957d952534243e0164f63b33443fb73476084a856891a403de6a6885",
+    "uri": "vless://ad3f4a0a-a89f-498e-9869-a93c8fa185b1@91.107.179.0:10105?sni=play.google.com&flow=xtls-rprx-vision&fp=chrome&security=tls#%F0%9F%87%A9%F0%9F%87%AA%5Bwww.v2nodes.com%5D%20vless-DE-1...%20%2311",
+    "protocol": "vless",
+    "name": "🇩🇪[www.v2nodes.com] vless-DE-1... #11",
+    "host": "91.107.179.0",
+    "port": 10105,
+    "firstSeenAt": "2026-11-06T04:15:54Z",
+    "sources": [
+      {
+        "id": "no-more-walls",
+        "name": "No More Walls",
+        "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+      }
+    ]
+  },
+  {
+    "id": "97af0656a2a4af4e026d0400e236127a79c815e8be1a88dd4148c0950f351cd3",
+    "uri": "vless://b8d8a5b0-867f-4491-b4e4-30edc04bb10e@104.17.117.137:443?security=tls&type=ws&path=%2F&host=u.srilankangrill.online&packetEncoding=xudp&sni=u.srilankangrill.online&fp=chrome#%F0%9F%87%B8%F0%9F%87%AC%20Singapore%2C%20Singapore%20%28Somapah%29%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL]",
+    "host": "104.17.117.137",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T04:15:54Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "30faed94167d9c4913c3a75d395097a96a780a469d287ae8b3c3baf1e6175f92",
+    "uri": "vless://b8d8a5b0-867f-4491-b4e4-30edc04bb10e@104.18.26.90:443?type=ws&path=%2F&host=u.srilankangrill.online&security=tls&sni=u.srilankangrill.online&fp=chrome#%F0%9F%87%B8%F0%9F%87%AC%20Singapore%2C%20Singapore%20%28Somapah%29%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL]",
+    "host": "104.18.26.90",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T04:15:54Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "777a0a4056527739f28114eb2903507373cef38853f5b12f102cda3718ea3a7b",
+    "uri": "vless://b8d8a5b0-867f-4491-b4e4-30edc04bb10e@104.19.178.244:443?security=tls&sni=u.srilankangrill.online&type=ws&host=u.srilankangrill.online&path=/&fp=chrome#%F0%9F%87%B8%F0%9F%87%AC%20Singapore%2C%20Singapore%20%28Somapah%29%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL]",
+    "host": "104.19.178.244",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T04:15:54Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "1ba2be2e87dd5d2891aae8c004d66ce56166dbd4a899f3a7d1b0a8a1f3b8cdea",
+    "uri": "vless://b8d8a5b0-867f-4491-b4e4-30edc04bb10e@104.21.236.63:443?type=ws&path=%2F&host=u.srilankangrill.online&security=tls&sni=u.srilankangrill.online&fp=chrome#%F0%9F%87%B8%F0%9F%87%AC%20Singapore%2C%20Singapore%20%28Somapah%29%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL]",
+    "host": "104.21.236.63",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T04:15:54Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "78f0b204c4860df298b4af4cfe58216f828ff2a90c73a8aa25af177ddcd61f36",
+    "uri": "vless://b8d8a5b0-867f-4491-b4e4-30edc04bb10e@104.21.5.75:443?security=tls&sni=u.srilankangrill.online&type=ws&host=u.srilankangrill.online&path=/&fp=chrome#%F0%9F%87%B8%F0%9F%87%AC%20Singapore%2C%20Singapore%20%28Somapah%29%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL]",
+    "host": "104.21.5.75",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T04:15:54Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "1cf3a750f6408b3aed05320e60621e2eeb87173b57742fc0173968cb1c6c4d42",
+    "uri": "vless://b8d8a5b0-867f-4491-b4e4-30edc04bb10e@104.21.60.109:443?security=tls&type=ws&path=%2F&host=u.srilankangrill.online&packetEncoding=xudp&sni=u.srilankangrill.online&fp=chrome#%F0%9F%87%B8%F0%9F%87%AC%20Singapore%2C%20Singapore%20%28Somapah%29%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL]",
+    "host": "104.21.60.109",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T04:15:54Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "c53241f26fc171d78c31639a6377fab4b02d59be41c8d56fb667c4b6ba093cfd",
+    "uri": "vless://b8d8a5b0-867f-4491-b4e4-30edc04bb10e@104.21.89.41:443?security=tls&type=ws&path=/&host=u.srilankangrill.online&packetEncoding=xudp&sni=u.srilankangrill.online&fp=chrome#%F0%9F%87%B8%F0%9F%87%AC%20Singapore%2C%20Singapore%20%28Somapah%29%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL]",
+    "host": "104.21.89.41",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T04:15:54Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "aeebd5dd740bf9befef73c4aea411d8494a5b14aafc43cc21a9203f8fcdc3e8d",
+    "uri": "vless://0ef68b97-f878-4cea-b756-c56ea3632851@news.zoom.us:2087?path=%2F&security=tls&alpn=http%2F1.1&encryption=none&host=free.vkehi.store&type=ws&sni=free.vkehi.store&fp=safari#%F0%9F%87%B1%F0%9F%87%B0%20Sri%20Lanka%2C%20Battaramulla%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇱🇰 Sri Lanka, Battaramulla | [BL]",
+    "host": "news.zoom.us",
+    "port": 2087,
+    "firstSeenAt": "2026-11-06T04:23:03Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "d079593b51b26fad7e81c36e4b03815385f6b7db8ed162942a302e746812233e",
+    "uri": "vless://0ef68b97-f878-4cea-b756-c56ea3632851@news.zoom.us:2087?path=/&security=tls&alpn=http/1.1&encryption=none&host=free.vkehi.store&fp=chrome&type=ws&sni=free.vkehi.store#%F0%9F%87%B1%F0%9F%87%B0%20Sri%20Lanka%2C%20Battaramulla%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇱🇰 Sri Lanka, Battaramulla | [BL]",
+    "host": "news.zoom.us",
+    "port": 2087,
+    "firstSeenAt": "2026-11-06T04:23:03Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "8bc9fc105d784c1b501360bb2c899361121b632feee0f8e6787195814ea9ce1f",
+    "uri": "vless://0ef68b97-f878-4cea-b756-c56ea3632851@news.zoom.us:2087?security=tls&type=ws&sni=free.vkehi.store&path=%2F&host=free.vkehi.store&alpn=http%2F1.1&allowInsecure=0&insecure=0#%F0%9F%87%B1%F0%9F%87%B0%20Sri%20Lanka%2C%20Battaramulla%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇱🇰 Sri Lanka, Battaramulla | [BL]",
+    "host": "news.zoom.us",
+    "port": 2087,
+    "firstSeenAt": "2026-11-06T04:23:03Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "d1ccf1181ce6e9c9f86bf0e0a71ef4734137bf2ededcd4ccd17bfe6e868c32d8",
+    "uri": "vless://0ef68b97-f878-4cea-b756-c56ea3632851@news.zoom.us:2087?type=ws&security=tls&fp=chrome&sni=free.vkehi.store&host=free.vkehi.store#%F0%9F%87%B1%F0%9F%87%B0%20Sri%20Lanka%2C%20Battaramulla%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇱🇰 Sri Lanka, Battaramulla | [BL]",
+    "host": "news.zoom.us",
+    "port": 2087,
+    "firstSeenAt": "2026-11-06T04:23:03Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "aa4050b7ebd825afc0b6f91e0836af6eb48337313edbc43b9cbe6277686fb75c",
+    "uri": "vless://0ef68b97-f878-4cea-b756-c56ea3632851@news.zoom.us:2087?type=ws&security=tls&sni=free.vkehi.store&host=free.vkehi.store&fp=android#%F0%9F%87%B1%F0%9F%87%B0%20Sri%20Lanka%2C%20Battaramulla%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇱🇰 Sri Lanka, Battaramulla | [BL]",
+    "host": "news.zoom.us",
+    "port": 2087,
+    "firstSeenAt": "2026-11-06T04:23:03Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "b7d0646323c8f43854e63dd9f1848b9413c1bee602e30add6bf2639150e48bab",
+    "uri": "vless://0ef68b97-f878-4cea-b756-c56ea3632851@news.zoom.us:2087?type=ws&security=tls&sni=free.vkehi.store&host=free.vkehi.store&fp=edge#%F0%9F%87%B1%F0%9F%87%B0%20Sri%20Lanka%2C%20Battaramulla%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇱🇰 Sri Lanka, Battaramulla | [BL]",
+    "host": "news.zoom.us",
+    "port": 2087,
+    "firstSeenAt": "2026-11-06T04:23:03Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "20f589e3a8fc43af028d23505d0b3e80259df123cadb06e38a811193f8e56b3a",
+    "uri": "vless://0ef68b97-f878-4cea-b756-c56ea3632851@news.zoom.us:2087?type=ws&security=tls&sni=free.vkehi.store&host=free.vkehi.store&fp=firefox#%F0%9F%87%B1%F0%9F%87%B0%20Sri%20Lanka%2C%20Battaramulla%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇱🇰 Sri Lanka, Battaramulla | [BL]",
+    "host": "news.zoom.us",
+    "port": 2087,
+    "firstSeenAt": "2026-11-06T04:23:03Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "d97c352e5cde5d21e14ad49c541554e5a9fe20a0e012fca259f3fa43d31ba85c",
+    "uri": "vless://0ef68b97-f878-4cea-b756-c56ea3632851@news.zoom.us:2087?type=ws&security=tls&sni=free.vkehi.store&host=free.vkehi.store&fp=ios#%F0%9F%87%B1%F0%9F%87%B0%20Sri%20Lanka%2C%20Battaramulla%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇱🇰 Sri Lanka, Battaramulla | [BL]",
+    "host": "news.zoom.us",
+    "port": 2087,
+    "firstSeenAt": "2026-11-06T04:23:03Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "ffba84d3577c6f318d0e9c41f29f39f3e5e0d9bf5fb65c6cc0f3951b6a1bedf1",
+    "uri": "vless://0ef68b97-f878-4cea-b756-c56ea3632851@news.zoom.us:2087?type=ws&security=tls&sni=free.vkehi.store&host=free.vkehi.store&fp=qq#%F0%9F%87%B1%F0%9F%87%B0%20Sri%20Lanka%2C%20Battaramulla%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇱🇰 Sri Lanka, Battaramulla | [BL]",
+    "host": "news.zoom.us",
+    "port": 2087,
+    "firstSeenAt": "2026-11-06T04:23:03Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "a695ce15d28ef425a21e9def59c9638cff237c5591d8b64b4c15e067faebbf0a",
+    "uri": "vless://0ef68b97-f878-4cea-b756-c56ea3632851@news.zoom.us:2087?type=ws&security=tls&sni=free.vkehi.store&host=free.vkehi.store&fp=safari#%F0%9F%87%B1%F0%9F%87%B0%20Sri%20Lanka%2C%20Battaramulla%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇱🇰 Sri Lanka, Battaramulla | [BL]",
+    "host": "news.zoom.us",
+    "port": 2087,
+    "firstSeenAt": "2026-11-06T04:23:03Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "990e81dc29126711a513424935a2376328c540b43bfd526e20b38624751ba0d8",
+    "uri": "vless://2f6c70f3-206a-4bc1-ac1f-6b70153f9c73@connect4.accessgate.link:1085?encryption=none&flow=xtls-rprx-vision&insecure=1&pbk=CQBmePak1QN5SsSmK_KTOSLjsCTaiaM4Jtxt7jLheko&security=reality&sid=b0d8c9a285c70f6f&sni=unpkg.com&type=tcp&fp=ios#%F0%9F%87%B8%F0%9F%87%AA%20Sweden%2C%20Stockholm%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇸🇪 Sweden, Stockholm | [BL]",
+    "host": "connect4.accessgate.link",
+    "port": 1085,
+    "firstSeenAt": "2026-11-06T04:23:03Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "116887f562860765bbb0462fb6441f0c34dc24d446b6f044845341d90b6b4b29",
+    "uri": "vless://2f6c70f3-206a-4bc1-ac1f-6b70153f9c73@connect4.accessgate.link:1085?security=reality&type=tcp&sni=unpkg.com&host=unpkg.com&flow=xtls-rprx-vision&pbk=CQBmePak1QN5SsSmK_KTOSLjsCTaiaM4Jtxt7jLheko&sid=b0d8c9a285c70f6f&fp=safari#%F0%9F%87%B8%F0%9F%87%AA%20Sweden%2C%20Stockholm%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇸🇪 Sweden, Stockholm | [BL]",
+    "host": "connect4.accessgate.link",
+    "port": 1085,
+    "firstSeenAt": "2026-11-06T04:23:03Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "07f13b8b9459bae994dd09bd293fb04a21eb3d764ca14d818be32f9e31cf5482",
+    "uri": "vless://fc2d811f-3b7d-4706-9f46-d470255ef061@grok.com:2083?path=%2F7x&security=tls&encryption=none&insecure=0&host=cdn.config7x.site&fp=chrome&type=ws&allowInsecure=0&sni=cdn.config7x.site#%F0%9F%87%B8%F0%9F%87%AA%20Sweden%2C%20Stockholm%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇸🇪 Sweden, Stockholm | 🌐 | [BL]",
+    "host": "grok.com",
+    "port": 2083,
+    "firstSeenAt": "2026-11-06T04:23:03Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "fcf9aff19111021b68cbabb773a34bfdc6264cfb1cb425a7cbbf310b245d9859",
+    "uri": "vless://fc2d811f-3b7d-4706-9f46-d470255ef061@grok.com:2083?path=%2F7x&security=tls&encryption=none&insecure=0&host=cdn.config7x.site&type=ws&allowInsecure=0&sni=cdn.config7x.site&fp=qq#%F0%9F%87%B8%F0%9F%87%AA%20Sweden%2C%20Stockholm%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇸🇪 Sweden, Stockholm | 🌐 | [BL]",
+    "host": "grok.com",
+    "port": 2083,
+    "firstSeenAt": "2026-11-06T04:23:03Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "c786eb2a49e2a87c997b371428025254c0690ca07a7445732944121c54fea9b6",
+    "uri": "vless://91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a@172.67.165.32:8443?host=n04.jinggai.online&path=%2Fnvl-n04-ws%2Fe0577fe8fd7c8823&security=tls&sni=n04.jinggai.online&type=ws#%F0%9F%87%B9%F0%9F%87%BC%20Taiwan%2C%20Taoyuan%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇹🇼 Taiwan, Taoyuan | [BL]",
+    "host": "172.67.165.32",
+    "port": 8443,
+    "firstSeenAt": "2026-11-06T04:23:03Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "91e695e1a24a2e11cfcd99f3a6601750cf6f44c46e07a4b0d82e1604e88870e1",
+    "uri": "vless://91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a@172.67.165.32:8443?host=n04.jinggai.online&path=%2Fnvl-n04-ws%2Fe0577fe8fd7c8823&security=tls&sni=n04.jinggai.online&type=ws&fp=firefox#%F0%9F%87%B9%F0%9F%87%BC%20Taiwan%2C%20Taoyuan%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇹🇼 Taiwan, Taoyuan | [BL]",
+    "host": "172.67.165.32",
+    "port": 8443,
+    "firstSeenAt": "2026-11-06T04:23:03Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "247d2459b27df006cf535e5f0aba10f678d63edd2baf7f6c53489ec93e992a1e",
+    "uri": "vless://91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a@n04.jinggai.online:8443?&security=tls&fp=chrome&sni=n04.jinggai.online&type=ws&headerType=none&host=n04.jinggai.online&path=%2Fnvl-n04-ws%2Fe0577fe8fd7c8823#%F0%9F%87%B9%F0%9F%87%BC%20Taiwan%2C%20Taoyuan%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇹🇼 Taiwan, Taoyuan | [BL]",
+    "host": "n04.jinggai.online",
+    "port": 8443,
+    "firstSeenAt": "2026-11-06T04:23:03Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "9392f1687dcbf5b0da2e3d19583efcf3f553ac5b48d7cb069b58a18ba18cc49b",
+    "uri": "vless://91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a@n04.jinggai.online:8443?encryption=none&security=tls&sni=n04.jinggai.online&fp=chrome&type=ws&path=%2Fnvl-n04-ws%2Fe0577fe8fd7c8823#%F0%9F%87%B9%F0%9F%87%BC%20Taiwan%2C%20Taoyuan%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇹🇼 Taiwan, Taoyuan | [BL]",
+    "host": "n04.jinggai.online",
+    "port": 8443,
+    "firstSeenAt": "2026-11-06T04:23:03Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "9b670793eca0d3044098f64497de022e23dd37170f52b30a0717abde048494bb",
+    "uri": "vless://91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a@n04.jinggai.online:8443?path=%2Fnvl-n04-ws%2Fe0577fe8fd7c8823&security=tls&sni=n04.jinggai.online&type=ws#%F0%9F%87%B9%F0%9F%87%BC%20Taiwan%2C%20Taoyuan%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇹🇼 Taiwan, Taoyuan | [BL]",
+    "host": "n04.jinggai.online",
+    "port": 8443,
+    "firstSeenAt": "2026-11-06T04:23:03Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "59a94a9471f4b21022894dc5335b555d7fce751c548618ee0789fb4c90241950",
+    "uri": "vless://91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a@n04.jinggai.online:8443?type=ws&path=%252Fnvl-n04-ws%252Fe0577fe8fd7c8823&host=n04.jinggai.online&security=tls&sni=n04.jinggai.online&fp=chrome#%F0%9F%87%B9%F0%9F%87%BC%20Taiwan%2C%20Taoyuan%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇹🇼 Taiwan, Taoyuan | [BL]",
+    "host": "n04.jinggai.online",
+    "port": 8443,
+    "firstSeenAt": "2026-11-06T04:23:03Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "dea400097f2c7670eeb9d52c6e4f9074dc908d0a834ac5b18457613e7950202b",
+    "uri": "vless://91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a@n04.jinggai.online:8443?type=ws&path=%252Fnvl-n04-ws%252Fe0577fe8fd7c8823&host=n04.jinggai.online&security=tls&sni=n04.jinggai.online&fp=edge#%F0%9F%87%B9%F0%9F%87%BC%20Taiwan%2C%20Taoyuan%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇹🇼 Taiwan, Taoyuan | [BL]",
+    "host": "n04.jinggai.online",
+    "port": 8443,
+    "firstSeenAt": "2026-11-06T04:23:03Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "e42c9ce44523ead21847df0e3fafcbc87b35166764cfd2a3d1edfe5ab511290a",
+    "uri": "vless://eaf76557-2219-4799-8171-d7020adfefd0@104.18.151.231:2053?encryption=none&host=twilight-frost-15b0.yigom67484.workers.dev&path=%2Fws&security=tls&sni=twilight-frost-15b0.yigom67484.workers.dev&type=ws&fp=ios#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇳🇱 The Netherlands | 🌐 | [BL]",
+    "host": "104.18.151.231",
+    "port": 2053,
+    "firstSeenAt": "2026-11-06T04:23:03Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "3e0643bae4f7c937606b446ccebc2e223541c1f35559bf2815a74c684e55da25",
+    "uri": "vless://eaf76557-2219-4799-8171-d7020adfefd0@104.18.151.231:2053?security=tls&type=ws&path=%2Fws&host=twilight-frost-15b0.yigom67484.workers.dev&packetEncoding=xudp&sni=twilight-frost-15b0.yigom67484.workers.dev&fp=chrome&encryption=none#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇳🇱 The Netherlands | 🌐 | [BL]",
+    "host": "104.18.151.231",
+    "port": 2053,
+    "firstSeenAt": "2026-11-06T04:23:03Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "ac3c182319e3cded7c7269768ed0e4f7b1065aec06e595fd1cc394ae6f6b5359",
+    "uri": "vless://eaf76557-2219-4799-8171-d7020adfefd0@104.18.151.231:443?encryption=none&host=damp-pine-ea85.wimaren917.workers.dev&path=%2Fws&security=tls&sni=damp-pine-ea85.wimaren917.workers.dev&type=ws#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇳🇱 The Netherlands | 🌐 | [BL]",
+    "host": "104.18.151.231",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T04:23:03Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "c3930d93e9a2284f1c525909dfb7fc55f00cca05bb179e8314bc4d8889617f1f",
+    "uri": "vless://eaf76557-2219-4799-8171-d7020adfefd0@104.18.151.231:443?encryption=none&host=delicate-hall-bf16.vpndkah.workers.dev&path=%2Fws&security=tls&sni=delicate-hall-bf16.vpndkah.workers.dev&type=ws#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇳🇱 The Netherlands | 🌐 | [BL]",
+    "host": "104.18.151.231",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T04:23:03Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "1d571765f16e9587c2c21f68b525b48d0a045d20c220cce4d24e763df11ad6e4",
+    "uri": "vless://eaf76557-2219-4799-8171-d7020adfefd0@104.18.151.231:443?encryption=none&host=hidden-star-98c5.tebohi79684008.workers.dev&path=%2Fws&security=tls&sni=hidden-star-98c5.tebohi79684008.workers.dev&type=ws#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇳🇱 The Netherlands | 🌐 | [BL]",
+    "host": "104.18.151.231",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T04:23:03Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "d7928c5ca652af03234bf26ad50ccccf4eba0d86034fe721a778bb260a40a75b",
+    "uri": "vless://eaf76557-2219-4799-8171-d7020adfefd0@104.18.151.231:443?encryption=none&host=jolly-silence-83b2.kidat76098.workers.dev&path=%2Fws&security=tls&sni=jolly-silence-83b2.kidat76098.workers.dev&type=ws#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇳🇱 The Netherlands | 🌐 | [BL]",
+    "host": "104.18.151.231",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T04:23:03Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "8fed9d50ab29334c173ff3b50d954471ecf8d8303d9e1c285cdcda2f6b50ec71",
+    "uri": "vless://eaf76557-2219-4799-8171-d7020adfefd0@104.18.151.231:443?encryption=none&host=muddy-star-d195.aboumansour10313.workers.dev&path=/ws&security=tls&sni=muddy-star-d195.aboumansour10313.workers.dev&type=ws#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇳🇱 The Netherlands | 🌐 | [BL]",
+    "host": "104.18.151.231",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T04:23:03Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "845d840f381729ecae410e06e6575dca9df5eacd02a7f273300d0af2a445cedb",
+    "uri": "vless://eaf76557-2219-4799-8171-d7020adfefd0@104.18.151.231:443?encryption=none&host=steep-lake-615e.xeremed6978165.workers.dev&path=/ws&security=tls&sni=steep-lake-615e.xeremed6978165.workers.dev&type=ws#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇳🇱 The Netherlands | 🌐 | [BL]",
+    "host": "104.18.151.231",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T04:23:03Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "903c47551f5b2532bd5f7ac6e31b3c0523774a32a05a1d5108826348f669f512",
+    "uri": "vless://eaf76557-2219-4799-8171-d7020adfefd0@104.18.151.231:443?encryption=none&host=workers.jijew83195.workers.dev&path=/ws&security=tls&sni=workers.jijew83195.workers.dev&type=ws#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇳🇱 The Netherlands | 🌐 | [BL]",
+    "host": "104.18.151.231",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T04:23:03Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "46384296ba0ca4b13815c772645be1f15d74c08cec264f127eed558d5c72e48e",
+    "uri": "vless://eaf76557-2219-4799-8171-d7020adfefd0@104.18.151.231:443?encryption=none&host=workers.retaxay188.workers.dev&path=%2Fws&security=tls&sni=workers.retaxay188.workers.dev&type=ws#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇳🇱 The Netherlands | 🌐 | [BL]",
+    "host": "104.18.151.231",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T04:23:03Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "c67f9e697d91225f8eb5bffdbf594f8e2cda198ae917dff0fb178a542b4878a7",
+    "uri": "vless://eaf76557-2219-4799-8171-d7020adfefd0@104.18.151.231:443?headerType=none&host=steep-lake-615e.xeremed6978165.workers.dev&path=%2Fws&security=tls&sni=steep-lake-615e.xeremed6978165.workers.dev&type=ws&fp=chrome#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇳🇱 The Netherlands | 🌐 | [BL]",
+    "host": "104.18.151.231",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T04:23:03Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "084d4f401845e6d5234855270d591d66696c4c46def9f0a8e575c974038f5db5",
+    "uri": "vless://eaf76557-2219-4799-8171-d7020adfefd0@104.18.151.231:443?headerType=none&host=steep-lake-615e.xeremed6978165.workers.dev&path=%2Fws&security=tls&sni=steep-lake-615e.xeremed6978165.workers.dev&type=ws&fp=firefox#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇳🇱 The Netherlands | 🌐 | [BL]",
+    "host": "104.18.151.231",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T04:23:03Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "6875e57ce27b8fdbd621aa02bdc1c8a220f0eca20087bd9c60cc5211a273e2fc",
+    "uri": "vless://eaf76557-2219-4799-8171-d7020adfefd0@104.18.151.231:443?headerType=none&host=steep-lake-615e.xeremed6978165.workers.dev&path=%2Fws&security=tls&sni=steep-lake-615e.xeremed6978165.workers.dev&type=ws&fp=ios#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇳🇱 The Netherlands | 🌐 | [BL]",
+    "host": "104.18.151.231",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T04:23:03Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "e8fa94349a1191e8a4d12f88f87776c5d099434ec2c8c7fa88bb690f041473d0",
+    "uri": "vless://eaf76557-2219-4799-8171-d7020adfefd0@104.18.151.231:443?headerType=none&host=steep-lake-615e.xeremed6978165.workers.dev&path=%2Fws&security=tls&sni=steep-lake-615e.xeremed6978165.workers.dev&type=ws&fp=safari#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇳🇱 The Netherlands | 🌐 | [BL]",
+    "host": "104.18.151.231",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T04:23:03Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "0714101b955028ea59d277e28794aed68e3ec3174f6baee9a78362981a6aff66",
+    "uri": "vless://eaf76557-2219-4799-8171-d7020adfefd0@104.18.151.231:443?security=tls&type=ws&path=%2Fws&host=damp-pine-ea85.wimaren917.workers.dev&packetEncoding=xudp&sni=damp-pine-ea85.wimaren917.workers.dev&fp=chrome&encryption=none#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇳🇱 The Netherlands | 🌐 | [BL]",
+    "host": "104.18.151.231",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T04:23:03Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "4bde0123b2fff28084fcfc0ea755f66e64abdabf7fa121c77e48575b1aa5884b",
+    "uri": "vless://eaf76557-2219-4799-8171-d7020adfefd0@104.18.151.231:443?security=tls&type=ws&path=%2Fws&host=hidden-star-98c5.tebohi79684008.workers.dev&packetEncoding=xudp&sni=hidden-star-98c5.tebohi79684008.workers.dev&fp=chrome&encryption=none#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇳🇱 The Netherlands | 🌐 | [BL]",
+    "host": "104.18.151.231",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T04:23:03Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "70921d6044e47f213e7ee591ec56e209a8ea597c741ae76a8646cc81664dc771",
+    "uri": "vless://eaf76557-2219-4799-8171-d7020adfefd0@104.18.151.231:443?security=tls&type=ws&path=%2Fws&host=jolly-silence-83b2.kidat76098.workers.dev&packetEncoding=xudp&sni=jolly-silence-83b2.kidat76098.workers.dev&fp=chrome&encryption=none#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇳🇱 The Netherlands | 🌐 | [BL]",
+    "host": "104.18.151.231",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T04:23:03Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "8eba1c5ad61e3f017d1db3864206fef9e4d927c1487f1cbb62d2f9f396e2654a",
+    "uri": "vless://eaf76557-2219-4799-8171-d7020adfefd0@104.18.151.231:443?security=tls&type=ws&path=%2Fws&host=muddy-star-d195.aboumansour10313.workers.dev&packetEncoding=xudp&sni=muddy-star-d195.aboumansour10313.workers.dev&fp=chrome&encryption=none#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇳🇱 The Netherlands | 🌐 | [BL]",
+    "host": "104.18.151.231",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T04:23:03Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "46ee3c0e18026c5302cc0bac6c62f77cc1836edc6292a45143cce794539da9fa",
+    "uri": "vless://eaf76557-2219-4799-8171-d7020adfefd0@104.18.151.231:443?security=tls&type=ws&path=%2Fws&host=workers.jijew83195.workers.dev&packetEncoding=xudp&sni=workers.jijew83195.workers.dev&fp=chrome&encryption=none#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇳🇱 The Netherlands | 🌐 | [BL]",
+    "host": "104.18.151.231",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T04:23:03Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "f2a2125a2026851dd6587052167b68c0a19cb15c450fa9efbae9410252d96a55",
+    "uri": "vless://eaf76557-2219-4799-8171-d7020adfefd0@104.18.151.231:443?security=tls&type=ws&path=%2Fws&host=workers.retaxay188.workers.dev&packetEncoding=xudp&sni=workers.retaxay188.workers.dev&fp=chrome&encryption=none#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇳🇱 The Netherlands | 🌐 | [BL]",
+    "host": "104.18.151.231",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T04:23:03Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "8cd85f94571440d5495d95f570581d3963aec7fa5addeb257660908b3b1a7828",
+    "uri": "vless://eaf76557-2219-4799-8171-d7020adfefd0@104.18.151.231:443?type=ws&security=tls&fp=chrome&host=damp-pine-ea85.wimaren917.workers.dev#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇳🇱 The Netherlands | 🌐 | [BL]",
+    "host": "104.18.151.231",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T04:23:03Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "be1d0677c71ec6a520d1554574ab02c571bc185aa2b01373f812306357992ba9",
+    "uri": "vless://eaf76557-2219-4799-8171-d7020adfefd0@104.18.151.231:443?type=ws&security=tls&fp=chrome&host=muddy-star-d195.aboumansour10313.workers.dev#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇳🇱 The Netherlands | 🌐 | [BL]",
+    "host": "104.18.151.231",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T04:23:03Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "07f2027c1b884cca4f8c695c710daa56829b82496187be42b1d1288293c1ce7f",
+    "uri": "vless://eaf76557-2219-4799-8171-d7020adfefd0@104.18.151.231:443?type=ws&security=tls&fp=chrome&host=shiny-base-4d9a.mifolan4697928.workers.dev#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇳🇱 The Netherlands | 🌐 | [BL]",
+    "host": "104.18.151.231",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T04:23:03Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "3782291f6dd3382f7d7303f498e05a6ffc011191fb1f46205e01c806237482ff",
+    "uri": "vless://eaf76557-2219-4799-8171-d7020adfefd0@45.130.125.151:443?encryption=none&security=tls&sni=fancy-mouse-6aff.wixit71180.workers.dev&alpn=http%2F1.1&type=ws&host=fancy-mouse-6aff.wixit71180.workers.dev&path=%2Fws#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇳🇱 The Netherlands | 🌐 | [BL]",
+    "host": "45.130.125.151",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T04:23:03Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "71002c7568b227f2d43c0a39cd1bc3a4cd84b2d3d2aca18db13ca2b4428cc983",
+    "uri": "vless://eaf76557-2219-4799-8171-d7020adfefd0@45.130.125.151:443?security=tls&sni=fancy-mouse-6aff.wixit71180.workers.dev&fp=chrome&type=ws&host=fancy-mouse-6aff.wixit71180.workers.dev&encryption=none#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇳🇱 The Netherlands | 🌐 | [BL]",
+    "host": "45.130.125.151",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T04:23:03Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "375e49fe35a672ca14eb574deb71233e30afe6e16131d4ab262291527dfaa94d",
+    "uri": "vless://4e4f1f70-5e56-4a76-bb9d-db087f4690c4@43.170.8.95:443?sni=jp3.yohototo.top&type=ws&host=jp3.yohototo.top&path=/tyxywsfp=firefox&security=tls#%F0%9F%87%AF%F0%9F%87%B5%5Bwww.v2nodes.com%5D%20vless-JP-1...%20%233",
+    "protocol": "vless",
+    "name": "🇯🇵[www.v2nodes.com] vless-JP-1... #3",
+    "host": "43.170.8.95",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T04:23:03Z",
+    "sources": [
+      {
+        "id": "no-more-walls",
+        "name": "No More Walls",
+        "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+      }
+    ]
+  },
+  {
+    "id": "777fd43f88c289ad5a91545800b8986e7b670c1b8825078d3dcdc3c18fe533cd",
+    "uri": "vless://eaf76557-2219-4799-8171-d7020adfefd0@45.130.125.151:443?security=tls&type=ws&path=%2Fws&host=fancy-mouse-6aff.wixit71180.workers.dev&packetEncoding=xudp&alpn=http%2F1.1&sni=fancy-mouse-6aff.wixit71180.workers.dev&fp=chrome#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇳🇱 The Netherlands | 🌐 | [BL]",
+    "host": "45.130.125.151",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T04:23:03Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "14213bfc2d6bf5d70d31400e464710d9d587b73bf245a07b8c67704f672c3758",
+    "uri": "vless://eaf76557-2219-4799-8171-d7020adfefd0@45.130.125.151:443?type=ws&security=tls&fp=chrome&host=fancy-mouse-6aff.wixit71180.workers.dev&encryption=none#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇳🇱 The Netherlands | 🌐 | [BL]",
+    "host": "45.130.125.151",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T04:23:03Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "b983332b3fbe2170fe8992de987f75ee251b13bc07651597f1b38e5be0ebd772",
+    "uri": "vless://f8d52ece-fad4-478d-875d-df6eed3befa7@fr.golangwikito.cfd:443?security=reality&flow=xtls-rprx-vision&pbk=isYQuhKDrgc7IQ7G0LHywFnt57wffrkZ-er18DkVsBA&sid=e6d589857d1cec5e&sni=fr.golangwikito.cfd&type=tcp&headerType=none&host=fr.golangwikito.cfd&path=%2F&fp=edge#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Amsterdam%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇳🇱 The Netherlands, Amsterdam | [BL]",
+    "host": "fr.golangwikito.cfd",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T04:23:03Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "944d3c1e0baf004e788fdeebb42f15e4051a6844996b168b2ec5acc8277a9141",
+    "uri": "vless://36cf792c-f07d-4500-97ea-a395e5178deb@ru2.radiolumens.uk:9444?type=xhttp&security=tls&path=%2Fberu-uk&sni=ru2.radiolumens.uk&fp=qq#%F0%9F%87%AC%F0%9F%87%A7%20United%20Kingdom%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇬🇧 United Kingdom | 🌐 | [BL]",
+    "host": "ru2.radiolumens.uk",
+    "port": 9444,
+    "firstSeenAt": "2026-11-06T04:30:05Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "00fc948b5e35f1fa4c32b32c0045ecff2d99a0bfbc7b6f0070ffd613cbe73d81",
+    "uri": "vless://36cf792c-f07d-4500-97ea-a395e5178deb@ru2.radiolumens.uk:9444?type=xhttp&security=tls&sni=ru2.radiolumens.uk&path=%2Fberu-uk&mode=auto&fp=firefox#%F0%9F%87%AC%F0%9F%87%A7%20United%20Kingdom%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇬🇧 United Kingdom | 🌐 | [BL]",
+    "host": "ru2.radiolumens.uk",
+    "port": 9444,
+    "firstSeenAt": "2026-11-06T04:30:05Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "b3c84177c858d2c22a58db1f1766cd360db3e0abd7ced7e5a557ba45646e6a82",
+    "uri": "vless://36cf792c-f07d-4500-97ea-a395e5178deb@ru2.radiolumens.uk:9444?type=xhttp&security=tls&sni=ru2.radiolumens.uk&path=%2Fberu-uk&mode=auto&fp=ios#%F0%9F%87%AC%F0%9F%87%A7%20United%20Kingdom%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇬🇧 United Kingdom | 🌐 | [BL]",
+    "host": "ru2.radiolumens.uk",
+    "port": 9444,
+    "firstSeenAt": "2026-11-06T04:30:05Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "63e1663c8a47ea03c8d7905002bcfbf41d0dcfb8c5f8161ac5ecc983a4d71acd",
+    "uri": "vless://5c32201a-6c0e-451b-8f0a-24b4bd40df59@45.141.202.69:443?#%F0%9F%87%B3%F0%9F%87%B1%5Bwww.v2nodes.com%5D%20vless-NL-1...",
+    "protocol": "vless",
+    "name": "🇳🇱[www.v2nodes.com] vless-NL-1...",
+    "host": "45.141.202.69",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T04:30:05Z",
+    "sources": [
+      {
+        "id": "no-more-walls",
+        "name": "No More Walls",
+        "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+      }
+    ]
+  },
+  {
+    "id": "fa81fab142eb72b97f83dfd862955fcb1018580b2741359601a583c128355c34",
+    "uri": "vless://8301bf90-8c37-45c8-9e74-442ea11737e5@104.194.144.122:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=suffolkprimarycare.uk&fp=edge&pbk=ZsPMlk9GJQhNvKUfzqcTAUKBa_A_XvoSGuP8M_eIyRo&sid=9ebddbd6ffb1a830&spx=%2F&type=tcp#%F0%9F%87%AC%F0%9F%87%A7%20United%20Kingdom%2C%20London%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇬🇧 United Kingdom, London | 🌐 | [BL]",
+    "host": "104.194.144.122",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T04:30:05Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "7b4f7aaa93b232aeba3968261a1c6c419f46ce312c3faf63c97bbee0830a0f58",
+    "uri": "vless://1fc13329-ad0b-4848-85e7-29f9bb553556@190.93.247.200:443?encryption=none&host=vidag-xqtz.mml007.workers.dev&path=%2Fstream%2FDEVCOP%2F29f9bb553556%2Floc-3&security=tls&sni=vidag-xqtz.mml007.workers.dev&type=ws&fp=firefox#%F0%9F%87%BA%F0%9F%87%B8%20United%20States%2C%20Dublin%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇺🇸 United States, Dublin | [BL]",
+    "host": "190.93.247.200",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T04:30:05Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "75c1e8748ae8c0abf366265accd89c8b53ccd59a3b193c05c82fc5e5fe481f85",
+    "uri": "vless://1fc13329-ad0b-4848-85e7-29f9bb553556@190.93.247.200:443?encryption=none&host=vidag-xqtz.mml007.workers.dev&path=%2Fstream%2FDEVCOP%2F29f9bb553556%2Floc-3&security=tls&sni=vidag-xqtz.mml007.workers.dev&type=ws&fp=ios#%F0%9F%87%BA%F0%9F%87%B8%20United%20States%2C%20Dublin%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇺🇸 United States, Dublin | [BL]",
+    "host": "190.93.247.200",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T04:30:05Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "0e80d0f103a25891c57c9da2f5bdc44948e931394b9867d1997b321743cab97b",
+    "uri": "vless://255a8044-3337-473e-af26-46a37208adcc@hudson.glowbreeze.online:443?encryption=none&flow=xtls-rprx-vision&type=tcp&security=reality&sni=hudson.glowbreeze.online&pbk=qqvs2x0N1F5WgXvC7PB9wmO5RxcVgCHS1hYHYOxdBk4&sid=5f3fd060c992bb2e&fp=firefox#%F0%9F%87%BA%F0%9F%87%B8%20United%20States%2C%20Englewood%20Cliffs%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇺🇸 United States, Englewood Cliffs | [BL]",
+    "host": "hudson.glowbreeze.online",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T04:30:05Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "457ec6d1d9af7df8c83e23172c9a7868a34cb062beb2b4cd10b2878ee481d862",
+    "uri": "vless://47525ee4-b128-444a-bcc6-95917b5e2053@cdn.crackerbinam.org:2083?alpn=http%2F1.1&encryption=none&host=cdn.crackerbinam.org&insecure=0&path=%2Fconnect-a7b2&security=tls&sni=cdn.crackerbinam.org&type=ws&fp=firefox#%F0%9F%87%BA%F0%9F%87%B8%20United%20States%2C%20Los%20Angeles%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇺🇸 United States, Los Angeles | [BL]",
+    "host": "cdn.crackerbinam.org",
+    "port": 2083,
+    "firstSeenAt": "2026-11-06T04:30:05Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "6588d8c074217562adb9107dbff0a0eb3107552214fc86105021dcfea4da250b",
+    "uri": "vless://47525ee4-b128-444a-bcc6-95917b5e2053@cdn.crackerbinam.org:2083?alpn=http%2F1.1&encryption=none&host=cdn.crackerbinam.org&insecure=0&path=%2Fconnect-a7b2&security=tls&sni=cdn.crackerbinam.org&type=ws&fp=ios#%F0%9F%87%BA%F0%9F%87%B8%20United%20States%2C%20Los%20Angeles%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇺🇸 United States, Los Angeles | [BL]",
+    "host": "cdn.crackerbinam.org",
+    "port": 2083,
+    "firstSeenAt": "2026-11-06T04:30:05Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "198fafbbf81ad0efcdca1886520fdab9cb913bf6b56798d59acdd421368ae816",
+    "uri": "vless://47525ee4-b128-444a-bcc6-95917b5e2053@cdn.crackerbinam.org:2083?alpn=http%2F1.1&encryption=none&host=cdn.crackerbinam.org&insecure=0&path=%2Fconnect-a7b2&security=tls&sni=cdn.crackerbinam.org&type=ws&fp=safari#%F0%9F%87%BA%F0%9F%87%B8%20United%20States%2C%20Los%20Angeles%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇺🇸 United States, Los Angeles | [BL]",
+    "host": "cdn.crackerbinam.org",
+    "port": 2083,
+    "firstSeenAt": "2026-11-06T04:30:05Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "1be408d585cbe6eb79a303033718c59562dc5ac58de186bd88524d589bc3f6ca",
+    "uri": "vless://47525ee4-b128-444a-bcc6-95917b5e2053@cdn.crackerbinam.org:2083?path=%2Fconnect-a7b2&security=tls&alpn=http%2F1.1&encryption=none&insecure=0&host=cdn.crackerbinam.org&fp=chrome&type=ws&allowInsecure=0&sni=cdn.crackerbinam.org#%F0%9F%87%BA%F0%9F%87%B8%20United%20States%2C%20Los%20Angeles%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇺🇸 United States, Los Angeles | [BL]",
+    "host": "cdn.crackerbinam.org",
+    "port": 2083,
+    "firstSeenAt": "2026-11-06T04:30:05Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "f86838efdea47d9e61f828c02cc6fc45aeee9b3eb6212d5ebbba383f702b65a2",
+    "uri": "vless://47525ee4-b128-444a-bcc6-95917b5e2053@cdn.crackerbinam.org:2083?type=ws&security=tls&path=/connect-a7b2&sni=cdn.crackerbinam.org&fp=chrome#%F0%9F%87%BA%F0%9F%87%B8%20United%20States%2C%20Los%20Angeles%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇺🇸 United States, Los Angeles | [BL]",
+    "host": "cdn.crackerbinam.org",
+    "port": 2083,
+    "firstSeenAt": "2026-11-06T04:30:05Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "4dcb05db12f08e828626e4dd15115039aec99dc4a9771bb235ef23f0738d4e03",
+    "uri": "vless://d806a58b-33aa-42e0-b170-395e49c16b37@104.239.12.81:443?sni=www.microsoft.com&flow=xtls-rprx-vision&fp=firefox&security=tls#%F0%9F%87%B3%F0%9F%87%B1%5Bwww.v2nodes.com%5D%20vless-NL-1...%20%236",
+    "protocol": "vless",
+    "name": "🇳🇱[www.v2nodes.com] vless-NL-1... #6",
+    "host": "104.239.12.81",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T04:30:05Z",
+    "sources": [
+      {
+        "id": "no-more-walls",
+        "name": "No More Walls",
+        "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+      }
+    ]
+  },
+  {
+    "id": "535c031240aeae29bc78e5a2fa0714081037fc712eea0744226e2582bc129d78",
+    "uri": "vless://c83f15bf-1817-4ec8-a19f-6393d226434c@104.21.58.37:2053?security=tls&sni=fast.145779.xyz&type=ws&host=fast.145779.xyz&path=%2Fws-tesla&fp=android#%F0%9F%87%BA%F0%9F%87%B8%20United%20States%2C%20North%20Bergen%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇺🇸 United States, North Bergen | [BL]",
+    "host": "104.21.58.37",
+    "port": 2053,
+    "firstSeenAt": "2026-11-06T04:30:05Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "9785e4add4adf3b7c2d0a57f80a1371d41113311b043806bca7aad42f3685c07",
+    "uri": "vless://c83f15bf-1817-4ec8-a19f-6393d226434c@104.21.58.37:2053?security=tls&sni=fast.145779.xyz&type=ws&host=fast.145779.xyz&path=%2Fws-tesla&fp=chrome#%F0%9F%87%BA%F0%9F%87%B8%20United%20States%2C%20North%20Bergen%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇺🇸 United States, North Bergen | [BL]",
+    "host": "104.21.58.37",
+    "port": 2053,
+    "firstSeenAt": "2026-11-06T04:30:05Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "2cb333ccb722488cab8678a9b60617aacfc35dc9989e692974576eb40917cfd0",
+    "uri": "vless://c83f15bf-1817-4ec8-a19f-6393d226434c@172.67.199.126:2053?host=fast.145779.xyz&path=%2Fws-tesla&security=tls&sni=fast.145779.xyz&type=ws&fp=firefox#%F0%9F%87%BA%F0%9F%87%B8%20United%20States%2C%20North%20Bergen%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇺🇸 United States, North Bergen | [BL]",
+    "host": "172.67.199.126",
+    "port": 2053,
+    "firstSeenAt": "2026-11-06T04:30:05Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "423861e63f3da4efca009de5700b207db5b14d87c2d9a2c41fdab404d4c860b9",
+    "uri": "vless://c83f15bf-1817-4ec8-a19f-6393d226434c@172.67.199.126:2053?host=fast.145779.xyz&path=%2Fws-tesla&security=tls&sni=fast.145779.xyz&type=ws&fp=safari#%F0%9F%87%BA%F0%9F%87%B8%20United%20States%2C%20North%20Bergen%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇺🇸 United States, North Bergen | [BL]",
+    "host": "172.67.199.126",
+    "port": 2053,
+    "firstSeenAt": "2026-11-06T04:30:05Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "dac898d7697f2fbdbcf40be51850c02a515848b991d59f576f83eb8d4f38ec4e",
+    "uri": "vless://c83f15bf-1817-4ec8-a19f-6393d226434c@172.67.199.126:2053?security=tls&type=ws&path=%2Fws-tesla&host=fast.145779.xyz&packetEncoding=xudp&sni=fast.145779.xyz&fp=chrome#%F0%9F%87%BA%F0%9F%87%B8%20United%20States%2C%20North%20Bergen%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇺🇸 United States, North Bergen | [BL]",
+    "host": "172.67.199.126",
+    "port": 2053,
+    "firstSeenAt": "2026-11-06T04:30:05Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "b70012a75192b20c64e257b0298486374a7232c97b2c15f0caaea156662e8c7c",
+    "uri": "vless://c83f15bf-1817-4ec8-a19f-6393d226434c@172.67.199.126:2053?type=ws&path=%252Fws-tesla&host=fast.145779.xyz&security=tls&sni=fast.145779.xyz&fp=chrome#%F0%9F%87%BA%F0%9F%87%B8%20United%20States%2C%20North%20Bergen%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇺🇸 United States, North Bergen | [BL]",
+    "host": "172.67.199.126",
+    "port": 2053,
+    "firstSeenAt": "2026-11-06T04:30:05Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "bea98ddb153b798eedc9073487a694feb5e29516fcb09e7a87ec60e051f642a4",
+    "uri": "vless://c83f15bf-1817-4ec8-a19f-6393d226434c@fast.145779.xyz:2053?encryption=none&path=%2Fws-tesla&security=tls&sni=fast.145779.xyz&type=ws&fp=safari#%F0%9F%87%BA%F0%9F%87%B8%20United%20States%2C%20North%20Bergen%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇺🇸 United States, North Bergen | [BL]",
+    "host": "fast.145779.xyz",
+    "port": 2053,
+    "firstSeenAt": "2026-11-06T04:30:05Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "784150f663f6e09d74b1bff9d72ed5dab34a1978a41f5b98961db5273e3a1cbb",
+    "uri": "vless://c83f15bf-1817-4ec8-a19f-6393d226434c@fast.145779.xyz:2053?path=%2Fws-tesla&security=tls&sni=fast.145779.xyz&type=ws#%F0%9F%87%BA%F0%9F%87%B8%20United%20States%2C%20North%20Bergen%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇺🇸 United States, North Bergen | [BL]",
+    "host": "fast.145779.xyz",
+    "port": 2053,
+    "firstSeenAt": "2026-11-06T04:30:05Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "03a2a731f1eeea07cd8714e4766c253d3c13025091c6801023f89d0a4ff037ca",
+    "uri": "vless://c83f15bf-1817-4ec8-a19f-6393d226434c@fast.145779.xyz:2053?security=tls&type=ws&path=%2Fws-tesla&host=fast.145779.xyz&packetEncoding=xudp&sni=fast.145779.xyz&fp=chrome&encryption=none#%F0%9F%87%BA%F0%9F%87%B8%20United%20States%2C%20North%20Bergen%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇺🇸 United States, North Bergen | [BL]",
+    "host": "fast.145779.xyz",
+    "port": 2053,
+    "firstSeenAt": "2026-11-06T04:30:05Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "8dd571a15ff8938bdbb0aced7dcbd0c85768496d85012c3758bfc5597bc6475b",
+    "uri": "vless://c83f15bf-1817-4ec8-a19f-6393d226434c@fast.145779.xyz:2053?security=tls&type=ws&path=%2Fws-tesla&sni=fast.145779.xyz&fp=chrome#%F0%9F%87%BA%F0%9F%87%B8%20United%20States%2C%20North%20Bergen%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇺🇸 United States, North Bergen | [BL]",
+    "host": "fast.145779.xyz",
+    "port": 2053,
+    "firstSeenAt": "2026-11-06T04:30:05Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "862f4aa006d043ef6d8dfac3567086462df217eafdaf490675be0b89904d677f",
+    "uri": "vless://c83f15bf-1817-4ec8-a19f-6393d226434c@fast.145779.xyz:2053?type=ws&path=%252Fws-tesla&host=&security=tls&sni=fast.145779.xyz&fp=firefox#%F0%9F%87%BA%F0%9F%87%B8%20United%20States%2C%20North%20Bergen%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇺🇸 United States, North Bergen | [BL]",
+    "host": "fast.145779.xyz",
+    "port": 2053,
+    "firstSeenAt": "2026-11-06T04:30:05Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "b70026136e41669af7684189c6fe00c932a835f806127f170f6d6385fd550479",
+    "uri": "vless://c83f15bf-1817-4ec8-a19f-6393d226434c@fast.145779.xyz:2053?type=ws&path=%252Fws-tesla&host=fast.145779.xyz&security=tls&sni=fast.145779.xyz&fp=chrome#%F0%9F%87%BA%F0%9F%87%B8%20United%20States%2C%20North%20Bergen%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇺🇸 United States, North Bergen | [BL]",
+    "host": "fast.145779.xyz",
+    "port": 2053,
+    "firstSeenAt": "2026-11-06T04:30:05Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "0ecc0942a873dc500d18e661018636824033983b86ceab4643d0810024e34932",
+    "uri": "vless://e3149c82-00f6-4227-b2c0-b78f1dd81279@104.21.58.37:2053?security=tls&sni=fast.145779.xyz&type=ws&host=fast.145779.xyz&path=%2Fws-tesla&alpn=http%2F1.1&fp=safari#%F0%9F%87%BA%F0%9F%87%B8%20United%20States%2C%20North%20Bergen%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇺🇸 United States, North Bergen | [BL]",
+    "host": "104.21.58.37",
+    "port": 2053,
+    "firstSeenAt": "2026-11-06T04:30:05Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "a9a72061a79aa3c27323f467fa570fd7880844dcf42aaaf3fd552647893c9daf",
+    "uri": "vless://e3149c82-00f6-4227-b2c0-b78f1dd81279@104.21.58.37:2053?security=tls&sni=fast.145779.xyz&type=ws&host=fast.145779.xyz&path=%2Fws-tesla&fp=chrome#%F0%9F%87%BA%F0%9F%87%B8%20United%20States%2C%20North%20Bergen%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇺🇸 United States, North Bergen | [BL]",
+    "host": "104.21.58.37",
+    "port": 2053,
+    "firstSeenAt": "2026-11-06T04:30:05Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "4c1abc992b378552149b1a4f565dcdcd96ded13f4ed528aad5e157de74aa6168",
+    "uri": "vless://e3149c82-00f6-4227-b2c0-b78f1dd81279@104.21.58.37:2053?security=tls&sni=fast.145779.xyz&type=ws&host=fast.145779.xyz&path=%2Fws-tesla&fp=chrome&alpn=http%2F1.1#%F0%9F%87%BA%F0%9F%87%B8%20United%20States%2C%20North%20Bergen%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇺🇸 United States, North Bergen | [BL]",
+    "host": "104.21.58.37",
+    "port": 2053,
+    "firstSeenAt": "2026-11-06T04:30:05Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "74d882c205f542d1bf7e8fdd537f978419092563029996bd7127675fdbcb2df0",
+    "uri": "vless://e3149c82-00f6-4227-b2c0-b78f1dd81279@104.21.58.37:2053?security=tls&sni=fast.145779.xyz&type=ws&host=fast.145779.xyz&path=%2Fws-tesla&fp=firefox#%F0%9F%87%BA%F0%9F%87%B8%20United%20States%2C%20North%20Bergen%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇺🇸 United States, North Bergen | [BL]",
+    "host": "104.21.58.37",
+    "port": 2053,
+    "firstSeenAt": "2026-11-06T04:30:05Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "85a711d8b17e317b9567cc58898cadbccda3c88d80aba0fd009b0a4fe3fb4c65",
+    "uri": "vless://b2fe1fa4-6a79-4938-a3f4-63b54ae7f16b@138.124.86.230:48115?sni=138-124-86-230.sslip.io&type=grpc&serviceName=138-124-86-230-sslip-io&fp=firefox&security=tls#%F0%9F%87%B8%F0%9F%87%AA%20%E7%91%9E%E5%85%B8%20%7C%20SWE",
+    "protocol": "vless",
+    "name": "🇸🇪 瑞典 | SWE",
+    "host": "138.124.86.230",
+    "port": 48115,
+    "firstSeenAt": "2026-11-06T04:30:05Z",
+    "sources": [
+      {
+        "id": "no-more-walls",
+        "name": "No More Walls",
+        "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+      }
+    ]
+  },
+  {
+    "id": "044aed330bf161eb26e09c5f498d6b8a085accd9bd2ee8b6e347eb20a50f955f",
+    "uri": "vless://e3149c82-00f6-4227-b2c0-b78f1dd81279@172.67.199.126:2053?alpn=http%2F1.1&host=fast.145779.xyz&path=%2Fws-tesla&security=tls&sni=fast.145779.xyz&type=ws&fp=firefox#%F0%9F%87%BA%F0%9F%87%B8%20United%20States%2C%20North%20Bergen%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇺🇸 United States, North Bergen | [BL]",
+    "host": "172.67.199.126",
+    "port": 2053,
+    "firstSeenAt": "2026-11-06T04:30:05Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "1b0250086725befa9106221fd293a7e1d849e63fe3df9f9aaa0de307975c8569",
+    "uri": "vless://e3149c82-00f6-4227-b2c0-b78f1dd81279@172.67.199.126:2053?alpn=http%2F1.1&host=fast.145779.xyz&path=%2Fws-tesla&security=tls&sni=fast.145779.xyz&type=ws&fp=ios#%F0%9F%87%BA%F0%9F%87%B8%20United%20States%2C%20North%20Bergen%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇺🇸 United States, North Bergen | [BL]",
+    "host": "172.67.199.126",
+    "port": 2053,
+    "firstSeenAt": "2026-11-06T04:30:05Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "a7df840488ef4cef3be5d22dfcc464cfcd6ff92692af079227cee627fd5e8a93",
+    "uri": "vless://e3149c82-00f6-4227-b2c0-b78f1dd81279@172.67.199.126:2053?alpn=http%2F1.1&host=fast.145779.xyz&path=%2Fws-tesla&security=tls&sni=fast.145779.xyz&type=ws&fp=safari#%F0%9F%87%BA%F0%9F%87%B8%20United%20States%2C%20North%20Bergen%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇺🇸 United States, North Bergen | [BL]",
+    "host": "172.67.199.126",
+    "port": 2053,
+    "firstSeenAt": "2026-11-06T04:30:05Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "a787fad4fdc4886e0667a7310a981912ec0f1185e7f2630e7d66c7cddc4e2f7b",
+    "uri": "vless://e3149c82-00f6-4227-b2c0-b78f1dd81279@172.67.199.126:2053?security=tls&sni=fast.145779.xyz&type=ws&host=fast.145779.xyz&path=%2Fws-tesla&fp=chrome#%F0%9F%87%BA%F0%9F%87%B8%20United%20States%2C%20North%20Bergen%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇺🇸 United States, North Bergen | [BL]",
+    "host": "172.67.199.126",
+    "port": 2053,
+    "firstSeenAt": "2026-11-06T04:30:05Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "3a6e8647452b248bfa9df20b6544ac3741caa76664af95e56126752f7e611cdf",
+    "uri": "vless://e3149c82-00f6-4227-b2c0-b78f1dd81279@172.67.199.126:2053?security=tls&sni=fast.145779.xyz&type=ws&host=fast.145779.xyz&path=%2Fws-tesla&fp=chrome&alpn=http%2F1.1#%F0%9F%87%BA%F0%9F%87%B8%20United%20States%2C%20North%20Bergen%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇺🇸 United States, North Bergen | [BL]",
+    "host": "172.67.199.126",
+    "port": 2053,
+    "firstSeenAt": "2026-11-06T04:30:05Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "1de18028aef13f9c16279e22c925d3a99161b422540854cc3b1d2c23ed926e2c",
+    "uri": "vless://e3149c82-00f6-4227-b2c0-b78f1dd81279@fast.145779.xyz:2053?encryption=none&host=fast.145779.xyz&path=%2Fws-tesla&security=tls&sni=fast.145779.xyz&type=ws&fp=firefox#%F0%9F%87%BA%F0%9F%87%B8%20United%20States%2C%20North%20Bergen%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇺🇸 United States, North Bergen | [BL]",
+    "host": "fast.145779.xyz",
+    "port": 2053,
+    "firstSeenAt": "2026-11-06T04:30:05Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "7e2e163e7d7030d7123ced4a95dc580018cc4d097cbc9b7db3508489f94f5d5e",
+    "uri": "vless://e3149c82-00f6-4227-b2c0-b78f1dd81279@fast.145779.xyz:2053?encryption=none&host=fast.145779.xyz&path=%2Fws-tesla&security=tls&sni=fast.145779.xyz&type=ws&fp=ios#%F0%9F%87%BA%F0%9F%87%B8%20United%20States%2C%20North%20Bergen%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇺🇸 United States, North Bergen | [BL]",
+    "host": "fast.145779.xyz",
+    "port": 2053,
+    "firstSeenAt": "2026-11-06T04:30:05Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "36d23ef0543706605bc9c5287fd4eb65a78479560b25f217d62c652ea6e1849c",
+    "uri": "vless://e3149c82-00f6-4227-b2c0-b78f1dd81279@fast.145779.xyz:2053?encryption=none&host=fast.145779.xyz&path=%2Fws-tesla&security=tls&sni=fast.145779.xyz&type=ws&fp=safari#%F0%9F%87%BA%F0%9F%87%B8%20United%20States%2C%20North%20Bergen%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇺🇸 United States, North Bergen | [BL]",
+    "host": "fast.145779.xyz",
+    "port": 2053,
+    "firstSeenAt": "2026-11-06T04:30:05Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "11305934b614368e9d74e3913eec845724c679f2eba32aa3a4c1b34aafcc45ef",
+    "uri": "vless://e3149c82-00f6-4227-b2c0-b78f1dd81279@fast.145779.xyz:2053?host=fast.145779.xyz&path=%2Fws-tesla&security=tls&sni=fast.145779.xyz&type=ws#%F0%9F%87%BA%F0%9F%87%B8%20United%20States%2C%20North%20Bergen%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇺🇸 United States, North Bergen | [BL]",
+    "host": "fast.145779.xyz",
+    "port": 2053,
+    "firstSeenAt": "2026-11-06T04:30:05Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "dbc69b006a9388f0d92334646994ea24398b85bc165d0bdb1d75838c43c5e33d",
+    "uri": "vless://e3149c82-00f6-4227-b2c0-b78f1dd81279@fast.145779.xyz:2053?path=%2Fws-tesla&security=tls&sni=fast.145779.xyz&type=ws#%F0%9F%87%BA%F0%9F%87%B8%20United%20States%2C%20North%20Bergen%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇺🇸 United States, North Bergen | [BL]",
+    "host": "fast.145779.xyz",
+    "port": 2053,
+    "firstSeenAt": "2026-11-06T04:30:05Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "3e450256337375b0a3f121217e4c3b01aa094fcc45acd283e9b8070654ec8296",
+    "uri": "vless://3d78373f-bdbd-428a-9b83-aea64264bf4e@191.217.216.208:2054?type=grpc&headerType=none&security=reality&encryption=none&sni=dl.google.com&fp=chrome&pbk=lszRqVbMe37CVLcMHifgRllBcDYt0EGDyY6KI2bXEQg&spx=%2F&serviceName=grpc-tunnel&mode=gun#%F0%9F%87%BA%F0%9F%87%B8%20United%20States%2C%20Orem%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇺🇸 United States, Orem | [BL]",
+    "host": "191.217.216.208",
+    "port": 2054,
+    "firstSeenAt": "2026-11-06T04:30:05Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "7d8520ad1e04e6af5ebb78ea5bc0c61f75edd63ee9f6e2e5a3220bde2c78f517",
+    "uri": "vless://96341708-6833-7020-0998-eac39b6b9de8@sys-827407-4068cc-production.up.railway.app:443?encryption=none&security=tls&type=ws&host=sys-827407-4068cc-production.up.railway.app&path=/ws/96341708-6833-7020-0998-eac39b6b9de8&sni=sys-827407-4068cc-production.up.railway.app&fp=chrome&alpn=http/1.1#%F0%9F%87%BA%F0%9F%87%B8%20United%20States%2C%20Reston%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🇺🇸 United States, Reston | [BL]",
+    "host": "sys-827407-4068cc-production.up.railway.app",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T04:30:05Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "8c2afb10ef7b39b5057addded5e00a5071641281d5d2e82c78b573d54767db02",
+    "uri": "vless://fa45096d-bed0-ad80-c773-23c300000018@104.21.108.4:443?security=tls&type=ws&path=%2F&host=xo3ubk-c97eql-n2d4a9.shoameni17.workers.dev&packetEncoding=xudp&sni=xo3ubk-c97eql-n2d4a9.shoameni17.workers.dev&fp=chrome&encryption=none#%F0%9F%8C%90%20Anycast-IP%20%7C%20%F0%9F%87%A6%F0%9F%87%AA%20%F0%9F%87%A8%F0%9F%87%A6%20%F0%9F%87%AB%F0%9F%87%AE%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🌐 Anycast-IP | 🇦🇪 🇨🇦 🇫🇮 | [BL]",
+    "host": "104.21.108.4",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T04:30:05Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "6ac8f4bc808bcadac3b37bf1914855f9ea616ece525c00cb7052adc82339fc05",
+    "uri": "vless://5e610f80-fc6a-479d-8621-b672355b96a1@77.91.68.117:443?encryption=none&security=tls&sni=cf-1rm.pages.dev&fp=chrome&type=ws&path=%2F&host=cf-1rm.pages.dev#%F0%9F%8C%90%20Anycast-IP%20%7C%20%F0%9F%87%A6%F0%9F%87%B2%20%F0%9F%87%AE%F0%9F%87%B6%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🌐 Anycast-IP | 🇦🇲 🇮🇶 | [BL]",
+    "host": "77.91.68.117",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T04:30:05Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "36229d10c2022496257cedc9913b3822cc5eefff4935bcb2be21d22e1632ecf5",
+    "uri": "vless://5e610f80-fc6a-479d-8621-b672355b96a1@185.36.143.71:443?encryption=none&security=tls&sni=cf-1rm.pages.dev&fp=chrome&type=ws&path=%2F&host=cf-1rm.pages.dev#%F0%9F%8C%90%20Anycast-IP%20%7C%20%F0%9F%87%A6%F0%9F%87%B7%20%F0%9F%87%A8%F0%9F%87%A6%20%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%87%AE%F0%9F%87%AA%20%F0%9F%87%B3%F0%9F%87%B1%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🌐 Anycast-IP | 🇦🇷 🇨🇦 🇩🇪 🇮🇪 🇳🇱 | [BL]",
+    "host": "185.36.143.71",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T04:30:05Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "da77c0273731087e302b74e5e4a7b428efc83b98622a07eec0792646bb0290f6",
+    "uri": "vless://d342d11e-d424-4583-b36e-524ab1f0afa4@47.79.147.53:443?&security=tls&fp=chrome&packet-encoding=xudp&sni=edg-2oo.pages.dev&type=ws&headerType=none&host=edg-2oo.pages.dev&path=%2Fpage%2Fcourse%2Fdownload#%F0%9F%8C%90%20Anycast-IP%20%7C%20%F0%9F%87%A6%F0%9F%87%B7%20%F0%9F%87%AF%F0%9F%87%B5%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🌐 Anycast-IP | 🇦🇷 🇯🇵 | [BL]",
+    "host": "47.79.147.53",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T04:30:05Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "eb7be8b2dc54c83adc49c04561071298c3b4d889537e3cfd22dcd735cc5e1ae3",
+    "uri": "vless://d342d11e-d424-4583-b36e-524ab1f0afa4@47.79.147.53:443?security=tls&type=ws&path=/page/course/download?ed=2560&host=edg-2oo.pages.dev&packetEncoding=xudp&sni=edg-2oo.pages.dev&fp=chrome#%F0%9F%8C%90%20Anycast-IP%20%7C%20%F0%9F%87%A6%F0%9F%87%B7%20%F0%9F%87%AF%F0%9F%87%B5%20%F0%9F%87%B0%F0%9F%87%B7%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🌐 Anycast-IP | 🇦🇷 🇯🇵 🇰🇷 | [BL]",
+    "host": "47.79.147.53",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T04:30:05Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "cb3a2dd198a26bf60a6947a40793e26bafe64aeeafe82ba9a5ce5cdf24e8726b",
+    "uri": "vless://d342d11e-d424-4583-b36e-524ab1f0afa4@8.211.132.111:443?fp=chrome&host=edg-2oo.pages.dev&path=%2Fedu%2Fteacher%2Ftorrent%3Fed%3D2560&security=tls&sni=edg-2oo.pages.dev&type=ws#%F0%9F%8C%90%20Anycast-IP%20%7C%20%F0%9F%87%A6%F0%9F%87%B7%20%F0%9F%87%AF%F0%9F%87%B5%20%F0%9F%87%B0%F0%9F%87%B7%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🌐 Anycast-IP | 🇦🇷 🇯🇵 🇰🇷 | [BL]",
+    "host": "8.211.132.111",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T04:30:05Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "91e70f5c537008922b5d2c498fbf38a6e097951ed0fed535966389a049020798",
+    "uri": "vless://fa45096d-bed0-ad80-c773-23c30000001b@172.67.209.13:443?&security=tls&sni=xo3ubk-c97eql-n2d4a9.shoameni17.workers.dev&type=ws&headerType=none&host=xo3ubk-c97eql-n2d4a9.shoameni17.workers.dev&path=%2Fsync#%F0%9F%8C%90%20Anycast-IP%20%7C%20%F0%9F%87%A7%F0%9F%87%AA%20%F0%9F%87%A8%F0%9F%87%A6%20%F0%9F%87%AB%F0%9F%87%AE%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🌐 Anycast-IP | 🇧🇪 🇨🇦 🇫🇮 | [BL]",
+    "host": "172.67.209.13",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T04:30:05Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "69d6c8ea461c02ef98ee1af733060deecaf1c9464ec004b08d9c547702e01129",
+    "uri": "vmess://ewogICAgImFkZCI6ICIxMTMuMzEuMTI0LjE0NyIsCiAgICAiYWlkIjogMCwKICAgICJob3N0IjogImdvb2RmYW1pbHkxOS5zaXRlIiwKICAgICJpZCI6ICI1NzIxMjZmOC01MzAxLTgzYzItMGEyNi1jMzBjZWQzZGI3YzQiLAogICAgIm5ldCI6ICJ3cyIsCiAgICAicGF0aCI6ICIvd216bXZ3cyIsCiAgICAicG9ydCI6IDQ0MywKICAgICJwcyI6ICLwn4eo8J+Hs0NOLTExMy4zMS4xMjQuMTQ3LTAwNTciLAogICAgInRscyI6ICJ0bHMiLAogICAgInR5cGUiOiAiYXV0byIsCiAgICAic2VjdXJpdHkiOiAiYXV0byIsCiAgICAic2tpcC1jZXJ0LXZlcmlmeSI6IGZhbHNlLAogICAgInNuaSI6ICJnb29kZmFtaWx5MTkuc2l0ZSIKfQ==",
+    "protocol": "vmess",
+    "name": "🇨🇳CN-113.31.124.147-0057",
+    "host": "113.31.124.147",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T06:55:09Z",
+    "sources": [
+      {
+        "id": "v2ray-aggregator",
+        "name": "V2Ray Aggregator",
+        "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+      }
+    ]
+  },
+  {
+    "id": "d627ac3692767b01a5d74edfaf4e2984f8d98e77a1f5a2561c25296914035df2",
+    "uri": "vless://c98a16e4-0dc5-42f0-b3db-30f04525c123@162.159.152.205:443?security=tls&sni=vless2-8vx.pages.dev&type=ws&host=vless2-8vx.pages.dev&path=/&fp=chrome#%F0%9F%8C%90%20Anycast-IP%20%7C%20%F0%9F%87%A8%F0%9F%87%A6%20%F0%9F%87%AC%F0%9F%87%A7%20%F0%9F%87%B7%F0%9F%87%BA%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL]",
+    "host": "162.159.152.205",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T06:55:09Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "7ae95107e61f9eff388555cfa630cfb27ac29883c93982de63164769d9f61f06",
+    "uri": "vless://c98a16e4-0dc5-42f0-b3db-30f04525c123@27.50.48.6:443?encryption=none&security=tls&sni=vless2-8vx.pages.dev&alpn=h3&type=ws&path=%2F&host=vless2-8vx.pages.dev#%F0%9F%8C%90%20Anycast-IP%20%7C%20%F0%9F%87%A8%F0%9F%87%A6%20%F0%9F%87%AC%F0%9F%87%A7%20%F0%9F%87%B7%F0%9F%87%BA%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL]",
+    "host": "27.50.48.6",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T06:55:09Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "661b7b82cc05630caaea01c92acaa23f0deab25dd7af67053f0e5af85fb8b231",
+    "uri": "vless://fd62968a-2e97-41ea-9aa0-aa61aed78955@94.247.142.1:443?encryption=none&fp=chrome&host=simIlarcaTerpillarPvet-j5H6x4-1.simIlar-caterPillar-pVet.worKers.deV&path=%2F%3Fed%3D2560&pcs=B39EC30AEA34AE5F9ED15E201E93595E3C445890D16FAED6CEB26F844DBC1AEE&security=tls&sni=simIlarcaTerpillarPvet-j5H6x4-1.simIlar-caterPillar-pVet.worKers.deV&type=ws#%F0%9F%8C%90%20Anycast-IP%20%7C%20%F0%9F%87%A8%F0%9F%87%A6%20%F0%9F%87%AC%F0%9F%87%A7%20%F0%9F%87%B7%F0%9F%87%BA%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL]",
+    "host": "94.247.142.1",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T06:55:09Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "78086c8364a398788e2c799bb0c375064344be2847fa9d66e5a79447a014fa0e",
+    "uri": "vless://2bcfbfba-b446-4ad5-93ad-72af9e008f61@104.18.185.26:443?security=tls&type=ws&path=%2F44.209.52.7-443&host=blackshadow.dpdns.org&packetEncoding=xudp&sni=blackshadow.dpdns.org&fp=chrome#%F0%9F%8C%90%20Anycast-IP%20%7C%20%F0%9F%87%A8%F0%9F%87%A6%20%F0%9F%87%AC%F0%9F%87%A7%20%F0%9F%87%B7%F0%9F%87%BA%20%F0%9F%87%B8%F0%9F%87%AA%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 🇸🇪 | [BL]",
+    "host": "104.18.185.26",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T06:55:09Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "8be922e5c6d071cdc73d054f09dc0a4731397d835c85de661ac5b6d39c911eb7",
+    "uri": "trojan://Ty33ylFA4u6A5e0NE3wRFp3DIa8lZOzC87CeKnxYgpSOSa2ZaXBjDDSY9qCcxR@45.64.22.55:443?security=tls&sni=flowery.meijireform.com#%F0%9F%87%B2%F0%9F%87%B4MO-45.64.22.55-0052",
+    "protocol": "trojan",
+    "name": "🇲🇴MO-45.64.22.55-0052",
+    "host": "45.64.22.55",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T06:55:09Z",
+    "sources": [
+      {
+        "id": "v2ray-aggregator",
+        "name": "V2Ray Aggregator",
+        "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+      }
+    ]
+  },
+  {
+    "id": "f16fc1abdb7e5c51b1db3a0d831f4eb7f95d13b773481897bbb082042376c5fd",
+    "uri": "vless://2ea2719c-23e1-4cde-b192-c8652d55d9e5@104.18.221.221:443?security=tls&type=ws&path=%2Fwsfp%3Dchrome&host=cfnode-11ivy8.pages.dev&packetEncoding=xudp&sni=cfnode-11ivy8.pages.dev&fp=chrome#%F0%9F%8C%90%20Anycast-IP%20%7C%20%F0%9F%87%A8%F0%9F%87%A6%20%F0%9F%87%AC%F0%9F%87%A7%20%F0%9F%87%B7%F0%9F%87%BA%20%F0%9F%87%B8%F0%9F%87%AA%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 🇸🇪 | [BL]",
+    "host": "104.18.221.221",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T06:55:09Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "2e04f3ca9238c42f0094246c70f0569edbbb04fcb41df1f86cb383653c09c5cf",
+    "uri": "vless://2ea2719c-23e1-4cde-b192-c8652d55d9e5@141.101.115.230:443?security=tls&type=ws&path=%2Fws&host=cfnode-11ivy8.pages.dev&packetEncoding=xudp&sni=cfnode-11ivy8.pages.dev&fp=chrome#%F0%9F%8C%90%20Anycast-IP%20%7C%20%F0%9F%87%A8%F0%9F%87%A6%20%F0%9F%87%AC%F0%9F%87%A7%20%F0%9F%87%B7%F0%9F%87%BA%20%F0%9F%87%B8%F0%9F%87%AA%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 🇸🇪 | [BL]",
+    "host": "141.101.115.230",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T06:55:09Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "b53085c7e0396ee97bbd47f7d0da0e4c76fb08dcdd3a829fb2063e822839f9f5",
+    "uri": "vless://85550ebf-fd43-42dd-9801-bda528fea2fc@www.speedtest.net:443?host=wallweb5.pages.dev&path=%2F&security=tls&sni=wallweb5.pages.dev&type=ws#%F0%9F%8C%90%20Anycast-IP%20%7C%20%F0%9F%87%A8%F0%9F%87%A6%20%F0%9F%87%AC%F0%9F%87%A7%20%F0%9F%87%B7%F0%9F%87%BA%20%F0%9F%87%B8%F0%9F%87%AA%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 🇸🇪 | [BL]",
+    "host": "www.speedtest.net",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T06:55:09Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "8ce503ad5af72ece55803984529720cddae1bc5c0c9874a474cd78fdcdf7af3d",
+    "uri": "vmess://ewogICAgImFkZCI6ICIxNTIuMjI4LjE5MS4yMzIiLAogICAgImFpZCI6IDAsCiAgICAiaG9zdCI6ICJnb29kZmFtaWx5MTkuc2l0ZSIsCiAgICAiaWQiOiAiNTcyMTI2ZjgtNTMwMS04M2MyLTBhMjYtYzMwY2VkM2RiN2M0IiwKICAgICJuZXQiOiAid3MiLAogICAgInBhdGgiOiAiLyIsCiAgICAicG9ydCI6IDQ0MywKICAgICJwcyI6ICLwn4er8J+Ht0ZSLTE1Mi4yMjguMTkxLjIzMi0wMjk2IiwKICAgICJ0bHMiOiAidGxzIiwKICAgICJ0eXBlIjogImF1dG8iLAogICAgInNlY3VyaXR5IjogImF1dG8iLAogICAgInNraXAtY2VydC12ZXJpZnkiOiBmYWxzZSwKICAgICJzbmkiOiAiZ29vZGZhbWlseTE5LnNpdGUiCn0=",
+    "protocol": "vmess",
+    "name": "🇫🇷FR-152.228.191.232-0296",
+    "host": "152.228.191.232",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T06:55:09Z",
+    "sources": [
+      {
+        "id": "v2ray-aggregator",
+        "name": "V2Ray Aggregator",
+        "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+      }
+    ]
+  },
+  {
+    "id": "cee8528cc7084aab0d8caabba48c4715f9432cd2479ae7733ca47ae66eda4028",
+    "uri": "vless://ec23f217-23a1-4f62-b98d-ba56070de89c@www.speedtest.net:443?host=wallweb4.pages.dev&path=%2Ffp%3Dchrome&security=tls&sni=wallweb4.pages.dev&type=ws#%F0%9F%8C%90%20Anycast-IP%20%7C%20%F0%9F%87%A8%F0%9F%87%A6%20%F0%9F%87%AC%F0%9F%87%A7%20%F0%9F%87%B7%F0%9F%87%BA%20%F0%9F%87%B8%F0%9F%87%AA%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 🇸🇪 | [BL]",
+    "host": "www.speedtest.net",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T06:55:09Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "c0b666cfb4ed7655de731d6a9698fa5af9fbb2e800330303c073ee732f401e92",
+    "uri": "vmess://ewogICAgImFkZCI6ICIxNzIuNjcuMTg5LjE4OCIsCiAgICAiYWlkIjogMCwKICAgICJob3N0IjogImhpbmV0Lmd1b2xpY2hlbmcuY3lvdSIsCiAgICAiaWQiOiAiMjc1ZDlhYTgtYjI3MS00M2QxLWIxY2YtMWYzZTZlODgxMDQ3IiwKICAgICJuZXQiOiAid3MiLAogICAgInBhdGgiOiAiLyIsCiAgICAicG9ydCI6IDQ0MywKICAgICJwcyI6ICLwn4+BUkVMQVktMTcyLjY3LjE4OS4xODgtMDI5NyIsCiAgICAidGxzIjogInRscyIsCiAgICAidHlwZSI6ICJhdXRvIiwKICAgICJzZWN1cml0eSI6ICJhdXRvIiwKICAgICJza2lwLWNlcnQtdmVyaWZ5IjogdHJ1ZSwKICAgICJzbmkiOiAiIgp9",
+    "protocol": "vmess",
+    "name": "🏁RELAY-172.67.189.188-0297",
+    "host": "172.67.189.188",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T06:55:09Z",
+    "sources": [
+      {
+        "id": "v2ray-aggregator",
+        "name": "V2Ray Aggregator",
+        "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+      }
+    ]
+  },
+  {
+    "id": "6826f47f9c895117fa05a7e45f13a64f69674f3d95ced4e3d21d3fe7194c3bd6",
+    "uri": "vless://fc60147e-76b8-4bc5-b691-90b2da79e3d2@104.17.3.81:443?security=tls&sni=nautica-cff.kloningstrife002.workers.dev&type=ws&host=nautica-cff.kloningstrife002.workers.dev&path=/138.2.74.219-28616&fp=chrome#%F0%9F%8C%90%20Anycast-IP%20%7C%20%F0%9F%87%A8%F0%9F%87%A6%20%F0%9F%87%AC%F0%9F%87%A7%20%F0%9F%87%B7%F0%9F%87%BA%20%F0%9F%87%B8%F0%9F%87%AA%20%F0%9F%87%B8%F0%9F%87%AC%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 🇸🇪 🇸🇬 | [BL]",
+    "host": "104.17.3.81",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T06:55:09Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "c655c556c9ec520207bc7ee4fa34300b0f0f0e509f8e1e4b6f071a40a8d9b7ad",
+    "uri": "vmess://ewogICAgImFkZCI6ICIxNDEuMTAxLjExNC4xMDAiLAogICAgImFpZCI6IDAsCiAgICAiaG9zdCI6ICJ2MnJheTEuemh1amljbjIub3JnIiwKICAgICJpZCI6ICI0Njc5ZjAwZS05MGNlLTQzMGQtOTcxNC02YTE5MzY3YmExMTIiLAogICAgIm5ldCI6ICJ3cyIsCiAgICAicGF0aCI6ICIvZG9uZ3RhaXdhbmcuY29tIiwKICAgICJwb3J0IjogNDQzLAogICAgInBzIjogIvCfj4FSRUxBWS0xNDEuMTAxLjExNC4xMDAtMDA0NiIsCiAgICAidGxzIjogInRscyIsCiAgICAidHlwZSI6ICJhdXRvIiwKICAgICJzZWN1cml0eSI6ICJhdXRvIiwKICAgICJza2lwLWNlcnQtdmVyaWZ5IjogdHJ1ZSwKICAgICJzbmkiOiAiIgp9",
+    "protocol": "vmess",
+    "name": "🏁RELAY-141.101.114.100-0046",
+    "host": "141.101.114.100",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T06:55:09Z",
+    "sources": [
+      {
+        "id": "v2ray-aggregator",
+        "name": "V2Ray Aggregator",
+        "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+      }
+    ]
+  },
+  {
+    "id": "9bd1c183ab09b877b8f3abb12dc2201e0c94dee8f01c9f50b7b6ddffd5413298",
+    "uri": "vless://85550ebf-fd43-42dd-9801-bda528fea2fc@www.speedtest.net:443?path=%2F&security=tls&encryption=none&insecure=0&allowInsecure=0&host=wallweb5.pages.dev&fp=chrome&type=ws&sni=wallweb5.pages.dev&ech=cloudflare-ech.com%2Budp%3A%2F%2F64.6.65.6#%F0%9F%8C%90%20Anycast-IP%20%7C%20%F0%9F%87%A8%F0%9F%87%A6%20%F0%9F%87%AC%F0%9F%87%A7%20%F0%9F%87%B7%F0%9F%87%BA%20%F0%9F%87%BA%F0%9F%87%B8%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 🇺🇸 | [BL]",
+    "host": "www.speedtest.net",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T06:55:09Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "7cfd92e33569993698a1b0a0f26920cf3dc60f21a8482be77db3c9c12d5fe61b",
+    "uri": "vless://40af9131-d540-448a-bc56-5bba147a1dc3@152.69.199.75:443?encryption=none&security=tls&type=ws&host=proxy-1cu.pages.dev&path=%2F&sni=proxy-1cu.pages.dev&fp=android#%F0%9F%8C%90%20Anycast-IP%20%7C%20%F0%9F%87%A8%F0%9F%87%A6%20%F0%9F%87%AF%F0%9F%87%B5%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🌐 Anycast-IP | 🇨🇦 🇯🇵 | [BL]",
+    "host": "152.69.199.75",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T06:55:09Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "5dc1f77972f2151f555ab2519f584644bf94b18b435670b862e52b596b79bcda",
+    "uri": "vmess://ewogICAgImFkZCI6ICIxNzIuNjcuMjA2LjExOCIsCiAgICAiYWlkIjogMCwKICAgICJob3N0IjogImZyLmd1b2xpY2hlbmcuY3lvdSIsCiAgICAiaWQiOiAiMjc1ZDlhYTgtYjI3MS00M2QxLWIxY2YtMWYzZTZlODgxMDQ3IiwKICAgICJuZXQiOiAid3MiLAogICAgInBhdGgiOiAiLyIsCiAgICAicG9ydCI6IDQ0MywKICAgICJwcyI6ICLwn4+BUkVMQVktMTcyLjY3LjIwNi4xMTgtMDMwMCIsCiAgICAidGxzIjogInRscyIsCiAgICAidHlwZSI6ICJhdXRvIiwKICAgICJzZWN1cml0eSI6ICJhdXRvIiwKICAgICJza2lwLWNlcnQtdmVyaWZ5IjogdHJ1ZSwKICAgICJzbmkiOiAiIgp9",
+    "protocol": "vmess",
+    "name": "🏁RELAY-172.67.206.118-0300",
+    "host": "172.67.206.118",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T06:55:09Z",
+    "sources": [
+      {
+        "id": "v2ray-aggregator",
+        "name": "V2Ray Aggregator",
+        "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+      }
+    ]
+  },
+  {
+    "id": "098929d144e2bdd628cb0f7b3687542511124dac3302233f0a33a3de7a05181c",
+    "uri": "vless://3fd1868a-a3bb-4eab-a878-2c344bc86810@172.105.241.119:1916?security=tls&type=ws&path=%2F%40Marisa_kristi&host=3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev&packetEncoding=xudp&sni=3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev&fp=chrome#%F0%9F%8C%90%20Anycast-IP%20%7C%20%F0%9F%87%A8%F0%9F%87%A6%20%F0%9F%87%AF%F0%9F%87%B5%20%F0%9F%87%B0%F0%9F%87%B7%20%F0%9F%87%BA%F0%9F%87%B8%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🌐 Anycast-IP | 🇨🇦 🇯🇵 🇰🇷 🇺🇸 | [BL]",
+    "host": "172.105.241.119",
+    "port": 1916,
+    "firstSeenAt": "2026-11-06T06:55:09Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "73d71fe0d54a92be0c7febfe32b40f5b5a4a8d989abe6eb373119f4f1ba41a9d",
+    "uri": "vmess://ewogICAgImFkZCI6ICIxNzIuNjcuMjA2LjIwOCIsCiAgICAiYWlkIjogMCwKICAgICJob3N0IjogImRlLmd1b2xpY2hlbmcuY3lvdSIsCiAgICAiaWQiOiAiMjc1ZDlhYTgtYjI3MS00M2QxLWIxY2YtMWYzZTZlODgxMDQ3IiwKICAgICJuZXQiOiAid3MiLAogICAgInBhdGgiOiAiLyIsCiAgICAicG9ydCI6IDQ0MywKICAgICJwcyI6ICLwn4+BUkVMQVktMTcyLjY3LjIwNi4yMDgtMDMwMSIsCiAgICAidGxzIjogInRscyIsCiAgICAidHlwZSI6ICJhdXRvIiwKICAgICJzZWN1cml0eSI6ICJhdXRvIiwKICAgICJza2lwLWNlcnQtdmVyaWZ5IjogdHJ1ZSwKICAgICJzbmkiOiAiIgp9",
+    "protocol": "vmess",
+    "name": "🏁RELAY-172.67.206.208-0301",
+    "host": "172.67.206.208",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T06:55:09Z",
+    "sources": [
+      {
+        "id": "v2ray-aggregator",
+        "name": "V2Ray Aggregator",
+        "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+      }
+    ]
+  },
+  {
+    "id": "94a7207b4c24724a819e12b509a9a0efbb90f0274ad9ae83937612c778755899",
+    "uri": "vless://60dad3e5-86b7-437b-b42b-64e882955132@172.105.241.119:1916?security=tls&type=ws&path=%2F%40Marisa_kristi&host=mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev&packetEncoding=xudp&sni=mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev&fp=chrome#%F0%9F%8C%90%20Anycast-IP%20%7C%20%F0%9F%87%A8%F0%9F%87%A6%20%F0%9F%87%AF%F0%9F%87%B5%20%F0%9F%87%BA%F0%9F%87%B8%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🌐 Anycast-IP | 🇨🇦 🇯🇵 🇺🇸 | [BL]",
+    "host": "172.105.241.119",
+    "port": 1916,
+    "firstSeenAt": "2026-11-06T06:55:09Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "b23f78407c38bdfda0803c9a1ec58346f3cd61c1d4cc23e528cc68acc5cc32d4",
+    "uri": "vless://8008ceea-be4e-47e1-88c0-6a99cb1b5825@172.105.241.119:1916?encryption=none&security=tls&type=ws&host=3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev&path=%2F%40Marisa_kristi&sni=3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev&fp=chrome#%F0%9F%8C%90%20Anycast-IP%20%7C%20%F0%9F%87%A8%F0%9F%87%A6%20%F0%9F%87%AF%F0%9F%87%B5%20%F0%9F%87%BA%F0%9F%87%B8%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🌐 Anycast-IP | 🇨🇦 🇯🇵 🇺🇸 | [BL]",
+    "host": "172.105.241.119",
+    "port": 1916,
+    "firstSeenAt": "2026-11-06T06:55:09Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "db603500054ffbe0d9f8af02eb654d4c4fef7e18e89491494ce3fc33343e266f",
+    "uri": "vless://bb5988f1-7e0a-4b6d-acdf-aac2a47d5dd4@172.105.241.119:1916?security=tls&type=ws&path=%2F%40Marisa_kristi&host=d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev&packetEncoding=xudp&sni=d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev&fp=chrome#%F0%9F%8C%90%20Anycast-IP%20%7C%20%F0%9F%87%A8%F0%9F%87%A6%20%F0%9F%87%AF%F0%9F%87%B5%20%F0%9F%87%BA%F0%9F%87%B8%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🌐 Anycast-IP | 🇨🇦 🇯🇵 🇺🇸 | [BL]",
+    "host": "172.105.241.119",
+    "port": 1916,
+    "firstSeenAt": "2026-11-06T06:55:09Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "1d8769172953a264d1a7b21f49ec43a695e88dd3d9d9331f92925344b06333e1",
+    "uri": "vmess://ewogICAgImFkZCI6ICI4LjIxOS4yMTguMTU1IiwKICAgICJhaWQiOiAwLAogICAgImhvc3QiOiAiY2xhc2gxLnRydW1wMjAyMy5uZXQiLAogICAgImlkIjogIjE3NmI1OThmLTQ0NWItNDFhYy05ZDJhLTQzMGM1YzRkZjI2YSIsCiAgICAibmV0IjogIndzIiwKICAgICJwYXRoIjogIi8iLAogICAgInBvcnQiOiA0NDMsCiAgICAicHMiOiAi8J+HuPCfh6xTRy04LjIxOS4yMTguMTU1LTAzMDQiLAogICAgInRscyI6ICJ0bHMiLAogICAgInR5cGUiOiAiYXV0byIsCiAgICAic2VjdXJpdHkiOiAiYXV0byIsCiAgICAic2tpcC1jZXJ0LXZlcmlmeSI6IGZhbHNlLAogICAgInNuaSI6ICJjbGFzaDEudHJ1bXAyMDIzLm5ldCIKfQ==",
+    "protocol": "vmess",
+    "name": "🇸🇬SG-8.219.218.155-0304",
+    "host": "8.219.218.155",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T06:55:09Z",
+    "sources": [
+      {
+        "id": "v2ray-aggregator",
+        "name": "V2Ray Aggregator",
+        "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+      }
+    ]
+  },
+  {
+    "id": "b9681cbd55bf2a43c67dc16e4aa64f15fa955c626957d0af0816231b1a908da8",
+    "uri": "vless://df54bb48-921e-446a-9b10-1a2a0bef680b@172.105.241.119:1916?fp=chrome&host=d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev&path=%2F%40Marisa_kristi&security=tls&sni=d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev&type=ws#%F0%9F%8C%90%20Anycast-IP%20%7C%20%F0%9F%87%A8%F0%9F%87%A6%20%F0%9F%87%B0%F0%9F%87%B7%20%F0%9F%87%BA%F0%9F%87%B8%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🌐 Anycast-IP | 🇨🇦 🇰🇷 🇺🇸 | [BL]",
+    "host": "172.105.241.119",
+    "port": 1916,
+    "firstSeenAt": "2026-11-06T06:55:09Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "1efaece712eb58f78b58a12cb6e1af4842d24c1b602d2f8a4c440c3458dc2759",
+    "uri": "vless://e121912d-2931-4326-a7f8-2c1db8376b18@172.105.241.119:1916?encryption=none&security=tls&sni=kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev&fp=chrome&type=ws&path=%2F%40Marisa_kristi&host=kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev#%F0%9F%8C%90%20Anycast-IP%20%7C%20%F0%9F%87%A8%F0%9F%87%A6%20%F0%9F%87%B0%F0%9F%87%B7%20%F0%9F%87%BA%F0%9F%87%B8%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🌐 Anycast-IP | 🇨🇦 🇰🇷 🇺🇸 | [BL]",
+    "host": "172.105.241.119",
+    "port": 1916,
+    "firstSeenAt": "2026-11-06T06:55:09Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "641a94bbcd95a3c4ff141907bd01ffce2a0732c53ced6d199a38fb6328fc2dce",
+    "uri": "vless://2bcfbfba-b446-4ad5-93ad-72af9e008f61@172.64.146.116:443?security=tls&sni=support.zoom.us.blackshadow.dpdns.org&type=ws&host=support.zoom.us.blackshadow.dpdns.org&path=/44.209.52.7-443&fp=chrome#%F0%9F%8C%90%20Anycast-IP%20%7C%20%F0%9F%87%A8%F0%9F%87%A6%20%F0%9F%87%B7%F0%9F%87%BA%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🌐 Anycast-IP | 🇨🇦 🇷🇺 | [BL]",
+    "host": "172.64.146.116",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T06:55:09Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "22bf0a18432e669555c02c8d1f8c0d5c345a1db23c4e9581e471836b5262762e",
+    "uri": "vmess://ewogICAgImFkZCI6ICIxNzIuNjcuMTgzLjE3MCIsCiAgICAiYWlkIjogMCwKICAgICJob3N0IjogImhraGdjLmd1b2xpY2hlbmcuY3lvdSIsCiAgICAiaWQiOiAiMjc1ZDlhYTgtYjI3MS00M2QxLWIxY2YtMWYzZTZlODgxMDQ3IiwKICAgICJuZXQiOiAid3MiLAogICAgInBhdGgiOiAiLyIsCiAgICAicG9ydCI6IDQ0MywKICAgICJwcyI6ICLwn4+BUkVMQVktMTcyLjY3LjE4My4xNzAtMDMwOSIsCiAgICAidGxzIjogInRscyIsCiAgICAidHlwZSI6ICJhdXRvIiwKICAgICJzZWN1cml0eSI6ICJhdXRvIiwKICAgICJza2lwLWNlcnQtdmVyaWZ5IjogdHJ1ZSwKICAgICJzbmkiOiAiIgp9",
+    "protocol": "vmess",
+    "name": "🏁RELAY-172.67.183.170-0309",
+    "host": "172.67.183.170",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T06:55:09Z",
+    "sources": [
+      {
+        "id": "v2ray-aggregator",
+        "name": "V2Ray Aggregator",
+        "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+      }
+    ]
+  },
+  {
+    "id": "9c152beaca4bf6b796d4aef3b69923a1736f666a1b4a12d0d2f704b6e71a3fc2",
+    "uri": "vless://40af9131-d540-448a-bc56-5bba147a1dc3@27.50.49.154:2083?encryption=none&host=proxy-34l.pages.dev&path=%2F&security=tls&sni=proxy-34l.pages.dev&type=ws#%F0%9F%8C%90%20Anycast-IP%20%7C%20%F0%9F%87%A8%F0%9F%87%A6%20%F0%9F%87%B7%F0%9F%87%BA%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🌐 Anycast-IP | 🇨🇦 🇷🇺 | [BL]",
+    "host": "27.50.49.154",
+    "port": 2083,
+    "firstSeenAt": "2026-11-06T06:55:09Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "fdb66035280e9adbf5aba4bea9d26dba9c452bf2cab86b0185b2a9e05829b7c4",
+    "uri": "vless://5dc15e15-f285-4a9d-959b-0e4fbdd77b63@172.64.145.94:443?encryption=none&security=tls&sni=powered-by-surena.configfarsi695fd01a94fe7.workers.dev&type=ws&host=powered-by-surena.configfarsi695fd01a94fe7.workers.dev&path=%2F#%F0%9F%8C%90%20Anycast-IP%20%7C%20%F0%9F%87%A8%F0%9F%87%A6%20%F0%9F%87%B7%F0%9F%87%BA%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🌐 Anycast-IP | 🇨🇦 🇷🇺 | [BL]",
+    "host": "172.64.145.94",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T06:55:09Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "c492542b12fb911a2b5ca3d87dba85bc7e0eb62aba78ef676320482be5ed0f30",
+    "uri": "vless://87c467e9-f0af-4b03-8fbd-65fd375d3a26@172.64.144.240:443?sni=pmpmppm.pages.dev&type=ws&host=pmpmppm.pages.dev&path=/?ed=2048fp=randomizedfp=chrome&security=tls#%F0%9F%8C%90%20Anycast-IP%20%7C%20%F0%9F%87%A8%F0%9F%87%A6%20%F0%9F%87%B7%F0%9F%87%BA%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🌐 Anycast-IP | 🇨🇦 🇷🇺 | [BL]",
+    "host": "172.64.144.240",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T06:55:09Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "a0443e79a08279f5c37e1b200e67b5159c2d21b61f0a9558912890758de42499",
+    "uri": "vmess://ewogICAgImFkZCI6ICI1MS44My45Ny4xNjciLAogICAgImFpZCI6IDAsCiAgICAiaG9zdCI6ICIiLAogICAgImlkIjogIjZlN2VmMjFmLTQ3MzYtNDgwZS05M2FhLTFmN2Q1NGYyODA4OSIsCiAgICAibmV0IjogIndzIiwKICAgICJwYXRoIjogIi8iLAogICAgInBvcnQiOiA4MCwKICAgICJwcyI6ICLwn4er8J+Ht0ZSLTUxLjgzLjk3LjE2Ny0wMzEzIiwKICAgICJ0bHMiOiAiIiwKICAgICJ0eXBlIjogImF1dG8iLAogICAgInNlY3VyaXR5IjogImF1dG8iLAogICAgInNraXAtY2VydC12ZXJpZnkiOiB0cnVlLAogICAgInNuaSI6ICIiCn0=",
+    "protocol": "vmess",
+    "name": "🇫🇷FR-51.83.97.167-0313",
+    "host": "51.83.97.167",
+    "port": 80,
+    "firstSeenAt": "2026-11-06T06:55:09Z",
+    "sources": [
+      {
+        "id": "v2ray-aggregator",
+        "name": "V2Ray Aggregator",
+        "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+      }
+    ]
+  },
+  {
+    "id": "e55feb5254ca0c5858e8afe80873f094be7bb1185848478ee7a3c5da391f1a3d",
+    "uri": "vmess://ewogICAgImFkZCI6ICIxNDEuMTAxLjExNS4xMDAiLAogICAgImFpZCI6IDAsCiAgICAiaG9zdCI6ICJsZzEuY2ZjZG4yLnh5eiIsCiAgICAiaWQiOiAiMjY3YTlmMzgtNDBkOC00ZWQ2LWFiNTgtY2FmYzY3ZTljOTMzIiwKICAgICJuZXQiOiAid3MiLAogICAgInBhdGgiOiAiLyIsCiAgICAicG9ydCI6IDQ0MywKICAgICJwcyI6ICLwn4+BUkVMQVktMTQxLjEwMS4xMTUuMTAwLTAzMTQiLAogICAgInRscyI6ICJ0bHMiLAogICAgInR5cGUiOiAiYXV0byIsCiAgICAic2VjdXJpdHkiOiAiYXV0byIsCiAgICAic2tpcC1jZXJ0LXZlcmlmeSI6IGZhbHNlLAogICAgInNuaSI6ICJsZzEuY2ZjZG4yLnh5eiIKfQ==",
+    "protocol": "vmess",
+    "name": "🏁RELAY-141.101.115.100-0314",
+    "host": "141.101.115.100",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T06:55:09Z",
+    "sources": [
+      {
+        "id": "v2ray-aggregator",
+        "name": "V2Ray Aggregator",
+        "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+      }
+    ]
+  },
+  {
+    "id": "93bf110a87f30d980343539916315b3722634028722b026c5b05a6a93401e546",
+    "uri": "vless://c98a16e4-0dc5-42f0-b3db-30f04525c123@27.50.48.13:443?type=ws&security=tls&host=vless2-8vx.pages.dev&fp=qq#%F0%9F%8C%90%20Anycast-IP%20%7C%20%F0%9F%87%A8%F0%9F%87%A6%20%F0%9F%87%B7%F0%9F%87%BA%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🌐 Anycast-IP | 🇨🇦 🇷🇺 | [BL]",
+    "host": "27.50.48.13",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T06:55:09Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "0741db45fe125af0b5d0ba368e00d752bffa32ce45d225fba8b859e945d05225",
+    "uri": "vmess://ewogICAgImFkZCI6ICI1Ny4xMjguNDUuMTYxIiwKICAgICJhaWQiOiAwLAogICAgImhvc3QiOiAiIiwKICAgICJpZCI6ICIzNWQyNTg5OS1lZDIwLTQ2ZDktOWM3Yy05OWMwZDQxNGQ1ZTQiLAogICAgIm5ldCI6ICJ3cyIsCiAgICAicGF0aCI6ICIvdXNlciIsCiAgICAicG9ydCI6IDgwLAogICAgInBzIjogIvCfh6vwn4e3RlItNTcuMTI4LjQ1LjE2MS0wMDQwIiwKICAgICJ0bHMiOiAiIiwKICAgICJ0eXBlIjogImF1dG8iLAogICAgInNlY3VyaXR5IjogImF1dG8iLAogICAgInNraXAtY2VydC12ZXJpZnkiOiB0cnVlLAogICAgInNuaSI6ICIiCn0=",
+    "protocol": "vmess",
+    "name": "🇫🇷FR-57.128.45.161-0040",
+    "host": "57.128.45.161",
+    "port": 80,
+    "firstSeenAt": "2026-11-06T06:55:09Z",
+    "sources": [
+      {
+        "id": "v2ray-aggregator",
+        "name": "V2Ray Aggregator",
+        "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+      }
+    ]
+  },
+  {
+    "id": "4dbfd30339b731c84bea1dba18592134cfe0671e2410096b636d14130a700d63",
+    "uri": "vless://d37a75db-76b6-4db8-b213-0d5b044d138d@104.17.44.17:443?security=tls&type=ws&path=%2Ffp%3Dunsafe&host=top-e4s.pages.dev&packetEncoding=xudp&sni=top-e4s.pages.dev&fp=chrome#%F0%9F%8C%90%20Anycast-IP%20%7C%20%F0%9F%87%A8%F0%9F%87%A6%20%F0%9F%87%B7%F0%9F%87%BA%20%F0%9F%87%B8%F0%9F%87%AA%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🌐 Anycast-IP | 🇨🇦 🇷🇺 🇸🇪 | [BL]",
+    "host": "104.17.44.17",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T06:55:09Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "ef8c963e92abdf7b3c93ab4d66990fee14a31526a5dd2034a12cdb4b1e74079d",
+    "uri": "vless://2ea2719c-23e1-4cde-b192-c8652d55d9e5@104.18.221.221:443?sni=cfnode-11ivy8.pages.dev&type=ws&host=cfnode-11ivy8.pages.dev&path=/wsfp=chrome&security=tls#%F0%9F%8C%90%20Anycast-IP%20%7C%20%F0%9F%87%A8%F0%9F%87%A6%20%F0%9F%87%B7%F0%9F%87%BA%20%F0%9F%87%B8%F0%9F%87%AA%20%F0%9F%87%BA%F0%9F%87%B8%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🌐 Anycast-IP | 🇨🇦 🇷🇺 🇸🇪 🇺🇸 | [BL]",
+    "host": "104.18.221.221",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T06:55:09Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "8b250a681954930093d08981ce220fdd69fc447d7d0070047e68a97c287f080f",
+    "uri": "vless://85550ebf-fd43-42dd-9801-bda528fea2fc@www.speedtest.net:443?sni=wallweb5.pages.dev&type=ws&host=wallweb5.pages.dev&path=/fp=chrome&security=tls#%F0%9F%8C%90%20Anycast-IP%20%7C%20%F0%9F%87%A8%F0%9F%87%A6%20%F0%9F%87%B7%F0%9F%87%BA%20%F0%9F%87%B8%F0%9F%87%AA%20%F0%9F%87%BA%F0%9F%87%B8%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🌐 Anycast-IP | 🇨🇦 🇷🇺 🇸🇪 🇺🇸 | [BL]",
+    "host": "www.speedtest.net",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T06:55:09Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "b1cf31fe6aacc919ef84bf5389a53242790531423440659f870c7434f48586c2",
+    "uri": "vmess://ewogICAgImFkZCI6ICIxNzIuNjcuMjA2LjE4OCIsCiAgICAiYWlkIjogMCwKICAgICJob3N0IjogInVzMy5ndW9saWNoZW5nLmN5b3UiLAogICAgImlkIjogIjI3NWQ5YWE4LWIyNzEtNDNkMS1iMWNmLTFmM2U2ZTg4MTA0NyIsCiAgICAibmV0IjogIndzIiwKICAgICJwYXRoIjogIi8iLAogICAgInBvcnQiOiA0NDMsCiAgICAicHMiOiAi8J+PgVJFTEFZLTE3Mi42Ny4yMDYuMTg4LTAzMTkiLAogICAgInRscyI6ICJ0bHMiLAogICAgInR5cGUiOiAiYXV0byIsCiAgICAic2VjdXJpdHkiOiAiYXV0byIsCiAgICAic2tpcC1jZXJ0LXZlcmlmeSI6IHRydWUsCiAgICAic25pIjogIiIKfQ==",
+    "protocol": "vmess",
+    "name": "🏁RELAY-172.67.206.188-0319",
+    "host": "172.67.206.188",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T06:55:09Z",
+    "sources": [
+      {
+        "id": "v2ray-aggregator",
+        "name": "V2Ray Aggregator",
+        "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+      }
+    ]
+  },
+  {
+    "id": "bcfeb6584b64e284cb7db0f7eb5219f7a6f1992ba4584e10dcaf583852d60191",
+    "uri": "vless://22424ee2-6fe3-42ca-9749-6d4c5a8acc82@188.114.98.0:443?path=/id-pusat&security=tls&encryption=none&insecure=0&host=tn1r.eu.cc&fp=chrome&type=ws&allowInsecure=0&sni=tn1r.eu.cc#%F0%9F%8C%90%20Anycast-IP%20%7C%20%F0%9F%87%A8%F0%9F%87%A6%20%F0%9F%87%B8%F0%9F%87%AA%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🌐 Anycast-IP | 🇨🇦 🇸🇪 | [BL]",
+    "host": "188.114.98.0",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T06:55:09Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "f9352fa45fa0cbf1a39bd3b338a9dc741ad0b02b311310cffbd5856bd9c85a82",
+    "uri": "vless://2ea2719c-23e1-4cde-b192-c8652d55d9e5@104.19.55.100:443?security=tls&type=ws&path=%2Fws&host=cfnode-11ivy8.pages.dev&packetEncoding=xudp&sni=cfnode-11ivy8.pages.dev&fp=chrome#%F0%9F%8C%90%20Anycast-IP%20%7C%20%F0%9F%87%A8%F0%9F%87%A6%20%F0%9F%87%B8%F0%9F%87%AA%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🌐 Anycast-IP | 🇨🇦 🇸🇪 | [BL]",
+    "host": "104.19.55.100",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T06:55:09Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "85a75dff334ea8be13bb88af2e45b964cadd597375b36146ef76ec326d3fe36c",
+    "uri": "vmess://ewogICAgImFkZCI6ICIxOTguNDEuMjEyLjEwMCIsCiAgICAiYWlkIjogMCwKICAgICJob3N0IjogImxnMS5jZmNkbjMueHl6IiwKICAgICJpZCI6ICIzM2FhNTdkZi0xYzkzLTQzMTgtOWZjZS1lODUwNDM3ZWU3ODEiLAogICAgIm5ldCI6ICJ3cyIsCiAgICAicGF0aCI6ICIvIiwKICAgICJwb3J0IjogNDQzLAogICAgInBzIjogIvCfj4FSRUxBWS0xOTguNDEuMjEyLjEwMC0wMzIxIiwKICAgICJ0bHMiOiAidGxzIiwKICAgICJ0eXBlIjogImF1dG8iLAogICAgInNlY3VyaXR5IjogImF1dG8iLAogICAgInNraXAtY2VydC12ZXJpZnkiOiBmYWxzZSwKICAgICJzbmkiOiAibGcxLmNmY2RuMy54eXoiCn0=",
+    "protocol": "vmess",
+    "name": "🏁RELAY-198.41.212.100-0321",
+    "host": "198.41.212.100",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T06:55:09Z",
+    "sources": [
+      {
+        "id": "v2ray-aggregator",
+        "name": "V2Ray Aggregator",
+        "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+      }
+    ]
+  },
+  {
+    "id": "334b1c8a9435175889fce79d1655f4fe2d4becaff3d31c8e20ea8a3501d2ca60",
+    "uri": "vless://22424ee2-6fe3-42ca-9749-6d4c5a8acc82@188.114.98.0:443?encryption=none&host=tn1r.eu.cc&path=/id-pusat&security=tls&sni=tn1r.eu.cc&type=ws#%F0%9F%8C%90%20Anycast-IP%20%7C%20%F0%9F%87%A8%F0%9F%87%A6%20%F0%9F%87%B8%F0%9F%87%AA%20%F0%9F%87%BA%F0%9F%87%B8%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🌐 Anycast-IP | 🇨🇦 🇸🇪 🇺🇸 | [BL]",
+    "host": "188.114.98.0",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T06:55:09Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "463a71505a9bff0b21df48e00587eb03526329f9c3debf08925e677b793fbc1d",
+    "uri": "vless://2ea2719c-23e1-4cde-b192-c8652d55d9e5@141.101.123.232:443?security=tls&type=ws&path=%2Fws&host=cfnode-11ivy8.pages.dev&packetEncoding=xudp&sni=cfnode-11ivy8.pages.dev&fp=chrome#%F0%9F%8C%90%20Anycast-IP%20%7C%20%F0%9F%87%A8%F0%9F%87%A6%20%F0%9F%87%B8%F0%9F%87%AA%20%F0%9F%87%BA%F0%9F%87%B8%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🌐 Anycast-IP | 🇨🇦 🇸🇪 🇺🇸 | [BL]",
+    "host": "141.101.123.232",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T06:55:09Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "ae852aeeaae09ec3a2da13f22e110d912fbf3e16f9edfbcd93dd9bdf7fa194fa",
+    "uri": "vless://87c467e9-f0af-4b03-8fbd-65fd375d3a26@172.66.196.248:443?security=tls&type=ws&path=%2F%3Fed%3D2048&host=pmpmppm.pages.dev&packetEncoding=xudp&sni=pmpmppm.pages.dev&fp=randomized&encryption=none#%F0%9F%8C%90%20Anycast-IP%20%7C%20%F0%9F%87%A8%F0%9F%87%A6%20%F0%9F%87%B8%F0%9F%87%AA%20%F0%9F%87%BA%F0%9F%87%B8%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🌐 Anycast-IP | 🇨🇦 🇸🇪 🇺🇸 | [BL]",
+    "host": "172.66.196.248",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T06:55:09Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "dbfa927d3a429a6e7c9e37f0c6dbcb4bfd7ff7b604251d8ff058b355249a5df5",
+    "uri": "vless://87c467e9-f0af-4b03-8fbd-65fd375d3a26@188.114.98.0:443?alpn=http%2F1.1&fp=chrome&host=pmpmppm.pages.dev&path=%2F%3Fed%3D2048&security=tls&sni=pmpmppm.pages.dev&type=ws#%F0%9F%8C%90%20Anycast-IP%20%7C%20%F0%9F%87%A8%F0%9F%87%A6%20%F0%9F%87%B8%F0%9F%87%AA%20%F0%9F%87%BA%F0%9F%87%B8%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🌐 Anycast-IP | 🇨🇦 🇸🇪 🇺🇸 | [BL]",
+    "host": "188.114.98.0",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T06:55:09Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "b288b91bb146c4c69f0f687d74e895bee95dc2c2794eea382ff25b433e773ede",
+    "uri": "vless://87c467e9-f0af-4b03-8fbd-65fd375d3a26@188.114.98.0:443?alpn=http%2F1.1&fp=chrome&host=pmpmppm.pages.dev&path=%2F%3Fed%3D2048fp%3Drandomized&security=tls&sni=pmpmppm.pages.dev&type=ws#%F0%9F%8C%90%20Anycast-IP%20%7C%20%F0%9F%87%A8%F0%9F%87%A6%20%F0%9F%87%B8%F0%9F%87%AA%20%F0%9F%87%BA%F0%9F%87%B8%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🌐 Anycast-IP | 🇨🇦 🇸🇪 🇺🇸 | [BL]",
+    "host": "188.114.98.0",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T06:55:09Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "9c6f0127a863c4f2cce85b9cd1be7b8c1c98b60d16a1c8eab358cd297b342d35",
+    "uri": "vmess://ewogICAgImFkZCI6ICIxNzIuNjcuMjA1LjIwOCIsCiAgICAiYWlkIjogMCwKICAgICJob3N0IjogImhpbmV0Lmd1b2xpY2hlbmcuY3lvdSIsCiAgICAiaWQiOiAiMjc1ZDlhYTgtYjI3MS00M2QxLWIxY2YtMWYzZTZlODgxMDQ3IiwKICAgICJuZXQiOiAid3MiLAogICAgInBhdGgiOiAiLyIsCiAgICAicG9ydCI6IDQ0MywKICAgICJwcyI6ICLwn4+BUkVMQVktMTcyLjY3LjIwNS4yMDgtMDMyNiIsCiAgICAidGxzIjogInRscyIsCiAgICAidHlwZSI6ICJhdXRvIiwKICAgICJzZWN1cml0eSI6ICJhdXRvIiwKICAgICJza2lwLWNlcnQtdmVyaWZ5IjogdHJ1ZSwKICAgICJzbmkiOiAiIgp9",
+    "protocol": "vmess",
+    "name": "🏁RELAY-172.67.205.208-0326",
+    "host": "172.67.205.208",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T06:55:09Z",
+    "sources": [
+      {
+        "id": "v2ray-aggregator",
+        "name": "V2Ray Aggregator",
+        "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+      }
+    ]
+  },
+  {
+    "id": "15752b228c0bcad64488962d74e85d88d12890ee7663cb43646893b9c7159c3f",
+    "uri": "vless://d37a75db-76b6-4db8-b213-0d5b044d138d@www.speedtest.net:443?security=tls&type=ws&path=%2F&host=top-e4s.pages.dev&packetEncoding=xudp&sni=top-e4s.pages.dev&fp=chrome&encryption=none#%F0%9F%8C%90%20Anycast-IP%20%7C%20%F0%9F%87%A8%F0%9F%87%A6%20%F0%9F%87%B8%F0%9F%87%AA%20%F0%9F%87%BA%F0%9F%87%B8%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🌐 Anycast-IP | 🇨🇦 🇸🇪 🇺🇸 | [BL]",
+    "host": "www.speedtest.net",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T06:55:09Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "e6054d5a14478c57c7c9f2ec6a0e85cf4d42db000099ae8d96b2e7280e405786",
+    "uri": "vmess://ewogICAgImFkZCI6ICIxOTguNDEuMjEyLjEyMiIsCiAgICAiYWlkIjogMCwKICAgICJob3N0IjogImxnMS5jZmNkbjEueHl6IiwKICAgICJpZCI6ICJmY2ZhZWM5MS02MDk2LTQ0ZDgtOTU2Yy03ODY4ZDllODc0YjEiLAogICAgIm5ldCI6ICJ3cyIsCiAgICAicGF0aCI6ICIvIiwKICAgICJwb3J0IjogNDQzLAogICAgInBzIjogIvCfj4FSRUxBWS0xOTguNDEuMjEyLjEyMi0wMzI3IiwKICAgICJ0bHMiOiAidGxzIiwKICAgICJ0eXBlIjogImF1dG8iLAogICAgInNlY3VyaXR5IjogImF1dG8iLAogICAgInNraXAtY2VydC12ZXJpZnkiOiBmYWxzZSwKICAgICJzbmkiOiAibGcxLmNmY2RuMS54eXoiCn0=",
+    "protocol": "vmess",
+    "name": "🏁RELAY-198.41.212.122-0327",
+    "host": "198.41.212.122",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T06:55:09Z",
+    "sources": [
+      {
+        "id": "v2ray-aggregator",
+        "name": "V2Ray Aggregator",
+        "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+      }
+    ]
+  },
+  {
+    "id": "d7c726eb137b553e27717d71b389215bd59d8a74ac9f3dbc2a6311094809cce9",
+    "uri": "vless://0575005f-0ba9-4d6d-85e0-4a6a8cbafc1b@kclx.eu.org:443?host=kclx.eu.org&path=%2F154.16.10.34-8080&security=tls&sni=kclx.eu.org&type=ws#%F0%9F%8C%90%20Anycast-IP%20%7C%20%F0%9F%87%AB%F0%9F%87%AE%20%7C%20%5BBL%5D",
+    "protocol": "vless",
+    "name": "🌐 Anycast-IP | 🇫🇮 | [BL]",
+    "host": "kclx.eu.org",
+    "port": 443,
+    "firstSeenAt": "2026-11-06T06:55:09Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
   }
 ]
