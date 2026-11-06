@@ -24,6 +24,8 @@ jobs:
           node-version: '22'
           cache: 'npm'
       - run: npm ci
+      - name: Generate official NIL 04 app icons
+        run: npm run icons
       - name: Check and build Persian NIL application
         run: npm run build
       - name: Check service TypeScript and tests
