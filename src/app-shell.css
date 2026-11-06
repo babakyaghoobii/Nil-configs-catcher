@@ -116,3 +116,33 @@ input::placeholder{color:#b1bee1}
   .page-footer{padding-bottom:95px}
   .mobile-nav{border-radius:23px 23px 0 0}
 }
+
+/* NIL Proxy Configs Hub: proprietary Blue Peach neon design */
+.nil-proxy-hub{padding-bottom:110px;direction:rtl}
+.nil-hub-header,.nil-hub-tools,.nil-hub-connect{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.nil-hub-header{padding:22px;border-radius:26px;background:linear-gradient(115deg,rgba(35,66,145,.76),rgba(76,35,111,.58));border:1px solid #9ab4ff5c;box-shadow:0 12px 32px #050b265c}
+.nil-hub-header h2{font-size:clamp(20px,4vw,28px);margin:4px 0}
+.nil-hub-header p,.nil-hub-kicker{color:#becaf1;font-size:12px}
+.nil-hub-kicker{letter-spacing:1.5px;direction:ltr;display:block}
+.nil-hub-tools{margin:18px 0;flex-wrap:wrap}
+.nil-hub-tools .search-field{flex:1;min-width:220px}
+.nil-hub-chips{display:flex;gap:9px;overflow-x:auto;padding:5px 2px 14px;scrollbar-width:thin}
+.nil-hub-chip{white-space:nowrap;border-radius:999px;padding:7px 14px;background:linear-gradient(130deg,#214a9c88,#663f9a66);border:1px solid #8aa8ff66;font-size:12px}
+.nil-hub-measure-note{color:#b9c9f2;font-size:12px;padding:10px 4px 16px}
+.nil-hub-list{display:grid;gap:10px}
+.nil-hub-node{display:flex;align-items:center;gap:11px;min-width:0;border:1px solid #849fff47;border-radius:20px;padding:12px;background:linear-gradient(115deg,#182c62df,#1b1b48df);box-shadow:0 5px 17px #03081f60}
+.nil-hub-node.selected{border-color:#ffab86;box-shadow:0 0 0 1px #ffab8688,0 0 23px #7b56fa55}
+.nil-hub-pick{flex:1;display:flex;align-items:center;gap:12px;text-align:right;min-width:0;border:0;background:transparent;color:#fff;cursor:pointer}
+.nil-hub-protocol{flex-shrink:0;min-width:74px;padding:12px 8px;text-align:center;border-radius:13px;background:linear-gradient(140deg,#286eff75,#aa4cda70);font-size:11px;font-weight:800}
+.nil-hub-name{min-width:0;display:grid;gap:5px}
+.nil-hub-name strong{font-size:13px;overflow-wrap:anywhere}
+.nil-hub-name small{font-size:11px;color:#b7c8ee;text-align:left;overflow-wrap:anywhere}
+.nil-hub-ping{font-size:12px;font-weight:800;white-space:nowrap;border-radius:999px;padding:6px 10px;background:#34466e;color:#c6d3f1}
+.nil-hub-ping.good{background:#164c43;color:#84efb4}
+.nil-hub-ping.slow{background:#55402b;color:#ffc783}
+.nil-hub-ping.failed{background:#552e46;color:#ff9ba6}
+.nil-hub-retest,.nil-hub-pin{border:1px solid #879fff5c;border-radius:12px;background:#283b78;color:#e4eaff;display:grid;place-items:center;min-width:35px;height:35px;cursor:pointer}
+.nil-hub-connect{position:sticky;bottom:12px;margin-top:22px;padding:16px 20px;border:1px solid #ffab8688;border-radius:26px;background:linear-gradient(115deg,#162b70,#493073 65%,#8c4c70);box-shadow:0 0 24px #286eff66,0 14px 40px #050a20}
+.nil-hub-connect>div{display:grid;gap:5px}
+.nil-hub-connect small{color:#e1c9f2;font-size:11px}
+@media(max-width:600px){.nil-hub-header{padding:15px;flex-wrap:wrap}.nil-hub-header>.button{width:100%}.nil-hub-node{gap:6px;padding:9px 7px;border-radius:15px}.nil-hub-protocol{min-width:53px;font-size:10px;padding:10px 4px}.nil-hub-name strong{font-size:11px}.nil-hub-ping{font-size:10px;padding:5px}.nil-hub-retest,.nil-hub-pin{min-width:28px;height:30px;padding:4px}.nil-hub-connect{bottom:80px;padding:12px}.nil-hub-tools{gap:10px}}
