@@ -75,13 +75,14 @@ self.addEventListener('fetch', event => {
     event.respondWith(caches.open(CACHE).then(async cache => {
       // Navigation is the cached app shell. Do not require a failed network
       // navigation before returning it (important for offline WebKit).
-      if (request.mode === 'navigate') {
+      const isAppShell = request.mode === 'navigate' && (url.pathname === new URL(BASE).pathname || url.pathname === new URL('index.html', BASE).pathname);
+      if (isAppShell) {
         const shell = await cache.match(new URL('index.html', BASE).href);
         if (shell) return shell;
       }
       const cached = await cache.match(request); if (cached) return cached;
       try { return await fetch(request); }
-      catch (error) { if (request.mode === 'navigate') return await cache.match(new URL('index.html', BASE).href) || Response.error(); throw error; }
+      catch (error) { if (isAppShell) return await cache.match(new URL('index.html', BASE).href) || Response.error(); throw error; }
     }));
   }
 });

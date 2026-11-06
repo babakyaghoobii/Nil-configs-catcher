@@ -290,6 +290,12 @@ export class CollectorStore {
     return JSON.parse(row.report) as RunReport;
   }
 
+  async record(id: string): Promise<ConfigRecord | null> {
+    const row = await this.statement("SELECT seq,record FROM nil_configs WHERE id = ?", id)
+      .first<{ seq: number; record: string }>();
+    return row ? renameForClient(JSON.parse(row.record) as ConfigRecord, row.seq) : null;
+  }
+
   async snapshot(): Promise<Batch> {
     const results = await this.db.batch([
       this.statement("SELECT total AS n FROM nil_totals WHERE singleton=1"),

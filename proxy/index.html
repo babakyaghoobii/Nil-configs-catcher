@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#0a102b" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="NIL Proxy" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="../branding/nil-04-blue-peach.svg?v=official-04-20261106"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./apple-touch-icon.png?v=official-04-20261106"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="./apple-touch-icon.png?v=official-04-20261106"
+    />
+    <link rel="manifest" href="./manifest.webmanifest?v=official-04-20261106" />
+    <title>NIL Proxy — Smart Configs Hub</title>
+  </head>
+  <body>
+    <main>
+      <header class="brand">
+        <div class="identity">
+          <img
+            class="logo"
+            src="../branding/nil-04-blue-peach.svg?v=official-04-20261106"
+            alt="NIL official 04 Blue Peach"
+            width="54"
+            height="54"
+          />
+          <div>
+            <h1>NIL Proxy</h1>
+            <p>Smart Configs Hub</p>
+          </div>
+        </div>
+        <div class="tools">
+          <button class="round" id="searchToggle" aria-label="جستجو">⌕</button
+          ><button class="round" id="settingsToggle" aria-label="تنظیمات">
+            ☷</button
+          ><button class="round" id="addToggle" aria-label="افزودن">+</button>
+        </div>
+      </header>
+      <nav class="topnav">
+        <button data-tab="configs" class="active">◈ Configs</button
+        ><button data-tab="subscriptions">◉ Subscriptions</button
+        ><button data-tab="pinned">♧ Pinned</button
+        ><button data-tab="logs">▤ Logs</button>
+      </nav>
+      <section id="configs">
+        <div class="glass heading">
+          <span class="orb">◉</span>
+          <div class="grow">
+            <h2>Config Manager</h2>
+            <p>NIL Config Catcher · Xray · TCP</p>
+          </div>
+          <button class="glow" id="pingAll">↻ نتایج Xray</button>
+        </div>
+        <div class="proxy-actions">
+          <button class="action" id="refreshConfigs">آخرین کانفیگ‌ها</button
+          ><button class="action" id="collectConfigs">
+            دریافت کانفیگ تازه
+          </button>
+        </div>
+        <p class="muted live-status" id="collectorStatus" role="status">
+          در حال خواندن Collector…
+        </p>
+        <p class="muted live-status" id="measurementStatus" role="status"></p>
+        <div class="searchbar">
+          <input
+            id="search"
+            placeholder="جستجوی نام یا سرور…"
+            aria-label="جستجو"
+          /><select id="sort">
+            <option value="name">Sort: Name</option>
+            <option value="protocol">Protocol</option>
+          </select>
+        </div>
+        <div class="filters" id="filters"></div>
+        <div class="nodes" id="nodes"></div>
+        <button class="action load-more hidden" id="loadMore">
+          نمایش موارد بیشتر
+        </button>
+        <div class="connect">
+          <button id="connectBtn" aria-label="اتصال">⏻</button>
+          <div class="grow">
+            <strong>Connect to Selected Config</strong
+            ><small id="selectedName">کانفیگی انتخاب نشده</small>
+          </div>
+          <span class="connect-chevron">»</span>
+        </div>
+      </section>
+      <section id="subscriptions" class="hidden glass">
+        <h2>Subscriptions</h2>
+        <p class="muted">اشتراک‌ها و وارد کردن کانفیگ</p>
+        <div class="form">
+          <textarea
+            id="importText"
+            placeholder="هر خط یک URI از نوع vless:// ، vmess:// ، trojan:// ، ss:// ، hysteria2:// یا tuic://"
+          ></textarea
+          ><button id="importBtn">افزودن کانفیگ‌ها</button
+          ><button id="exportBtn">خروجی گرفتن از کانفیگ‌ها</button>
+        </div>
+      </section>
+      <section id="pinned" class="hidden glass">
+        <h2>Pinned Configs</h2>
+        <div id="pinnedNodes"></div>
+      </section>
+      <section id="logs" class="hidden glass">
+        <h2>Logs</h2>
+        <div id="logList" class="muted">هنوز رویدادی ثبت نشده است.</div>
+      </section>
+      <section id="settings" class="hidden glass">
+        <h2>Settings</h2>
+        <p class="muted">
+          نسخه وب NIL Proxy — داده‌ها فقط در مرورگر شما ذخیره می‌شوند.
+        </p>
+        <button id="clearBtn" class="action">پاک کردن اطلاعات محلی</button>
+        <div class="notice">
+          زمان Xray از اجرای CI و زمان TCP از سرور NIL می‌آید. برای اتصال VPN از
+          کلاینت بومی استفاده کن.
+        </div>
+      </section>
+      <section id="home" class="hidden glass">
+        <h2>NIL Proxy</h2>
+        <p>مرکز مدیریت کانفیگ‌های شخصی شما</p>
+        <button class="action" data-tab="configs">باز کردن کانفیگ‌ها</button>
+      </section>
+      <section id="connect" class="hidden glass">
+        <h2>Connect</h2>
+        <p class="muted">پنل اتصال NIL Proxy</p>
+        <button id="openConnectSheet" class="action">
+          ⏻ باز کردن پنل اتصال
+        </button>
+      </section>
+      <div
+        id="connectOverlay"
+        class="connect-overlay hidden"
+        role="presentation"
+      ></div>
+      <aside
+        id="connectSheet"
+        class="connect-sheet hidden"
+        role="dialog"
+        aria-modal="true"
+        aria-label="پنل اتصال"
+      >
+        <div class="sheet-handle"></div>
+        <div class="sheet-head">
+          <h2>⏻ اتصال NIL Proxy</h2>
+          <button id="closeConnectSheet" class="round" aria-label="بستن">
+            ×
+          </button>
+        </div>
+        <p class="muted">کانفیگ انتخاب‌شده</p>
+        <select
+          aria-label="کانفیگ انتخاب‌شده"
+          id="connectConfigSelect"
+          class="sheet-select"
+        ></select>
+        <p id="connectStatus" class="sheet-status" role="status">
+          اتصال در کلاینت بومی انجام می‌شود.
+        </p>
+        <div class="proxy-actions">
+          <a id="startConnection" class="action action-link hidden"
+            >⏻ باز کردن در کلاینت بومی</a
+          ><button id="copyConfig" class="action hidden">کپی کانفیگ</button>
+        </div>
+        <p class="notice">
+          برای کانفیگ عمومی، وارد کردن پروفایل را در کلاینت تأیید کن و همان
+          پروفایل را برای اتصال یا آزمون از دستگاه انتخاب کن. کانفیگ دستی فقط از
+          راه کپی منتقل می‌شود.
+        </p>
+      </aside>
+      <footer class="footer">
+        Owned by NIL Group · Created by B. YAGHOOBI
+      </footer>
+    </main>
+    <nav class="bottomnav">
+      <button data-tab="home"><b>⌂</b>Home</button
+      ><button data-tab="configs" class="active"><b>◈</b>Configs</button
+      ><button data-tab="connect"><b>⏻</b>Connect</button
+      ><button data-tab="settings"><b>⚙</b>Settings</button>
+    </nav>
+    <script type="module" src="./app.ts"></script>
+  </body>
+</html>

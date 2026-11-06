@@ -110,6 +110,7 @@ export async function handleCollectorAPI(
     headers.set("X-Content-Type-Options", "nosniff");
     headers.set("Referrer-Policy", "no-referrer");
     headers.set("Cache-Control", "no-store");
+    if (origin && allowedOrigin) headers.set("Access-Control-Expose-Headers", "Retry-After");
     for (const [key, value] of Object.entries(cors)) headers.set(key, value);
     return new Response(request.method === "HEAD" ? null : response.body, {
       status: response.status,
@@ -120,6 +121,7 @@ export async function handleCollectorAPI(
     if (
       ![
         "/api/data",
+        "/api/profile",
         "/api/collect",
         "/api/subscription",
         "/api/export",
@@ -161,6 +163,19 @@ export async function handleCollectorAPI(
     if (path === "/api/data") {
       query(request, []);
       return respond(Response.json(await store.snapshot()));
+    }
+    if (path === "/api/profile") {
+      const id = query(request, ["id"]).get("id");
+      if (!id || !/^[a-f0-9]{64}$/.test(id))
+        throw new HttpFailure(400, "A canonical config ID is required");
+      const record = await store.record(id);
+      if (!record) throw new HttpFailure(404, "Public config not found");
+      return respond(new Response(encodeBase64(utf8Encode(record.uri + "\n")), {
+        headers: {
+          "Content-Type": "text/plain; charset=utf-8",
+          "profile-title": `base64:${encodeBase64(utf8Encode(record.name))}`,
+        },
+      }));
     }
     if (path === "/api/export") {
       const params = query(request, ["cursor", "until", "limit"]);

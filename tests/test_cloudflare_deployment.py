@@ -117,9 +117,19 @@ class CloudflareDeploymentTests(unittest.TestCase):
         icon = self.root / "dist-hosted/icons/icon-192.png"
         icon.parent.mkdir()
         icon.write_bytes(b"fixture-icon")
+        proxy = self.root / "dist-hosted/proxy"
+        proxy.mkdir(exist_ok=True)
+        (proxy / "index.html").write_bytes(b"<html>NIL Proxy</html>")
+        (proxy / "apple-touch-icon.png").write_bytes(b"nil-04-icon")
         record = {**parse_config("trojan://fixture@example.com:443"), "firstSeenAt": "2026-01-01T00:00:00Z", "sources": [{"id": "fixture", "name": "Fixture", "url": "https://github.com/example/public/blob/main/list.txt"}]}
         report = {"schemaVersion": 1, "state": "success", "startedAt": record["firstSeenAt"], "finishedAt": record["firstSeenAt"], "totalUnique": 1, "added": 1, "duplicateCount": 0, "invalidCount": 0, "connectionTested": False}
         values = {"/": html.read_bytes(), "/icons/icon-192.png": icon.read_bytes(), "/manifest.webmanifest": json.dumps({"short_name": "NIL", "display": "standalone"}).encode(), "/api/sync": b"{}", "/api/collect": json.dumps({"snapshot": {"totalUnique": 1, "configs": [record]}, "status": report}).encode(), "/api/subscription?protocol=all&source=all&format=base64": base64.b64encode((record["uri"] + "\n").encode())}
+        values.update({
+            "/proxy/": (proxy / "index.html").read_bytes(),
+            "/proxy/apple-touch-icon.png": (proxy / "apple-touch-icon.png").read_bytes(),
+            "/api/profile?id=" + record["id"]: base64.b64encode((record["uri"] + "\n").encode()),
+            "/api/latency?id=" + record["id"]: b'{"state":"failed"}',
+        })
         def fetcher(origin, path, payload=None):
             self.assertEqual(origin, ORIGIN)
             return values[path], {"profile-update-interval": "2"}

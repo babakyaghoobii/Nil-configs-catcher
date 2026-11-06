@@ -4,6 +4,7 @@ import worker, { type WorkerEnv } from "../worker.ts";
 import { TestDatabase } from "./sqlite.ts";
 import { CollectorStore, type RunReport } from "../database.ts";
 import { parseConfig } from "../protocols.ts";
+import { latency } from "../latency.ts";
 
 const origin = "https://nil-config-catcher.nil-tests.workers.dev";
 const assets: WorkerEnv["ASSETS"] = {
@@ -149,6 +150,31 @@ test("public API and base64 subscription use real SQLite data without exposing b
       { DB: db, ASSETS: assets },
     );
     assert.equal(atob(await feed.text()).trim(), `${record.uri}#Babak-tr-00-00-01`);
+    const profile = await worker.fetch(new Request(origin + "/api/profile?id=" + record.id),
+      { DB: db, ASSETS: assets });
+    assert.equal(profile.status, 200);
+    assert.equal(atob(await profile.text()), batch.snapshot.configs[0].uri + "\n");
+    for (const [params, status] of [["id=" + "0".repeat(64), 404], ["id=" + record.id + "&url=localhost", 400]] as const) {
+      const rejected = await worker.fetch(new Request(origin + "/api/profile?" + params), { DB: db, ASSETS: assets });
+      assert.equal(rejected.status, status);
+    }
+
+    const probeRequest = () => new Request(origin + "/api/latency?id=" + record.id, {
+      method: "POST",
+      headers: { Origin: "https://babakyaghoobii.github.io", "CF-Connecting-IP": "8.8.8.8" },
+    });
+    const guard = { DB: db, LATENCY_LIMITER: { limit: async () => ({ success: true }) } };
+    const neverDial = () => assert.fail("Unsafe DNS result reached the socket");
+    const mixed = await latency(probeRequest(), guard, neverDial, async () => Response.json({
+      Status: 0, Answer: [{ type: 1, data: "8.8.8.8" }, { type: 1, data: "127.0.0.1" }],
+    }));
+    assert.deepEqual(await mixed.json(), { state: "unsupported" });
+    const throttled = await latency(probeRequest(), {
+      ...guard, LATENCY_LIMITER: { limit: async () => ({ success: false }) },
+    }, neverDial, async () => assert.fail("Rate-limited request reached DNS"));
+    assert.equal(throttled.status, 429);
+    const unavailable = await worker.fetch(probeRequest(), { DB: db, ASSETS: assets });
+    assert.equal(unavailable.status, 503);
     const malicious = await worker.fetch(
       new Request(origin + "/api/collect", {
         method: "POST",

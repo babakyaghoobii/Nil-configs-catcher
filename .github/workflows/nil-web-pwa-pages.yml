@@ -1,24 +1,13 @@
 name: Publish NIL Proxy Web App to GitHub Pages
 on:
-  push:
-    branches: [main]
-    paths:
-      - 'src/**'
-      - 'public/**'
-      - 'index.html'
-      - 'package.json'
-      - 'package-lock.json'
-      - 'scripts/**'
-      - 'vite.config.ts'
-      - '.github/workflows/nil-web-pwa-pages.yml'
   workflow_dispatch:
 permissions:
   contents: read
   pages: write
   id-token: write
 concurrency:
-  group: nil-proxy-pages
-  cancel-in-progress: true
+  group: github-pages
+  cancel-in-progress: false
 jobs:
   publish:
     runs-on: ubuntu-latest

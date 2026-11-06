@@ -104,15 +104,9 @@ test("RTL, no horizontal overflow, all protocols, safe rendering and no CSP erro
   await fixture(page);
   await expect(page.locator("html")).toHaveAttribute("dir", "rtl");
   await expect(page.locator("html")).toHaveAttribute("lang", "fa");
-  await expect(page.locator("#creator-title")).toContainText("babakyaghoobii");
-  await expect(page.locator(".creator-english")).toContainText(
-    "Free for everyone to use",
-  );
-  await expect(page.locator(".creator-logo")).toBeVisible();
-  await expect(page.locator(".creator-logo")).toHaveJSProperty(
-    "naturalWidth",
-    640,
-  );
+  await expect(page.locator(".page-footer")).toContainText("B. YAGHOOBI");
+  await expect(page.locator(".nil-command-logo img")).toBeVisible();
+  await expect(page.locator(".nil-command-logo img")).toHaveJSProperty("naturalWidth", 1024);
   await expect(page.locator(".config-card img")).toHaveCount(0);
   expect(
     await page.evaluate(
@@ -259,7 +253,7 @@ test("stale and partial collection status are visible", async ({ page }) => {
     });
   });
   await page.goto("./");
-  await expect(page.locator(".refresh-strip")).toContainText("دریافت ناقص");
+  await expect(page.locator(".nil-command-summary")).toContainText("دریافت ناقص");
   await expect(page.locator(".notice.warning")).toContainText("بیش از");
 });
 
@@ -307,7 +301,7 @@ test.describe("real offline installation", () => {
       );
       await page.reload();
       await expect(
-        page.getByRole("heading", { name: "یک قدم تا اتصال." }),
+        page.getByRole("heading", { name: "NIL Config Catcher" }),
       ).toBeVisible();
       await expect(page.locator(".notice.warning").first()).toContainText(
         "آفلاین",

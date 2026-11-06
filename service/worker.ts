@@ -1,9 +1,8 @@
 import { handleCollectorAPI } from "./api.ts";
 import { canonicalRoot, readRaw } from "./pipeline.ts";
-import type { SqlDatabase } from "./database.ts";
+import { latency, type LatencyEnv } from "./latency.ts";
 
-export type WorkerEnv = {
-  DB?: SqlDatabase;
+export type WorkerEnv = LatencyEnv & {
   ASSETS: { fetch(request: Request): Promise<Response> };
 };
 
@@ -29,7 +28,12 @@ export default {
     try {
       const url = new URL(request.url);
       let response: Response;
-      if (url.pathname === "/api/measurements" && ["GET", "HEAD"].includes(request.method)) {
+      if (url.pathname === "/api/latency" && env.LATENCY_LIMITER) {
+        const { connect } = await import("cloudflare:sockets");
+        response = await latency(request, env, connect);
+      } else if (url.pathname === "/api/latency") {
+        response = await latency(request, env, () => { throw new Error("Socket unavailable"); });
+      } else if (url.pathname === "/api/measurements" && ["GET", "HEAD"].includes(request.method)) {
         const { text } = await readRaw(
           canonicalRoot + "public/data/measurements.json",
           fetch,
@@ -69,7 +73,9 @@ export default {
         if (
           url.pathname === "/" ||
           url.pathname === "/sw.js" ||
-          url.pathname === "/index.html"
+          url.pathname === "/index.html" ||
+          url.pathname === "/proxy/" ||
+          url.pathname === "/proxy/index.html"
         ) {
           const headers = new Headers(response.headers);
           headers.set("Cache-Control", "no-cache");

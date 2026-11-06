@@ -2,6 +2,7 @@
 import base64
 import hashlib
 import json
+import re
 import sys
 import time
 from datetime import datetime, timezone
@@ -17,9 +18,13 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 def fetch_public(origin, path, payload=None):
-    if path not in ("/", "/manifest.webmanifest", "/icons/icon-192.png", "/api/sync", "/api/collect", "/api/subscription?protocol=all&source=all&format=base64"):
+    fixed = ("/", "/proxy/", "/proxy/apple-touch-icon.png", "/manifest.webmanifest", "/icons/icon-192.png",
+             "/api/sync", "/api/collect", "/api/subscription?protocol=all&source=all&format=base64")
+    if path not in fixed and not re.fullmatch(r"/api/(profile|latency)\?id=[a-f0-9]{64}", path):
         raise ValueError("Unexpected verification route")
-    request = Request(origin + path, data=None if payload is None else json.dumps(payload).encode(),
+    is_latency = path.startswith("/api/latency?")
+    request = Request(origin + path, method="POST" if is_latency else None,
+                      data=b"" if is_latency else None if payload is None else json.dumps(payload).encode(),
                       headers={"Content-Type": "application/json", "Accept-Encoding": "identity", "User-Agent": "NIL-Public-Verification/1.0"})
     with build_opener(NoRedirects()).open(request, timeout=45) as response:
         raw = response.read(6 * 1024 * 1024 + 1)
@@ -41,6 +46,9 @@ def verify(root, fetcher=fetch_public):
     icon, _ = fetcher(origin, "/icons/icon-192.png")
     if icon != (root / "dist-hosted/icons/icon-192.png").read_bytes():
         raise ValueError("Live icon does not match the creator's NIL logo")
+    for route, asset in (("/proxy/", "index.html"), ("/proxy/apple-touch-icon.png", "apple-touch-icon.png")):
+        if fetcher(origin, route)[0] != (root / "dist-hosted" / "proxy" / asset).read_bytes():
+            raise ValueError("Live NIL Proxy HTML or icon does not match the build")
     manifest = json.loads(fetcher(origin, "/manifest.webmanifest")[0])
     if manifest.get("display") != "standalone" or manifest.get("short_name") != "NIL":
         raise ValueError("The live PWA manifest does not match NIL")
@@ -60,6 +68,17 @@ def verify(root, fetcher=fetch_public):
     ids = [parse_config(uri)["id"] for uri in uris]
     if len(set(ids)) != len(ids) or set(ids) != expected or headers.get("profile-update-interval") != "2":
         raise ValueError("The live subscription does not match the actual collected records")
+    if rows:
+        selected = rows[0]
+        profile = fetcher(origin, "/api/profile?id=" + selected["id"])[0]
+        if base64.b64decode(profile, validate=True).decode("utf-8") != selected["uri"] + "\n":
+            raise ValueError("Live Connect profile does not match the selected config")
+        latency = json.loads(fetcher(origin, "/api/latency?id=" + selected["id"])[0])
+        state = latency.get("state")
+        if state not in ("open", "failed", "unsupported") or (
+            state == "open" and not (type(latency.get("latencyMs")) is int and 1 <= latency["latencyMs"] <= 6000)
+        ):
+            raise ValueError("Live TCP measurement endpoint did not return a valid result")
     candidate["verifiedAt"] = datetime.now(timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z")
     write_json(root / "deployment.json", candidate)
     # Update the next desktop build's restrictive native CSP to the verified origin.

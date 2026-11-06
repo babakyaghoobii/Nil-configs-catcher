@@ -1,5 +1,5 @@
 declare const __NIL_SERVICE_ORIGIN__: string;
-const primaryOrigin = __NIL_SERVICE_ORIGIN__;
+export const primaryOrigin = __NIL_SERVICE_ORIGIN__;
 const localPreview =
   ["http:", "https:"].includes(location.protocol) &&
   ["localhost", "127.0.0.1"].includes(location.hostname);
@@ -20,14 +20,14 @@ export class ServiceError extends Error {
   }
 }
 
-export async function serviceData(collect = false, signal?: AbortSignal) {
+export async function serviceData(collect = false, signal?: AbortSignal, base = apiBase) {
   const controller = new AbortController();
   const timer = setTimeout(() => controller.abort(), collect ? 40000 : 7000);
   const abort = () => controller.abort();
   signal?.addEventListener("abort", abort, { once: true });
   if (signal?.aborted) controller.abort();
   try {
-    const response = await fetch(`${apiBase}${collect ? "collect" : "data"}`, {
+    const response = await fetch(`${base}${collect ? "collect" : "data"}`, {
       method: collect ? "POST" : "GET",
       cache: "no-store",
       signal: controller.signal,
@@ -101,11 +101,10 @@ export type Measurement = { state: "reachable"; latencyMs: number } | {
   state: "failed" | "skipped";
 };
 
-export async function serviceMeasurements(signal: AbortSignal) {
-  const locations = [
+export async function serviceMeasurements(signal: AbortSignal, locations = [
     `${apiBase}measurements`,
     `${import.meta.env.BASE_URL}data/measurements.json`,
-  ];
+  ]) {
   for (const location of locations) {
     try {
       const response = await fetch(location, {

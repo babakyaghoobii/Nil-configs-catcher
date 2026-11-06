@@ -1,6 +1,15 @@
 name: Deploy NIL to Cloudflare
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - 'proxy/**'
+      - 'service/**'
+      - 'scripts/prepare-cloudflare.py'
+      - 'scripts/verify-cloudflare.py'
+      - 'vite.config.ts'
+      - '.github/workflows/deploy-cloudflare.yml'
   workflow_dispatch:
 
 permissions:

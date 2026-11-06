@@ -20,6 +20,7 @@ export default defineConfig(({ mode }) => ({
   build: {
     target: "es2022",
     sourcemap: false,
+    rollupOptions: { input: ["index.html", "proxy/index.html"] },
     outDir:
       mode === "desktop"
         ? "dist-desktop"
@@ -31,6 +32,13 @@ export default defineConfig(({ mode }) => ({
   plugins: [
     {
       name: "repository-data-policy",
+      generateBundle() {
+        this.emitFile({
+          type: "asset",
+          fileName: "proxy/apple-touch-icon.png",
+          source: readFileSync(new URL("./public/icons/apple-touch-icon.png", import.meta.url)),
+        });
+      },
       transformIndexHtml(html: string) {
         return html.replace(
           "connect-src 'self'",

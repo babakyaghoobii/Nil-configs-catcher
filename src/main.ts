@@ -1,3 +1,4 @@
+import { validateSnapshot, type Config, type Snapshot, type Source } from "./config-snapshot";
 import "@fontsource-variable/vazirmatn";
 import "./style.css";
 import "./creator.css";
@@ -16,17 +17,6 @@ import {
 
 type Protocol = "vless" | "vmess" | "trojan" | "ss" | "hysteria2" | "tuic";
 type View = "dashboard" | "configs" | "saved" | "sources" | "history";
-type Source = { id: string; name: string; url: string };
-type Config = {
-  id: string;
-  uri: string;
-  protocol: Protocol;
-  name: string;
-  host: string;
-  port: number;
-  firstSeenAt: string;
-  sources: Source[];
-};
 type SourceReport = Source & {
   status: string;
   candidates: number;
@@ -49,12 +39,6 @@ type Status = {
   snapshotLimit: number;
   sources: SourceReport[];
   errors: string[];
-};
-type Snapshot = {
-  schemaVersion: number;
-  generatedAt: string | null;
-  totalUnique: number;
-  configs: Config[];
 };
 const repository = "https://github.com/babakyaghoobii/Nil-configs-catcher";
 const usesRepositoryData = isDesktop || import.meta.env.MODE === "hosted";
@@ -251,6 +235,8 @@ function dashboard() {
       <div class="nil-command-buttons">
         <button class="button primary" data-action="open-settings">${icon("layers")} تنظیمات جمع‌آوری</button>
         <button class="button secondary" data-action="subscription">${icon("link")} لینک اشتراک</button>
+        <button class="button secondary" data-action="refresh">${icon("refresh")} آخرین داده</button>
+        <a class="button secondary" href="${import.meta.env.BASE_URL}proxy/">NIL Proxy</a>
       </div>
     </section>
     ${state.collectionSettings ? collectionSettings() : ""}
@@ -294,7 +280,7 @@ function configsHub() {
         <button class="nil-hub-pick" data-action="select-proxy" data-id="${item.id}" aria-pressed="${selectedProxyId === item.id}" aria-label="انتخاب ${escape(item.name)}">
           <span class="nil-hub-protocol">${protocolLabels[item.protocol]}</span><span class="nil-hub-name"><strong dir="auto">${escape(item.name)}</strong><small dir="ltr">${escape(item.host)}:${item.port}</small></span>
         </button><span class="nil-hub-ping ${tone}">${latency}</span>
-        <button class="nil-hub-retest" data-action="retest-proxy" data-id="${item.id}" aria-label="تست مجدد ${escape(item.name)}" title="تست بومی هنوز متصل نیست">${icon("refresh")}</button>
+        <button class="nil-hub-retest" data-action="retest-proxy" data-id="${item.id}" aria-label="تست مجدد ${escape(item.name)}" title="آزمون زنده در NIL Proxy">${icon("refresh")}</button>
         <button class="nil-hub-pin" data-action="save" data-id="${item.id}" aria-label="نشان کردن">${icon("bookmark")}</button>
       </article>`;
     }).join("") : '<div class="empty-state">کانفیگی برای نمایش موجود نیست.</div>'}</div>
@@ -400,41 +386,6 @@ function historyView() {
   return `<section class="panel"><div class="section-heading"><div><h2>نبض جمع‌آوری</h2><p>۱۲۰ اجرای اخیر در این صفحه؛ تاریخچهٔ کامل در کامیت‌های گیت‌هاب.</p></div><a class="button secondary" href="${repository}/actions" target="_blank" rel="noopener noreferrer">GitHub Actions ${icon("external")}</a></div><div class="history-list">${state.history.length ? state.history.map((status) => `<article class="history-item"><span class="history-icon ${status.state}">${icon(status.state === "success" ? "check" : "info")}</span><div><h3>${statusLabel(status)}</h3><time datetime="${escape(status.startedAt)}">${date(status.startedAt)}</time></div><div class="history-stat"><strong>+${number(status.added)}</strong><span>کانفیگ جدید</span></div><div class="history-extra"><span>${number(status.duplicateCount)} تکراری</span><span>${number(status.invalidCount)} نامعتبر</span></div></article>`).join("") : '<div class="empty-state"><h3>اولین فصل هنوز نوشته نشده</h3><p>بعد از اجرای جمع‌آوری، گزارش واقعی اینجا ثبت می‌شود.</p></div>'}</div></section>`;
 }
 
-function validateSnapshot(value: unknown): Snapshot {
-  if (!value || typeof value !== "object") throw new Error("Invalid snapshot");
-  const data = value as Snapshot;
-  if (
-    data.schemaVersion !== 1 ||
-    !Array.isArray(data.configs) ||
-    data.configs.length > 1000
-  )
-    throw new Error("Invalid snapshot");
-  for (const item of data.configs) {
-    if (
-      !item ||
-      !/^[a-f0-9]{64}$/.test(item.id) ||
-      !protocols.includes(item.protocol) ||
-      typeof item.uri !== "string" ||
-      item.uri.length > 16384 ||
-      !/^(vless|vmess|trojan|ss|hysteria2|hy2|tuic):\/\//i.test(item.uri) ||
-      typeof item.name !== "string" ||
-      typeof item.host !== "string" ||
-      !Number.isInteger(item.port) ||
-      item.port < 1 ||
-      item.port > 65535 ||
-      Number.isNaN(Date.parse(item.firstSeenAt)) ||
-      !Array.isArray(item.sources) ||
-      item.sources.some(
-        (source) =>
-          !source ||
-          typeof source.name !== "string" ||
-          typeof source.url !== "string",
-      )
-    )
-      throw new Error("Invalid record");
-  }
-  return data;
-}
 function validateStatus(value: unknown): Status {
   if (!value || typeof value !== "object") throw new Error("Invalid status");
   const status = value as Status;
@@ -736,8 +687,14 @@ app.addEventListener("click", async (event) => {
   }
   const action = button.dataset.action;
   if (action === "select-proxy") { selectedProxyId = button.dataset.id || null; render(); return; }
-  if (action === "connect-proxy") { toast("اتصال واقعی به موتور VPN بومی هنوز پیاده‌سازی نشده است؛ اتصال جعلی نمایش داده نمی‌شود."); return; }
-  if (action === "retest-proxy") { toast("تست مستقل هر سرور به موتور بومی نیاز دارد؛ نتیجه قبلی بدون اندازه‌گیری تغییر نمی‌کند."); return; }
+  if (action === "connect-proxy" || action === "retest-proxy") {
+    const url = new URL(`${import.meta.env.BASE_URL}proxy/`, location.href);
+    const id = action === "connect-proxy" ? selectedProxyId : button.dataset.id;
+    if (id) url.searchParams.set("id", id);
+    if (action === "connect-proxy") url.hash = "connect";
+    location.assign(url.href);
+    return;
+  }
   if (action === "reload-ping") { void refresh(); return; }
   if (action === "theme") {
     const choice = button.dataset.themeChoice;

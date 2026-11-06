@@ -30,7 +30,7 @@ export function createPreviewServer(
         return;
       }
       if (!pathname.startsWith(prefix)) throw new Error("Not found");
-      const path = resolve(root, pathname.slice(prefix.length) || "index.html");
+      const path = resolve(root, pathname.slice(prefix.length) + (pathname.endsWith("/") ? "index.html" : ""));
       if (!path.startsWith(root + sep) || !(await stat(path)).isFile())
         throw new Error("Not found");
       response.writeHead(200, {

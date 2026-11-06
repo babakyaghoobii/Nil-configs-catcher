@@ -96,7 +96,7 @@ test("a grouped subscription URL preserves selected protocol, source and title",
 }) => {
   await data(page);
   await page.locator('[data-protocol="vless"]').click();
-  await page.getByRole("button", { name: "ساخت لینک اشتراک" }).click();
+  await page.locator(".nil-command [data-action=subscription]").click();
   await page.locator("#subscription-name").fill("مجموعهٔ نیل");
   await page.locator("#subscription-source").selectOption("fixture");
   await page.locator("#subscription-format").selectOption("plain");
@@ -120,7 +120,8 @@ test("manual collection sends POST and inserts only the returned fresh records",
     count++;
     await route.fulfill({ json: batch(true) });
   });
-  await page.locator('[data-action="collect-now"]').click();
+  await page.locator(".nil-command-buttons [data-action=open-settings]").click();
+  await page.locator('[data-action="start-collection"]').click();
   await expect(page.locator(".config-card")).toHaveCount(3);
   await expect(page.locator(".config-card").first()).toContainText("Fixture c");
   expect(count).toBe(1);
@@ -137,7 +138,8 @@ test("a busy collector keeps the existing list and exposes the actual retry dela
       json: { error: "Collection busy" },
     }),
   );
-  await page.locator('[data-action="collect-now"]').click();
+  await page.locator(".nil-command-buttons [data-action=open-settings]").click();
+  await page.locator('[data-action="start-collection"]').click();
   await expect(page.getByRole("alert")).toContainText("۳۳");
   await expect(page.locator(".config-card")).toHaveCount(2);
   await expect(page.locator("#toast")).not.toContainText("دریافت شد");
@@ -189,9 +191,10 @@ test.describe("manual collection with a real installed service worker", () => {
       await expect.poll(() => page.evaluate(() => Boolean(navigator.serviceWorker.controller))).toBe(true);
       await page.reload();
       await expect(page.locator(".config-card")).toHaveCount(2);
-      await page.locator('[data-action="collect-now"]').click();
+      await page.locator(".nil-command-buttons [data-action=open-settings]").click();
+      await page.locator('[data-action="start-collection"]').click();
       await expect(page.locator(".config-card")).toHaveCount(3);
-      await page.locator('[data-action="collect-now"]').click();
+      await page.locator('[data-action="start-collection"]').click();
       await expect(page.getByRole("alert")).toContainText("۳۳");
       await expect(page.locator(".config-card")).toHaveCount(3);
       expect(requests).toHaveLength(2);

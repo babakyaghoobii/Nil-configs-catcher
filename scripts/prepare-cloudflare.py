@@ -108,6 +108,8 @@ def prepare(root, account, api):
                    "html_handling": "auto-trailing-slash", "not_found_handling": "none"},
         "d1_databases": [{"binding": "DB", "database_name": DATABASE_NAME, "database_id": identifier,
                           "migrations_dir": "../service/migrations"}],
+        "ratelimits": [{"name": "LATENCY_LIMITER", "namespace_id": "2494106",
+                        "simple": {"limit": 8, "period": 60}}],
         "observability": {"enabled": True},
     }
     write_json(root / "deploy" / "cloudflare.generated.json", config)
