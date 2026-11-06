@@ -42,3 +42,17 @@ jobs:
           path: dist
       - id: deployment
         uses: actions/deploy-pages@v4
+      - name: Verify Safari entrypoint is publicly accessible
+        env:
+          SITE_URL: ${{ steps.deployment.outputs.page_url }}
+        run: |
+          test -n "$SITE_URL"
+          for i in $(seq 1 12); do
+            if curl --fail --location --silent --show-error --max-time 15 "${SITE_URL%/}/proxy/" -o /tmp/nil-proxy-page.html && grep -q 'NIL Proxy — Smart Configs Hub' /tmp/nil-proxy-page.html; then
+              echo "Verified deployed NIL Proxy at ${SITE_URL%/}/proxy/"
+              exit 0
+            fi
+            sleep 10
+          done
+          echo 'ERROR: NIL Proxy Safari entrypoint is not publicly accessible or wrong content was served.' >&2
+          exit 1
