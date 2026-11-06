@@ -4,7 +4,7 @@ import "./creator.css";
 import "./nil.css";
 import { icon } from "./icons";
 import { setTheme, themeChoice, type ThemeChoice } from "./theme";
-import { serviceData, subscriptionURL, ServiceError } from "./service";
+import { serviceData, serviceMeasurements, subscriptionURL, ServiceError } from "./service";
 import {
   isDesktop,
   repositoryDataURL,
@@ -245,7 +245,7 @@ function dashboard() {
 }
 
 function catalog() {
-  return `<section id="catalog" class="catalog"><div class="section-heading"><div><h2>${state.view === "saved" ? "کانفیگ‌های نشان‌شده" : "کاوش کانفیگ‌ها"} <span class="count-badge" id="result-total">۰</span></h2><p>فقط قالب بررسی شده است؛ اتصال و سرعت تضمین نمی‌شود.</p></div><div class="heading-actions"><button class="button secondary export-button" data-action="export">${icon("download")} خروجی اشتراک</button><button class="button primary" data-action="subscription">${icon("link")} ساخت لینک اشتراک</button></div></div><div class="filter-toolbar"><div class="search-field">${icon("search")}<input id="search" type="search" autocomplete="off" maxlength="200" placeholder="جستجوی نام، سرور یا منبع…" aria-label="جستجوی کانفیگ" value="${escape(state.query)}"/><kbd>⌘ K</kbd></div><label class="sort-field">${icon("layers")}<span class="sr-only">مرتب‌سازی</span><select id="sort" aria-label="مرتب‌سازی"><option value="newest" ${state.sort === "newest" ? "selected" : ""}>جدیدترین اول</option><option value="oldest" ${state.sort === "oldest" ? "selected" : ""}>قدیمی‌ترین اول</option><option value="name" ${state.sort === "name" ? "selected" : ""}>بر اساس نام</option></select></label></div><div class="protocol-tabs" role="group" aria-label="فیلتر پروتکل"><button class="protocol-tab ${state.protocol === "all" ? "selected" : ""}" data-protocol="all" aria-pressed="${state.protocol === "all"}">همه پروتکل‌ها <span>${number(baseConfigs().length)}</span></button>${protocols.map((protocol) => `<button class="protocol-tab ${state.protocol === protocol ? "selected" : ""}" data-protocol="${protocol}" aria-pressed="${state.protocol === protocol}"><i class="protocol-dot ${protocol}"></i><b dir="ltr">${protocolLabels[protocol]}</b><span>${number(baseConfigs().filter((item) => item.protocol === protocol).length)}</span></button>`).join("")}</div><div class="list-meta"><span id="list-description" role="status" aria-live="polite"></span><span>${icon("shield")} اعتبارسنجی ساختاری</span></div><div id="config-list" class="config-grid" aria-busy="${state.loading}"></div><div id="load-more"></div><div class="catalog-note">${icon("info")} این فهرست شامل حداکثر ${number(state.status?.snapshotLimit || 1000)} کانفیگ اخیر است. <a href="${repository}/tree/main/data/archive" target="_blank" rel="noopener noreferrer">آرشیو کامل در گیت‌هاب ${icon("external")}</a></div></section>`;
+  return `<section id="catalog" class="catalog"><div class="section-heading"><div><h2>${state.view === "saved" ? "کانفیگ‌های نشان‌شده" : "کاوش کانفیگ‌ها"} <span class="count-badge" id="result-total">۰</span></h2><p>${probeReport ? `زمان پاسخ HTTPS از محل اجرای آزمون · ${date(probeReport.measuredAt)}` : "دادهٔ تازه‌ای از آزمون اتصال در دسترس نیست."}</p></div><div class="heading-actions"><button class="button secondary export-button" data-action="export">${icon("download")} خروجی اشتراک</button><button class="button primary" data-action="subscription">${icon("link")} ساخت لینک اشتراک</button></div></div><div class="filter-toolbar"><div class="search-field">${icon("search")}<input id="search" type="search" autocomplete="off" maxlength="200" placeholder="جستجوی نام، سرور یا منبع…" aria-label="جستجوی کانفیگ" value="${escape(state.query)}"/><kbd>⌘ K</kbd></div><label class="sort-field">${icon("layers")}<span class="sr-only">مرتب‌سازی</span><select id="sort" aria-label="مرتب‌سازی"><option value="newest" ${state.sort === "newest" ? "selected" : ""}>جدیدترین اول</option><option value="oldest" ${state.sort === "oldest" ? "selected" : ""}>قدیمی‌ترین اول</option><option value="name" ${state.sort === "name" ? "selected" : ""}>بر اساس نام</option><option value="latency" ${state.sort === "latency" ? "selected" : ""}>کمترین زمان پاسخ آزمون</option></select></label></div><div class="protocol-tabs" role="group" aria-label="فیلتر پروتکل"><button class="protocol-tab ${state.protocol === "all" ? "selected" : ""}" data-protocol="all" aria-pressed="${state.protocol === "all"}">همه پروتکل‌ها <span>${number(baseConfigs().length)}</span></button>${protocols.map((protocol) => `<button class="protocol-tab ${state.protocol === protocol ? "selected" : ""}" data-protocol="${protocol}" aria-pressed="${state.protocol === protocol}"><i class="protocol-dot ${protocol}"></i><b dir="ltr">${protocolLabels[protocol]}</b><span>${number(baseConfigs().filter((item) => item.protocol === protocol).length)}</span></button>`).join("")}</div><div class="list-meta"><span id="list-description" role="status" aria-live="polite"></span><span>${icon("shield")} اعتبارسنجی ساختاری</span></div><div id="config-list" class="config-grid" aria-busy="${state.loading}"></div><div id="load-more"></div><div class="catalog-note">${icon("info")} این فهرست شامل حداکثر ${number(state.status?.snapshotLimit || 1000)} کانفیگ اخیر است. <a href="${repository}/tree/main/data/archive" target="_blank" rel="noopener noreferrer">آرشیو کامل در گیت‌هاب ${icon("external")}</a></div></section>`;
 }
 function baseConfigs() {
   return (state.snapshot?.configs || []).filter(
@@ -263,11 +263,18 @@ function filteredConfigs() {
           .includes(query),
     )
     .sort((a, b) =>
-      state.sort === "name"
+      state.sort === "latency"
+        ? (measuredLatency(a.id) - measuredLatency(b.id) || Date.parse(b.firstSeenAt) - Date.parse(a.firstSeenAt))
+        : state.sort === "name"
         ? a.name.localeCompare(b.name, "fa")
         : (Date.parse(b.firstSeenAt) - Date.parse(a.firstSeenAt)) *
           (state.sort === "oldest" ? -1 : 1),
     );
+}
+let probeReport: Awaited<ReturnType<typeof serviceMeasurements>> = null;
+function measuredLatency(id: string) {
+  const result = probeReport?.measurements.get(id);
+  return result?.state === "reachable" ? result.latencyMs : Infinity;
 }
 let visibleLimit = 24;
 function renderResults() {
@@ -313,11 +320,15 @@ function renderResults() {
 function configCard(item: Config) {
   const saved = state.saved.has(item.id);
   const isNew = state.status?.startedAt === item.firstSeenAt;
-  return `<article class="config-card"><div class="card-top"><div class="card-identity"><span class="protocol-symbol ${item.protocol}">${icon(item.protocol === "hysteria2" || item.protocol === "tuic" ? "bolt" : item.protocol === "trojan" ? "shield" : "globe")}</span><div><h3 dir="auto" title="${escape(item.name)}">${escape(item.name)}</h3><span class="server-address" dir="ltr">${escape(item.host)}<span>:${item.port}</span></span></div></div><button class="icon-button save-button ${saved ? "is-saved" : ""}" data-action="save" data-id="${item.id}" aria-label="${saved ? "حذف نشان" : "نشان کردن"}" aria-pressed="${saved}">${icon("bookmark")}</button></div><div class="card-tags"><span class="protocol-badge ${item.protocol}" dir="ltr">${protocolLabels[item.protocol]}</span><span class="syntax-badge">${icon("check")} قالب معتبر</span>${isNew ? '<span class="new-badge">جدید</span>' : ""}</div><div class="uri-preview" dir="ltr" aria-label="پیش‌نمایش کانفیگ">${escape(item.uri)}</div><div class="card-meta"><span class="source-name" title="${escape(item.sources.map((source) => source.name).join("، "))}">${icon("github")} <b dir="auto">${escape(item.sources[0]?.name || "GitHub")}</b></span><time datetime="${escape(item.firstSeenAt)}">${date(item.firstSeenAt, true)}</time></div><div class="card-actions"><button class="button copy-button" data-action="copy" data-id="${item.id}">${icon("copy")} کپی کانفیگ</button><button class="button share-button" data-action="share" data-id="${item.id}" aria-label="اشتراک‌گذاری ${escape(item.name)}">${icon("share")}</button></div></article>`;
+  const measurement = probeReport?.measurements.get(item.id);
+  const connection = measurement?.state === "reachable"
+    ? `پاسخ HTTPS در ${number(measurement.latencyMs)} میلی‌ثانیه`
+    : measurement?.state === "failed" ? "آزمون اتصال ناموفق" : "اتصال آزموده نشده";
+  return `<article class="config-card"><div class="card-top"><div class="card-identity"><span class="protocol-symbol ${item.protocol}">${icon(item.protocol === "hysteria2" || item.protocol === "tuic" ? "bolt" : item.protocol === "trojan" ? "shield" : "globe")}</span><div><h3 dir="auto" title="${escape(item.name)}">${escape(item.name)}</h3><span class="server-address" dir="ltr">${escape(item.host)}<span>:${item.port}</span></span></div></div><button class="icon-button save-button ${saved ? "is-saved" : ""}" data-action="save" data-id="${item.id}" aria-label="${saved ? "حذف نشان" : "نشان کردن"}" aria-pressed="${saved}">${icon("bookmark")}</button></div><div class="card-tags"><span class="protocol-badge ${item.protocol}" dir="ltr">${protocolLabels[item.protocol]}</span><span class="syntax-badge">${icon("check")} قالب معتبر</span><span class="syntax-badge">${connection}</span>${isNew ? '<span class="new-badge">جدید</span>' : ""}</div><div class="uri-preview" dir="ltr" aria-label="پیش‌نمایش کانفیگ">${escape(item.uri)}</div><div class="card-meta"><span class="source-name" title="${escape(item.sources.map((source) => source.name).join("، "))}">${icon("github")} <b dir="auto">${escape(item.sources[0]?.name || "GitHub")}</b></span><time datetime="${escape(item.firstSeenAt)}">${date(item.firstSeenAt, true)}</time></div><div class="card-actions"><button class="button copy-button" data-action="copy" data-id="${item.id}">${icon("copy")} کپی کانفیگ</button><button class="button share-button" data-action="share" data-id="${item.id}" aria-label="اشتراک‌گذاری ${escape(item.name)}">${icon("share")}</button></div></article>`;
 }
 function sourcesView() {
   const sources = state.status?.sources || [];
-  return `<section class="panel"><div class="section-heading"><div><h2>شفاف، از منبع تا کانفیگ</h2><p>تنها فایل‌های عمومی روی raw.githubusercontent.com دریافت می‌شوند.</p></div><a class="button secondary" href="${repository}/edit/main/sources.json" target="_blank" rel="noopener noreferrer">ویرایش منابع ${icon("external")}</a></div><div class="source-list">${sources.length ? sources.map((source) => `<article class="source-card"><span class="source-logo">${icon("github")}</span><div class="source-details"><h3 dir="auto">${escape(source.name)}</h3><a href="${safeLink(source.url)}" target="_blank" rel="noopener noreferrer">مشاهدهٔ فایل منبع ${icon("external")}</a>${source.error ? `<p class="error-text" dir="auto">${escape(source.error)}</p>` : ""}</div><div class="source-numbers"><strong>${number(source.added)}<small>جدید</small></strong><span class="source-status ${source.status === "success" ? "success" : "failed"}">${source.status === "success" ? "دریافت موفق" : "دریافت ناموفق"}</span></div><div class="source-summary">${number(source.valid)} قالب معتبر <span>·</span> ${number(source.invalid)} ورودی نامعتبر</div></article>`).join("") : '<div class="empty-state"><h3>هنوز گزارشی از منابع نداریم</h3><p>منابع در sources.json تعریف می‌شوند؛ گزارش بعد از اولین اجرا ظاهر می‌شود.</p></div>'}</div><div class="notice neutral">${icon("shield")} آدرس مقصد کانفیگ‌ها هرگز فراخوانی نمی‌شود. تغییر منابع فقط با ویرایش ریپازیتوری انجام می‌شود.</div></section>`;
+  return `<section class="panel"><div class="section-heading"><div><h2>شفاف، از منبع تا کانفیگ</h2><p>تنها فایل‌های عمومی روی raw.githubusercontent.com دریافت می‌شوند.</p></div><a class="button secondary" href="${repository}/edit/main/sources.json" target="_blank" rel="noopener noreferrer">ویرایش منابع ${icon("external")}</a></div><div class="source-list">${sources.length ? sources.map((source) => `<article class="source-card"><span class="source-logo">${icon("github")}</span><div class="source-details"><h3 dir="auto">${escape(source.name)}</h3><a href="${safeLink(source.url)}" target="_blank" rel="noopener noreferrer">مشاهدهٔ فایل منبع ${icon("external")}</a>${source.error ? `<p class="error-text" dir="auto">${escape(source.error)}</p>` : ""}</div><div class="source-numbers"><strong>${number(source.added)}<small>جدید</small></strong><span class="source-status ${source.status === "success" ? "success" : "failed"}">${source.status === "success" ? "دریافت موفق" : "دریافت ناموفق"}</span></div><div class="source-summary">${number(source.valid)} قالب معتبر <span>·</span> ${number(source.invalid)} ورودی نامعتبر</div></article>`).join("") : '<div class="empty-state"><h3>هنوز گزارشی از منابع نداریم</h3><p>منابع در sources.json تعریف می‌شوند؛ گزارش بعد از اولین اجرا ظاهر می‌شود.</p></div>'}</div><div class="notice neutral">${icon("shield")} آزمون اتصال برای بخشی از نودهای عمومی جداگانه انجام می‌شود. تغییر منابع از طریق ریپازیتوری انجام می‌شود.</div></section>`;
 }
 function historyView() {
   return `<section class="panel"><div class="section-heading"><div><h2>نبض جمع‌آوری</h2><p>۱۲۰ اجرای اخیر در این صفحه؛ تاریخچهٔ کامل در کامیت‌های گیت‌هاب.</p></div><a class="button secondary" href="${repository}/actions" target="_blank" rel="noopener noreferrer">GitHub Actions ${icon("external")}</a></div><div class="history-list">${state.history.length ? state.history.map((status) => `<article class="history-item"><span class="history-icon ${status.state}">${icon(status.state === "success" ? "check" : "info")}</span><div><h3>${statusLabel(status)}</h3><time datetime="${escape(status.startedAt)}">${date(status.startedAt)}</time></div><div class="history-stat"><strong>+${number(status.added)}</strong><span>کانفیگ جدید</span></div><div class="history-extra"><span>${number(status.duplicateCount)} تکراری</span><span>${number(status.invalidCount)} نامعتبر</span></div></article>`).join("") : '<div class="empty-state"><h3>اولین فصل هنوز نوشته نشده</h3><p>بعد از اجرای جمع‌آوری، گزارش واقعی اینجا ثبت می‌شود.</p></div>'}</div></section>`;
@@ -428,6 +439,12 @@ async function refresh() {
   refreshController = new AbortController();
   const controller = refreshController;
   const timeout = setTimeout(() => controller.abort(), 15000);
+  const measurements = serviceMeasurements(controller.signal).then((report) => {
+    if (!controller.signal.aborted) {
+      probeReport = report;
+      if (!state.refreshing) render();
+    }
+  });
   try {
     let data;
     try {
@@ -468,7 +485,7 @@ async function refresh() {
       ? "دریافت دادهٔ تازه ممکن نشد؛ آخرین دادهٔ این صفحه نمایش داده می‌شود."
       : "دریافت داده‌ها ممکن نشد. اتصال اینترنت را بررسی کنید و دوباره تلاش کنید.";
   } finally {
-    clearTimeout(timeout);
+    void measurements.finally(() => clearTimeout(timeout));
     state.loading = false;
     state.refreshing = false;
     render();

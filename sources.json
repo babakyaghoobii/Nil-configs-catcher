@@ -18,6 +18,15 @@
       "ref": "master",
       "path": "list_raw.txt",
       "enabled": true
+    },
+    {
+      "id": "igareck-black-vless",
+      "name": "iGareck Black VLESS",
+      "owner": "igareck",
+      "repo": "vpn-configs-for-russia",
+      "ref": "main",
+      "path": "BLACK_VLESS_RUS.txt",
+      "enabled": true
     }
   ]
 }

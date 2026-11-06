@@ -28,7 +28,10 @@ export default {
     try {
       const url = new URL(request.url);
       let response: Response;
-      if (url.pathname.startsWith("/api/")) {
+      if (url.pathname === "/api/measurements" && ["GET", "HEAD"].includes(request.method)) {
+        const asset = new URL("/data/measurements.json", url);
+        response = await env.ASSETS.fetch(new Request(asset, request));
+      } else if (url.pathname.startsWith("/api/")) {
         response = await handleCollectorAPI(request, env.DB);
       } else if (!["GET", "HEAD"].includes(request.method)) {
         response = new Response("GET or HEAD required", {

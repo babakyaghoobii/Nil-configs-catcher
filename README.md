@@ -223,3 +223,19 @@ The new public web host uses `npm run build:hosted`, the same NIL assets, and th
 ## Layout
 
 `src/`: TypeScript UI. `collector/`: standard-library Python pipeline and service archiver. `service/`: Worker API, strict parser and database migrations. `apps/nil-client/`: NIL-authored native subscription bridge and integration template. `scripts/`: cache generation, packaging, icons and local preview. `tests/`: parsing, security, archival and browser flows.
+
+### اندازه‌گیری اتصال و رتبه‌بندی
+
+در گردش کار جمع‌آوری، `python3 -m collector.probe` حداکثر ۶۰ کانفیگ
+VLESS با TLS و ترابری TCP یا WebSocket را از فهرست اخیر انتخاب می‌کند.
+Xray درخواست HTTPS را از خود تونل عبور می‌دهد. رتبه‌بندی فقط به پاسخ‌های
+موفق ۲۰۴ امتیاز می‌دهد و زمان کل درخواست را برحسب میلی‌ثانیه نشان می‌دهد.
+کانفیگ‌های خارج از دامنهٔ آزمون جدا از آزمون‌های ناموفق نمایش داده می‌شوند.
+این زمان به مسیر شبکهٔ اجراکننده وابسته است. Nil-proxy برای انتخاب روی دستگاه
+کاربر از آزمون URL داخلی خود استفاده می‌کند.
+
+گزارش بدون URI و فقط با شناسهٔ کانفیگ منتشر می‌شود. داشبورد آن را از
+`GET /api/measurements` در Worker یا `data/measurements.json` در انتشار
+ایستا می‌خواند و نتایج بیش از شش ساعت را کنار می‌گذارد. آزمون خارج از مسیر
+درخواست کاربر اجرا می‌شود و مقصد نود فقط پس از بررسی و تثبیت IPv4 عمومی
+به هسته داده می‌شود.

@@ -93,3 +93,44 @@ export function subscriptionURL(
   }).toString();
   return url.href;
 }
+
+export type Measurement = { state: "reachable"; latencyMs: number } | {
+  state: "failed" | "skipped";
+};
+
+export async function serviceMeasurements(signal: AbortSignal) {
+  const locations = [
+    `${apiBase}measurements`,
+    `${import.meta.env.BASE_URL}data/measurements.json`,
+  ];
+  for (const location of locations) {
+    try {
+      const response = await fetch(location, {
+        signal: AbortSignal.any([signal, AbortSignal.timeout(3000)]),
+        cache: "no-store",
+      });
+      if (!response.ok) continue;
+      const { schemaVersion, measuredAt, results } = await response.json();
+      const age = Date.now() - Date.parse(measuredAt);
+      if (schemaVersion !== 1 || !(age >= -60_000 && age <= 6 * 60 * 60 * 1000)
+          || !results || typeof results !== "object") continue;
+      const entries = Object.entries(results);
+      if (entries.length > 100) continue;
+      const measurements = new Map<string, Measurement>();
+      for (const [id, result] of entries) {
+        if (!/^[a-f0-9]{64}$/.test(id) || !result || typeof result !== "object"
+            || !("state" in result)) continue;
+        if (result.state === "failed" || result.state === "skipped")
+          measurements.set(id, { state: result.state });
+        else if (result.state === "reachable" && "latencyMs" in result
+            && typeof result.latencyMs === "number" && Number.isInteger(result.latencyMs)
+            && result.latencyMs > 0 && result.latencyMs <= 8000)
+          measurements.set(id, { state: "reachable", latencyMs: result.latencyMs });
+      }
+      return { measuredAt: String(measuredAt), measurements };
+    } catch {
+      if (signal.aborted) break;
+    }
+  }
+  return null;
+}

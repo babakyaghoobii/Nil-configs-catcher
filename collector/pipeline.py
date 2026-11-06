@@ -133,7 +133,7 @@ def run(root: Path, limit=50, fetcher=fetch_source, now=None) -> dict:
     public = root / "public" / "data"
     previous = load_json(public / "configs.json", {"schemaVersion": 1, "generatedAt": None, "totalUnique": 0, "configs": []})
     seen_list = load_json(root / "data" / "seen.json", [])
-    if not isinstance(seen_list, list) or any(not re.fullmatch(r"[0-9a-f]{64}", x) for x in seen_list):
+    if not isinstance(seen_list, list) or any(not isinstance(x, str) or not re.fullmatch(r"[0-9a-f]{64}", x) for x in seen_list) or len(set(seen_list)) != len(seen_list):
         raise ValueError("Invalid deduplication registry; refusing to overwrite it")
     seen = set(seen_list)
     history = load_json(public / "history.json", [])

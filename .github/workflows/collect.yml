@@ -46,6 +46,15 @@ jobs:
           else
             python3 -m collector --limit "$COLLECTION_LIMIT"
           fi
+      - name: Measure HTTPS through supported public nodes
+        continue-on-error: true
+        run: |
+          curl --fail --silent --show-error --location --proto '=https' --proto-redir '=https' --max-time 90 \
+            https://github.com/XTLS/Xray-core/releases/download/v26.10.31/Xray-linux-64.zip \
+            -o "$RUNNER_TEMP/nil-xray.zip"
+          printf '%s  %s\n' e4bd9119f50ae7c41658b1abd0679ae06f98bd864a2907ff33f2f2cf7081b214 "$RUNNER_TEMP/nil-xray.zip" | sha256sum --check --strict
+          unzip -j "$RUNNER_TEMP/nil-xray.zip" xray -d "$RUNNER_TEMP"
+          timeout 180 python3 -m collector.probe --core "$RUNNER_TEMP/xray"
       - name: Commit data and actual refresh status
         id: commit
         run: |
