@@ -1,4 +1,5 @@
 import type { ParsedConfig } from "./protocols.ts";
+import { renameForClient } from "./naming.ts";
 
 export type SourceRef = { id: string; name: string; url: string };
 export type ConfigRecord = ParsedConfig & {
@@ -293,7 +294,7 @@ export class CollectorStore {
     const results = await this.db.batch([
       this.statement("SELECT total AS n FROM nil_totals WHERE singleton=1"),
       this.statement(
-        "SELECT record FROM nil_configs ORDER BY first_seen DESC,seq DESC LIMIT 1000",
+        "SELECT seq,record FROM nil_configs ORDER BY first_seen DESC,seq DESC LIMIT 1000",
       ),
       this.statement(
         "SELECT report FROM nil_runs ORDER BY started_at DESC,id DESC LIMIT 120",
@@ -315,7 +316,7 @@ export class CollectorStore {
       const record = String(row.record);
       bytes += new TextEncoder().encode(record).length;
       if (bytes > 3 * 1024 * 1024) break;
-      configs.push(JSON.parse(record) as ConfigRecord);
+      configs.push(renameForClient(JSON.parse(record) as ConfigRecord, Number(row.seq)));
     }
     return {
       snapshot: {
@@ -358,7 +359,7 @@ export class CollectorStore {
     const nextCursor = rows.results.at(-1)?.seq ?? cursor;
     return {
       records: rows.results.map(
-        (row) => JSON.parse(row.record) as ConfigRecord,
+        (row) => renameForClient(JSON.parse(row.record) as ConfigRecord, Number(row.seq)),
       ),
       cursor: nextCursor,
       until,
