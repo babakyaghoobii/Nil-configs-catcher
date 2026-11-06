@@ -2,16 +2,22 @@
   "id": "./",
   "name": "NIL Config Catcher | نیل",
   "short_name": "NIL",
-  "description": "آرشیو کانفیگ‌های عمومی؛ ساده، شفاف، بدون تکرار",
+  "description": "جمع‌آوری کانفیگ‌های عمومی با انتخاب پروتکل و تعداد",
   "lang": "fa",
   "dir": "rtl",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#111110",
-  "theme_color": "#111110",
+  "background_color": "#070d25",
+  "theme_color": "#1836B8",
   "orientation": "portrait-primary",
   "icons": [
+    {
+      "src": "branding/nil-04-blue-peach.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
     {
       "src": "icons/icon-192.png",
       "sizes": "192x192",
