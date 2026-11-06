@@ -191,18 +191,26 @@ export async function handleCollectorAPI(
       "q",
       "format",
       "title",
+      "limit",
+      "protocols",
     ]);
     const protocol = params.get("protocol") || "all",
       source = params.get("source") || "all",
       format = params.get("format") || "base64";
     const search = params.get("q") || "",
       title = params.get("title") || "NIL";
+    const rawLimit = params.get("limit");
+    const perProtocol = rawLimit === null ? null : Number(rawLimit);
+    const protocolSet = params.get("protocols");
+    const selectedProtocols = protocolSet === null ? null : protocolSet.split(",");
     if (
       !["all", ...PROTOCOLS].includes(protocol) ||
       !["plain", "base64"].includes(format) ||
       search.length > 200 ||
       title.length > 80 ||
-      /[\u0000-\u001f\u007f]/.test(search + title)
+      /[\u0000-\u001f\u007f]/.test(search + title) ||
+      (rawLimit !== null && (!/^(5|10|20|50|100)$/.test(rawLimit) || !Number.isInteger(perProtocol))) ||
+      (selectedProtocols !== null && (selectedProtocols.length < 1 || selectedProtocols.length > PROTOCOLS.length || new Set(selectedProtocols).size !== selectedProtocols.length || selectedProtocols.some((p) => !PROTOCOLS.includes(p as (typeof PROTOCOLS)[number]))))
     )
       throw new HttpFailure(400, "Invalid subscription filter");
     const sources = validateSources(await store.state("manifest", null));
@@ -217,8 +225,17 @@ export async function handleCollectorAPI(
           .toLowerCase()
           .includes(search.toLowerCase()),
     );
+    const counts = new Map<string, number>();
+    const chosen = rows.filter((row) => {
+      if (selectedProtocols && !selectedProtocols.includes(row.protocol)) return false;
+      if (perProtocol === null) return true;
+      const used = counts.get(row.protocol) || 0;
+      if (used >= perProtocol) return false;
+      counts.set(row.protocol, used + 1);
+      return true;
+    });
     const text =
-      rows.map((row) => row.uri).join("\n") + (rows.length ? "\n" : "");
+      chosen.map((row) => row.uri).join("\n") + (chosen.length ? "\n" : "");
     return respond(
       new Response(
         format === "base64" ? encodeBase64(utf8Encode(text)) : text,
@@ -227,7 +244,7 @@ export async function handleCollectorAPI(
             "Content-Type": "text/plain; charset=utf-8",
             "profile-update-interval": "2",
             "profile-title": `base64:${encodeBase64(utf8Encode(title))}`,
-            "X-NIL-Config-Count": String(rows.length),
+            "X-NIL-Config-Count": String(chosen.length),
           },
         },
       ),
