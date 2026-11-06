@@ -12,10 +12,17 @@
   },
   "app": {
     "windows": [
-      { "label": "main", "title": "NIL Config Catcher — babakyaghoobii", "width": 1180, "height": 850, "minWidth": 360, "minHeight": 600 }
+      {
+        "label": "main",
+        "title": "NIL Config Catcher — babakyaghoobii",
+        "width": 1180,
+        "height": 850,
+        "minWidth": 360,
+        "minHeight": 600
+      }
     ],
     "security": {
-      "csp": "default-src 'self'; script-src 'self'; style-src 'self'; font-src 'self'; img-src 'self' data:; connect-src 'self' ipc: http://ipc.localhost https://raw.githubusercontent.com; object-src 'none'; base-uri 'self'; form-action 'none'"
+      "csp": "default-src 'self'; script-src 'self'; style-src 'self'; font-src 'self'; img-src 'self' data:; connect-src 'self' ipc: http://ipc.localhost https://raw.githubusercontent.com https://nil-config-catcher.babak-yaghoobi23.workers.dev; object-src 'none'; base-uri 'self'; form-action 'none'"
     }
   },
   "bundle": {
@@ -27,8 +34,21 @@
     "shortDescription": "NIL — free public VPN configuration index",
     "longDescription": "A Persian RTL index of publicly shared configuration URIs, created by babakyaghoobii and freely available for everyone. Syntax validation only; no server connectivity claims.",
     "homepage": "https://github.com/babakyaghoobii/Nil-configs-catcher",
-    "icon": ["icons/32x32.png", "icons/128x128.png", "icons/128x128@2x.png", "icons/icon.icns", "icons/icon.ico"],
-    "macOS": { "minimumSystemVersion": "13.0", "signingIdentity": "-" },
-    "linux": { "deb": { "section": "net" } }
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ],
+    "macOS": {
+      "minimumSystemVersion": "13.0",
+      "signingIdentity": "-"
+    },
+    "linux": {
+      "deb": {
+        "section": "net"
+      }
+    }
   }
 }
