@@ -248,7 +248,7 @@ function dashboard() {
       </button>
       <p class="nil-command-summary">${state.loading ? "در حال بارگذاری…" : number(state.snapshot?.configs.length || 0) + " کانفیگ در فهرست"} <span>·</span> ${statusLabel()}</p>
       <div class="nil-command-buttons">
-        <button class="button primary" data-action="open-settings">${icon("sliders")} تنظیمات جمع‌آوری</button>
+        <button class="button primary" data-action="open-settings">${icon("layers")} تنظیمات جمع‌آوری</button>
         <button class="button secondary" data-action="subscription">${icon("link")} لینک اشتراک</button>
       </div>
     </section>
@@ -279,7 +279,7 @@ function baseConfigs() {
 }
 function filteredConfigs() {
   const query = state.query.toLocaleLowerCase();
-  return baseConfigs()
+  const ordered = baseConfigs()
     .filter(
       (item) =>
         (state.protocol === "all" || item.protocol === state.protocol) &&
@@ -295,6 +295,14 @@ function filteredConfigs() {
         : (Date.parse(b.firstSeenAt) - Date.parse(a.firstSeenAt)) *
           (state.sort === "oldest" ? -1 : 1),
     );
+  const counts = new Map<Protocol, number>();
+  return ordered.filter((item) => {
+    if (!state.pickedProtocols.has(item.protocol)) return false;
+    const seen = counts.get(item.protocol) || 0;
+    if (seen >= state.perProtocol) return false;
+    counts.set(item.protocol, seen + 1);
+    return true;
+  });
 }
 let probeReport: Awaited<ReturnType<typeof serviceMeasurements>> = null;
 function measuredLatency(id: string) {
@@ -580,6 +588,8 @@ function updateSubscriptionLink() {
       value("subscription-search"),
       value("subscription-format"),
       value("subscription-name"),
+      state.perProtocol,
+      [...state.pickedProtocols],
     );
   } catch {
     output.value = "";
