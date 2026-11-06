@@ -1,0 +1,51 @@
+name: NIL native desktop preview packages
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'src/**'
+      - 'src-tauri/**'
+      - 'public/**'
+      - 'package.json'
+      - 'package-lock.json'
+      - 'index.html'
+      - '.github/workflows/nil-native-preview.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  desktop:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - platform: ubuntu-22.04
+            label: linux
+          - platform: windows-latest
+            label: windows
+          - platform: macos-14
+            label: macos
+    runs-on: ${{ matrix.platform }}
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - uses: dtolnay/rust-toolchain@stable
+      - name: Install Linux dependencies
+        if: matrix.label == 'linux'
+        run: sudo apt-get update && sudo apt-get install -y libwebkit2gtk-4.1-dev build-essential curl wget file libxdo-dev libssl-dev librsvg2-dev libayatana-appindicator3-dev patchelf
+      - run: npm ci
+      - name: Generate NIL icons
+        run: npm run icons
+      - name: Compile native desktop preview
+        run: npm run desktop:build
+      - name: Upload installable desktop bundles
+        uses: actions/upload-artifact@v4
+        with:
+          name: nil-proxy-preview-${{ matrix.label }}
+          path: |
+            src-tauri/target/release/bundle/**
+          if-no-files-found: error
