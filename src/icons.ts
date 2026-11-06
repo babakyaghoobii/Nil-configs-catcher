@@ -15,6 +15,7 @@ const paths: Record<string, string> = {
   search: '<circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/>',
   refresh:
     '<path d="M20 7v5h-5M4 17v-5h5"/><path d="M6.1 6.1A8 8 0 0 1 20 12M4 12a8 8 0 0 0 13.9 5.9"/>',
+  rocket: '<path d="M4 15c-1 2-1 4-1 6 2 0 4 0 6-1"/><path d="M9 15l-3 3 3-1 3-3"/><path d="M10 14 5 9c1-2 3-3 5-2l2 2"/><path d="M14 10 17 13c3-3 4-7 4-11-4 0-8 1-11 4l4 4Z"/><circle cx="16" cy="7" r="1.1"/><path d="m6 20-2 2"/>',
   download:
     '<path d="M12 3v12m-4-4 4 4 4-4M4 16v3a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-3"/>',
   share:
