@@ -162,3 +162,13 @@ test("public API and base64 subscription use real SQLite data without exposing b
     db.close();
   }
 });
+
+test("public measurements read the current canonical report without a database", async (t) => {
+  const report = { schemaVersion: 1, results: {} };
+  const fetch = t.mock.method(globalThis, "fetch", async () => Response.json(report));
+  const response = await worker.fetch(new Request(origin + "/api/measurements"), { ASSETS: assets });
+  assert.equal(response.status, 200);
+  assert.equal(response.headers.get("Access-Control-Allow-Origin"), "*");
+  assert.deepEqual(await response.json(), report);
+  assert.match(String(fetch.mock.calls[0]?.arguments[0]), /\/public\/data\/measurements\.json$/);
+});

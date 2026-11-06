@@ -54,6 +54,16 @@ const status = {
 };
 
 async function fixture(page: import("@playwright/test").Page) {
+  await page.route("**/api/measurements", (route) =>
+    route.fulfill({ json: {
+      schemaVersion: 1,
+      measuredAt: new Date().toISOString(),
+      results: {
+        [configs[0].id]: { state: "reachable", latencyMs: 200 },
+        [configs[1].id]: { state: "reachable", latencyMs: 100 },
+      },
+    } }),
+  );
   await page.route("**/api/data", (route) =>
     route.fulfill({
       json: {

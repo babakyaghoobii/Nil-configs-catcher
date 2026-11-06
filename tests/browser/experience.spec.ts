@@ -160,6 +160,10 @@ test.describe("manual collection with a real installed service worker", () => {
       }
       response.setHeader("Content-Type", "application/json");
       response.setHeader("Cache-Control", "no-store");
+      if (path.endsWith("/measurements")) {
+        response.end(JSON.stringify({ schemaVersion: 1, measuredAt: new Date().toISOString(), results: {} }));
+        return;
+      }
       if (path.endsWith("/data")) {
         response.end(JSON.stringify(batch(collected)));
         return;

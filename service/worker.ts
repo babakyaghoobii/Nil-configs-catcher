@@ -1,4 +1,5 @@
 import { handleCollectorAPI } from "./api.ts";
+import { canonicalRoot, readRaw } from "./pipeline.ts";
 import type { SqlDatabase } from "./database.ts";
 
 export type WorkerEnv = {
@@ -29,8 +30,19 @@ export default {
       const url = new URL(request.url);
       let response: Response;
       if (url.pathname === "/api/measurements" && ["GET", "HEAD"].includes(request.method)) {
-        const asset = new URL("/data/measurements.json", url);
-        response = await env.ASSETS.fetch(new Request(asset, request));
+        const { text } = await readRaw(
+          canonicalRoot + "public/data/measurements.json",
+          fetch,
+          32 * 1024,
+          AbortSignal.timeout(2500),
+        );
+        response = new Response(request.method === "HEAD" ? null : text, {
+          headers: {
+            "Content-Type": "application/json; charset=utf-8",
+            "Access-Control-Allow-Origin": "*",
+            "Cache-Control": "public, max-age=60",
+          },
+        });
       } else if (url.pathname.startsWith("/api/")) {
         response = await handleCollectorAPI(request, env.DB);
       } else if (!["GET", "HEAD"].includes(request.method)) {
