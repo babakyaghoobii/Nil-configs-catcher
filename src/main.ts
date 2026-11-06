@@ -2,6 +2,7 @@ import "@fontsource-variable/vazirmatn";
 import "./style.css";
 import "./creator.css";
 import "./nil.css";
+import "./app-shell.css";
 import { icon } from "./icons";
 import { setTheme, themeChoice, type ThemeChoice } from "./theme";
 import { serviceData, serviceMeasurements, subscriptionURL, ServiceError } from "./service";
@@ -60,8 +61,8 @@ const usesRepositoryData = isDesktop || import.meta.env.MODE === "hosted";
 const repositoryCacheKey = isDesktop
   ? "nil-desktop-data-v1"
   : "nil-web-data-v1";
-const brandLogo = `${import.meta.env.BASE_URL}branding/creator-logo-charcoal.png`;
-const appIcon = `${import.meta.env.BASE_URL}icons/icon-192.png`;
+const brandLogo = `${import.meta.env.BASE_URL}branding/nil-04-blue-peach.svg`;
+const appIcon = `${import.meta.env.BASE_URL}branding/nil-04-blue-peach.svg`;
 const protocols: Protocol[] = [
   "vless",
   "vmess",
@@ -143,12 +144,15 @@ const state = {
   history: [] as Status[],
   refreshing: false,
   collecting: false,
+  collectionSettings: false,
+  perProtocol: 10,
+  pickedProtocols: new Set<Protocol>(protocols),
 };
 let toastTimer: ReturnType<typeof setTimeout>;
 let refreshController: AbortController | null = null;
 
 const navItems: { view: View; label: string; icon: string }[] = [
-  { view: "dashboard", label: "داشبورد", icon: "grid" },
+  { view: "dashboard", label: "خانه", icon: "grid" },
   { view: "saved", label: "نشان‌شده‌ها", icon: "bookmark" },
   { view: "sources", label: "منابع دریافت", icon: "layers" },
   { view: "history", label: "تاریخچهٔ دریافت", icon: "clock" },
@@ -158,11 +162,11 @@ function shell() {
   app.innerHTML = `
     <aside class="sidebar" aria-label="ناوبری اصلی">
       <a class="brand" href="#" data-view="dashboard" aria-label="نیل، داشبورد"><img class="brand-image" src="${brandLogo}" alt="لوگوی NIL، ساختهٔ babakyaghoobii" width="196" height="112"/><span class="brand-caption" dir="ltr">NIL CONFIG CATCHER</span></a>
-      <div class="workspace-label">فضای شخصی اتصال <span>V 1.0</span></div>
+      <div class="workspace-label">NIL CONFIG CATCHER</div>
       <nav class="desktop-nav">${navItems.map((item) => `<button data-view="${item.view}" class="nav-item">${icon(item.icon)}<span>${item.label}</span>${item.view === "dashboard" ? '<span class="nav-dot"></span>' : ""}</button>`).join("")}</nav>
-      <div class="sidebar-bottom"><div class="open-source-card"><span class="small-orange">${icon("github")}</span><h3>آزاد، مثل اینترنت.</h3><p>متن‌باز، شفاف و ساخته‌شده<br>برای دسترسی آسان‌تر.</p><a href="${repository}" target="_blank" rel="noopener noreferrer">مشاهده در گیت‌هاب ${icon("external")}</a></div><div class="sidebar-foot"><span class="tiny-dot"></span> عمومی و بدون حساب کاربری</div></div>
+      
     </aside>
-    <div class="workspace"><header class="topbar"><div class="breadcrumb"><img class="mobile-brand" src="${appIcon}" alt="" width="32" height="32"/>نیل <span>/</span> <strong id="breadcrumb-name">داشبورد</strong></div><div class="topbar-actions"><div class="theme-switch" role="group" aria-label="رنگ برنامه">${(
+    <div class="workspace"><header class="topbar"><div class="breadcrumb"><img class="mobile-brand" src="${appIcon}" alt="" width="32" height="32"/>NIL <span>/</span> <strong id="breadcrumb-name">خانه</strong></div><div class="topbar-actions"><div class="theme-switch" role="group" aria-label="رنگ برنامه">${(
       [
         ["dark", "تیره", "moon"],
         ["light", "روشن", "sun"],
@@ -176,7 +180,7 @@ function shell() {
       .join(
         "",
       )}</div><span class="local-time">${icon("clock")} <span>${date(new Date().toISOString(), true)}</span></span><a class="icon-button github-link" href="${repository}" aria-label="ریپازیتوری گیت‌هاب" target="_blank" rel="noopener noreferrer">${icon("github")}</a><img class="avatar" src="${appIcon}" alt="لوگوی نیل" width="32" height="32"/></div></header>
-    <main id="main" tabindex="-1"></main><footer class="page-footer"><span><b dir="ltr">NIL.</b> اتصال ساده‌تر، اینترنت آزادتر.</span><span>تنها منابع عمومی <span class="footer-dot">·</span> بدون تست اتصال</span></footer></div>
+    <main id="main" tabindex="-1"></main><footer class="page-footer" dir="ltr"><span>Owned by <b>NIL Group</b></span><span>Created by <b>B. YAGHOOBI</b></span></footer></div>
     <nav class="mobile-nav" aria-label="ناوبری موبایل">${navItems.map((item) => `<button data-view="${item.view}" aria-label="${item.label}">${icon(item.icon)}<span>${item.label.replace(" دریافت", "")}</span></button>`).join("")}</nav>
     <div id="toast" class="toast" role="status" aria-live="polite"></div>
     <dialog id="subscription-dialog" aria-labelledby="subscription-title"><button class="icon-button dialog-close" data-action="close-subscription" aria-label="بستن">${icon("close")}</button><h2 id="subscription-title">مجموعهٔ نیل، در یک لینک</h2><p>کانفیگ‌های هم‌پروتکل یا هم‌منبع را یک‌جا اضافه کن. این اشتراک با هر دریافت جدید، به‌روز می‌شود.</p><div class="subscription-options"><label>نام مجموعه <input id="subscription-name" maxlength="80" value="NIL — مجموعهٔ نیل" /></label><label>پروتکل <select id="subscription-protocol"><option value="all">همهٔ پروتکل‌ها</option>${protocols.map((protocol) => `<option value="${protocol}">${protocolLabels[protocol]}</option>`).join("")}</select></label><label>منبع <select id="subscription-source"><option value="all">همهٔ منابع</option></select></label><label>جستجو <input id="subscription-search" maxlength="200" placeholder="نام یا سرور؛ اختیاری" /></label><label>قالب <select id="subscription-format"><option value="base64">Base64 — مناسب کلاینت‌های اشتراک</option><option value="plain">فهرست متنی URI</option></select></label></div><label for="subscription-link">لینک اشتراک</label><input id="subscription-link" class="subscription-link" dir="ltr" readonly /><p class="muted">این لینک شامل کانفیگ‌های عمومی است؛ کانفیگ شخصی به سرور فرستاده نمی‌شود.</p><div class="dialog-actions"><button class="button primary" data-action="copy-subscription">${icon("copy")} کپی لینک اشتراک</button><button class="button secondary" data-action="close-subscription">بستن</button></div></dialog>
@@ -225,27 +229,48 @@ function render() {
   document.title = `${item.label} — NIL Config Catcher`;
   const main = document.querySelector("#main")!;
   main.innerHTML = `
-    <section class="page-heading"><div><div class="eyebrow"><span></span> مسیرهای تازه برای متصل ماندن</div><h1>${state.view === "dashboard" ? "یک قدم تا اتصال." : item.label}</h1><p>${{ dashboard: "کانفیگ‌های عمومی، یک‌جا و مرتب. انتخاب کن و متصل شو.", saved: "انتخاب‌های تو، ذخیره‌شده فقط در همین مرورگر.", sources: "هر کانفیگ یک منبع دارد. همه‌چیز قابل پیگیری است.", history: "گزارش واقعی هر اجرا؛ حتی وقتی چیزی پیدا نمی‌شود." }[state.view]}</p></div><button class="button secondary install-button" data-action="install">${icon("download")} نصب اپلیکیشن ${icon("external")}</button></section>
+    <section class="page-heading"><div><h1>${state.view === "dashboard" ? "NIL Config Catcher" : item.label}</h1></div><button class="button secondary install-button" data-action="install">${icon("download")} نصب اپلیکیشن ${icon("external")}</button></section>
     ${state.error ? `<div class="notice error" role="alert">${icon("info")}<span>${escape(state.error)}</span><button data-action="refresh" class="text-button">تلاش دوباره</button></div>` : ""}
     ${state.status?.errors.length ? `<div class="notice error" role="alert">${icon("info")}<span>خطای تنظیمات جمع‌آوری: <b dir="auto">${escape(state.status.errors.join(" · "))}</b></span></div>` : ""}
     ${!navigator.onLine || state.offlineCache ? `<div class="notice warning">${icon("wifi")} حالت آفلاین؛ آخرین نسخهٔ ذخیره‌شده نمایش داده می‌شود.</div>` : ""}
     ${isStale() ? `<div class="notice warning">${icon("clock")} بیش از ۴٫۵ ساعت از آخرین دریافت گذشته است. زمان‌بندی گیت‌هاب ممکن است با تأخیر اجرا شود.</div>` : ""}
-    ${creatorCredit()}
     ${state.view === "dashboard" ? dashboard() : state.view === "saved" ? catalog() : state.view === "sources" ? sourcesView() : historyView()}
   `;
   if (state.view === "dashboard" || state.view === "saved") renderResults();
 }
 
 function dashboard() {
-  const status = state.status;
-  const sourceCount = status?.sources.length || 0;
-  return `<section class="hero" aria-labelledby="hero-title"><div class="hero-content"><span class="hero-pill"><span></span> جمع‌آوری خودکار، هر ۲ ساعت</span><h2 id="hero-title">اینترنت،<br>بدون بن‌بست<span class="orange">.</span></h2><p>تا ۵۰ کانفیگ جدید در هر نوبت، از منابع عمومی گیت‌هاب.<br>بدون تکرار. بدون کانفیگ ساختگی.</p><a class="hero-cta" href="#catalog">کاوش کانفیگ‌ها ${icon("arrow")}</a></div><div class="hero-art" aria-hidden="true"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="orbit orbit-three"></div><span class="orbit-dot orbit-dot-one"></span><span class="orbit-dot orbit-dot-two"></span><div class="signal-tile">${icon("bolt")}</div><span class="art-label art-label-top">OPEN INTERNET</span><span class="art-label art-label-bottom">FIND YOUR NEXT CONNECTION ↗</span><span class="art-coordinate">35°41′ N / 51°25′ E</span></div></section>
-    <section class="stats-grid" aria-label="آمار جمع‌آوری"><article class="stat-card"><div class="stat-icon orange-soft">${icon("layers")}</div><div><span>کل کانفیگ‌های آرشیو</span><strong>${state.loading ? "—" : number(status?.totalUnique || 0)}<small>کانفیگ یکتا</small></strong></div><span class="stat-trend">بدون تکرار ${icon("check")}</span></article><article class="stat-card"><div class="stat-icon green-soft">${icon("bolt")}</div><div><span>جدید در آخرین اجرا</span><strong>${state.loading ? "—" : number(status?.added || 0)}<small>از حداکثر ${number(status?.target || 50)}</small></strong></div><span class="stat-label">فقط دادهٔ واقعی</span></article><article class="stat-card"><div class="stat-icon purple-soft">${icon("globe")}</div><div><span>منابع آخرین اجرا</span><strong>${state.loading ? "—" : number(sourceCount)}<small>منبع عمومی</small></strong></div><button class="stat-link" data-view="sources" aria-label="مشاهده منابع">${icon("arrow")}</button></article></section>
-    <section class="refresh-strip" aria-label="وضعیت آخرین دریافت"><div><span class="status-dot ${status?.state === "success" && !isStale() ? "green" : "amber"}"></span><strong>${state.loading ? "در حال دریافت داده…" : statusLabel()}</strong><span class="strip-divider"></span><span>آخرین اجرا: <b>${date(status?.startedAt || null)}</b></span></div><button class="text-button ${state.refreshing ? "is-refreshing" : ""}" data-action="refresh" ${state.refreshing ? "disabled" : ""}>${icon("refresh")} خواندن آخرین داده</button><button class="button primary" data-action="collect-now" ${state.collecting ? "disabled" : ""}>${icon("bolt")} ${state.collecting ? "در حال جمع‌آوری تازه…" : "همین حالا کانفیگ تازه بگیر"}</button></section>${catalog()}`;
+  return `<section class="nil-command" aria-labelledby="nil-command-title">
+      <div class="nil-command-logo"><img src="${brandLogo}" alt="آیکون رسمی NIL شماره 04" width="76" height="76" /></div>
+      <button class="nil-collect-orb" type="button" data-action="open-settings" aria-label="تنظیمات و شروع جمع‌آوری">
+        <span class="nil-orb-icon">${icon("download")}</span>
+        <strong id="nil-command-title">جمع‌آوری هوشمند<br />کانفیگ‌ها</strong>
+      </button>
+      <p class="nil-command-summary">${state.loading ? "در حال بارگذاری…" : number(state.snapshot?.configs.length || 0) + " کانفیگ در فهرست"} <span>·</span> ${statusLabel()}</p>
+      <div class="nil-command-buttons">
+        <button class="button primary" data-action="open-settings">${icon("sliders")} تنظیمات جمع‌آوری</button>
+        <button class="button secondary" data-action="subscription">${icon("link")} لینک اشتراک</button>
+      </div>
+    </section>
+    ${state.collectionSettings ? collectionSettings() : ""}
+    ${catalog()}`;
+}
+
+function collectionSettings() {
+  return `<section class="nil-collection-settings" aria-label="تنظیمات جمع‌آوری">
+    <div class="nil-panel-head"><h2>تنظیمات جمع‌آوری</h2><button class="icon-button" data-action="close-settings" aria-label="بستن">${icon("close")}</button></div>
+    <h3>انتخاب پروتکل‌ها</h3>
+    <div class="nil-protocol-picks">${protocols.map((p) => `<button type="button" data-action="pick-protocol" data-value="${p}" class="${state.pickedProtocols.has(p) ? "active" : ""}" aria-pressed="${state.pickedProtocols.has(p)}"><span dir="ltr">${protocolLabels[p]}</span> ${state.pickedProtocols.has(p) ? icon("check") : icon("plus")}</button>`).join("")}</div>
+    <h3>تعداد کانفیگ از هر پروتکل</h3>
+    <p>تعداد کانفیگ‌های جدیدتر برای نمایش و خروجی</p>
+    <div class="nil-amounts" role="group" aria-label="تعداد کانفیگ">${[5,10,20,50,100].map((n) => `<button data-action="set-amount" data-value="${n}" class="${state.perProtocol === n ? "active" : ""}" aria-pressed="${state.perProtocol === n}">${number(n)}</button>`).join("")}</div>
+    <button class="button primary nil-start" data-action="start-collection">${icon("download")} ${state.collecting ? "در حال جمع‌آوری…" : "شروع جمع‌آوری"}</button>
+    <p class="nil-hint">منابع عمومی بررسی می‌شوند؛ نتیجه برای هر پروتکل به تعداد انتخابی محدود می‌شود. سلامت اتصال فقط در صورت انجام آزمون واقعی گزارش می‌شود.</p>
+  </section>`;
 }
 
 function catalog() {
-  return `<section id="catalog" class="catalog"><div class="section-heading"><div><h2>${state.view === "saved" ? "کانفیگ‌های نشان‌شده" : "کاوش کانفیگ‌ها"} <span class="count-badge" id="result-total">۰</span></h2><p>${probeReport ? `زمان پاسخ HTTPS از محل اجرای آزمون · ${date(probeReport.measuredAt)}` : "دادهٔ تازه‌ای از آزمون اتصال در دسترس نیست."}</p></div><div class="heading-actions"><button class="button secondary export-button" data-action="export">${icon("download")} خروجی اشتراک</button><button class="button primary" data-action="subscription">${icon("link")} ساخت لینک اشتراک</button></div></div><div class="filter-toolbar"><div class="search-field">${icon("search")}<input id="search" type="search" autocomplete="off" maxlength="200" placeholder="جستجوی نام، سرور یا منبع…" aria-label="جستجوی کانفیگ" value="${escape(state.query)}"/><kbd>⌘ K</kbd></div><label class="sort-field">${icon("layers")}<span class="sr-only">مرتب‌سازی</span><select id="sort" aria-label="مرتب‌سازی"><option value="newest" ${state.sort === "newest" ? "selected" : ""}>جدیدترین اول</option><option value="oldest" ${state.sort === "oldest" ? "selected" : ""}>قدیمی‌ترین اول</option><option value="name" ${state.sort === "name" ? "selected" : ""}>بر اساس نام</option><option value="latency" ${state.sort === "latency" ? "selected" : ""}>کمترین زمان پاسخ آزمون</option></select></label></div><div class="protocol-tabs" role="group" aria-label="فیلتر پروتکل"><button class="protocol-tab ${state.protocol === "all" ? "selected" : ""}" data-protocol="all" aria-pressed="${state.protocol === "all"}">همه پروتکل‌ها <span>${number(baseConfigs().length)}</span></button>${protocols.map((protocol) => `<button class="protocol-tab ${state.protocol === protocol ? "selected" : ""}" data-protocol="${protocol}" aria-pressed="${state.protocol === protocol}"><i class="protocol-dot ${protocol}"></i><b dir="ltr">${protocolLabels[protocol]}</b><span>${number(baseConfigs().filter((item) => item.protocol === protocol).length)}</span></button>`).join("")}</div><div class="list-meta"><span id="list-description" role="status" aria-live="polite"></span><span>${icon("shield")} اعتبارسنجی ساختاری</span></div><div id="config-list" class="config-grid" aria-busy="${state.loading}"></div><div id="load-more"></div><div class="catalog-note">${icon("info")} این فهرست شامل حداکثر ${number(state.status?.snapshotLimit || 1000)} کانفیگ اخیر است. <a href="${repository}/tree/main/data/archive" target="_blank" rel="noopener noreferrer">آرشیو کامل در گیت‌هاب ${icon("external")}</a></div></section>`;
+  return `<section id="catalog" class="catalog"><div class="section-heading"><div><h2>${state.view === "saved" ? "کانفیگ‌های نشان‌شده" : "کانفیگ‌ها"} <span class="count-badge" id="result-total">۰</span></h2></div><div class="heading-actions"><button class="button secondary export-button" data-action="export">${icon("download")} دریافت فایل</button><button class="button primary" data-action="subscription">${icon("link")} لینک اشتراک</button></div></div><div class="filter-toolbar"><div class="search-field">${icon("search")}<input id="search" type="search" autocomplete="off" maxlength="200" placeholder="جستجوی نام، سرور یا منبع…" aria-label="جستجوی کانفیگ" value="${escape(state.query)}"/></div><label class="sort-field">${icon("layers")}<span class="sr-only">مرتب‌سازی</span><select id="sort" aria-label="مرتب‌سازی"><option value="newest" ${state.sort === "newest" ? "selected" : ""}>جدیدترین اول</option><option value="oldest" ${state.sort === "oldest" ? "selected" : ""}>قدیمی‌ترین اول</option><option value="name" ${state.sort === "name" ? "selected" : ""}>بر اساس نام</option><option value="latency" ${state.sort === "latency" ? "selected" : ""}>کمترین زمان پاسخ آزمون</option></select></label></div><div class="protocol-tabs" role="group" aria-label="فیلتر پروتکل"><button class="protocol-tab ${state.protocol === "all" ? "selected" : ""}" data-protocol="all" aria-pressed="${state.protocol === "all"}">همه پروتکل‌ها <span>${number(baseConfigs().length)}</span></button>${protocols.map((protocol) => `<button class="protocol-tab ${state.protocol === protocol ? "selected" : ""}" data-protocol="${protocol}" aria-pressed="${state.protocol === protocol}"><i class="protocol-dot ${protocol}"></i><b dir="ltr">${protocolLabels[protocol]}</b><span>${number(baseConfigs().filter((item) => item.protocol === protocol).length)}</span></button>`).join("")}</div><div class="list-meta"><span id="list-description" role="status" aria-live="polite"></span></div><div id="config-list" class="config-grid" aria-busy="${state.loading}"></div><div id="load-more"></div></section>`;
 }
 function baseConfigs() {
   return (state.snapshot?.configs || []).filter(
@@ -324,7 +349,7 @@ function configCard(item: Config) {
   const connection = measurement?.state === "reachable"
     ? `پاسخ HTTPS در ${number(measurement.latencyMs)} میلی‌ثانیه`
     : measurement?.state === "failed" ? "آزمون اتصال ناموفق" : "اتصال آزموده نشده";
-  return `<article class="config-card"><div class="card-top"><div class="card-identity"><span class="protocol-symbol ${item.protocol}">${icon(item.protocol === "hysteria2" || item.protocol === "tuic" ? "bolt" : item.protocol === "trojan" ? "shield" : "globe")}</span><div><h3 dir="auto" title="${escape(item.name)}">${escape(item.name)}</h3><span class="server-address" dir="ltr">${escape(item.host)}<span>:${item.port}</span></span></div></div><button class="icon-button save-button ${saved ? "is-saved" : ""}" data-action="save" data-id="${item.id}" aria-label="${saved ? "حذف نشان" : "نشان کردن"}" aria-pressed="${saved}">${icon("bookmark")}</button></div><div class="card-tags"><span class="protocol-badge ${item.protocol}" dir="ltr">${protocolLabels[item.protocol]}</span><span class="syntax-badge">${icon("check")} قالب معتبر</span><span class="syntax-badge">${connection}</span>${isNew ? '<span class="new-badge">جدید</span>' : ""}</div><div class="uri-preview" dir="ltr" aria-label="پیش‌نمایش کانفیگ">${escape(item.uri)}</div><div class="card-meta"><span class="source-name" title="${escape(item.sources.map((source) => source.name).join("، "))}">${icon("github")} <b dir="auto">${escape(item.sources[0]?.name || "GitHub")}</b></span><time datetime="${escape(item.firstSeenAt)}">${date(item.firstSeenAt, true)}</time></div><div class="card-actions"><button class="button copy-button" data-action="copy" data-id="${item.id}">${icon("copy")} کپی کانفیگ</button><button class="button share-button" data-action="share" data-id="${item.id}" aria-label="اشتراک‌گذاری ${escape(item.name)}">${icon("share")}</button></div></article>`;
+  return `<article class="config-card"><div class="card-top"><div class="card-identity"><span class="protocol-symbol ${item.protocol}">${icon(item.protocol === "hysteria2" || item.protocol === "tuic" ? "bolt" : item.protocol === "trojan" ? "shield" : "globe")}</span><div><h3 dir="auto" title="${escape(item.name)}">${escape(item.name)}</h3><span class="server-address" dir="ltr">${escape(item.host)}<span>:${item.port}</span></span></div></div><button class="icon-button save-button ${saved ? "is-saved" : ""}" data-action="save" data-id="${item.id}" aria-label="${saved ? "حذف نشان" : "نشان کردن"}" aria-pressed="${saved}">${icon("bookmark")}</button></div><div class="card-tags"><span class="protocol-badge ${item.protocol}" dir="ltr">${protocolLabels[item.protocol]}</span><span class="syntax-badge">${connection}</span>${isNew ? '<span class="new-badge">جدید</span>' : ""}</div><div class="card-meta"><span class="source-name" title="${escape(item.sources.map((source) => source.name).join("، "))}">${icon("github")} <b dir="auto">${escape(item.sources[0]?.name || "GitHub")}</b></span><time datetime="${escape(item.firstSeenAt)}">${date(item.firstSeenAt, true)}</time></div><div class="card-actions"><button class="button copy-button" data-action="copy" data-id="${item.id}">${icon("copy")} کپی</button><button class="button share-button" data-action="share" data-id="${item.id}" aria-label="اشتراک‌گذاری ${escape(item.name)}">${icon("share")}</button></div></article>`;
 }
 function sourcesView() {
   const sources = state.status?.sources || [];
@@ -518,7 +543,7 @@ async function copy(text: string) {
   if (!success) throw new Error("Clipboard unavailable");
 }
 async function exportConfigs() {
-  const configs = filteredConfigs();
+  const configs = filteredConfigs().filter((row) => state.pickedProtocols.has(row.protocol)).filter((row, index, array) => array.slice(0, index).filter((previous) => previous.protocol === row.protocol).length < state.perProtocol);
   if (!configs.length) return;
   const filename = `nil-${state.protocol}-${new Date().toISOString().slice(0, 10)}.txt`;
   const text = configs.map((item) => item.uri).join("\n") + "\n";
@@ -673,6 +698,11 @@ app.addEventListener("click", async (event) => {
       setTheme(choice as ThemeChoice);
     return;
   }
+  if (action === "open-settings") { state.collectionSettings = true; render(); return; }
+  if (action === "close-settings") { state.collectionSettings = false; render(); return; }
+  if (action === "set-amount") { state.perProtocol = Number(button.dataset.value); render(); return; }
+  if (action === "pick-protocol") { const p = button.dataset.value as Protocol; if (state.pickedProtocols.has(p)) { if (state.pickedProtocols.size > 1) state.pickedProtocols.delete(p); } else state.pickedProtocols.add(p); render(); return; }
+  if (action === "start-collection") { await collectNow(); return; }
   if (action === "collect-now") {
     await collectNow();
     return;
