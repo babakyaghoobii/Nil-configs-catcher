@@ -243,7 +243,7 @@ function dashboard() {
   return `<section class="nil-command" aria-labelledby="nil-command-title">
       <div class="nil-command-logo"><img src="${brandLogo}" alt="آیکون رسمی NIL شماره 04" width="76" height="76" /></div>
       <button class="nil-collect-orb" type="button" data-action="open-settings" aria-label="تنظیمات و شروع جمع‌آوری">
-        <span class="nil-orb-icon">${icon("download")}</span>
+        <span class="nil-orb-icon">${icon("rocket")}</span>
         <strong id="nil-command-title">جمع‌آوری هوشمند<br />کانفیگ‌ها</strong>
       </button>
       <p class="nil-command-summary">${state.loading ? "در حال بارگذاری…" : number(state.snapshot?.configs.length || 0) + " کانفیگ در فهرست"} <span>·</span> ${statusLabel()}</p>
@@ -264,7 +264,7 @@ function collectionSettings() {
     <h3>تعداد کانفیگ از هر پروتکل</h3>
     <p>تعداد کانفیگ‌های جدیدتر برای نمایش و خروجی</p>
     <div class="nil-amounts" role="group" aria-label="تعداد کانفیگ">${[5,10,20,50,100].map((n) => `<button data-action="set-amount" data-value="${n}" class="${state.perProtocol === n ? "active" : ""}" aria-pressed="${state.perProtocol === n}">${number(n)}</button>`).join("")}</div>
-    <button class="button primary nil-start" data-action="start-collection">${icon("download")} ${state.collecting ? "در حال جمع‌آوری…" : "شروع جمع‌آوری"}</button>
+    <button class="button primary nil-start" data-action="start-collection">${icon("rocket")} ${state.collecting ? "در حال جمع‌آوری…" : "شروع جمع‌آوری"}</button>
     <p class="nil-hint">منابع عمومی بررسی می‌شوند؛ نتیجه برای هر پروتکل به تعداد انتخابی محدود می‌شود. سلامت اتصال فقط در صورت انجام آزمون واقعی گزارش می‌شود.</p>
   </section>`;
 }
