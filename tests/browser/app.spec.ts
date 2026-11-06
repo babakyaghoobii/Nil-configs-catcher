@@ -307,9 +307,9 @@ test.describe("real offline installation", () => {
         "آفلاین",
       );
       await expect(page.getByRole("alert")).toHaveCount(0);
-      await expect(page.locator(".creator-logo")).toHaveJSProperty(
+      await expect(page.locator(".nil-command-logo img")).toHaveJSProperty(
         "naturalWidth",
-        640,
+        1024,
       );
     } finally {
       server.closeAllConnections();

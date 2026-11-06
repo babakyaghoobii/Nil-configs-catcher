@@ -86,11 +86,11 @@ test("public web app reads fresh GitHub data and retains browser PWA behavior", 
   await page.goto("./");
   await expect(page.locator(".config-card")).toHaveCount(1);
   await expect(page.locator(".config-card")).toContainText("Hosted fixture");
-  await expect(page.locator(".creator-logo")).toHaveJSProperty(
+  await expect(page.locator(".nil-command-logo img")).toHaveJSProperty(
     "naturalWidth",
-    640,
+    1024,
   );
-  await expect(page.locator("#creator-title")).toContainText("babakyaghoobii");
+  await expect(page.locator(".page-footer")).toContainText("B. YAGHOOBI");
   await expect(page.locator(".install-button")).toBeVisible();
   await page.locator(".install-button").click();
   await expect(page.locator("#install-dialog")).toBeVisible();
@@ -154,9 +154,9 @@ test("installed PWA reloads after the host stops and GitHub becomes unavailable"
     await expect(page.locator(".notice.warning").first()).toContainText(
       "آفلاین",
     );
-    await expect(page.locator(".creator-logo")).toHaveJSProperty(
+    await expect(page.locator(".nil-command-logo img")).toHaveJSProperty(
       "naturalWidth",
-      640,
+      1024,
     );
     await expect(page.getByRole("alert")).toHaveCount(0);
   } finally {
@@ -204,9 +204,9 @@ test("offline navigation works on hosts that redirect index.html to the root", a
     );
     await page.reload();
     await expect(page.locator(".config-card")).toHaveCount(1);
-    await expect(page.locator(".creator-logo")).toHaveJSProperty(
+    await expect(page.locator(".nil-command-logo img")).toHaveJSProperty(
       "naturalWidth",
-      640,
+      1024,
     );
   } finally {
     server.closeAllConnections();

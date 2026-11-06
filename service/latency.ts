@@ -86,7 +86,7 @@ export async function latency(
     return respond("method", 405);
   }
   const id = url.searchParams.get("id") ?? "";
-  if (url.searchParams.size !== 1 || !/^[a-f0-9]{64}$/.test(id) || request.body)
+  if (url.searchParams.size !== 1 || !/^[a-f0-9]{64}$/.test(id))
     return respond("invalid", 400);
   const client = request.headers.get("CF-Connecting-IP");
   if (!client || !env.DB || !env.LATENCY_LIMITER)

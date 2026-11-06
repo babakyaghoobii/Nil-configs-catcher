@@ -24,9 +24,13 @@ def fetch_public(origin, path, payload=None):
         raise ValueError("Unexpected verification route")
     is_latency = path.startswith("/api/latency?")
     request = Request(origin + path, method="POST" if is_latency else None,
-                      data=b"" if is_latency else None if payload is None else json.dumps(payload).encode(),
+                      data=None if payload is None else json.dumps(payload).encode(),
                       headers={"Content-Type": "application/json", "Accept-Encoding": "identity", "User-Agent": "NIL-Public-Verification/1.0"})
-    with build_opener(NoRedirects()).open(request, timeout=45) as response:
+    try:
+        response = build_opener(NoRedirects()).open(request, timeout=45)
+    except HTTPError as error:
+        raise ValueError(f"{path.split('?')[0]} returned HTTP {error.code}") from None
+    with response:
         raw = response.read(6 * 1024 * 1024 + 1)
         if response.status != 200 or len(raw) > 6 * 1024 * 1024 or response.headers.get("Content-Encoding", "identity") not in ("", "identity"):
             raise ValueError("Invalid public verification response")
