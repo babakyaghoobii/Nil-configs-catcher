@@ -106,7 +106,8 @@ test("RTL, no horizontal overflow, all protocols, safe rendering and no CSP erro
   await expect(page.locator("html")).toHaveAttribute("lang", "fa");
   await expect(page.locator(".page-footer")).toContainText("B. YAGHOOBI");
   await expect(page.locator(".nil-command-logo img")).toBeVisible();
-  await expect(page.locator(".nil-command-logo img")).toHaveJSProperty("naturalWidth", 1024);
+  await expect(page.locator(".nil-command-logo img")).toHaveAttribute("src", /nil-04-blue-peach\.svg/);
+  await expect.poll(() => page.locator(".nil-command-logo img").evaluate((logo: HTMLImageElement) => logo.naturalWidth)).toBeGreaterThan(0);
   await expect(page.locator(".config-card img")).toHaveCount(0);
   expect(
     await page.evaluate(
@@ -307,10 +308,8 @@ test.describe("real offline installation", () => {
         "آفلاین",
       );
       await expect(page.getByRole("alert")).toHaveCount(0);
-      await expect(page.locator(".nil-command-logo img")).toHaveJSProperty(
-        "naturalWidth",
-        1024,
-      );
+      await expect(page.locator(".nil-command-logo img")).toHaveAttribute("src", /nil-04-blue-peach\.svg/);
+      await expect.poll(() => page.locator(".nil-command-logo img").evaluate((logo: HTMLImageElement) => logo.naturalWidth)).toBeGreaterThan(0);
     } finally {
       server.closeAllConnections();
       if (server.listening)

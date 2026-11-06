@@ -94,10 +94,8 @@ test("desktop has creator credits, fetches live data and exposes no PWA installa
   await expect(page.locator(".config-card")).toHaveCount(2);
   await expect(page.locator(".page-footer")).toContainText("B. YAGHOOBI");
   await expect(page.locator(".nil-command-logo img")).toBeVisible();
-  await expect(page.locator(".nil-command-logo img")).toHaveJSProperty(
-    "naturalWidth",
-    1024,
-  );
+  await expect(page.locator(".nil-command-logo img")).toHaveAttribute("src", /nil-04-blue-peach\.svg/);
+  await expect.poll(() => page.locator(".nil-command-logo img").evaluate((logo: HTMLImageElement) => logo.naturalWidth)).toBeGreaterThan(0);
   await expect(page.locator(".install-button")).toBeHidden();
   expect(
     await page.evaluate(
