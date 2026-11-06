@@ -1,0 +1,37 @@
+name: NIL app build verification
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'src/**'
+      - 'service/**'
+      - 'public/**'
+      - 'index.html'
+      - 'package.json'
+      - 'package-lock.json'
+      - '.github/workflows/nil-app-build.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+      - run: npm ci
+      - name: Check and build Persian NIL application
+        run: npm run build
+      - name: Check service TypeScript and tests
+        run: npm run test:service
+      - name: Upload verified web build
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: nil-config-catcher-web
+          path: dist/
+          if-no-files-found: error
