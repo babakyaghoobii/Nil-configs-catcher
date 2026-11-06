@@ -36,6 +36,16 @@ jobs:
         run: npm run icons
       - name: Build Safari-compatible web app
         run: npm run build
+      - name: Install NIL Proxy iPhone icon in its own app directory
+        run: |
+          test -s public/icons/apple-touch-icon.png
+          test -s dist/proxy/index.html
+          mkdir -p dist/proxy
+          cp public/icons/apple-touch-icon.png dist/proxy/apple-touch-icon.png
+          cp public/icons/icon-192.png dist/proxy/icon-192.png
+          cp public/icons/icon-512.png dist/proxy/icon-512.png
+          cp public/icons/maskable-512.png dist/proxy/maskable-512.png
+          test -s dist/proxy/apple-touch-icon.png
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
