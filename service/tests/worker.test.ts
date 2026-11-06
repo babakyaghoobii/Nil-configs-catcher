@@ -148,7 +148,7 @@ test("public API and base64 subscription use real SQLite data without exposing b
       new Request(origin + "/api/subscription?format=base64"),
       { DB: db, ASSETS: assets },
     );
-    assert.equal(atob(await feed.text()).trim(), record.uri);
+    assert.equal(atob(await feed.text()).trim(), `${record.uri}#Babak-tr-00-00-01`);
     const malicious = await worker.fetch(
       new Request(origin + "/api/collect", {
         method: "POST",
