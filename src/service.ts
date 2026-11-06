@@ -65,6 +65,8 @@ export function subscriptionURL(
   query: string,
   format: string,
   title: string,
+  perProtocol?: number,
+  selectedProtocols?: string[],
 ): string {
   if (
     !["all", "vless", "vmess", "trojan", "ss", "hysteria2", "tuic"].includes(
@@ -90,6 +92,7 @@ export function subscriptionURL(
     q: query,
     format,
     title,
+    ...(perProtocol && selectedProtocols?.length ? {limit: String(perProtocol), protocols: selectedProtocols.join(",")} : {}),
   }).toString();
   return url.href;
 }
