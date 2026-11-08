@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
   "state": "success",
-  "startedAt": "2026-11-07T21:55:26Z",
-  "finishedAt": "2026-11-07T21:55:26Z",
-  "lastSuccessfulAt": "2026-11-07T21:55:26Z",
+  "startedAt": "2026-11-08T01:28:23Z",
+  "finishedAt": "2026-11-08T01:28:24Z",
+  "lastSuccessfulAt": "2026-11-08T01:28:23Z",
   "added": 50,
   "target": 50,
-  "totalUnique": 2550,
-  "duplicateCount": 38,
+  "totalUnique": 2600,
+  "duplicateCount": 51,
   "invalidCount": 0,
   "scheduleHours": 2,
   "snapshotLimit": 1000,
@@ -20,7 +20,7 @@
       "candidates": 4449,
       "valid": 44,
       "invalid": 0,
-      "added": 18,
+      "added": 29,
       "error": null,
       "scanned": 44
     },
@@ -32,7 +32,7 @@
       "candidates": 423,
       "valid": 42,
       "invalid": 0,
-      "added": 21,
+      "added": 4,
       "error": null,
       "scanned": 42
     },
@@ -41,17 +41,17 @@
       "name": "iGareck Black VLESS",
       "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt",
       "status": "success",
-      "candidates": 148,
+      "candidates": 154,
       "valid": 42,
       "invalid": 0,
-      "added": 11,
+      "added": 17,
       "error": null,
       "scanned": 42
     }
   ],
   "errors": [],
   "connectionTested": false,
-  "deferredCandidates": 4932,
+  "deferredCandidates": 4925,
   "origin": "api",
-  "runId": "c7e23c7d-daa3-4567-b7a8-8c02e39a7398"
+  "runId": "121924e9-b085-43ac-b471-239846fd578c"
 }
