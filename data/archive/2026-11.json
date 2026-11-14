@@ -45703,5 +45703,805 @@
         "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
       }
     ]
+  },
+  {
+    "id": "cade789a134ef667de48e3d4b91a84cecb1a03051ea579f58bc5a0675cf12691",
+    "uri": "ss://YWVzLTI1Ni1nY206ZmFCQW9ENTRrODdVSkc3@85.208.108.60:2375#Babak-ss-03-50-01",
+    "protocol": "ss",
+    "name": "Babak-ss-03-50-01",
+    "host": "85.208.108.60",
+    "port": 2375,
+    "firstSeenAt": "2026-11-14T15:08:52Z",
+    "sources": [
+      {
+        "id": "v2ray-aggregator",
+        "name": "V2Ray Aggregator",
+        "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+      }
+    ]
+  },
+  {
+    "id": "470c8c78f3b7f931a4cd2387b584fb67c2fcc3e45f2537cb2230a5acbb2d9d76",
+    "uri": "vless://99c5b713-dedf-4a10-8070-916ff3f49b0e@yx.l110.us.ci:443?sni=fs.qicai99.com&type=ws&host=fs.qicai99.com&path=/fp=chromesecurity=tls#Babak-vlss-03-50-02",
+    "protocol": "vless",
+    "name": "Babak-vlss-03-50-02",
+    "host": "yx.l110.us.ci",
+    "port": 443,
+    "firstSeenAt": "2026-11-14T15:08:52Z",
+    "sources": [
+      {
+        "id": "no-more-walls",
+        "name": "No More Walls",
+        "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+      }
+    ]
+  },
+  {
+    "id": "b9a7b80fc925816d5d99ce70e6e93266723e602881d80568a9bb4a60160751bb",
+    "uri": "vmess://eyJhZGQiOiIxNjUuMjI3LjE3NS44OCIsImFpZCI6MCwiaG9zdCI6IiIsImlkIjoiZWJhOGNjZjUtNWFiOS00YjZiLWRlNGItODNhYjkyMGMxMDA1IiwibmV0Ijoid3MiLCJwYXRoIjoiLyIsInBvcnQiOjI4MTY0LCJwcyI6IkJhYmFrLXZtLTAzLTUwLTAzIiwidGxzIjoiIiwidHlwZSI6ImF1dG8iLCJzZWN1cml0eSI6ImF1dG8iLCJza2lwLWNlcnQtdmVyaWZ5Ijp0cnVlLCJzbmkiOiIifQ==",
+    "protocol": "vmess",
+    "name": "Babak-vm-03-50-03",
+    "host": "165.227.175.88",
+    "port": 28164,
+    "firstSeenAt": "2026-11-14T15:08:52Z",
+    "sources": [
+      {
+        "id": "v2ray-aggregator",
+        "name": "V2Ray Aggregator",
+        "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+      }
+    ]
+  },
+  {
+    "id": "756be285712a2189e2e140182dd8c373f12742e65f965091ab25475bc05b58b0",
+    "uri": "ss://YWVzLTI1Ni1nY206S2l4THZLendqZWtHMDBybQ==@85.208.108.60:8000#Babak-ss-03-50-04",
+    "protocol": "ss",
+    "name": "Babak-ss-03-50-04",
+    "host": "85.208.108.60",
+    "port": 8000,
+    "firstSeenAt": "2026-11-14T15:08:52Z",
+    "sources": [
+      {
+        "id": "v2ray-aggregator",
+        "name": "V2Ray Aggregator",
+        "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+      }
+    ]
+  },
+  {
+    "id": "73f7736df08ac50b33d471b05ad6ca92c2a83d04fa451b2a1377810f4670714d",
+    "uri": "vmess://eyJhZGQiOiIxNS4yMzUuMTkyLjE5NiIsImFpZCI6MCwiaG9zdCI6IiIsImlkIjoiMzcwMWRlZDMtMDliYS00MTU0LTk3MGQtYTlmNGEwOTBhMzgyIiwibmV0Ijoid3MiLCJwYXRoIjoiL3ZtZXNzIiwicG9ydCI6ODAsInBzIjoiQmFiYWstdm0tMDMtNTAtMDUiLCJ0bHMiOiIiLCJ0eXBlIjoiYXV0byIsInNlY3VyaXR5IjoiYXV0byIsInNraXAtY2VydC12ZXJpZnkiOnRydWUsInNuaSI6IiJ9",
+    "protocol": "vmess",
+    "name": "Babak-vm-03-50-05",
+    "host": "15.235.192.196",
+    "port": 80,
+    "firstSeenAt": "2026-11-14T15:08:52Z",
+    "sources": [
+      {
+        "id": "v2ray-aggregator",
+        "name": "V2Ray Aggregator",
+        "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+      }
+    ]
+  },
+  {
+    "id": "533ea3f46efb2a46ff35da3fa4677a4c39b99fdf8cc8135e2936a903e18694f4",
+    "uri": "vless://52a5a29f-c162-411a-8a37-a3f11b0dc537@74.161.152.237:2083?sni=www.apple.com&flow=xtls-rprx-vision&fp=chrome&security=tls#Babak-vlss-03-50-06",
+    "protocol": "vless",
+    "name": "Babak-vlss-03-50-06",
+    "host": "74.161.152.237",
+    "port": 2083,
+    "firstSeenAt": "2026-11-14T15:08:52Z",
+    "sources": [
+      {
+        "id": "no-more-walls",
+        "name": "No More Walls",
+        "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+      }
+    ]
+  },
+  {
+    "id": "167aea3e29ea8c2d427ef7b9681b2e96ab99ac4ca1aa43ec590c1e243616e7ca",
+    "uri": "vmess://eyJhZGQiOiIxNTcuMjMwLjM2LjIzNSIsImFpZCI6MCwiaG9zdCI6IiIsImlkIjoiYjQ4NGQ1NzYtYjNlMy00YWM1LWIxMDgtODhhMzAwZGZlN2UzIiwibmV0Ijoid3MiLCJwYXRoIjoiL2dyYXBocWwiLCJwb3J0Ijo4MCwicHMiOiJCYWJhay12bS0wMy01MC0wNyIsInRscyI6IiIsInR5cGUiOiJhdXRvIiwic2VjdXJpdHkiOiJhdXRvIiwic2tpcC1jZXJ0LXZlcmlmeSI6dHJ1ZSwic25pIjoiIn0=",
+    "protocol": "vmess",
+    "name": "Babak-vm-03-50-07",
+    "host": "157.230.36.235",
+    "port": 80,
+    "firstSeenAt": "2026-11-14T15:08:52Z",
+    "sources": [
+      {
+        "id": "v2ray-aggregator",
+        "name": "V2Ray Aggregator",
+        "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+      }
+    ]
+  },
+  {
+    "id": "c09a377a23161015c935f003d1d354acb6a2e6aea54c1adfdfb3055bf7bd6381",
+    "uri": "vless://90157e25-cee1-4217-921e-91f300bc1a24@prvtch.titun.su:443?sni=perevodchiki.su&flow=xtls-rprx-vision&fp=firefox&security=tls#Babak-vlss-03-50-08",
+    "protocol": "vless",
+    "name": "Babak-vlss-03-50-08",
+    "host": "prvtch.titun.su",
+    "port": 443,
+    "firstSeenAt": "2026-11-14T15:08:52Z",
+    "sources": [
+      {
+        "id": "no-more-walls",
+        "name": "No More Walls",
+        "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+      }
+    ]
+  },
+  {
+    "id": "788776097d08f7d5a7b4156c9a006977720e25ffeafb806213e3a792c071baba",
+    "uri": "vmess://eyJhZGQiOiJ2MnVrLmNsYXNoem9uZS54eXoiLCJhaWQiOjAsImhvc3QiOiJ2MnVrLmNsYXNoem9uZS54eXoiLCJpZCI6IjQzMGI2ODk1LTJlMGYtNDcxNi05NDEwLWUxMzM5ZDBmOWFmNiIsIm5ldCI6IndzIiwicGF0aCI6Ii8iLCJwb3J0Ijo1Mzc3NSwicHMiOiJCYWJhay12bS0wMy01MC0wOSIsInRscyI6IiIsInR5cGUiOiJhdXRvIiwic2VjdXJpdHkiOiJhdXRvIiwic2tpcC1jZXJ0LXZlcmlmeSI6dHJ1ZSwic25pIjoiIn0=",
+    "protocol": "vmess",
+    "name": "Babak-vm-03-50-09",
+    "host": "v2uk.clashzone.xyz",
+    "port": 53775,
+    "firstSeenAt": "2026-11-14T15:08:52Z",
+    "sources": [
+      {
+        "id": "v2ray-aggregator",
+        "name": "V2Ray Aggregator",
+        "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+      }
+    ]
+  },
+  {
+    "id": "36301f94824252c69ca8ac970efddfd9643ab06c7ac5acc232d4cdbf5a2d13a9",
+    "uri": "vmess://eyJhZGQiOiIxMjkuMTUwLjQ0LjY0IiwiYWlkIjowLCJob3N0IjoiIiwiaWQiOiJkYTI1N2U3My1mMDJiLTQ1YWItOTkxNi03YmFmMTU0YzQ3YTMiLCJuZXQiOiJ3cyIsInBhdGgiOiIvamhuZHNtbGFuajExMjIzIiwicG9ydCI6NDYwNzUsInBzIjoiQmFiYWstdm0tMDMtNTAtMTAiLCJ0bHMiOiIiLCJ0eXBlIjoiYXV0byIsInNlY3VyaXR5IjoiYXV0byIsInNraXAtY2VydC12ZXJpZnkiOnRydWUsInNuaSI6IiJ9",
+    "protocol": "vmess",
+    "name": "Babak-vm-03-50-10",
+    "host": "129.150.44.64",
+    "port": 46075,
+    "firstSeenAt": "2026-11-14T15:08:52Z",
+    "sources": [
+      {
+        "id": "v2ray-aggregator",
+        "name": "V2Ray Aggregator",
+        "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+      }
+    ]
+  },
+  {
+    "id": "20b9199c0fddcbcbe24a8147d19a4f2cbe17ea24aab3b01dc0d720539a06721f",
+    "uri": "vmess://eyJhZGQiOiJibG9nLnZvZXdsLmNvbSIsImFpZCI6MCwiaG9zdCI6ImJsb2cudm9ld2wuY29tIiwiaWQiOiI3YTlmMDI2Zi1mN2E4LTQwY2EtZjJmOS0zYjM4MGMyODdjMGQiLCJuZXQiOiJ3cyIsInBhdGgiOiIvYWJjIiwicG9ydCI6NDM4MTUsInBzIjoiQmFiYWstdm0tMDMtNTAtMTEiLCJ0bHMiOiIiLCJ0eXBlIjoiYXV0byIsInNlY3VyaXR5IjoiYXV0byIsInNraXAtY2VydC12ZXJpZnkiOnRydWUsInNuaSI6IiJ9",
+    "protocol": "vmess",
+    "name": "Babak-vm-03-50-11",
+    "host": "blog.voewl.com",
+    "port": 43815,
+    "firstSeenAt": "2026-11-14T15:08:52Z",
+    "sources": [
+      {
+        "id": "v2ray-aggregator",
+        "name": "V2Ray Aggregator",
+        "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+      }
+    ]
+  },
+  {
+    "id": "3ad7677fcd678d47c5d44c4a6d13e91498ae19bbfab11df33663408b656819b4",
+    "uri": "vmess://eyJhZGQiOiIyMDQuMTUuNzQuNzUiLCJhaWQiOjAsImhvc3QiOiIiLCJpZCI6IjcxM2E5MWM2LWUxMjMtNDYxYy1hMjA1LTk0YTM3Nzk2Yzc5MSIsIm5ldCI6IndzIiwicGF0aCI6Ii8iLCJwb3J0IjoxMTAyMywicHMiOiJCYWJhay12bS0wMy01MC0xMiIsInRscyI6IiIsInR5cGUiOiJhdXRvIiwic2VjdXJpdHkiOiJhdXRvIiwic2tpcC1jZXJ0LXZlcmlmeSI6dHJ1ZSwic25pIjoiIn0=",
+    "protocol": "vmess",
+    "name": "Babak-vm-03-50-12",
+    "host": "204.15.74.75",
+    "port": 11023,
+    "firstSeenAt": "2026-11-14T15:08:52Z",
+    "sources": [
+      {
+        "id": "v2ray-aggregator",
+        "name": "V2Ray Aggregator",
+        "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+      }
+    ]
+  },
+  {
+    "id": "6a71bc8fb9fc6255581b0c4a48cddec18b218416b29c31920b6115519b00a53c",
+    "uri": "trojan://b09d2aaa443af97a@211.72.35.155:3389?security=tls#Babak-tr-03-50-13",
+    "protocol": "trojan",
+    "name": "Babak-tr-03-50-13",
+    "host": "211.72.35.155",
+    "port": 3389,
+    "firstSeenAt": "2026-11-14T15:08:52Z",
+    "sources": [
+      {
+        "id": "v2ray-aggregator",
+        "name": "V2Ray Aggregator",
+        "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+      }
+    ]
+  },
+  {
+    "id": "bd8ef033c2f86d3988bb0a9155ce358d76f3c40cc94eaa8a12b8c4bc1c83f459",
+    "uri": "vless://99c5b713-dedf-4a10-8070-916ff3f49b0e@188.137.178.174:8443?sni=fs.qicai99.com&type=ws&host=fs.qicai99.com&path=/fp=chrome&security=tls#Babak-vlss-03-50-14",
+    "protocol": "vless",
+    "name": "Babak-vlss-03-50-14",
+    "host": "188.137.178.174",
+    "port": 8443,
+    "firstSeenAt": "2026-11-14T15:08:52Z",
+    "sources": [
+      {
+        "id": "no-more-walls",
+        "name": "No More Walls",
+        "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+      }
+    ]
+  },
+  {
+    "id": "d3443a77eebfbcbb2049c8bf4b5fcb39513afc5a2170cabf248f5f57db982d98",
+    "uri": "trojan://a1b16d10-4f43-4dd9-8c4f-52065b2b0910@212.90.123.133:28443?security=tls#Babak-tr-03-50-15",
+    "protocol": "trojan",
+    "name": "Babak-tr-03-50-15",
+    "host": "212.90.123.133",
+    "port": 28443,
+    "firstSeenAt": "2026-11-14T15:08:52Z",
+    "sources": [
+      {
+        "id": "v2ray-aggregator",
+        "name": "V2Ray Aggregator",
+        "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+      }
+    ]
+  },
+  {
+    "id": "59e00ae79c4d943e3aaa7d269420513e52b45ae944c0c6bbe9402f07bdf0f637",
+    "uri": "vless://c1208c5a-2350-0003-affd-fc41b4319286@decdn-28.nome-rkp.net:443?sni=decdn-28.nome-rkp.net&type=ws&host=decdn-28.nome-rkp.net&path=/media/ws/fp=chrome&security=tls#Babak-vlss-03-50-16",
+    "protocol": "vless",
+    "name": "Babak-vlss-03-50-16",
+    "host": "decdn-28.nome-rkp.net",
+    "port": 443,
+    "firstSeenAt": "2026-11-14T15:08:52Z",
+    "sources": [
+      {
+        "id": "no-more-walls",
+        "name": "No More Walls",
+        "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+      }
+    ]
+  },
+  {
+    "id": "92792e4314479df099cb012c4f6cb13d09addb0abbfb220e12463ea00bc3a692",
+    "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpHIXlCd1BXSDNWYW8=@109.169.72.249:809#Babak-ss-03-50-17",
+    "protocol": "ss",
+    "name": "Babak-ss-03-50-17",
+    "host": "109.169.72.249",
+    "port": 809,
+    "firstSeenAt": "2026-11-14T15:08:52Z",
+    "sources": [
+      {
+        "id": "v2ray-aggregator",
+        "name": "V2Ray Aggregator",
+        "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+      }
+    ]
+  },
+  {
+    "id": "6d352b5f9845d8b398fe4e680d2b9017682a18986ca473b710fd05ab8baae26f",
+    "uri": "vless://3c152dce-5887-486c-9f0f-693ca271f2e6@zibanabz.jonsonvip.ir:3939?#Babak-vlss-03-50-18",
+    "protocol": "vless",
+    "name": "Babak-vlss-03-50-18",
+    "host": "zibanabz.jonsonvip.ir",
+    "port": 3939,
+    "firstSeenAt": "2026-11-14T15:08:52Z",
+    "sources": [
+      {
+        "id": "no-more-walls",
+        "name": "No More Walls",
+        "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+      }
+    ]
+  },
+  {
+    "id": "744ec91b00f69405473b3e26e15b6f2fd7c3b250e3df9c206f365673440b0bae",
+    "uri": "vmess://eyJhZGQiOiI1MS44MS4yMjAuMTk1IiwiYWlkIjowLCJob3N0IjoiIiwiaWQiOiI2ZmVhMTY0OS00MjViLTQwOTItYmY1My0yOTc5MjE1MmM5MjUiLCJuZXQiOiJ3cyIsInBhdGgiOiIvc3Noa2l0L1lhcmF5YXVqLzYzNDk5MTFmODNiMzEvIiwicG9ydCI6ODAsInBzIjoiQmFiYWstdm0tMDMtNTAtMTkiLCJ0bHMiOiIiLCJ0eXBlIjoiYXV0byIsInNlY3VyaXR5IjoiYXV0byIsInNraXAtY2VydC12ZXJpZnkiOnRydWUsInNuaSI6IiJ9",
+    "protocol": "vmess",
+    "name": "Babak-vm-03-50-19",
+    "host": "51.81.220.195",
+    "port": 80,
+    "firstSeenAt": "2026-11-14T15:08:52Z",
+    "sources": [
+      {
+        "id": "v2ray-aggregator",
+        "name": "V2Ray Aggregator",
+        "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+      }
+    ]
+  },
+  {
+    "id": "f2aff363c0c7cb128e927baf58c92b9e69e457557d10cbac76fd5e6cab70e954",
+    "uri": "vless://baded307-189c-4ffc-a271-9acdab51a324@online.shop.ir.eeso.cc:39653?security=tls#Babak-vlss-03-50-20",
+    "protocol": "vless",
+    "name": "Babak-vlss-03-50-20",
+    "host": "online.shop.ir.eeso.cc",
+    "port": 39653,
+    "firstSeenAt": "2026-11-14T15:08:52Z",
+    "sources": [
+      {
+        "id": "no-more-walls",
+        "name": "No More Walls",
+        "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+      }
+    ]
+  },
+  {
+    "id": "5b57af078f32771a82041d0075c59292a4bf4d518e4aba2b8e9de29b7f03fd36",
+    "uri": "trojan://750a29bf-0a40-437f-b120-38de74ae7eaf@168.138.189.17:28443?security=tls#Babak-tr-03-50-21",
+    "protocol": "trojan",
+    "name": "Babak-tr-03-50-21",
+    "host": "168.138.189.17",
+    "port": 28443,
+    "firstSeenAt": "2026-11-14T15:08:52Z",
+    "sources": [
+      {
+        "id": "v2ray-aggregator",
+        "name": "V2Ray Aggregator",
+        "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+      }
+    ]
+  },
+  {
+    "id": "54e2a5c12a011f523ab4796d1c276d61956220cd88a0bfd5add22e5dd6aceda2",
+    "uri": "vless://4201786b-d99b-4147-a5f0-20d47acddb81@4935e4t.de25.h1clayd.click:443?sni=4935e4t.de25.h1clayd.click&flow=xtls-rprx-vision&fp=firefox&security=tls#Babak-vlss-03-50-22",
+    "protocol": "vless",
+    "name": "Babak-vlss-03-50-22",
+    "host": "4935e4t.de25.h1clayd.click",
+    "port": 443,
+    "firstSeenAt": "2026-11-14T15:08:52Z",
+    "sources": [
+      {
+        "id": "no-more-walls",
+        "name": "No More Walls",
+        "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+      }
+    ]
+  },
+  {
+    "id": "2d66623dc817d415e1bbfcf203f3105d158234d1e823cf9455dfc5b5b1e7b4c8",
+    "uri": "trojan://8a03bc28-2a33-42c4-be59-30464dbb9954@fra13.yukiss.eu.org:18818?security=tls#Babak-tr-03-50-23",
+    "protocol": "trojan",
+    "name": "Babak-tr-03-50-23",
+    "host": "fra13.yukiss.eu.org",
+    "port": 18818,
+    "firstSeenAt": "2026-11-14T15:08:52Z",
+    "sources": [
+      {
+        "id": "v2ray-aggregator",
+        "name": "V2Ray Aggregator",
+        "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+      }
+    ]
+  },
+  {
+    "id": "1291f14032e6f1baec2db99587289aeb7de85fc192954dea3740afb079f19ba4",
+    "uri": "vless://4201786b-d99b-4147-a5f0-20d47acddb81@150.251.143.253:443?sni=4935e4t.de25.h1clayd.click&flow=xtls-rprx-vision&fp=chrome&security=tls#Babak-vlss-03-50-24",
+    "protocol": "vless",
+    "name": "Babak-vlss-03-50-24",
+    "host": "150.251.143.253",
+    "port": 443,
+    "firstSeenAt": "2026-11-14T15:08:52Z",
+    "sources": [
+      {
+        "id": "no-more-walls",
+        "name": "No More Walls",
+        "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+      }
+    ]
+  },
+  {
+    "id": "979335a34e7cdd49110dc156564e4960ead2f00661a22b2957c67fd161720581",
+    "uri": "trojan://b874173c-dfc6-40f4-9542-d973997f9659@103.81.85.238:443?security=tls#Babak-tr-03-50-25",
+    "protocol": "trojan",
+    "name": "Babak-tr-03-50-25",
+    "host": "103.81.85.238",
+    "port": 443,
+    "firstSeenAt": "2026-11-14T15:08:52Z",
+    "sources": [
+      {
+        "id": "v2ray-aggregator",
+        "name": "V2Ray Aggregator",
+        "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+      }
+    ]
+  },
+  {
+    "id": "c1c89a8a486a66792822faacffd55ed67fb08ec2358743319bd2a2153e2d669b",
+    "uri": "vless://fb390da4-00c5-54f1-a1b4-c8e2bb6378c2@vv9bo423qfvc.cloudymedia.click:443?sni=deepl.com&flow=xtls-rprx-vision&fp=qq&security=tls#Babak-vlss-03-50-26",
+    "protocol": "vless",
+    "name": "Babak-vlss-03-50-26",
+    "host": "vv9bo423qfvc.cloudymedia.click",
+    "port": 443,
+    "firstSeenAt": "2026-11-14T15:08:52Z",
+    "sources": [
+      {
+        "id": "no-more-walls",
+        "name": "No More Walls",
+        "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+      }
+    ]
+  },
+  {
+    "id": "2dee85021c647ba188a0562b1f90eb1c9a6843264edea80cf41ece122cd76ab4",
+    "uri": "trojan://8a03bc28-2a33-42c4-be59-30464dbb9954@london11.yukiss.eu.org:18818?security=tls#Babak-tr-03-50-27",
+    "protocol": "trojan",
+    "name": "Babak-tr-03-50-27",
+    "host": "london11.yukiss.eu.org",
+    "port": 18818,
+    "firstSeenAt": "2026-11-14T15:08:52Z",
+    "sources": [
+      {
+        "id": "v2ray-aggregator",
+        "name": "V2Ray Aggregator",
+        "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+      }
+    ]
+  },
+  {
+    "id": "f25e7c9d82f096abaed63cd0b084383b80cd739142f24d5c0ce8bf97d372f9f3",
+    "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpHIXlCd1BXSDNWYW8=@148.66.56.99:802#Babak-ss-03-50-28",
+    "protocol": "ss",
+    "name": "Babak-ss-03-50-28",
+    "host": "148.66.56.99",
+    "port": 802,
+    "firstSeenAt": "2026-11-14T15:08:52Z",
+    "sources": [
+      {
+        "id": "v2ray-aggregator",
+        "name": "V2Ray Aggregator",
+        "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+      }
+    ]
+  },
+  {
+    "id": "70e82cd8d2fd1d9616f61022f7163998f919904915eaa1c31d65e2ef8a9ac7d6",
+    "uri": "vless://4cabcd59-a405-4c00-96f5-03507e1e28fa@188.225.37.43:443?sni=torvani.cyou&type=ws&host=torvani.cyou&path=/api/boards/livefp=firefox&security=tls#Babak-vlss-03-50-29",
+    "protocol": "vless",
+    "name": "Babak-vlss-03-50-29",
+    "host": "188.225.37.43",
+    "port": 443,
+    "firstSeenAt": "2026-11-14T15:08:52Z",
+    "sources": [
+      {
+        "id": "no-more-walls",
+        "name": "No More Walls",
+        "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+      }
+    ]
+  },
+  {
+    "id": "63ede80c043641d6180e17a82388ba49e5fccd9dfa6de7edde35d20d48f37acc",
+    "uri": "vmess://eyJhZGQiOiI5MS4xOTMuMTgxLjE5MiIsImFpZCI6MCwiaG9zdCI6IiIsImlkIjoiMDhiYzMwZTEtYmUzOS00ZWI0LWU4ODctZTY1NzliZTE1YTQ1IiwibmV0Ijoid3MiLCJwYXRoIjoiLyIsInBvcnQiOjgwOTAsInBzIjoiQmFiYWstdm0tMDMtNTAtMzAiLCJ0bHMiOiIiLCJ0eXBlIjoiYXV0byIsInNlY3VyaXR5IjoiYXV0byIsInNraXAtY2VydC12ZXJpZnkiOnRydWUsInNuaSI6IiJ9",
+    "protocol": "vmess",
+    "name": "Babak-vm-03-50-30",
+    "host": "91.193.181.192",
+    "port": 8090,
+    "firstSeenAt": "2026-11-14T15:08:52Z",
+    "sources": [
+      {
+        "id": "v2ray-aggregator",
+        "name": "V2Ray Aggregator",
+        "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+      }
+    ]
+  },
+  {
+    "id": "0ca90207f1b4449d2f01f6dd1354328e583ca1874416a6e9cedd7bbc095734ec",
+    "uri": "trojan://7a566d21dfcd0f12490275fd3dd3cfc4@trs09.bolab.net:443?security=tls#Babak-tr-03-50-31",
+    "protocol": "trojan",
+    "name": "Babak-tr-03-50-31",
+    "host": "trs09.bolab.net",
+    "port": 443,
+    "firstSeenAt": "2026-11-14T15:08:52Z",
+    "sources": [
+      {
+        "id": "v2ray-aggregator",
+        "name": "V2Ray Aggregator",
+        "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+      }
+    ]
+  },
+  {
+    "id": "268e09fd58031dd1c4454f446fbf3e43186dc026e10c07e41dd3fb5aef70dd6e",
+    "uri": "vless://855c7aaa-e7d6-463e-971e-d36032744428@159.195.207.238:49313?#Babak-vlss-03-50-32",
+    "protocol": "vless",
+    "name": "Babak-vlss-03-50-32",
+    "host": "159.195.207.238",
+    "port": 49313,
+    "firstSeenAt": "2026-11-14T15:08:52Z",
+    "sources": [
+      {
+        "id": "no-more-walls",
+        "name": "No More Walls",
+        "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+      }
+    ]
+  },
+  {
+    "id": "dc66111fc7800e27221b3465029c7d96b7bf43c9acbd73dd6dcfe5ad08c314a1",
+    "uri": "vmess://eyJhZGQiOiIxNjguMTE5LjI1NC4yMzQiLCJhaWQiOjAsImhvc3QiOiIiLCJpZCI6IjQxOTkwYmRjLWRhNzUtNDk2ZC1iYWQzLWFlODIyYWQ4YmU1ZiIsIm5ldCI6IndzIiwicGF0aCI6Ii9ncmFwaHFsIiwicG9ydCI6ODAsInBzIjoiQmFiYWstdm0tMDMtNTAtMzMiLCJ0bHMiOiIiLCJ0eXBlIjoiYXV0byIsInNlY3VyaXR5IjoiYXV0byIsInNraXAtY2VydC12ZXJpZnkiOnRydWUsInNuaSI6IiJ9",
+    "protocol": "vmess",
+    "name": "Babak-vm-03-50-33",
+    "host": "168.119.254.234",
+    "port": 80,
+    "firstSeenAt": "2026-11-14T15:08:52Z",
+    "sources": [
+      {
+        "id": "v2ray-aggregator",
+        "name": "V2Ray Aggregator",
+        "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+      }
+    ]
+  },
+  {
+    "id": "12c313f630b002eed337c06047b066e758c97caa88363feea4abfa06b2087d12",
+    "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpHIXlCd1BXSDNWYW8=@148.66.56.99:800#Babak-ss-03-50-34",
+    "protocol": "ss",
+    "name": "Babak-ss-03-50-34",
+    "host": "148.66.56.99",
+    "port": 800,
+    "firstSeenAt": "2026-11-14T15:08:52Z",
+    "sources": [
+      {
+        "id": "v2ray-aggregator",
+        "name": "V2Ray Aggregator",
+        "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+      }
+    ]
+  },
+  {
+    "id": "a9fe32a5fa67eb8b4c28ead37c18183698e5d133572ed8262fec80df40c551a7",
+    "uri": "vless://9443badf-414f-4b12-b19a-7cc2c7431163@103.31.4.160:8443?sni=moz.ar-marz.fun&type=ws&host=moz.ar-marz.fun&path=/manfp=firefox&security=tls#Babak-vlss-03-50-35",
+    "protocol": "vless",
+    "name": "Babak-vlss-03-50-35",
+    "host": "103.31.4.160",
+    "port": 8443,
+    "firstSeenAt": "2026-11-14T15:08:52Z",
+    "sources": [
+      {
+        "id": "no-more-walls",
+        "name": "No More Walls",
+        "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+      }
+    ]
+  },
+  {
+    "id": "9d622e269f775ea2dbf0a34369a732978e7d016e98d0b33ad9779e8f3d89845a",
+    "uri": "trojan://c60fbf90-4b55-11ed-b935-225401db9d57@51.75.76.22:443?security=tls#Babak-tr-03-50-36",
+    "protocol": "trojan",
+    "name": "Babak-tr-03-50-36",
+    "host": "51.75.76.22",
+    "port": 443,
+    "firstSeenAt": "2026-11-14T15:08:52Z",
+    "sources": [
+      {
+        "id": "v2ray-aggregator",
+        "name": "V2Ray Aggregator",
+        "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+      }
+    ]
+  },
+  {
+    "id": "f6d13a43a254f44a98990f56e47fe256888edf4c1bdd39e10c467ea049ea199d",
+    "uri": "vless://5d967efa-702c-4cde-9e79-29386c8012e5@hk1t.wawojk.dpdns.org:443?security=tls&type=ws&path=%2Fhk1-ws-1f8915c8964a&host=hk1t.wawojk.dpdns.org&sni=hk1t.wawojk.dpdns.org&fp=chrome#Babak-vlss-03-50-37",
+    "protocol": "vless",
+    "name": "Babak-vlss-03-50-37",
+    "host": "hk1t.wawojk.dpdns.org",
+    "port": 443,
+    "firstSeenAt": "2026-11-14T15:08:52Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "026a6c26bcdc1fd43b07422891ac57b6a93c23919bfbdb7fb9a9a7c360ff0cfc",
+    "uri": "trojan://a1b16d10-4f43-4dd9-8c4f-52065b2b0910@45.88.148.237:28443?security=tls&sni=sbank.ir#Babak-tr-03-50-38",
+    "protocol": "trojan",
+    "name": "Babak-tr-03-50-38",
+    "host": "45.88.148.237",
+    "port": 28443,
+    "firstSeenAt": "2026-11-14T15:08:52Z",
+    "sources": [
+      {
+        "id": "v2ray-aggregator",
+        "name": "V2Ray Aggregator",
+        "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+      }
+    ]
+  },
+  {
+    "id": "310ac46dee20efffc185b76ae235169cf118e5398e6f5507ad3b217022edd9ba",
+    "uri": "vless://5d967efa-702c-4cde-9e79-29386c8012e5@hk1t.wawojk.dpdns.org:443?type=ws&security=tls&path=/hk1-ws-1f8915c8964a&sni=hk1t.wawojk.dpdns.org&fp=chrome#Babak-vlss-03-50-39",
+    "protocol": "vless",
+    "name": "Babak-vlss-03-50-39",
+    "host": "hk1t.wawojk.dpdns.org",
+    "port": 443,
+    "firstSeenAt": "2026-11-14T15:08:52Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "6a62d73b4c0e066880bee836e422ca0ee11c7d2a024807b81e5423289b6ba895",
+    "uri": "trojan://3febb05ea76a940f@60.249.3.125:3389?security=tls#Babak-tr-03-50-40",
+    "protocol": "trojan",
+    "name": "Babak-tr-03-50-40",
+    "host": "60.249.3.125",
+    "port": 3389,
+    "firstSeenAt": "2026-11-14T15:08:52Z",
+    "sources": [
+      {
+        "id": "v2ray-aggregator",
+        "name": "V2Ray Aggregator",
+        "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+      }
+    ]
+  },
+  {
+    "id": "c99a6c85af75a52091088dc626164d8d0282c3e907a74e7cbb8dcfaa3b3b5ce3",
+    "uri": "vless://efd11a89-7506-44ce-95b6-6654859f155b@170.114.45.6:2096?host=pcloud.z-tas.com&security=tls&sni=pcloud.z-tas.com&type=ws#Babak-vlss-03-50-41",
+    "protocol": "vless",
+    "name": "Babak-vlss-03-50-41",
+    "host": "170.114.45.6",
+    "port": 2096,
+    "firstSeenAt": "2026-11-14T15:08:52Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "2c1fa3189ca7e624aa51b6c59dabf4ed36512e74a5ee0eae73ba7c436ea31e49",
+    "uri": "trojan://8a03bc28-2a33-42c4-be59-30464dbb9954@ch12.yukiss.eu.org:18818?security=tls#Babak-tr-03-50-42",
+    "protocol": "trojan",
+    "name": "Babak-tr-03-50-42",
+    "host": "ch12.yukiss.eu.org",
+    "port": 18818,
+    "firstSeenAt": "2026-11-14T15:08:52Z",
+    "sources": [
+      {
+        "id": "v2ray-aggregator",
+        "name": "V2Ray Aggregator",
+        "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+      }
+    ]
+  },
+  {
+    "id": "1ccaf308f75be7f873af6ec7be94dff0b5fd3049ff58f552c04ef21ff0e635af",
+    "uri": "vless://52a5a29f-c162-411a-8a37-a3f11b0dc537@68.221.177.135:2083?sni=www.apple.com&flow=xtls-rprx-vision&fp=chrome&security=tls#Babak-vlss-03-50-43",
+    "protocol": "vless",
+    "name": "Babak-vlss-03-50-43",
+    "host": "68.221.177.135",
+    "port": 2083,
+    "firstSeenAt": "2026-11-14T15:08:52Z",
+    "sources": [
+      {
+        "id": "no-more-walls",
+        "name": "No More Walls",
+        "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+      }
+    ]
+  },
+  {
+    "id": "4d60653c3dac619a383b2beec0423ab74c9799d11218f37816b9e64db655abe1",
+    "uri": "vless://efd11a89-7506-44ce-95b6-6654859f155b@170.114.45.6:2096?security=tls&encryption=none&insecure=0&host=pcloud.z-tas.com&fp=chrome&type=ws&allowInsecure=0&sni=pcloud.z-tas.com#Babak-vlss-03-50-44",
+    "protocol": "vless",
+    "name": "Babak-vlss-03-50-44",
+    "host": "170.114.45.6",
+    "port": 2096,
+    "firstSeenAt": "2026-11-14T15:08:52Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "9aba516881f8c832715535214042faead7c498dbac1485be084b6433ba404e82",
+    "uri": "trojan://c19d1432-8b3e-4818-8837-3d160cf65908@138.2.45.243:443?security=tls#Babak-tr-03-50-45",
+    "protocol": "trojan",
+    "name": "Babak-tr-03-50-45",
+    "host": "138.2.45.243",
+    "port": 443,
+    "firstSeenAt": "2026-11-14T15:08:52Z",
+    "sources": [
+      {
+        "id": "v2ray-aggregator",
+        "name": "V2Ray Aggregator",
+        "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+      }
+    ]
+  },
+  {
+    "id": "1fee4ffef113f537b1cdbd9390f98d6cf9a2ababdc47b91f969ee5c79ada8152",
+    "uri": "vless://4201786b-d99b-4147-a5f0-20d47acddb81@79.182.70.212:443?sni=7aa271t.es1.h1clayd.click&flow=xtls-rprx-vision&fp=firefox&security=tls#Babak-vlss-03-50-46",
+    "protocol": "vless",
+    "name": "Babak-vlss-03-50-46",
+    "host": "79.182.70.212",
+    "port": 443,
+    "firstSeenAt": "2026-11-14T15:08:52Z",
+    "sources": [
+      {
+        "id": "no-more-walls",
+        "name": "No More Walls",
+        "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+      }
+    ]
+  },
+  {
+    "id": "f412e32b546bac9e58cf21293b23de72f8d1aae4321a64d414972eb83351920d",
+    "uri": "vless://efd11a89-7506-44ce-95b6-6654859f155b@170.114.46.6:2096?security=tls&encryption=none&insecure=0&host=pcloud.z-tas.com&fp=chrome&type=ws&allowInsecure=0&sni=pcloud.z-tas.com#Babak-vlss-03-50-47",
+    "protocol": "vless",
+    "name": "Babak-vlss-03-50-47",
+    "host": "170.114.46.6",
+    "port": 2096,
+    "firstSeenAt": "2026-11-14T15:08:52Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "dff14dc0a3d97819217cd92efc34b607a75be08f93e6ae3351e0f42f0a1f89ea",
+    "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpHIXlCd1BXSDNWYW8=@148.66.56.99:804#Babak-ss-03-50-48",
+    "protocol": "ss",
+    "name": "Babak-ss-03-50-48",
+    "host": "148.66.56.99",
+    "port": 804,
+    "firstSeenAt": "2026-11-14T15:08:52Z",
+    "sources": [
+      {
+        "id": "v2ray-aggregator",
+        "name": "V2Ray Aggregator",
+        "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+      }
+    ]
+  },
+  {
+    "id": "f78445a0daaa1f5f412c75a0b823e37b1bdab83d02a064ff5300a47d5d0b66f9",
+    "uri": "vless://dbf3f074-3b18-43f3-b82a-debd8c879c69@66.163.118.113:443?sni=www.apple.com&flow=xtls-rprx-vision&fp=chrome&security=tls#Babak-vlss-03-50-49",
+    "protocol": "vless",
+    "name": "Babak-vlss-03-50-49",
+    "host": "66.163.118.113",
+    "port": 443,
+    "firstSeenAt": "2026-11-14T15:08:52Z",
+    "sources": [
+      {
+        "id": "no-more-walls",
+        "name": "No More Walls",
+        "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+      }
+    ]
+  },
+  {
+    "id": "3cc648a86acee3700c62db6bf227770ff958021c69e05aae7948e5e180ca6abd",
+    "uri": "vless://c83f15bf-1817-4ec8-a19f-6393d226434c@104.21.58.37:2053?path=%2Fws-tesla&security=tls&encryption=none&insecure=0&host=fast.145779.xyz&fp=android&type=ws&allowInsecure=0&sni=fast.145779.xyz#Babak-vlss-03-50-50",
+    "protocol": "vless",
+    "name": "Babak-vlss-03-50-50",
+    "host": "104.21.58.37",
+    "port": 2053,
+    "firstSeenAt": "2026-11-14T15:08:52Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
   }
 ]
