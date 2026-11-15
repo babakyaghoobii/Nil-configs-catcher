@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
   "state": "success",
-  "startedAt": "2026-11-15T17:14:09Z",
-  "finishedAt": "2026-11-15T17:14:10Z",
-  "lastSuccessfulAt": "2026-11-15T17:14:09Z",
+  "startedAt": "2026-11-15T22:53:38Z",
+  "finishedAt": "2026-11-15T22:53:39Z",
+  "lastSuccessfulAt": "2026-11-15T22:53:38Z",
   "added": 50,
   "target": 50,
-  "totalUnique": 3900,
-  "duplicateCount": 40,
+  "totalUnique": 3950,
+  "duplicateCount": 131,
   "invalidCount": 0,
   "scheduleHours": 2,
   "snapshotLimit": 1000,
@@ -17,41 +17,41 @@
       "name": "V2Ray Aggregator",
       "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt",
       "status": "success",
-      "candidates": 4479,
-      "valid": 44,
+      "candidates": 4467,
+      "valid": 66,
       "invalid": 0,
-      "added": 23,
+      "added": 33,
       "error": null,
-      "scanned": 44
+      "scanned": 66
     },
     {
       "id": "no-more-walls",
       "name": "No More Walls",
       "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt",
       "status": "success",
-      "candidates": 428,
-      "valid": 42,
+      "candidates": 419,
+      "valid": 63,
       "invalid": 0,
-      "added": 9,
+      "added": 15,
       "error": null,
-      "scanned": 42
+      "scanned": 63
     },
     {
       "id": "igareck-black-vless",
       "name": "iGareck Black VLESS",
       "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt",
       "status": "success",
-      "candidates": 159,
-      "valid": 42,
+      "candidates": 206,
+      "valid": 63,
       "invalid": 0,
-      "added": 18,
+      "added": 2,
       "error": null,
-      "scanned": 42
+      "scanned": 63
     }
   ],
   "errors": [],
   "connectionTested": false,
-  "deferredCandidates": 4976,
+  "deferredCandidates": 4911,
   "origin": "api",
-  "runId": "c75d3bee-13a1-45bf-8a6a-ef5b6d830c57"
+  "runId": "f2f2c538-ae2b-4cb3-aa77-f52d40dd85cf"
 }
