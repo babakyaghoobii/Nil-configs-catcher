@@ -1,10 +1,81 @@
 {
   "schemaVersion": 1,
-  "measuredAt": "2026-11-15T01:58:15+00:00",
+  "measuredAt": "2026-11-15T09:32:30+00:00",
   "results": {
-    "1c53000e5bd7a0b7001ab1e4b31be072abb13c74be7e26646ba017f186556f20": {
+    "41d4634241dd3513b0f6241d0eebdc4a00b2b04097ffb393181121e3a81a7d2f": {
       "state": "reachable",
-      "latencyMs": 991
+      "latencyMs": 1930
+    },
+    "2903fcc3d2ad7273a12989f752946e008aa0fe1ae5ba7c9b30960e8bd4bce91c": {
+      "state": "failed"
+    },
+    "c7a1c4c5016ab3437a9c736de2243da091dea3bad77add237c2ee84dceab9b02": {
+      "state": "reachable",
+      "latencyMs": 6410
+    },
+    "9e97c74b3ccb33d9e2bb3b88f5caa6ffc2c46807f2457526f27aa2b6888d385d": {
+      "state": "failed"
+    },
+    "e517e2518e246427589ce6e77af587d7db61ca47c0b357cfc0feadedd5ead25e": {
+      "state": "failed"
+    },
+    "3249aba9013c8c7a66757d22c2750ff73a62638bc9fd3197664c8f416796fce5": {
+      "state": "failed"
+    },
+    "ebfe260a6f18b23e3449dec48848a784abf50802de9a0eaaa4cc4bb978d5ef1c": {
+      "state": "failed"
+    },
+    "18f684ee2a60844548b5a375a93ca41df6a4fe423c2447857eb2c9851c09f780": {
+      "state": "failed"
+    },
+    "d9ea126e79e13959a49e6b97ddc2108b93b8317488fc3c60d595debaeff455aa": {
+      "state": "reachable",
+      "latencyMs": 2467
+    },
+    "7e8649e91f9c84b346f2b22246ed2a867f21b07cf5cfb70d29a8814e6d29ba45": {
+      "state": "reachable",
+      "latencyMs": 786
+    },
+    "54b869d67ed074cd4b579829f3b9254077b28a0a33711e4a3989cc51e4c48b65": {
+      "state": "failed"
+    },
+    "1749177882971df48649852cb31b92fb1c3ef3729e054bef82755843354df13b": {
+      "state": "reachable",
+      "latencyMs": 6156
+    },
+    "1dc38e5be8d8a5ef60545e2857e72d60ce290727dc8dae6c56381c4730f99126": {
+      "state": "failed"
+    },
+    "19949bcfba71252998d16a6a5cae8ca99fa0f0de271d5ac7d4220122ad64e38e": {
+      "state": "reachable",
+      "latencyMs": 6171
+    },
+    "3271520197371fc856edf1064f91d050e27ab00ad83ee5bd4e75ece8dd1a9784": {
+      "state": "failed"
+    },
+    "ff7c2c52e1add03b4de337ac41ae1a12f1d46304837bcc17b31a0f1ff87deca7": {
+      "state": "reachable",
+      "latencyMs": 4835
+    },
+    "01cf97b31ca0e6155120ada4d3cbf759b7de60a587c8d0d269dc51d2aa2a7442": {
+      "state": "failed"
+    },
+    "2f3a64299f4eddf3a7af12565bf059ef3ae8d1db0fbea30fd3becd3675df919d": {
+      "state": "reachable",
+      "latencyMs": 3107
+    },
+    "3a6c7f09548bf28d10f53848c8ac58978bb8df53f476a742aa461d0f138b7e91": {
+      "state": "failed"
+    },
+    "eef57144a2d0c843d599911ffe99f2230661410f704f35b8f3b5d8f7013f1fda": {
+      "state": "reachable",
+      "latencyMs": 900
+    },
+    "a1c267b04fdce74991cef89244465dc7aeadc2a23f6200ef5cecbac37641e003": {
+      "state": "failed"
+    },
+    "1c53000e5bd7a0b7001ab1e4b31be072abb13c74be7e26646ba017f186556f20": {
+      "state": "failed"
     },
     "cb8547c755388328f211e52cf0fd1c7f3e1a894e60de50ddeb87b8559d11d1ae": {
       "state": "failed"
@@ -29,25 +100,25 @@
     },
     "0d44d5e3fcb9b47e461e0de1c54e11f8f86471851e44ad37a9db1e22fc37e94d": {
       "state": "reachable",
-      "latencyMs": 2315
+      "latencyMs": 1659
     },
     "7e70f507870c220ee6274523ac8bc1582578678d53804f42d1c32721088e20d3": {
       "state": "failed"
     },
     "866819facb6a88daa01a3fc8b88dc8176b150a975a9d1323f13b694f2fe1cf4e": {
       "state": "reachable",
-      "latencyMs": 2212
+      "latencyMs": 3445
     },
     "22d986dffdc22cc7fa1c37246814cac8e895569342ec67293479323c333069bb": {
       "state": "failed"
     },
     "a0b455e967011ed640885be908e1b1c736355f12da51a2d4565947f31bdc42d7": {
       "state": "reachable",
-      "latencyMs": 950
+      "latencyMs": 2144
     },
     "586b800eb05841e4dd3c33ad998ea107e8439e55e34fd6a8c7789bb2b3786fb2": {
       "state": "reachable",
-      "latencyMs": 4470
+      "latencyMs": 3080
     },
     "ab09518890bf324faeda0956eabe95ac5b5d541b4163dfdcd61564ebf16be6f5": {
       "state": "failed"
@@ -57,19 +128,19 @@
     },
     "0598731825cab245eeae605ec71834dbaba0c9ec339661b662f0317dd2ee2f3e": {
       "state": "reachable",
-      "latencyMs": 1810
+      "latencyMs": 2169
     },
     "08c6091e55f2d2ad351a8194a586397fdd9f29d7bb2dfc6fae1fcb643f0faa69": {
       "state": "reachable",
-      "latencyMs": 3189
+      "latencyMs": 1562
     },
     "f78df109a88284dae2b888766a952185cfba82df69fb7cdb85fb16abb63ff514": {
       "state": "reachable",
-      "latencyMs": 4144
+      "latencyMs": 2908
     },
     "c23ac07ae7632d965d0f314f4ad9ce79944724879d74349e84c1770452091b7b": {
       "state": "reachable",
-      "latencyMs": 1770
+      "latencyMs": 2578
     },
     "ec6089cec0b312bf54e1e7d600251e33d5cbd79a2831d8398c22afb38e5dfb47": {
       "state": "failed"
@@ -85,25 +156,25 @@
     },
     "c8b5c4732cb3cf6740492ce2aece4696c1d09171872e960d54cc573095218c5a": {
       "state": "reachable",
-      "latencyMs": 602
+      "latencyMs": 5439
     },
     "3681dff927b9e2e430e8f3134662bc71821127601e7121772e5a15f1fa42db53": {
       "state": "reachable",
-      "latencyMs": 613
+      "latencyMs": 5406
     },
     "2e8a78a37a82ec04fb9a0834db8a29f11eb0c54f9f16ee08ec83ad998c05559f": {
       "state": "failed"
     },
     "88a775464947160038b2246f569220eda6580cfa189953e69c114fca9b38a648": {
       "state": "reachable",
-      "latencyMs": 609
+      "latencyMs": 4074
     },
     "5379d5cadcc62c1d901c9f4ca432037f44b39a78dc147f1578feb20a9588b4ab": {
       "state": "failed"
     },
     "d0c2b7636a4354a6ac66722593f903a58089206b2479ec42e328f6e9bc005ed1": {
       "state": "reachable",
-      "latencyMs": 610
+      "latencyMs": 2880
     },
     "50b1311a72f66cf5efda7ea8d996c620dfa2ece1f7f4c36e568a127e9b06b96a": {
       "state": "failed"
@@ -122,91 +193,17 @@
     },
     "c99a6c85af75a52091088dc626164d8d0282c3e907a74e7cbb8dcfaa3b3b5ce3": {
       "state": "reachable",
-      "latencyMs": 1129
+      "latencyMs": 1518
     },
     "310ac46dee20efffc185b76ae235169cf118e5398e6f5507ad3b217022edd9ba": {
       "state": "reachable",
-      "latencyMs": 3997
+      "latencyMs": 1230
     },
     "f6d13a43a254f44a98990f56e47fe256888edf4c1bdd39e10c467ea049ea199d": {
       "state": "reachable",
-      "latencyMs": 4077
+      "latencyMs": 5278
     },
     "a9fe32a5fa67eb8b4c28ead37c18183698e5d133572ed8262fec80df40c551a7": {
-      "state": "failed"
-    },
-    "70e82cd8d2fd1d9616f61022f7163998f919904915eaa1c31d65e2ef8a9ac7d6": {
-      "state": "failed"
-    },
-    "c1c89a8a486a66792822faacffd55ed67fb08ec2358743319bd2a2153e2d669b": {
-      "state": "failed"
-    },
-    "1291f14032e6f1baec2db99587289aeb7de85fc192954dea3740afb079f19ba4": {
-      "state": "failed"
-    },
-    "54e2a5c12a011f523ab4796d1c276d61956220cd88a0bfd5add22e5dd6aceda2": {
-      "state": "failed"
-    },
-    "f2aff363c0c7cb128e927baf58c92b9e69e457557d10cbac76fd5e6cab70e954": {
-      "state": "reachable",
-      "latencyMs": 397
-    },
-    "59e00ae79c4d943e3aaa7d269420513e52b45ae944c0c6bbe9402f07bdf0f637": {
-      "state": "failed"
-    },
-    "bd8ef033c2f86d3988bb0a9155ce358d76f3c40cc94eaa8a12b8c4bc1c83f459": {
-      "state": "failed"
-    },
-    "c09a377a23161015c935f003d1d354acb6a2e6aea54c1adfdfb3055bf7bd6381": {
-      "state": "failed"
-    },
-    "533ea3f46efb2a46ff35da3fa4677a4c39b99fdf8cc8135e2936a903e18694f4": {
-      "state": "failed"
-    },
-    "e2427ca92845fc0910b1f0e01a4127b2e845202ae8663f2b84aec7dcd9f8067a": {
-      "state": "reachable",
-      "latencyMs": 996
-    },
-    "9a03e57560c0415bea95e148bbe22c5f847c5306428e694a69195689be34b6dd": {
-      "state": "reachable",
-      "latencyMs": 1056
-    },
-    "e1e3aead97f032269d06cf8075a332ed3c59e858500b8183058b548bc6536960": {
-      "state": "reachable",
-      "latencyMs": 1033
-    },
-    "a251ada6c921545bd9384b8d0167fc3154952294615436941a3e49ad1923954f": {
-      "state": "reachable",
-      "latencyMs": 807
-    },
-    "80bd25a9b5bfe01f5956de25597c725757f309e4e385ef1190813ef246829ed4": {
-      "state": "reachable",
-      "latencyMs": 839
-    },
-    "a9341bf65c4a45e8107609ecb1c3c0ab8f3ff737eb880922b824435a576a4e12": {
-      "state": "reachable",
-      "latencyMs": 1478
-    },
-    "fcf800c564fc87ad0e37ed376f0ec5f8567123c594e9935a2ccfd58c46ff3cf5": {
-      "state": "reachable",
-      "latencyMs": 1547
-    },
-    "6ecdb445981a5d00c7b703bd401a8c51f3863a4e204a1468551455f8ccb77445": {
-      "state": "failed"
-    },
-    "f886d7a3f6cf031e3f88617b6e5ac36abfe8fb1d516973a4314363c6cfb102ac": {
-      "state": "reachable",
-      "latencyMs": 1977
-    },
-    "83f5d94b75f17230cc71a81b2aee544803efe29de56eb6394d97edfde0da1d04": {
-      "state": "reachable",
-      "latencyMs": 3186
-    },
-    "d9621da94d444cb1132035a68f148a7385881b753da4598b60ac0d140822e66f": {
-      "state": "reachable",
-      "latencyMs": 2313
-    },
-    "8249b58daa02068510fca5b7f3aea376f394feb86ed0bb2964db9e3041df3568": {
       "state": "failed"
     }
   }
