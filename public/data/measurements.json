@@ -1,10 +1,30 @@
 {
   "schemaVersion": 1,
-  "measuredAt": "2026-11-17T02:58:08+00:00",
+  "measuredAt": "2026-11-17T13:32:27+00:00",
   "results": {
+    "2078c458ce442b4eb50edef538a23244964db034c8d98f08591acdc2b0ce0e7c": {
+      "state": "reachable",
+      "latencyMs": 6872
+    },
+    "dbd2645464cf0e3e54a4da4a56d03cc8fdb76c6b55541303f2e5ac1bb940d7ac": {
+      "state": "failed"
+    },
+    "91936f4a20cd86027c632fc6f4ab81d04eb51f6c4ef64fe03295084e0bd04e4a": {
+      "state": "failed"
+    },
+    "08e7d27e2909bde4b9fb3eb7a3dee09a33872c7568ad26c4a8142e9acd7561b0": {
+      "state": "failed"
+    },
+    "9b9b8fd6fa7610c3e30264e4a88c5feef98a450ab3e871cf72de2a6e51e6a05d": {
+      "state": "failed"
+    },
+    "de66396422493118e8f327df7ec88d92bd1d8b4a860f648716fcc5a0f2056a5a": {
+      "state": "reachable",
+      "latencyMs": 6656
+    },
     "11aabd988645f6c876fddfd3a4af29bde70c2498b4e3c07349f959e08b6d5610": {
       "state": "reachable",
-      "latencyMs": 3007
+      "latencyMs": 5358
     },
     "7196db1753161c884aba1dbae79a486b1e1aadb3a8c6c428229868321c832586": {
       "state": "failed"
@@ -28,12 +48,10 @@
       "state": "failed"
     },
     "06bd61a31469e8dee54b1d5d2e95d7cadbddc788a24c0450f350435b0426f40c": {
-      "state": "reachable",
-      "latencyMs": 4341
+      "state": "failed"
     },
     "8645c8e367768c49e292c4e93e1f12afa3ca86727f7ca10bf4e4a7aacbf3f2c0": {
-      "state": "reachable",
-      "latencyMs": 2638
+      "state": "failed"
     },
     "27a90bfa21814301aca8fb1def5e32194753ffbeffd4723b393b669720752819": {
       "state": "failed"
@@ -43,23 +61,23 @@
     },
     "3830b612b78f81a899eb9d2b790220611983fb6f8ccd97f48de194c4c37dedf2": {
       "state": "reachable",
-      "latencyMs": 401
+      "latencyMs": 1518
     },
     "5abc5d877e275cc3b4fe40c17cadebbb5c90377e70c8f006cd12b44b38f750a0": {
       "state": "reachable",
-      "latencyMs": 970
+      "latencyMs": 2293
     },
     "5c6d9997173eb9559b293313bbddf68dedb082ef50428827a8954f89fac9268f": {
       "state": "reachable",
-      "latencyMs": 955
+      "latencyMs": 2647
     },
     "295c425365560c192fca062253310387bc8421f22014968ac5cf4be93a4ca661": {
       "state": "reachable",
-      "latencyMs": 764
+      "latencyMs": 2362
     },
     "9f70a988a70ca69ba35b47aaf47132461b9610c1009fa65ccfa643afe750f84f": {
       "state": "reachable",
-      "latencyMs": 753
+      "latencyMs": 2521
     },
     "c8a497d26e8a564b2cc3ea58d387ce3a3d0ccbeecb63e1d4ec48f1baa0b8d20e": {
       "state": "failed"
@@ -93,22 +111,23 @@
     },
     "29a0cf2484b78c12bd2e488a75aed4d443896e3eaf873640c7daa91c77daca3c": {
       "state": "reachable",
-      "latencyMs": 584
+      "latencyMs": 5946
     },
     "9da5bfdfcf3d5c1817c7b373c1130b1ec0dafe92fb63ba2c2f7947142137e6b1": {
       "state": "reachable",
-      "latencyMs": 1262
+      "latencyMs": 5506
     },
     "300f62e14dbb3ea037e7e3bd5bf93a1c5f65a5f99acfa83301307a88f86ab4a3": {
       "state": "reachable",
-      "latencyMs": 958
+      "latencyMs": 7919
     },
     "c2521a5afe726a63b3e933761e699e62c4a28a76c2f7636fd0b87cd478d8664f": {
       "state": "reachable",
-      "latencyMs": 888
+      "latencyMs": 6747
     },
     "f2d933688f5d1a4a3e82988bf8fa2566137fe8f4b01434f21746dc15455add22": {
-      "state": "failed"
+      "state": "reachable",
+      "latencyMs": 5761
     },
     "9bd37d61730a9d5d7c2d33c195873064345e4b4227b6c583a716302dbd5315cb": {
       "state": "failed"
@@ -118,18 +137,18 @@
     },
     "fc2d15e79bdba26b0217e13b4c7082c3ce8f904b7e379c4c09ff82d87d17f66e": {
       "state": "reachable",
-      "latencyMs": 893
+      "latencyMs": 5459
     },
     "0879d02f6af8098ff94c971efb8f99b42de45412d86094b98a497bfbffc2da6b": {
       "state": "failed"
     },
     "4042a8d89978f4697de0d26ef8b24b178c4cca92c284fb7c2907a7eb81c2e97c": {
       "state": "reachable",
-      "latencyMs": 1067
+      "latencyMs": 7234
     },
     "2275bf4446e93a5d1f62bf9a3fc74b86ac90c11571d606cd8844b2a179af357f": {
       "state": "reachable",
-      "latencyMs": 751
+      "latencyMs": 6882
     },
     "0431826a0350a2afb395e3d5a12ad59eaf40d67c3baec04940256b9cbe296aee": {
       "state": "failed"
@@ -138,15 +157,14 @@
       "state": "failed"
     },
     "41d4634241dd3513b0f6241d0eebdc4a00b2b04097ffb393181121e3a81a7d2f": {
-      "state": "reachable",
-      "latencyMs": 2025
+      "state": "failed"
     },
     "2903fcc3d2ad7273a12989f752946e008aa0fe1ae5ba7c9b30960e8bd4bce91c": {
       "state": "failed"
     },
     "c7a1c4c5016ab3437a9c736de2243da091dea3bad77add237c2ee84dceab9b02": {
       "state": "reachable",
-      "latencyMs": 2216
+      "latencyMs": 5324
     },
     "9e97c74b3ccb33d9e2bb3b88f5caa6ffc2c46807f2457526f27aa2b6888d385d": {
       "state": "failed"
@@ -155,19 +173,16 @@
       "state": "failed"
     },
     "3249aba9013c8c7a66757d22c2750ff73a62638bc9fd3197664c8f416796fce5": {
-      "state": "reachable",
-      "latencyMs": 6633
+      "state": "failed"
     },
     "ebfe260a6f18b23e3449dec48848a784abf50802de9a0eaaa4cc4bb978d5ef1c": {
       "state": "failed"
     },
     "18f684ee2a60844548b5a375a93ca41df6a4fe423c2447857eb2c9851c09f780": {
-      "state": "reachable",
-      "latencyMs": 1757
+      "state": "failed"
     },
     "d9ea126e79e13959a49e6b97ddc2108b93b8317488fc3c60d595debaeff455aa": {
-      "state": "reachable",
-      "latencyMs": 1640
+      "state": "failed"
     },
     "7e8649e91f9c84b346f2b22246ed2a867f21b07cf5cfb70d29a8814e6d29ba45": {
       "state": "failed"
@@ -182,24 +197,6 @@
       "state": "failed"
     },
     "19949bcfba71252998d16a6a5cae8ca99fa0f0de271d5ac7d4220122ad64e38e": {
-      "state": "failed"
-    },
-    "3271520197371fc856edf1064f91d050e27ab00ad83ee5bd4e75ece8dd1a9784": {
-      "state": "failed"
-    },
-    "ff7c2c52e1add03b4de337ac41ae1a12f1d46304837bcc17b31a0f1ff87deca7": {
-      "state": "failed"
-    },
-    "01cf97b31ca0e6155120ada4d3cbf759b7de60a587c8d0d269dc51d2aa2a7442": {
-      "state": "failed"
-    },
-    "2f3a64299f4eddf3a7af12565bf059ef3ae8d1db0fbea30fd3becd3675df919d": {
-      "state": "failed"
-    },
-    "3a6c7f09548bf28d10f53848c8ac58978bb8df53f476a742aa461d0f138b7e91": {
-      "state": "failed"
-    },
-    "eef57144a2d0c843d599911ffe99f2230661410f704f35b8f3b5d8f7013f1fda": {
       "state": "failed"
     }
   }
