@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
   "state": "success",
-  "startedAt": "2026-11-20T21:51:26Z",
-  "finishedAt": "2026-11-20T21:51:27Z",
-  "lastSuccessfulAt": "2026-11-20T21:51:26Z",
+  "startedAt": "2026-11-21T03:15:35Z",
+  "finishedAt": "2026-11-21T03:15:35Z",
+  "lastSuccessfulAt": "2026-11-21T03:15:35Z",
   "added": 50,
   "target": 50,
-  "totalUnique": 4600,
-  "duplicateCount": 32,
+  "totalUnique": 4650,
+  "duplicateCount": 43,
   "invalidCount": 0,
   "scheduleHours": 2,
   "snapshotLimit": 1000,
@@ -20,7 +20,7 @@
       "candidates": 4429,
       "valid": 44,
       "invalid": 0,
-      "added": 23,
+      "added": 30,
       "error": null,
       "scanned": 44
     },
@@ -29,10 +29,10 @@
       "name": "No More Walls",
       "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt",
       "status": "success",
-      "candidates": 319,
+      "candidates": 337,
       "valid": 42,
       "invalid": 0,
-      "added": 7,
+      "added": 14,
       "error": null,
       "scanned": 42
     },
@@ -41,17 +41,17 @@
       "name": "iGareck Black VLESS",
       "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt",
       "status": "success",
-      "candidates": 193,
+      "candidates": 1363,
       "valid": 42,
       "invalid": 0,
-      "added": 20,
+      "added": 6,
       "error": null,
       "scanned": 42
     }
   ],
   "errors": [],
   "connectionTested": false,
-  "deferredCandidates": 4859,
+  "deferredCandidates": 6036,
   "origin": "api",
-  "runId": "ebe634e0-6c23-4af0-806f-395473e9b224"
+  "runId": "37a0b695-8ea6-4e82-bdf7-a9810d0de5e2"
 }
