@@ -64103,5 +64103,805 @@
         "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
       }
     ]
+  },
+  {
+    "id": "aa072fbdc83e721abeb39b1244614fec9b48bc0825282bb1a6513f9a62431fe7",
+    "uri": "vless://16f63796-3e98-5a7b-b016-540ce6e79007@8.6.112.0:443?encryption=none&host=se1.v2less.site&path=%2Fvless&security=tls&sni=se1.v2less.site&type=ws&fp=ios#Babak-vlss-05-91-51",
+    "protocol": "vless",
+    "name": "Babak-vlss-05-91-51",
+    "host": "8.6.112.0",
+    "port": 443,
+    "firstSeenAt": "2026-11-22T12:38:40Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "4c5ae738bc39e024b35853d449cec6c58da0d0742b8348055db1eb5bb39803d8",
+    "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpHIXlCd1BXSDNWYW8=@196.247.59.156:803#Babak-ss-05-91-52",
+    "protocol": "ss",
+    "name": "Babak-ss-05-91-52",
+    "host": "196.247.59.156",
+    "port": 803,
+    "firstSeenAt": "2026-11-22T12:38:40Z",
+    "sources": [
+      {
+        "id": "v2ray-aggregator",
+        "name": "V2Ray Aggregator",
+        "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+      }
+    ]
+  },
+  {
+    "id": "0d54a187b5953a26b862d7175552791394c5b1c130a21e5c415718f487f65592",
+    "uri": "vless://16f63796-3e98-5a7b-b016-540ce6e79007@8.6.112.0:443?encryption=none&host=se1.v2less.site&path=%2Fvless&security=tls&sni=se1.v2less.site&type=ws&fp=safari#Babak-vlss-05-91-53",
+    "protocol": "vless",
+    "name": "Babak-vlss-05-91-53",
+    "host": "8.6.112.0",
+    "port": 443,
+    "firstSeenAt": "2026-11-22T12:38:40Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "526f55e6cd8f7804f45d0a5c7789ade2a71c9e70149c30cd1391de379a17df6d",
+    "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpHIXlCd1BXSDNWYW8=@196.247.59.154:802#Babak-ss-05-91-54",
+    "protocol": "ss",
+    "name": "Babak-ss-05-91-54",
+    "host": "196.247.59.154",
+    "port": 802,
+    "firstSeenAt": "2026-11-22T12:38:40Z",
+    "sources": [
+      {
+        "id": "v2ray-aggregator",
+        "name": "V2Ray Aggregator",
+        "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+      }
+    ]
+  },
+  {
+    "id": "8b013faf40f586b9aae2022ce4725446b75b3eb10e856dc15b822881aeef10c2",
+    "uri": "vless://16f63796-3e98-5a7b-b016-540ce6e79007@8.6.112.0:443?fp=firefox&host=se1.v2less.site&path=%2Fvless&security=tls&sni=se1.v2less.site&type=ws#Babak-vlss-05-91-55",
+    "protocol": "vless",
+    "name": "Babak-vlss-05-91-55",
+    "host": "8.6.112.0",
+    "port": 443,
+    "firstSeenAt": "2026-11-22T12:38:40Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "fdaa0fc0073abd817158a66eca58525ffa8426d80404270d2de700efde239da6",
+    "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpHIXlCd1BXSDNWYW8=@196.247.59.156:801#Babak-ss-05-91-56",
+    "protocol": "ss",
+    "name": "Babak-ss-05-91-56",
+    "host": "196.247.59.156",
+    "port": 801,
+    "firstSeenAt": "2026-11-22T12:38:40Z",
+    "sources": [
+      {
+        "id": "v2ray-aggregator",
+        "name": "V2Ray Aggregator",
+        "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+      }
+    ]
+  },
+  {
+    "id": "2343088ef04d5b99037ea05f96e7460ceae48e3e5ddda86b80afa8df667afe5b",
+    "uri": "vless://58e22afd-bf74-4736-984d-63a8ca03d7f0@77.232.143.142:443?&security=tls&fp=firefox&sni=volumestyle.komediyatorg.net&type=ws&headerType=none&path=%2Fmedia%2Fws%2F#Babak-vlss-05-91-57",
+    "protocol": "vless",
+    "name": "Babak-vlss-05-91-57",
+    "host": "77.232.143.142",
+    "port": 443,
+    "firstSeenAt": "2026-11-22T12:38:40Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "c2f012f91e6bbcb5b33f59dc833335c8a08a04c44a96f33fe5ca09544fbfea93",
+    "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpHIXlCd1BXSDNWYW8=@196.247.59.156:808#Babak-ss-05-91-58",
+    "protocol": "ss",
+    "name": "Babak-ss-05-91-58",
+    "host": "196.247.59.156",
+    "port": 808,
+    "firstSeenAt": "2026-11-22T12:38:40Z",
+    "sources": [
+      {
+        "id": "v2ray-aggregator",
+        "name": "V2Ray Aggregator",
+        "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+      }
+    ]
+  },
+  {
+    "id": "36006c677f605602c170ff78a1829c956bb5f3d9bf528b0c83d86b9e8d59748b",
+    "uri": "vless://58e22afd-bf74-4736-984d-63a8ca03d7f0@77.232.143.142:443?encryption=none&fp=firefox&host=volumestyle.komediyatorg.net&path=/media/ws/&security=tls&sni=volumestyle.komediyatorg.net&type=ws#Babak-vlss-05-91-59",
+    "protocol": "vless",
+    "name": "Babak-vlss-05-91-59",
+    "host": "77.232.143.142",
+    "port": 443,
+    "firstSeenAt": "2026-11-22T12:38:40Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "509273754edccaebc8ca259946554a7380a91ec9c51784eff9d8d102f51e4487",
+    "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpHIXlCd1BXSDNWYW8=@196.247.59.156:809#Babak-ss-05-91-60",
+    "protocol": "ss",
+    "name": "Babak-ss-05-91-60",
+    "host": "196.247.59.156",
+    "port": 809,
+    "firstSeenAt": "2026-11-22T12:38:40Z",
+    "sources": [
+      {
+        "id": "v2ray-aggregator",
+        "name": "V2Ray Aggregator",
+        "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+      }
+    ]
+  },
+  {
+    "id": "47dee266812972142c33977503fcc90564f0ed896b8fcb6a43ff5820faaaa853",
+    "uri": "vless://58e22afd-bf74-4736-984d-63a8ca03d7f0@77.232.143.142:443?path=%2Fmedia%2Fws%2F&security=tls&sni=volumestyle.komediyatorg.net&type=ws#Babak-vlss-05-91-61",
+    "protocol": "vless",
+    "name": "Babak-vlss-05-91-61",
+    "host": "77.232.143.142",
+    "port": 443,
+    "firstSeenAt": "2026-11-22T12:38:40Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "b800c6cecce486e5c39954a7d483c4cd91b9c9405c1f9ee02db05b2efb840c0e",
+    "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpHIXlCd1BXSDNWYW8=@196.247.59.156:804#Babak-ss-05-91-62",
+    "protocol": "ss",
+    "name": "Babak-ss-05-91-62",
+    "host": "196.247.59.156",
+    "port": 804,
+    "firstSeenAt": "2026-11-22T12:38:40Z",
+    "sources": [
+      {
+        "id": "v2ray-aggregator",
+        "name": "V2Ray Aggregator",
+        "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+      }
+    ]
+  },
+  {
+    "id": "07b7f1abbdd5bf3f68f186c536fc94f571685c45ac14743d74087cffa23f11bc",
+    "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpHIXlCd1BXSDNWYW8=@51.161.118.38:806#Babak-ss-05-91-63",
+    "protocol": "ss",
+    "name": "Babak-ss-05-91-63",
+    "host": "51.161.118.38",
+    "port": 806,
+    "firstSeenAt": "2026-11-22T12:38:40Z",
+    "sources": [
+      {
+        "id": "v2ray-aggregator",
+        "name": "V2Ray Aggregator",
+        "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+      }
+    ]
+  },
+  {
+    "id": "684eaf17cc6f455067512167455d369c6b1a1bce5eb358b1b51a095d066b21b0",
+    "uri": "ss://YWVzLTI1Ni1nY206ZmFCQW9ENTRrODdVSkc3@38.107.226.49:2376#Babak-ss-05-91-64",
+    "protocol": "ss",
+    "name": "Babak-ss-05-91-64",
+    "host": "38.107.226.49",
+    "port": 2376,
+    "firstSeenAt": "2026-11-22T12:38:40Z",
+    "sources": [
+      {
+        "id": "v2ray-aggregator",
+        "name": "V2Ray Aggregator",
+        "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+      }
+    ]
+  },
+  {
+    "id": "3fb3c792f5a95cabde51bfdfabe53b2ad44ff1c1263b836a5124684621d431b3",
+    "uri": "vless://33330382-a046-428d-9e95-9aae8bd6b90e@47.81.32.116:443/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=www.amazon.com&fp=chrome&security=reality&pbk=P3MHfKzFZhV5TRjdEj2r43fUr24iijLqB_k7rbSR2Bg&sid=4446248c38c846e6&packetEncoding=xudp#Babak-vlss-05-91-65",
+    "protocol": "vless",
+    "name": "Babak-vlss-05-91-65",
+    "host": "47.81.32.116",
+    "port": 443,
+    "firstSeenAt": "2026-11-22T12:38:40Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "10d6171bdc9245475ead4f745c8b1d83fed7352f957881cce1301bbdc1cdf997",
+    "uri": "ss://YWVzLTI1Ni1nY206ZTRGQ1dyZ3BramkzUVk=@38.86.135.27:9102#Babak-ss-05-91-66",
+    "protocol": "ss",
+    "name": "Babak-ss-05-91-66",
+    "host": "38.86.135.27",
+    "port": 9102,
+    "firstSeenAt": "2026-11-22T12:38:40Z",
+    "sources": [
+      {
+        "id": "v2ray-aggregator",
+        "name": "V2Ray Aggregator",
+        "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+      }
+    ]
+  },
+  {
+    "id": "43eb84b173dd2eaa1d8faa32207f792e735bddddb8c68a3965d2e6bf8a139bc1",
+    "uri": "vless://33330382-a046-428d-9e95-9aae8bd6b90e@47.81.32.116:443?encryption=none&flow=xtls-rprx-vision&fp=firefox&pbk=P3MHfKzFZhV5TRjdEj2r43fUr24iijLqB_k7rbSR2Bg&security=reality&sid=4446248c38c846e6&sni=www.amazon.com&type=tcp#Babak-vlss-05-91-67",
+    "protocol": "vless",
+    "name": "Babak-vlss-05-91-67",
+    "host": "47.81.32.116",
+    "port": 443,
+    "firstSeenAt": "2026-11-22T12:38:40Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "4e8bd97f0a6945b0bbaf6c7c1c6c2d3652b7845223ece63cc2b0f4ee90be532f",
+    "uri": "ss://YWVzLTI1Ni1nY206WTZSOXBBdHZ4eHptR0M=@38.68.135.19:5601#Babak-ss-05-91-68",
+    "protocol": "ss",
+    "name": "Babak-ss-05-91-68",
+    "host": "38.68.135.19",
+    "port": 5601,
+    "firstSeenAt": "2026-11-22T12:38:40Z",
+    "sources": [
+      {
+        "id": "v2ray-aggregator",
+        "name": "V2Ray Aggregator",
+        "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+      }
+    ]
+  },
+  {
+    "id": "6105f020ecb8dc6a186978b02a04afd9663750d018fb1cc17bca55e9f5e91e73",
+    "uri": "vless://04920673-035c-410d-94e4-5b1469d3fb6f@91.132.190.161:443?flow=xtls-rprx-vision&security=tls&sni=171.22.183.166#Babak-vlss-05-91-69",
+    "protocol": "vless",
+    "name": "Babak-vlss-05-91-69",
+    "host": "91.132.190.161",
+    "port": 443,
+    "firstSeenAt": "2026-11-22T12:38:40Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "7a0a209b718e9a5c56e25f1653f18f9232dfd6857815518b0c152d2efd0f5089",
+    "uri": "ss://YWVzLTI1Ni1nY206ZmFCQW9ENTRrODdVSkc3@142.202.48.52:2376#Babak-ss-05-91-70",
+    "protocol": "ss",
+    "name": "Babak-ss-05-91-70",
+    "host": "142.202.48.52",
+    "port": 2376,
+    "firstSeenAt": "2026-11-22T12:38:40Z",
+    "sources": [
+      {
+        "id": "v2ray-aggregator",
+        "name": "V2Ray Aggregator",
+        "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+      }
+    ]
+  },
+  {
+    "id": "6fbe57b86950afc27d3018de513e76180bf3b7e2f6bc078d6101be6bfbff3963",
+    "uri": "vless://364D2D52-E61E-4E52-80EC-2BC6BDF15349@172.67.139.189:443?security=tls&sni=fr-free.fastestrelay.com&type=ws&host=fr-free.fastestrelay.com&path=%2F700gvl&fp=chrome&allowInsecure=0#Babak-vlss-05-91-71",
+    "protocol": "vless",
+    "name": "Babak-vlss-05-91-71",
+    "host": "172.67.139.189",
+    "port": 443,
+    "firstSeenAt": "2026-11-22T12:38:40Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "306f47caa2f6750263fd7046a1950d6207b9ca7c8a23fbbb809163619dcfd49e",
+    "uri": "ss://YWVzLTI1Ni1nY206VEV6amZBWXEySWp0dW9T@38.121.43.71:6679#Babak-ss-05-91-72",
+    "protocol": "ss",
+    "name": "Babak-ss-05-91-72",
+    "host": "38.121.43.71",
+    "port": 6679,
+    "firstSeenAt": "2026-11-22T12:38:40Z",
+    "sources": [
+      {
+        "id": "v2ray-aggregator",
+        "name": "V2Ray Aggregator",
+        "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+      }
+    ]
+  },
+  {
+    "id": "084747e57af6148a204c20f24a0f04ad703c61a4b247648877922e514b64be7f",
+    "uri": "vless://364D2D52-E61E-4E52-80EC-2BC6BDF15349@188.114.98.0:443?&security=tls&fp=chrome&sni=fr-free.fastestrelay.com&type=ws&headerType=none&host=fr-free.fastestrelay.com&path=%2F700gvl#Babak-vlss-05-91-73",
+    "protocol": "vless",
+    "name": "Babak-vlss-05-91-73",
+    "host": "188.114.98.0",
+    "port": 443,
+    "firstSeenAt": "2026-11-22T12:38:40Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "92d612766b6e2f2c1f25d6d5aa99d8a7e65948ef612f3e7aab19dc10aa85047e",
+    "uri": "ss://YWVzLTI1Ni1nY206ZTRGQ1dyZ3BramkzUVk=@38.68.135.19:9102#Babak-ss-05-91-74",
+    "protocol": "ss",
+    "name": "Babak-ss-05-91-74",
+    "host": "38.68.135.19",
+    "port": 9102,
+    "firstSeenAt": "2026-11-22T12:38:40Z",
+    "sources": [
+      {
+        "id": "v2ray-aggregator",
+        "name": "V2Ray Aggregator",
+        "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+      }
+    ]
+  },
+  {
+    "id": "1c85e961d6e9068fc6cb34e487055cd4de562dfc0ba1827ee6109d845d363979",
+    "uri": "vless://bb836d81-d0c5-4f01-a584-806cdf65e36a@116.213.43.43:11103?allowInsecure=1&sni=www.apple.com&flow=xtls-rprx-vision&fp=chrome&security=tls#Babak-vlss-05-91-75",
+    "protocol": "vless",
+    "name": "Babak-vlss-05-91-75",
+    "host": "116.213.43.43",
+    "port": 11103,
+    "firstSeenAt": "2026-11-22T12:38:40Z",
+    "sources": [
+      {
+        "id": "no-more-walls",
+        "name": "No More Walls",
+        "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+      }
+    ]
+  },
+  {
+    "id": "f0b08ffcb42664096eb005d650185226162a34c70b7a33988e76c51d2de630a8",
+    "uri": "vless://364D2D52-E61E-4E52-80EC-2BC6BDF15349@188.114.98.0:443?alpn=http%2F1.1&host=fr-free.fastestrelay.com&path=%2F700gvl&security=tls&sni=fr-free.fastestrelay.com&type=ws&fp=edge#Babak-vlss-05-91-76",
+    "protocol": "vless",
+    "name": "Babak-vlss-05-91-76",
+    "host": "188.114.98.0",
+    "port": 443,
+    "firstSeenAt": "2026-11-22T12:38:40Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "845a17d3ec4d5abe174cf6e32e1e2370497bf7d1d761c2f1bd9d09bb74e0e11c",
+    "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpHIXlCd1BXSDNWYW8=@5.188.0.151:800#Babak-ss-05-91-77",
+    "protocol": "ss",
+    "name": "Babak-ss-05-91-77",
+    "host": "5.188.0.151",
+    "port": 800,
+    "firstSeenAt": "2026-11-22T12:38:40Z",
+    "sources": [
+      {
+        "id": "v2ray-aggregator",
+        "name": "V2Ray Aggregator",
+        "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+      }
+    ]
+  },
+  {
+    "id": "6456d07ca82b3b9c162a8d745efe6020c88da36cffd5bdef0c0189ce3ececf73",
+    "uri": "vless://08a37d1f-7bf1-4b5d-a2ec-5ced6a633d7f@116.213.43.43:11107?allowInsecure=1&sni=www.apple.com&flow=xtls-rprx-vision&fp=chrome&security=tls#Babak-vlss-05-91-78",
+    "protocol": "vless",
+    "name": "Babak-vlss-05-91-78",
+    "host": "116.213.43.43",
+    "port": 11107,
+    "firstSeenAt": "2026-11-22T12:38:40Z",
+    "sources": [
+      {
+        "id": "no-more-walls",
+        "name": "No More Walls",
+        "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+      }
+    ]
+  },
+  {
+    "id": "6300f8aef5a70e01ea144eaa5bebc1a8545f2a1d8fbbfbb7a0f831982ca055f5",
+    "uri": "vless://364D2D52-E61E-4E52-80EC-2BC6BDF15349@188.114.98.0:443?alpn=http%2F1.1&host=fr-free.fastestrelay.com&path=%2F700gvl&security=tls&sni=fr-free.fastestrelay.com&type=ws&fp=ios#Babak-vlss-05-91-79",
+    "protocol": "vless",
+    "name": "Babak-vlss-05-91-79",
+    "host": "188.114.98.0",
+    "port": 443,
+    "firstSeenAt": "2026-11-22T12:38:40Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "bc02670dac2cedb2521cf678458151694879a5300b5212623dfbfebfe069cd7c",
+    "uri": "ss://YWVzLTI1Ni1nY206a0RXdlhZWm9UQmNHa0M0@38.121.43.97:8881#Babak-ss-05-91-80",
+    "protocol": "ss",
+    "name": "Babak-ss-05-91-80",
+    "host": "38.121.43.97",
+    "port": 8881,
+    "firstSeenAt": "2026-11-22T12:38:40Z",
+    "sources": [
+      {
+        "id": "v2ray-aggregator",
+        "name": "V2Ray Aggregator",
+        "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+      }
+    ]
+  },
+  {
+    "id": "413a9e29440d0b6ea1c60b2d7c0fc1a51919e5c78e05b72ac3659e593bdd8312",
+    "uri": "vless://530d31fc-2690-49e4-bfc9-3f991e145008@116.213.43.43:11102?allowInsecure=1&sni=www.apple.com&flow=xtls-rprx-vision&fp=chrome&security=tls#Babak-vlss-05-91-81",
+    "protocol": "vless",
+    "name": "Babak-vlss-05-91-81",
+    "host": "116.213.43.43",
+    "port": 11102,
+    "firstSeenAt": "2026-11-22T12:38:40Z",
+    "sources": [
+      {
+        "id": "no-more-walls",
+        "name": "No More Walls",
+        "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+      }
+    ]
+  },
+  {
+    "id": "1db8e6f7ae95c316ac6117323bd26ab51855730a1be7b8d0066353fd5ee6191e",
+    "uri": "vless://364D2D52-E61E-4E52-80EC-2BC6BDF15349@188.114.98.0:443?alpn=http%2F1.1&host=fr-free.fastestrelay.com&path=%2F700gvl&security=tls&sni=fr-free.fastestrelay.com&type=ws&fp=safari#Babak-vlss-05-91-82",
+    "protocol": "vless",
+    "name": "Babak-vlss-05-91-82",
+    "host": "188.114.98.0",
+    "port": 443,
+    "firstSeenAt": "2026-11-22T12:38:40Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "e8066db42e26b4a86392f52f0300c5bda62b284860ed1b8b7312da8f4054f98e",
+    "uri": "ss://YWVzLTI1Ni1nY206ZmFCQW9ENTRrODdVSkc3@38.121.43.65:2375#Babak-ss-05-91-83",
+    "protocol": "ss",
+    "name": "Babak-ss-05-91-83",
+    "host": "38.121.43.65",
+    "port": 2375,
+    "firstSeenAt": "2026-11-22T12:38:40Z",
+    "sources": [
+      {
+        "id": "v2ray-aggregator",
+        "name": "V2Ray Aggregator",
+        "url": "https://github.com/mahdibland/V2RayAggregator/blob/master/sub/sub_merge.txt"
+      }
+    ]
+  },
+  {
+    "id": "1bd9491ad73b1ff5fca0152835ed3cd8a8e1fecf1d25184c31db1abc6b1bd7a2",
+    "uri": "vless://27c26119-090b-4ae3-80d2-e9f08a575862@47.243.230.253:443?allowInsecure=1&sni=www.apple.com&flow=xtls-rprx-vision&fp=chrome&security=tls#Babak-vlss-05-91-84",
+    "protocol": "vless",
+    "name": "Babak-vlss-05-91-84",
+    "host": "47.243.230.253",
+    "port": 443,
+    "firstSeenAt": "2026-11-22T12:38:40Z",
+    "sources": [
+      {
+        "id": "no-more-walls",
+        "name": "No More Walls",
+        "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+      }
+    ]
+  },
+  {
+    "id": "5e56543d9ccfaf963aaebc3ed7f546d264b6709e3d557292639b38011900b949",
+    "uri": "vless://89be587f-0e93-4c67-822e-98ad0a56c29e@103.119.15.175:443?allowInsecure=1&sni=www.amazon.com&flow=xtls-rprx-vision&fp=chrome&security=tls#Babak-vlss-05-91-85",
+    "protocol": "vless",
+    "name": "Babak-vlss-05-91-85",
+    "host": "103.119.15.175",
+    "port": 443,
+    "firstSeenAt": "2026-11-22T12:38:40Z",
+    "sources": [
+      {
+        "id": "no-more-walls",
+        "name": "No More Walls",
+        "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+      }
+    ]
+  },
+  {
+    "id": "966a788b24aea27ab6e083ca1ee5e3f8a03d9965c9a84f2cb76f12bb39df4593",
+    "uri": "vless://364D2D52-E61E-4E52-80EC-2BC6BDF15349@fr-free.fastestrelay.com:443?path=%2F700gvl&security=tls&host=fr-free.fastestrelay.com&type=ws&sni=fr-free.fastestrelay.com&fp=qq#Babak-vlss-05-91-86",
+    "protocol": "vless",
+    "name": "Babak-vlss-05-91-86",
+    "host": "fr-free.fastestrelay.com",
+    "port": 443,
+    "firstSeenAt": "2026-11-22T12:38:40Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "77f4e7121d8b29212568639fb26e6efc033008c5fd9e76ed97894d5533a0112f",
+    "uri": "vless://b354463f-ac84-422e-9a26-556c81ba001c@189.24.82.30:443?allowInsecure=1&sni=www.apple.com&flow=xtls-rprx-vision&fp=chrome&security=tls#Babak-vlss-05-91-87",
+    "protocol": "vless",
+    "name": "Babak-vlss-05-91-87",
+    "host": "189.24.82.30",
+    "port": 443,
+    "firstSeenAt": "2026-11-22T12:38:40Z",
+    "sources": [
+      {
+        "id": "no-more-walls",
+        "name": "No More Walls",
+        "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+      }
+    ]
+  },
+  {
+    "id": "e695672298ee5871b7d4c3eac7affbe53ebba7082c9e03eb79934a70e5bd927a",
+    "uri": "vless://364D2D52-E61E-4E52-80EC-2BC6BDF15349@fr-free.fastestrelay.com:443?type=ws&security=tls&path=%2F700gvl&sni=fr-free.fastestrelay.com&fp=edge#Babak-vlss-05-91-88",
+    "protocol": "vless",
+    "name": "Babak-vlss-05-91-88",
+    "host": "fr-free.fastestrelay.com",
+    "port": 443,
+    "firstSeenAt": "2026-11-22T12:38:40Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "585c931c4cafde083e0db86c5e22fcc6e1c1ec70d85746cb92b9e1afcdfb2128",
+    "uri": "vless://31d5b95e-aff2-4ffb-8160-b5ae941b46f6@116.213.43.43:11105?allowInsecure=1&sni=www.apple.com&flow=xtls-rprx-vision&fp=chrome&security=tls#Babak-vlss-05-91-89",
+    "protocol": "vless",
+    "name": "Babak-vlss-05-91-89",
+    "host": "116.213.43.43",
+    "port": 11105,
+    "firstSeenAt": "2026-11-22T12:38:40Z",
+    "sources": [
+      {
+        "id": "no-more-walls",
+        "name": "No More Walls",
+        "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+      }
+    ]
+  },
+  {
+    "id": "a6b1f54f89c24dd9e169d253ec473f1d2ddb992deae80ddd09a37833fc784c3a",
+    "uri": "vless://364D2D52-E61E-4E52-80EC-2BC6BDF15349@fr-free.fastestrelay.com:443?type=ws&security=tls&path=/700gvl&sni=fr-free.fastestrelay.com&fp=qq#Babak-vlss-05-91-90",
+    "protocol": "vless",
+    "name": "Babak-vlss-05-91-90",
+    "host": "fr-free.fastestrelay.com",
+    "port": 443,
+    "firstSeenAt": "2026-11-22T12:38:40Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "e3e51875a3b52c6038f1a12e193f5551fdfd9d54fa9efe62cae03077809f5ce3",
+    "uri": "vless://ad45be81-9ba1-4a41-9326-f6ceb63eb79f@166.0.27.137:443?allowInsecure=1&sni=www.samsung.com&flow=xtls-rprx-vision&fp=chrome&security=tls#Babak-vlss-05-91-91",
+    "protocol": "vless",
+    "name": "Babak-vlss-05-91-91",
+    "host": "166.0.27.137",
+    "port": 443,
+    "firstSeenAt": "2026-11-22T12:38:40Z",
+    "sources": [
+      {
+        "id": "no-more-walls",
+        "name": "No More Walls",
+        "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+      }
+    ]
+  },
+  {
+    "id": "194c60e373319f24127520a0f39fb37cc5b1f62a3a5ca96492b8c24c74a01bf6",
+    "uri": "vless://cda0862a-0f87-4be9-8ed8-1d0c9e382839@5d0319t.nl7.h1clayd.click:443?security=reality&type=tcp&packetEncoding=xudp&sni=5d0319t.nl7.h1clayd.click&fp=firefox&sid=361d0dd59c70516f&pbk=l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs#Babak-vlss-05-91-92",
+    "protocol": "vless",
+    "name": "Babak-vlss-05-91-92",
+    "host": "5d0319t.nl7.h1clayd.click",
+    "port": 443,
+    "firstSeenAt": "2026-11-22T12:38:40Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "4450784a1abba94daf770aa4f7a39751a9d66a182bd8ba17a2a369582b88fd73",
+    "uri": "vless://3112c3f2-7172-417d-bce6-d168135d1603@8.208.101.215:443?allowInsecure=1&sni=www.ebay.com&flow=xtls-rprx-vision&fp=chrome&security=tls#Babak-vlss-05-91-93",
+    "protocol": "vless",
+    "name": "Babak-vlss-05-91-93",
+    "host": "8.208.101.215",
+    "port": 443,
+    "firstSeenAt": "2026-11-22T12:38:40Z",
+    "sources": [
+      {
+        "id": "no-more-walls",
+        "name": "No More Walls",
+        "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+      }
+    ]
+  },
+  {
+    "id": "5f004ff49ddbcc0febcb9615ba5a86c9309d0943239fd6f10364e2ca9f717424",
+    "uri": "vless://cda0862a-0f87-4be9-8ed8-1d0c9e382839@5d0319t.nl7.h1clayd.click:443?security=reality&type=tcp&sni=5d0319t.nl7.h1clayd.click&path=%2F&host=5d0319t.nl7.h1clayd.click&fp=random&pbk=l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs&sid=361d0dd59c70516f#Babak-vlss-05-91-94",
+    "protocol": "vless",
+    "name": "Babak-vlss-05-91-94",
+    "host": "5d0319t.nl7.h1clayd.click",
+    "port": 443,
+    "firstSeenAt": "2026-11-22T12:38:40Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "cd5925da8553719199c332fdf15f15a8650387d96c3f4fff23db8eb18885d48e",
+    "uri": "vless://ca69a29d-60ef-433a-91bc-27537be993c8@116.213.43.43:11101?allowInsecure=1&sni=www.apple.com&flow=xtls-rprx-vision&fp=chrome&security=tls#Babak-vlss-05-91-95",
+    "protocol": "vless",
+    "name": "Babak-vlss-05-91-95",
+    "host": "116.213.43.43",
+    "port": 11101,
+    "firstSeenAt": "2026-11-22T12:38:40Z",
+    "sources": [
+      {
+        "id": "no-more-walls",
+        "name": "No More Walls",
+        "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+      }
+    ]
+  },
+  {
+    "id": "7f48b9b67e118b759ede52cc655fe120dc6afccd34420c46ff7a54d992f9c4c2",
+    "uri": "vless://cda0862a-0f87-4be9-8ed8-1d0c9e382839@e60833x.nl7.h1clayd.click:443?type=xhttp&security=reality&fp=chrome&pbk=jIRVNEf9SpuWP2nJrAbHGGIUnfzOmwZZlrNGw-Y-O2Q&sid=2d2598d60447a967&sni=e60833x.nl7.h1clayd.click&path=/d20896a4ce30&mode=auto#Babak-vlss-05-91-96",
+    "protocol": "vless",
+    "name": "Babak-vlss-05-91-96",
+    "host": "e60833x.nl7.h1clayd.click",
+    "port": 443,
+    "firstSeenAt": "2026-11-22T12:38:40Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "71e408d8641a8f806a749b3f416380c66243d67b6dec58620a15da043170e164",
+    "uri": "vless://a6fd460c-88bd-4425-bb56-2b73d29455cc@47.84.39.7:443?allowInsecure=1&sni=www.amazon.com&flow=xtls-rprx-vision&fp=chrome&security=tls#Babak-vlss-05-91-97",
+    "protocol": "vless",
+    "name": "Babak-vlss-05-91-97",
+    "host": "47.84.39.7",
+    "port": 443,
+    "firstSeenAt": "2026-11-22T12:38:40Z",
+    "sources": [
+      {
+        "id": "no-more-walls",
+        "name": "No More Walls",
+        "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+      }
+    ]
+  },
+  {
+    "id": "209bf7fcab5da402b5b07c2d63c1ce7497f18e94d9b45dd9281a759f4217b081",
+    "uri": "vless://e9958027-03be-4eb5-bcec-70415b2e4844@196.240.4.2:443?security=tls&sni=e9958027.ferrin.uk&alpn=h2&fp=firefox&type=xhttp&path=%2F&mode=auto#Babak-vlss-05-91-98",
+    "protocol": "vless",
+    "name": "Babak-vlss-05-91-98",
+    "host": "196.240.4.2",
+    "port": 443,
+    "firstSeenAt": "2026-11-22T12:38:40Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
+  },
+  {
+    "id": "ccd973acf398e57f6d0226831f9713e0a3d957c9fddda4f83cee05ca948a2626",
+    "uri": "vless://4ded3111-b418-475a-93de-0360932508b2@43.108.109.112:443?allowInsecure=1&sni=www.samsung.com&flow=xtls-rprx-vision&fp=chrome&security=tls#Babak-vlss-05-91-99",
+    "protocol": "vless",
+    "name": "Babak-vlss-05-91-99",
+    "host": "43.108.109.112",
+    "port": 443,
+    "firstSeenAt": "2026-11-22T12:38:40Z",
+    "sources": [
+      {
+        "id": "no-more-walls",
+        "name": "No More Walls",
+        "url": "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt"
+      }
+    ]
+  },
+  {
+    "id": "cd8d514f212b5dfc80cabd478d6100cdfa743937902a45bb40e73f4ff4c11bfa",
+    "uri": "vless://43BCAE0A-10A6-4003-8615-BD510F4215BA@fr-free.fastestrelay.com:443?path=%2F700gvl-us-free&security=tls&encryption=none&insecure=0&host=fr-free.fastestrelay.com&fp=random&type=ws&allowInsecure=0&sni=fr-free.fastestrelay.com#Babak-vlss-05-92-00",
+    "protocol": "vless",
+    "name": "Babak-vlss-05-92-00",
+    "host": "fr-free.fastestrelay.com",
+    "port": 443,
+    "firstSeenAt": "2026-11-22T12:38:40Z",
+    "sources": [
+      {
+        "id": "igareck-black-vless",
+        "name": "iGareck Black VLESS",
+        "url": "https://github.com/igareck/vpn-configs-for-russia/blob/main/BLACK_VLESS_RUS.txt"
+      }
+    ]
   }
 ]
